@@ -1,0 +1,88 @@
+<?php
+use App\Http\Controllers\AuditController;
+use App\Http\Controllers\ForceChangeController;
+use App\Http\Controllers\Log_in_and_out_Controller;
+use App\Http\Controllers\ProfileController;
+// use App\Http\Controllers\RoleController;
+use App\Http\Controllers\RolesAndPermissionController;
+use App\Http\Controllers\UserAccountController;
+// use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+ */
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified',
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard');
+//     })->name('dashboard');
+// });
+Route::get('/', function () {
+    return view('auth.login');
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('logistics.layouts.index');
+    })->name('dashboard');
+});
+Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-admin');
+Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
+    ->middleware('auth');
+Route::group(['prefix' => 'settings'], function () {
+    Route::prefix('roles')->group(function () {
+        Route::get('/', [RolesAndPermissionController::class, 'index'])->name('index-roles');
+        Route::get('/add', [RolesAndPermissionController::class, 'create'])->name('create-roles');
+        Route::post('/store', [RolesAndPermissionController::class, 'store'])->name('store-roles');
+        Route::get('/edit/{uuid}', [RolesAndPermissionController::class, 'edit'])->name('edit-roles');
+        Route::post('/update', [RolesAndPermissionController::class, 'update'])->name('update-roles');
+        Route::get('/delete{uuid}', [RolesAndPermissionController::class, 'destroy'])->name('destroy-roles');
+    });
+
+    Route::prefix('user')->group(function () {
+        Route::get('/', [UserAccountController::class, 'index'])->name('index-user');
+        Route::get('/add', [UserAccountController::class, 'create'])->name('create-user');
+        Route::post('/store', [UserAccountController::class, 'store'])->name('store-user');
+        Route::get('/edit/{uuid}', [UserAccountController::class, 'edit'])->name('edit-user');
+        Route::post('/update', [UserAccountController::class, 'update'])->name('update-user');
+        Route::get('/delete{uuid}', [UserAccountController::class, 'destroy'])->name('destroy-user');
+    });
+
+    Route::get('/forgot-password', [Log_in_and_out_Controller::class, 'resetpassword'])->name('forgot-password');
+    Route::get('/change-password', [Log_in_and_out_Controller::class, 'verifyaccount'])->name('verify-password');
+    Route::post('/password-changed', [ForceChangeController::class, 'changePassword'])->name('changed-password');
+    Route::prefix('Profile')->group(function () {
+        Route::get('/', [ProfileController::class, 'ProfileView'])->name('profileview');
+        Route::get('/edit', [ProfileController::class, 'ProfileEdit'])->name('profile.edit');
+        Route::post('/store', [ProfileController::class, 'ProfileStore'])->name('profile.store');
+        Route::get('/password/view', [ProfileController::class, 'PasswordView'])->name('password.view');
+        Route::post('/password/update', [ProfileController::class, 'PasswordUpdate'])->name('password.update');
+        Route::get('/inactivation{id}', [ProfileController::class, 'Inactive'])->name('user.inactive');
+        Route::get('/activation{id}', [ProfileController::class, 'Active'])->name('user.active');
+    });
+    // Route::get('/login-activities', [LogactivityController::class, 'login_and_logout_activities'])->name('login_and_logout');
+    Route::prefix('audit-trail')->group(function () {
+        Route::get('/', [AuditController::class, 'ViewAudit'])->name('audit.trail');
+        Route::get('/user-audit', [AuditController::class, 'AuthAudit'])->name('user-audit-trail');
+    });
+});
