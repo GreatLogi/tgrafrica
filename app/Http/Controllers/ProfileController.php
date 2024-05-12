@@ -19,7 +19,7 @@ class ProfileController extends Controller
     {
         $id = Auth::user()->id;
         $editData = User::find($id);
-        return view('logistics.systemsetting.profile.profile', compact('editData'));
+        return view('admin.systemsetting.profile.profile', compact('editData'));
     }
 
     public function ProfileEdit()

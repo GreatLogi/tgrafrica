@@ -33,7 +33,65 @@ use Illuminate\Support\Facades\Route;
 //         return view('dashboard');
 //     })->name('dashboard');
 // });
+
 Route::get('/', function () {
+    return view('website.index');
+})->name('home');
+
+Route::get('contact', function () {
+    return view('website.contact');
+})->name('contact');
+
+Route::get('partners', function () {
+    return view('website.partners');
+})->name('partners');
+
+Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
+
+    Route::get('founder', function () {
+        return view('website.about.founder');
+    })->name('founder');
+
+    Route::get('mission', function () {
+        return view('website.about.mission');
+    })->name('mission');
+
+    Route::get('vision', function () {
+        return view('website.about.vision');
+    })->name('vision');
+
+    Route::get('purpose', function () {
+        return view('website.about.purpose');
+    })->name('purpose');
+
+});
+
+Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
+
+    Route::get('brainstorm', function () {
+        return view('website.advisory.brainstorm');
+    })->name('brainstorm');
+
+    Route::get('analytic', function () {
+        return view('website.advisory.analytic');
+    })->name('analytic');
+
+    Route::get('seminar', function () {
+        return view('website.advisory.seminar');
+    })->name('seminar');
+
+});
+
+Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
+    Route::get('book', function () {
+        return view('website.features.book');
+    })->name('book');
+    Route::get('consult', function () {
+        return view('website.features.consult');
+    })->name('consult');
+
+});
+Route::get('/@.charcoal.trg.@trgafrica', function () {
     return view('auth.login');
 });
 
@@ -43,7 +101,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('logistics.layouts.index');
+        return view('admin.layouts.index');
     })->name('dashboard');
 });
 Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-admin');

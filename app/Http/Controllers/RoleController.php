@@ -32,7 +32,7 @@ class RoleController extends Controller
             abort(403, 'Sorry !! You are Unauthorized to view any user !');
         }
         $roles = Role::all();
-        return view('logistics.systemsetting.roles.index', compact('roles'));
+        return view('admin.systemsetting.roles.index', compact('roles'));
     }
 
     /**
@@ -48,7 +48,7 @@ class RoleController extends Controller
 
         $permissions = Permission::all();
         $permission_groups = User::getpermissionGroups();
-        return view('logistics.systemsetting.roles.create', compact('permissions', 'permission_groups'));
+        return view('admin.systemsetting.roles.create', compact('permissions', 'permission_groups'));
     }
 
     /**
@@ -108,7 +108,7 @@ class RoleController extends Controller
         $permissions = Permission::all();
         $permission_groups = User::getpermissionGroups();
 
-        return view('logistics.systemsetting.roles.edit', compact('role', 'permissions', 'permission_groups'));
+        return view('admin.systemsetting.roles.edit', compact('role', 'permissions', 'permission_groups'));
     }
 
     /**

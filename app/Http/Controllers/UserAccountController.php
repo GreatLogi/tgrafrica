@@ -41,7 +41,7 @@ class UserAccountController extends Controller
             session()->flash('alert', $alertMessage);
         }
         $users = User::all();
-        return view('logistics.systemsetting.users.index', compact('users'));
+        return view('admin.systemsetting.users.index', compact('users'));
     }
 
     /**
@@ -55,7 +55,7 @@ class UserAccountController extends Controller
             abort(403, 'Sorry !! You are Unauthorized to create any user !');
         }
         $roles = Role::all();
-        return view('logistics.systemsetting.users.create', compact('roles'));
+        return view('admin.systemsetting.users.create', compact('roles'));
     }
 
     /**
@@ -118,7 +118,7 @@ class UserAccountController extends Controller
         }
         // $user = User::find($id);
         $roles = Role::all();
-        return view('logistics.systemsetting.users.edit', compact('user', 'roles'));
+        return view('admin.systemsetting.users.edit', compact('user', 'roles'));
     }
 
     /**

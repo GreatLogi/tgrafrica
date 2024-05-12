@@ -41,7 +41,7 @@ class UserController extends Controller
         }
         $users = User::all();
 
-        return view('logistics.systemsetting.users.index', compact('users'));
+        return view('admin.systemsetting.users.index', compact('users'));
     }
 
     /**
@@ -56,7 +56,7 @@ class UserController extends Controller
         }
         $roles = Role::all();
 
-        return view('logistics.systemsetting.users.create', compact('roles'));
+        return view('admin.systemsetting.users.create', compact('roles'));
     }
 
     /**
@@ -116,7 +116,7 @@ class UserController extends Controller
         $user = User::find($id);
         $roles = Role::all();
 
-        return view('logistics.systemsetting.users.edit', compact('user', 'roles'));
+        return view('admin.systemsetting.users.edit', compact('user', 'roles'));
     }
 
     /**
