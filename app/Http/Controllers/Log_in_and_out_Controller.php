@@ -17,18 +17,13 @@ class Log_in_and_out_Controller extends Controller
             'email' => 'required|string|email',
             'password' => 'required|string',
         ]);
-
         $email = $request->email;
         $password = $request->password;
-
         $now = Carbon::now();
         $todayDate = $now->toDateTimeString();
-
         $credentials = $request->only('email', 'password');
-
         if (Auth::guard('web')->attempt($credentials)) {
             $user = Auth::guard('web')->user();
-
             if ($user->status == 1) {
                 $activityLog = [
                     'uuid' => Str::uuid(),
@@ -41,11 +36,10 @@ class Log_in_and_out_Controller extends Controller
                 return redirect()->intended('dashboard');
             } else {
                 auth()->logout();
-                return redirect()->route('login')->withErrors(['error' => 'Your account is deactivated. Please contact the admin.']);
+                return redirect('/@.charcoal.trg.@tgrafrica')->withErrors(['error' => 'Your account is deactivated. Please contact the admin.']);
             }
         }
-
-        return redirect()->route('login')->withErrors(['error' => 'Invalid credentials. Please try again.']);
+        return redirect('/@.charcoal.trg.@tgrafrica')->withErrors(['error' => 'Invalid credentials. Please try again.']);
     }
 
     public function Logout()
@@ -64,7 +58,7 @@ class Log_in_and_out_Controller extends Controller
         ];
         DB::table('activity_logs')->insert($activityLog);
         Auth::logout();
-        return redirect()->route('login')->with('success', 'User Logout Successfully');
+        return redirect('/@.charcoal.trg.@tgrafrica')->with('success', 'User Logout Successfully');
     }
 
     public function verifyaccount()

@@ -1,8 +1,8 @@
 <header class="header header-nav-menu header-nav-links">
     <div class="logo-container">
         <a href="https://www.okler.net/previews/porto-admin/" class="logo">
-            <img src="{{ asset('img/logo-modern.png') }}" class="logo-image" width="90" height="24"
-                alt="Porto Admin" /><img src="{{ asset('img/logo-default.png') }}" class="logo-image-mobile"
+            <img src="{{ asset('img/logo-default-slim.png') }}" class="logo-image" width="90" height="35"
+                alt="Porto Admin" /><img src="{{ asset('img/logo-default-slim.png') }}" class="logo-image-mobile"
                 width="90" height="41" alt="Porto Admin" />
         </a>
         <button class="btn header-btn-collapse-nav d-lg-none" data-bs-toggle="collapse" data-bs-target=".header-nav">
@@ -750,14 +750,8 @@
                             My Profile</a>
                     </li>
                     <li>
-                        <a role="menuitem" tabindex="-1" href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            <i class="bx bx-log-out"></i> Logout
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-
+                        <a role="menuitem" tabindex="-1" href="{{ route('logout') }}">
+                            <i class="bx bx-log-out"></i> Logout</a>
                     </li>
                 </ul>
             </div>

@@ -4,9 +4,9 @@
 <head>
     <title>{{ config('app.name') }}</title>
     <meta charset="UTF-8">
-    <meta name="keywords" content="GAF-admin" />
-    <meta name="description" content="GAF-admin">
-    <meta name="author" content="GAF-admin">
+    <meta name="keywords" content="TGR-ADMIN" />
+    <meta name="description" content="TGR-ADMIN">
+    <meta name="author" content="TGR-ADMIN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light"
         rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@
     <section class="body-sign">
         <div class="center-sign">
             <a href="#" class="logo float-left">
-                <img src="{{ asset('img/logo.png') }}" height="70" alt="Porto Admin" />
+                <img src="{{ asset('img/logo-default-slim.png') }}" height="100" alt="Porto Admin" />
             </a>
             <div class="panel card-sign">
                 <div class="card-title-sign mt-3 text-end">
@@ -59,7 +59,6 @@
                                 </span>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-sm-8">
                             </div>

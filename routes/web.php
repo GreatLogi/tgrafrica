@@ -91,7 +91,7 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
     })->name('consult');
 
 });
-Route::get('/@.charcoal.trg.@trgafrica', function () {
+Route::get('/@.charcoal.trg.@tgrafrica', function () {
     return view('auth.login');
 });
 
