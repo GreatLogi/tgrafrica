@@ -7,7 +7,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-        style="background-image: url({{ asset('img/page-header/bc-adv.jpg') }});">
+        style="background-image: url({{ asset('frontend/img/page-header/bc-adv.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -147,11 +147,11 @@
                             data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 4000, 'margin': 10, 'animateOut': 'fadeOut', 'dots': false}">
                             <div class="pb-5">
                                 <img alt="" class="img-fluid rounded"
-                                    src="{{ asset('img/generic/g-seminar.jpg') }}">
+                                    src="{{ asset('frontend/img/generic/g-seminar.jpg') }}">
                             </div>
                             <div class="pb-5">
                                 <img alt="" class="img-fluid rounded"
-                                    src="{{ asset('img/generic/g-seminar2.jpg') }}">
+                                    src="{{ asset('frontend/img/generic/g-seminar2.jpg') }}">
                             </div>
                         </div>
 

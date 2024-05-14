@@ -7,7 +7,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-        style="background-image: url({{ asset('img/page-header/page-header-backgrounda.jpg') }});">
+        style="background-image: url({{ asset('frontend/img/page-header/page-header-backgrounda.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -37,8 +37,8 @@
                     </h2>
                 </div> --}}
 
-                <img class="float-start img-fluid" width="450" height="11" src="{{ asset('img/layout-styles.png') }}"
-                    alt="Lordy Emmen">
+                <img class="float-start img-fluid" width="450" height="11"
+                    src="{{ asset('frontend/img/layout-styles.png') }}" alt="Lordy Emmen">
                 <p style="text-align: justify"><strong>Lordy Emmen</strong> is a diaspora entrepreneur, diaspora activist
                     and author of<strong> `The Great Return`</strong>.
                     She is of Ghanian decent and has spent the past 25 years living in the UK where she had a successful

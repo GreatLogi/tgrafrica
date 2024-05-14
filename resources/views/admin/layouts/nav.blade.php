@@ -16,6 +16,54 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
+                    <li class="nav-group-label">Site Configuration</li>
+
+                    <li class="nav-parent">
+                        <a class="nav-link" href="#">
+                            <i class="bx bx-cube" aria-hidden="true"></i>
+                            <span>SITE CONFIGURATION</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - Settings <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('index-roles') }}">
+                                            - Roles
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('profileview') }}">
+                                            - Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="ui-elements-icons-line-icons.html">
+                                            - Password Update
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('index-user') }}">
+                                            - User Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
+                                            - Audit Trail
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
+                                            - User Log Activities
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-group-label">APPs</li>
 
                     <li class="nav-parent">

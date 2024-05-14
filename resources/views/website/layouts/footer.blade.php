@@ -6,15 +6,13 @@
                 <h5 class="text-3 mb-3">NEWSLETTER</h5>
                 <p class="pe-1">
                     Keep up on our always evolving products and services.
-                   <br> Enter your e-mail address and subscribe to our newsletter.
+                    <br> Enter your e-mail address and subscribe to our newsletter.
                 </p>
                 <div class="alert alert-success d-none" id="newsletterSuccess">
                     <strong>Success!</strong> You've been added to our email list.
                 </div>
                 <div class="alert alert-danger d-none" id="newsletterError"></div>
-                <form id="newsletterForm"
-                    action="#" method="POST"
-                    class="me-4 mb-3 mb-md-0">
+                <form id="newsletterForm" action="#" method="POST" class="me-4 mb-3 mb-md-0">
                     <div class="input-group input-group-rounded">
                         <input class="form-control form-control-sm bg-light" placeholder="Email Address"
                             name="newsletterEmail" id="newsletterEmail" type="email" />
@@ -45,7 +43,7 @@
                             <p class="text-2 mb-0">12:55 AM Dec 19th</p>
                         </a>
                     </li>
-                  
+
                 </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
@@ -55,7 +53,7 @@
                         <li class="mb-1">
                             <i class="far fa-dot-circle text-color-secondary"></i>
                             <p class="m-0">GB33 Nii Tsoku Komletse, Abbey St</p>
-                             <p class="m-0">Gbawe Zero, Greater Accra</p>
+                            <p class="m-0">Gbawe Zero, Greater Accra</p>
                         </li>
                         <li class="mb-1">
                             <i class="fab fa-whatsapp text-color-secondary"></i>
@@ -99,9 +97,9 @@
             <div class="row py-4">
                 <div
                     class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-                    <a href="{{route('home')}}" class="logo pe-0 pe-lg-3">
-                        <img alt="TGR Logo" src="{{asset('img/logo-footer.png')}}" class="opacity-5" width="49"
-                            height="22" data-plugin-options="{'appearEffect': 'fadeIn'}" />
+                    <a href="{{ route('home') }}" class="logo pe-0 pe-lg-3">
+                        <img alt="TGR Logo" src="{{ asset('frontend/img/logo-footer.png') }}" class="opacity-5"
+                            width="49" height="22" data-plugin-options="{'appearEffect': 'fadeIn'}" />
                     </a>
                 </div>
                 <div

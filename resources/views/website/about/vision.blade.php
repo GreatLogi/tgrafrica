@@ -7,7 +7,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-        style="background-image: url({{ asset('img/page-header/page-header-backgrounda.jpg') }});">
+        style="background-image: url({{ asset('frontend/img/page-header/page-header-backgrounda.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -62,9 +62,6 @@
                     to live that even those in the Diaspora want to return.
 
                 </p>
-
-
-
             </div>
         </div>
 
