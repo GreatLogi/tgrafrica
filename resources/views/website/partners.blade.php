@@ -1,4 +1,4 @@
-@extends('website.website.layouts.main')
+@extends('website.layouts.main')
 @section('title')
     Partners
 @endsection

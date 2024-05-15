@@ -1,4 +1,4 @@
-@extends('website.website.layouts.main')
+@extends('website.layouts.main')
 
 @section('title')
     Contact
@@ -26,11 +26,7 @@
 
 
     <div role="main" class="main">
-
-
-
         <div class="container">
-
             <div class="row py-4">
                 <div class="col-lg-6">
 
