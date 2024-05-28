@@ -26,38 +26,38 @@
                         <ul class="nav nav-children">
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
-                                    - Settings <span class="mega-sub-nav-toggle toggled float-end"
+                                    - Configuration <span class="mega-sub-nav-toggle toggled float-end"
                                         data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
-                                        <a class="nav-link" href="{{ route('index-roles') }}">
-                                            - Roles
+                                        <a class="nav-link" href="{{ route('site-mission') }}">
+                                            - Mission
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{ route('profileview') }}">
-                                            - Profile
+                                        <a class="nav-link" href="{{ route('site-vision') }}">
+                                            - Vision
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="ui-elements-icons-line-icons.html">
-                                            - Password Update
+                                        <a class="nav-link" href="{{ route('site-purpose') }}">
+                                            - Purpose
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{ route('index-user') }}">
-                                            - User Account
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
-                                            - Audit Trail
+                                        <a class="nav-link" href="{{ route('site-contact-us') }}">
+                                            - Contact Us
                                         </a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="ui-elements-icons-box-icons.html">
-                                            - User Log Activities
+                                            - Logo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
+                                            - Founder
                                         </a>
                                     </li>
                                 </ul>

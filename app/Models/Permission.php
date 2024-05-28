@@ -20,7 +20,6 @@ class Permission extends Model implements Auditable
      * @var array<int, string>
      */
     protected $fillable = [
-
         'name',
         'group_name',
         'guard_name',

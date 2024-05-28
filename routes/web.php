@@ -1,9 +1,10 @@
 <?php
+use App\Http\Controllers\Admin\SiteConfigurationController;
 use App\Http\Controllers\AuditController;
 use App\Http\Controllers\ForceChangeController;
 use App\Http\Controllers\Log_in_and_out_Controller;
-use App\Http\Controllers\ProfileController;
 // use App\Http\Controllers\RoleController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RolesAndPermissionController;
 use App\Http\Controllers\UserAccountController;
 // use App\Http\Controllers\UserController;
@@ -107,6 +108,19 @@ Route::middleware([
 Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-admin');
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');
+
+Route::prefix('site-configuration')->group(function () {
+    Route::get('/footer', [SiteConfigurationController::class, 'create_footer'])->name('site-footer');
+    Route::get('/purpose', [SiteConfigurationController::class, 'create_purpose'])->name('site-purpose');
+    Route::get('/vision', [SiteConfigurationController::class, 'create_vision'])->name('site-vision');
+    Route::get('/mission', [SiteConfigurationController::class, 'create_mission'])->name('site-mission');
+    Route::get('/contact-us', [SiteConfigurationController::class, 'create_contact_us'])->name('site-contact-us');
+    // Route::post('/vision', [UserAccountController::class, 'store'])->name('store-user');
+    // Route::get('/edit/{uuid}', [UserAccountController::class, 'edit'])->name('edit-user');
+    // Route::post('/update', [UserAccountController::class, 'update'])->name('update-user');
+    // Route::get('/delete{uuid}', [UserAccountController::class, 'destroy'])->name('destroy-user');
+});
+
 Route::group(['prefix' => 'settings'], function () {
     Route::prefix('roles')->group(function () {
         Route::get('/', [RolesAndPermissionController::class, 'index'])->name('index-roles');

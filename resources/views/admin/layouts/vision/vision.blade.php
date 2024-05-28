@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin_master')
 @section('title')
-    Mission
+    Vision
 @endsection
 @section('admin')
     <div class="row">
