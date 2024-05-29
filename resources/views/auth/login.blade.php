@@ -34,6 +34,16 @@
                             class="bx bx-user-circle me-1 text-6 position-relative top-5"></i> Sign In</h2>
                 </div>
                 <div class="card-body">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <form action="{{ route('login-admin') }}" method="post">
                         @csrf
                         <div class="form-group mb-3">

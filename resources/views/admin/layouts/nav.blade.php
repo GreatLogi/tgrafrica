@@ -26,38 +26,54 @@
                         <ul class="nav nav-children">
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
-                                    - Configuration <span class="mega-sub-nav-toggle toggled float-end"
-                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    - Vision <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
+                                        data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
-                                        <a class="nav-link" href="{{ route('site-mission') }}">
-                                            - Mission
+                                        <a class="nav-link" href="{{ route('site-index-vision') }}">
+                                            - Record
                                         </a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="{{ route('site-vision') }}">
-                                            - Vision
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - Mission <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
+                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-mission') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-mission') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - Purpose <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
+                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-purpose') }}">
+                                            - Record
                                         </a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="{{ route('site-purpose') }}">
-                                            - Purpose
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('site-contact-us') }}">
-                                            - Contact Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
-                                            - Logo
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
-                                            - Founder
+                                            - Add Record
                                         </a>
                                     </li>
                                 </ul>
@@ -112,6 +128,7 @@
                             </li>
                         </ul>
                     </li>
+
                 </ul>
             </nav>
         </div>
