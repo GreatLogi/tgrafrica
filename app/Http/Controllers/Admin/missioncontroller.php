@@ -22,44 +22,42 @@ class missioncontroller extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'mission' => ['required', Rule::unique('categories')],
+            'mission' => 'required',
         ]);
         Mission::create([
-            'mission' => $request->vision,
-            'created_by' => Auth::user()->id,
-            'created_at' => Carbon::now(),
+            'mission' => $request->mission,
         ]);
         $notification = [
-            'message' => 'visions Inserted Successfully',
+            'message' => 'missions Inserted Successfully',
             'alert-type' => 'success',
         ];
-        return redirect()->route('view-index')->with($notification);
+        return redirect()->route('site-index-mission')->with($notification);
     }
 
     public function edit($uuid)
     {
-        $visions = Mission::where('uuid', $uuid)->first();
-        if (!$visions) {
+        $missions = Mission::where('uuid', $uuid)->first();
+        if (!$missions) {
             abort(404);
         }
-        return view('admin.layouts.vision.edit', compact('visions'));
+        return view('admin.layouts.mission.edit', compact('missions'));
     }
 
     public function update(Request $request)
     {
-        $vision_id = $request->uuid;
-        $visions = Mission::where('uuid', $vision_id)->first();
-        if (!$visions) {
+        $mission_id = $request->uuid;
+        $missions = Mission::where('uuid', $mission_id)->first();
+        if (!$missions) {
             abort(404);
         }
-        $visions->update([
+        $missions->update([
             'mission' => $request->mission,
         ]);
         $notification = [
             'message' => 'missions Updated Successfully',
             'alert-type' => 'success',
         ];
-        return redirect()->route('view-index')->with($notification);
+        return redirect()->route('site-index-mission')->with($notification);
     }
 
     public function delete($uuid)

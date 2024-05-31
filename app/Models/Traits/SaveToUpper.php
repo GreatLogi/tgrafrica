@@ -17,7 +17,6 @@ trait SaveToUpper
         'slug',
         'uuid',
         'personnel_image',
-        'barcode_image',
         'item_image',
         'profile_photo_path',
     ];

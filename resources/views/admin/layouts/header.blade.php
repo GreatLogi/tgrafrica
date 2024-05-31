@@ -728,6 +728,9 @@
         </div>
         <!-- end: header nav menu -->
     </div>
+    @php
+        $user = Auth::user();
+    @endphp
     <div class="header-right">
         <span class="separator"></span>
         <div id="userbox" class="userbox">
@@ -738,7 +741,7 @@
                 <div class="profile-info profile-info-no-role" data-lock-name="John Doe"
                     data-lock-email="johndoe@okler.com">
                     <span class="name">Hi, <strong
-                            class="font-weight-semibold">{{ Auth::user()->name }}</strong></span>
+                            class="font-weight-semibold">{{ $user ? $user->name : 'Guest' }}</strong></span>
                 </div>
                 <i class="fas fa-chevron-down text-color-dark"></i>
             </a>
