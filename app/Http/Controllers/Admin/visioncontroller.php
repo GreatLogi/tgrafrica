@@ -22,18 +22,16 @@ class visioncontroller extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'vision' => ['required', Rule::unique('categories')],
+            'vision' => 'required',
         ]);
         Vision::create([
             'vision' => $request->vision,
-            'created_by' => Auth::user()->id,
-            'created_at' => Carbon::now(),
         ]);
         $notification = [
             'message' => 'visions Inserted Successfully',
             'alert-type' => 'success',
         ];
-        return redirect()->route('view-index')->with($notification);
+        return redirect()->route('site-index-vision')->with($notification);
     }
 
     public function edit($uuid)
@@ -42,7 +40,6 @@ class visioncontroller extends Controller
         if (!$visions) {
             abort(404);
         }
-
         return view('admin.layouts.vision.edit', compact('visions'));
     }
 
@@ -60,7 +57,7 @@ class visioncontroller extends Controller
             'message' => 'visions Updated Successfully',
             'alert-type' => 'success',
         ];
-        return redirect()->route('view-index')->with($notification);
+        return redirect()->route('site-index-vision')->with($notification);
     }
 
     public function delete($uuid)

@@ -26,14 +26,12 @@ class purposecontroller extends Controller
         ]);
         Purpose::create([
             'purpose' => $request->purpose,
-            'created_by' => Auth::user()->id,
-            'created_at' => Carbon::now(),
         ]);
         $notification = [
             'message' => 'purposes Inserted Successfully',
             'alert-type' => 'success',
         ];
-        return redirect()->route('view-index')->with($notification);
+        return redirect()->route('site-index-purpose')->with($notification);
     }
 
     public function edit($uuid)
@@ -42,7 +40,6 @@ class purposecontroller extends Controller
         if (!$purposes) {
             abort(404);
         }
-
         return view('admin.layouts.purpose.edit', compact('purposes'));
     }
 
@@ -60,7 +57,7 @@ class purposecontroller extends Controller
             'message' => 'purposes Updated Successfully',
             'alert-type' => 'success',
         ];
-        return redirect()->route('view-index')->with($notification);
+        return redirect()->route('site-index-purpose')->with($notification);
     }
 
     public function delete($uuid)

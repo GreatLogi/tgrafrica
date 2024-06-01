@@ -116,18 +116,18 @@ Route::prefix('site-configuration')->group(function () {
     Route::prefix('purpose')->group(function () {
         Route::get('/', [purposecontroller::class, 'index'])->name('site-index-purpose');
         Route::get('/add', [SiteConfigurationController::class, 'create_purpose'])->name('site-purpose');
-        Route::post('/store', [purposecontroller::class, 'store'])->name('site-purpose');
-        Route::get('/edit/{uuid}', [purposecontroller::class, 'edit'])->name('site-purpose');
-        Route::post('/update', [purposecontroller::class, 'update'])->name('site-purpose');
-        Route::get('/delete', [purposecontroller::class, 'delete'])->name('site-purpose');
+        Route::post('/store', [purposecontroller::class, 'store'])->name('site-store-purpose');
+        Route::get('/edit/{uuid}', [purposecontroller::class, 'edit'])->name('site-edit-purpose');
+        Route::post('/update', [purposecontroller::class, 'update'])->name('site-update-purpose');
+        Route::get('/delete/{uuid}', [purposecontroller::class, 'delete'])->name('site-delete-purpose');
     });
     Route::prefix('vision')->group(function () {
-        Route::get('/', [missioncontroller::class, 'index'])->name('site-index-vision');
+        Route::get('/', [visioncontroller::class, 'index'])->name('site-index-vision');
         Route::get('/add', [SiteConfigurationController::class, 'create_vision'])->name('site-vision');
         Route::post('/store', [visioncontroller::class, 'store'])->name('site-store-vision');
-        Route::get('/edit/{uuid}', [visioncontroller::class, 'edit'])->name('site-update-vision');
+        Route::get('/edit/{uuid}', [visioncontroller::class, 'edit'])->name('site-edit-vision');
         Route::post('/update', [visioncontroller::class, 'update'])->name('site-update-vision');
-        Route::get('/delete', [visioncontroller::class, 'delete'])->name('site-delete-vision');
+        Route::get('/delete/{uuid}', [visioncontroller::class, 'delete'])->name('site-delete-vision');
     });
     Route::prefix('mission')->group(function () {
         Route::get('/', [missioncontroller::class, 'index'])->name('site-index-mission');
@@ -135,7 +135,7 @@ Route::prefix('site-configuration')->group(function () {
         Route::post('/store', [missioncontroller::class, 'store'])->name('site-store-mission');
         Route::get('/edit/{uuid}', [missioncontroller::class, 'edit'])->name('site-edit-mission');
         Route::post('/update', [missioncontroller::class, 'update'])->name('site-update-mission');
-        Route::get('/delete', [missioncontroller::class, 'delete'])->name('site-delete-mission');
+        Route::get('/delete/{uuid}', [missioncontroller::class, 'delete'])->name('site-delete-mission');
     });
     Route::get('/footer', [SiteConfigurationController::class, 'create_footer'])->name('site-footer');
     Route::get('/contact-us', [SiteConfigurationController::class, 'create_contact_us'])->name('site-contact-us');
