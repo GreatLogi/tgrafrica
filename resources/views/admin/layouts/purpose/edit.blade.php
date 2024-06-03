@@ -22,7 +22,7 @@
                                         class="col-lg-2 col-xl-3 control-label text-lg-end pt-2 mt-1 mb-0">Purpose</label>
                                     <div class="col-lg-9 col-xl-9">
                                         <textarea class="form-control form-control-modern" name="purpose" rows="12">{{ $purposes->purpose }}</textarea>
-                                        @error('vision')
+                                        @error('purpose')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>

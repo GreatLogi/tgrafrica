@@ -1,195 +1,148 @@
 @extends('admin.layouts.admin_master')
 @section('title')
-    Purpose
+    Contact Us
 @endsection
 @section('admin')
-<div class="row">
-    <div class="col">
-        <section class="card">
-            <header class="card-header">
-                <div class="card-actions">
-                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
-                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
+    <div class="row">
+        <div class="col">
+            <section class="card">
+                <header class="card-header">
+                    <h2 class="card-title">Contact Lists</h2>
+                </header>
+                <div class="card-body">
+                    <div id="datatable-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped mb-0 dataTable no-footer" id="contact-us-lists"
+                                role="grid" style="width: 852px;">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="datatable-default"
+                                            rowspan="1" colspan="1" aria-sort="ascending"
+                                            aria-label="Rendering engine: activate to sort column descending"
+                                            style="width: 236.667px;">No.</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 230.333px;">Name</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 230.333px;">Email</th>
+
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 230.333px;">Country Of Residence</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 230.333px;">Nationality</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 230.333px;">Subject</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 230.333px;">Message</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Platform(s): activate to sort column ascending"
+                                            style="width: 295.333px;">Date and Time</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-
-                <h2 class="card-title">Form Elements</h2>
-            </header>
-            <div class="card-body">
-                <form class="form-horizontal form-bordered" method="get">
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputDefault">Default</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" id="inputDefault">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputDisabled">Disabled</label>
-                        <div class="col-lg-6">
-                            <input class="form-control" id="inputDisabled" type="text" placeholder="Disabled input here..." disabled="">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputReadOnly">Read-Only Input</label>
-                        <div class="col-lg-6">
-                            <input type="text" value="Read-Only Input" id="inputReadOnly" class="form-control" readonly="readonly">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-3">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputHelpText">Help text</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" id="inputHelpText">
-                            <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputRounded">Rounded Input</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control input-rounded" id="inputRounded">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputFocus">Input focus</label>
-                        <div class="col-lg-6">
-                            <input class="form-control" id="inputFocus" type="text" value="This is focused...">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputPlaceholder">Placeholder</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="placeholder" id="inputPlaceholder">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputPassword">Password</label>
-                        <div class="col-lg-6">
-                            <input type="password" class="form-control" placeholder="" id="inputPassword">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-1">Static control</label>
-                        <div class="col-lg-6">
-                            <p class="form-control-static mb-0"><a href="../../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a5c0c8c4ccc9e5c0ddc4c8d5c9c08bc6cac8">[email&#160;protected]</a></p>
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2">Left Icon</label>
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                <span class="input-group-text">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Left icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2">Right Icon</label>
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Right icon">
-                                <span class="input-group-text">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2">File Upload</label>
-                        <div class="col-lg-6">
-                            <div class="fileupload fileupload-new" data-provides="fileupload">
-                                <div class="input-append">
-                                    <div class="uneditable-input">
-                                        <i class="fas fa-file fileupload-exists"></i>
-                                        <span class="fileupload-preview"></span>
-                                    </div>
-                                    <span class="btn btn-default btn-file">
-                                        <span class="fileupload-exists">Change</span>
-                                        <span class="fileupload-new">Select file</span>
-                                        <input type="file" />
-                                    </span>
-                                    <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2">Vertical Group</label>
-                        <div class="col-lg-6">
-                            <section class="form-group-vertical">
-                                <input class="form-control" type="text" placeholder="Username">
-                                <input class="form-control" type="text" placeholder="Email">
-                                <input class="form-control last" type="password" placeholder="Password">
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4 has-success">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputSuccess">Input with success</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" id="inputSuccess">
-                        </div>
-                    </div>
-                    <div class="form-group row pb-4 has-warning">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputWarning">Input with warning</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" id="inputWarning">
-                        </div>
-                    </div>
-                    <div class="form-group row pb-4 has-danger">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputError">Input with error</label>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control" id="inputError">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4 mb-2">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputTooltip">Input with Tooltip</label>
-                        <div class="col-lg-6">
-                            <input type="text" placeholder="Hover me" title="" data-bs-toggle="tooltip" data-bs-trigger="hover" class="form-control" data-original-title="Place your tooltip info here" id="inputTooltip">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2" for="inputPopover">Input with Popover</label>
-                        <div class="col-lg-6">
-                            <input type="text" placeholder="Click Here" class="form-control" data-bs-toggle="popover" data-bs-placement="top" data-original-title="The Title" data-bs-content="Content goes here..." data-bs-trigger="click" id="inputPopover">
-                        </div>
-                    </div>
-
-                    <div class="form-group row pb-4">
-                        <label class="col-lg-3 control-label text-lg-end pt-2">Column sizing</label>
-                        <div class="col-sm-8">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <input type="text" class="form-control" placeholder=".col-sm-2">
-                                </div>
-                                <div class="d-md-none mb-3"></div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" placeholder=".col-sm-3">
-                                </div>
-                                <div class="d-md-none mb-3"></div>
-                                <div class="col-sm-4">
-                                    <input type="text" class="form-control" placeholder=".col-sm-4">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
-</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.colVis.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var dataTable;
+            dataTable = $('#contact-us-lists').DataTable({
+                dom: "<'row'<'col-sm-2'l><'col'B><'col-sm-2'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-6'i><'col-sm-6'p>>",
+                buttons: [
+                    'colvis',
+                    {
+                        extend: 'copy',
+                        text: 'Copy to clipboard'
+                    },
+                    'excel',
+                ],
+                scrollY: 960,
+                scrollCollapse: true,
+                processing: true,
+                serverSide: true,
+                lengthMenu: [
+                    [15, 25, 50, 100, 200, -1],
+                    [15, 25, 50, 100, 200, 'All'],
+                ],
+                ajax: {
+                    url: "{{ route('contact-us-summary') }}",
+                    type: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: function(d) {
+                        var formData = $('#filter-form').serializeArray();
+                        $.each(formData, function(index, item) {
+                            d[item.name] = item.value;
+                        });
+                    },
+                },
+                columns: [{
+                        data: null,
+                        orderable: false,
+                        searchable: false,
+                        render: function(data, type, full, meta) {
+                            return meta.row + 1;
+                        }
+                    },
+                    {
+                        data: 'full_name',
+                        name: 'full_name'
+                    },
+                    {
+                        data: 'email',
+                        name: 'email'
+                    },
+                    {
+                        data: 'country_of_residence',
+                        name: 'country_of_residence'
+                    },
+                    {
+                        data: 'nationality',
+                        name: 'nationality'
+                    },
+                    {
+                        data: 'subject',
+                        name: 'subject'
+                    },
+                    {
+                        data: 'message',
+                        name: 'message'
+                    },
+                    {
+                        data: 'created_at',
+                        name: 'created_at'
+                    },
+                ],
+            });
+        });
+    </script>
 @endsection

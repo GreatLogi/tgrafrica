@@ -4,13 +4,14 @@ use App\Http\Controllers\Admin\purposecontroller;
 use App\Http\Controllers\Admin\SiteConfigurationController;
 use App\Http\Controllers\Admin\visioncontroller;
 use App\Http\Controllers\AuditController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\ForceChangeController;
-use App\Http\Controllers\Log_in_and_out_Controller;
 // use App\Http\Controllers\RoleController;
+use App\Http\Controllers\Log_in_and_out_Controller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RolesAndPermissionController;
-use App\Http\Controllers\UserAccountController;
 // use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserAccountController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -69,7 +70,10 @@ Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
     })->name('purpose');
 
 });
-
+Route::prefix('contact-us')->group(function () {
+    Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
+    Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
+});
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
 
     Route::get('brainstorm', function () {
