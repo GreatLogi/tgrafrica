@@ -16,7 +16,7 @@ class missioncontroller extends Controller
     public function index()
     {
         $missions = Mission::latest()->get();
-        return view('admin.layouts.mission.index', compact('missions'));
+        return view('admin.layouts.aboutus.mission.index', compact('missions'));
     }
 
     public function store(Request $request)
@@ -40,7 +40,7 @@ class missioncontroller extends Controller
         if (!$missions) {
             abort(404);
         }
-        return view('admin.layouts.mission.edit', compact('missions'));
+        return view('admin.layouts.aboutus.mission.edit', compact('missions'));
     }
 
     public function update(Request $request)

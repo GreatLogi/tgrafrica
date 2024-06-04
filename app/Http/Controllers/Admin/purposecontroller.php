@@ -16,7 +16,7 @@ class purposecontroller extends Controller
     public function index()
     {
         $purposes = Purpose::latest()->get();
-        return view('admin.layouts.purpose.index', compact('purposes'));
+        return view('admin.layouts.aboutus.purpose.index', compact('purposes'));
     }
 
     public function store(Request $request)
@@ -40,7 +40,7 @@ class purposecontroller extends Controller
         if (!$purposes) {
             abort(404);
         }
-        return view('admin.layouts.purpose.edit', compact('purposes'));
+        return view('admin.layouts.aboutus.purpose.edit', compact('purposes'));
     }
 
     public function update(Request $request)
