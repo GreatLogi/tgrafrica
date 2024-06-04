@@ -43,6 +43,25 @@
                             <span>SITE CONFIGURATION</span>
                         </a>
                         <ul class="nav nav-children">
+
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - Founder <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
+                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-mission') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('founder-profile') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
                                     - Vision <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"

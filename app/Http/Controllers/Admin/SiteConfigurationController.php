@@ -31,4 +31,9 @@ class SiteConfigurationController extends Controller
     {
         return view('admin.layouts.footer.logo');
     }
+
+    public function founder_profile()
+    {
+        return view('admin.layouts.founder.founder');
+    }
 }

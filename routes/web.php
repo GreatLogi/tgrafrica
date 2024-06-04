@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\Admin\FounderController;
 use App\Http\Controllers\Admin\missioncontroller;
 use App\Http\Controllers\Admin\purposecontroller;
 use App\Http\Controllers\Admin\SiteConfigurationController;
@@ -140,6 +141,15 @@ Route::prefix('site-configuration')->group(function () {
         Route::get('/edit/{uuid}', [missioncontroller::class, 'edit'])->name('site-edit-mission');
         Route::post('/update', [missioncontroller::class, 'update'])->name('site-update-mission');
         Route::get('/delete/{uuid}', [missioncontroller::class, 'delete'])->name('site-delete-mission');
+    });
+
+    Route::prefix('founder')->group(function () {
+        Route::get('/', [FounderController::class, 'index'])->name('site-index-founder');
+        Route::get('/add', [SiteConfigurationController::class, 'founder_profile'])->name('founder-profile');
+        Route::post('/store', [FounderController::class, 'store'])->name('site-store-founder');
+        Route::get('/edit/{uuid}', [FounderController::class, 'edit'])->name('site-edit-founder');
+        Route::post('/update', [FounderController::class, 'update'])->name('site-update-founder');
+        Route::get('/delete/{uuid}', [FounderController::class, 'delete'])->name('site-delete-founder');
     });
     Route::get('/footer', [SiteConfigurationController::class, 'create_footer'])->name('site-footer');
     Route::get('/contact-us', [SiteConfigurationController::class, 'create_contact_us'])->name('site-contact-us');
