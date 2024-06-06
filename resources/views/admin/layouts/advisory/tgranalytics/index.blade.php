@@ -1,5 +1,7 @@
 @extends('admin.layouts.admin_master')
-
+@section('title')
+    Analytics
+@endsection
 @section('admin')
     <div class="row">
         <div class="col">
@@ -9,7 +11,7 @@
                         <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
                     </div>
-                    <h2 class="card-title">Brainstorm</h2>
+                    <h2 class="card-title">Analytics</h2>
                 </header>
                 <div class="card-body">
                     <div id="datatable-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">

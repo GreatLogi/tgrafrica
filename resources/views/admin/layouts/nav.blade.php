@@ -66,12 +66,12 @@
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
-                                        <a class="nav-link" href="{{ route('site-index-vision') }}">
+                                        <a class="nav-link" href="{{ route('site-index-tgranalytic') }}">
                                             - Record
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{ route('site-vision') }}">
+                                        <a class="nav-link" href="{{ route('tgr-analytic-add') }}">
                                             - Add Record
                                         </a>
                                     </li>
@@ -84,12 +84,12 @@
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
-                                        <a class="nav-link" href="{{ route('site-index-mission') }}">
+                                        <a class="nav-link" href="{{ route('site-index-tgrseminar') }}">
                                             - Record
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{ route('site-mission') }}">
+                                        <a class="nav-link" href="{{ route('tgr-seminars-add') }}">
                                             - Add Record
                                         </a>
                                     </li>

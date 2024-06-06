@@ -33,7 +33,7 @@
                 @csrf
                 <section class="card">
                     <header class="card-header">
-                        <h2 class="card-title">Founder`s Profile and Image</h2>
+                        <h2 class="card-title">Analytics</h2>
                     </header>
                     <div class="card-body" style="display: block;">
                         <div class="row">
