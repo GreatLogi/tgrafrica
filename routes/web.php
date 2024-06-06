@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\SiteConfigurationController;
 use App\Http\Controllers\Admin\visioncontroller;
 use App\Http\Controllers\AnalyticsController;
 use App\Http\Controllers\AuditController;
+use App\Http\Controllers\BonkConsultationController;
 use App\Http\Controllers\BrainstormController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\ForceChangeController;
@@ -177,6 +178,15 @@ Route::prefix('site-configuration')->group(function () {
         Route::get('/edit/{uuid}', [AnalyticsController::class, 'edit'])->name('site-edit-tgranalytic');
         Route::post('/update', [AnalyticsController::class, 'update'])->name('site-update-tgranalytic');
         Route::get('/delete/{uuid}', [AnalyticsController::class, 'delete'])->name('site-delete-tgranalytic');
+    });
+
+    Route::prefix('book-a-consultation')->group(function () {
+        Route::get('/', [BonkConsultationController::class, 'index'])->name('site-index-bookaconsultation');
+        Route::get('/add', [SiteConfigurationController::class, 'book_a_consultation_add'])->name('tgr-bookaconsultation-add');
+        Route::post('/store', [BonkConsultationController::class, 'store'])->name('site-store-bookaconsultation');
+        Route::get('/edit/{uuid}', [BonkConsultationController::class, 'edit'])->name('site-edit-bookaconsultation');
+        Route::post('/update', [BonkConsultationController::class, 'update'])->name('site-update-bookaconsultation');
+        Route::get('/delete/{uuid}', [BonkConsultationController::class, 'delete'])->name('site-delete-bookaconsultation');
     });
     Route::get('/footer', [SiteConfigurationController::class, 'create_footer'])->name('site-footer');
     Route::get('/contact-us', [SiteConfigurationController::class, 'create_contact_us'])->name('site-contact-us');

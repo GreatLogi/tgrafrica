@@ -49,4 +49,8 @@ class SiteConfigurationController extends Controller
     {
         return view('admin.layouts.advisory.tgranalytics.analytics');
     }
+    public function book_a_consultation_add()
+    {
+        return view('admin.layouts.features.bookaconsultation.bookaconsultation');
+    }
 }

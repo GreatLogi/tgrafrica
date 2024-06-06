@@ -38,6 +38,69 @@
                     <li class="nav-parent">
                         <a class="nav-link" href="#">
                             <i class="bx bx-cube" aria-hidden="true"></i>
+                            <span>FEATURES</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - BOOK A CONSULTATION <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-bookaconsultation') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('tgr-bookaconsultation-add') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            {{-- <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - TGRANALYSTICS <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-tgranalytic') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('tgr-analytic-add') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - TGRSEMINAR <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-tgrseminar') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('tgr-seminars-add') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> --}}
+
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a class="nav-link" href="#">
+                            <i class="bx bx-cube" aria-hidden="true"></i>
                             <span>ADVISORY</span>
                         </a>
                         <ul class="nav nav-children">
@@ -107,8 +170,8 @@
 
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
-                                    - Founder <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    - Founder <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
@@ -125,8 +188,8 @@
                             </li>
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
-                                    - Vision <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    - Vision <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
