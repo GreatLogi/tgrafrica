@@ -1,7 +1,5 @@
 @extends('admin.layouts.admin_master')
-@section('title')
-    Vision
-@endsection
+
 @section('admin')
     <div class="row">
         <div class="col">
@@ -11,7 +9,7 @@
                         <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
                     </div>
-                    <h2 class="card-title">Vision</h2>
+                    <h2 class="card-title">Brainstorm</h2>
                 </header>
                 <div class="card-body">
                     <div id="datatable-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
@@ -53,31 +51,57 @@
                                         <th class="sorting_asc" tabindex="0" aria-controls="datatable-default"
                                             rowspan="1" colspan="1" aria-sort="ascending"
                                             aria-label="Rendering engine: activate to sort column descending"
-                                            style="width:5%">Svc</th>
+                                            style="width:5%;">No.</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width:85%;">Vision</th>
+                                            style="width:5%;">Title</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
-                                            colspan="1" aria-label="Platform(s): activate to sort column ascending"
-                                            style="width:10%;">Action</th>
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 20%;">First Paragraph</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width: 20%;">Second Paragraph</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width:20%;">Aim By</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default"
+                                            rowspan="1" colspan="1"
+                                            aria-label="Browser: activate to sort column ascending" style="width: 25%">
+                                            Process</th>
+                                        <th class="sorting" tabindex="0" aria-controls="datatable-default"
+                                            rowspan="1" colspan="1"
+                                            aria-label="Platform(s): activate to sort column ascending" style="width:5%;">
+                                            Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($visions as $key => $list)
+                                    @foreach ($tgranalytics as $key => $list)
                                         <tr role="row" class="odd">
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $list->vision }}</td>
+                                            <td>{{ $list->title }}</td>
+                                            <td>{{ $list->first_para_analytic }}</td>
+                                            <td>{{ $list->second_para_analytic }}</td>
+                                            <td>
+                                                <ul>
+                                                    @foreach (json_decode($list->aim_by, true) as $aim)
+                                                        <li>{{ $aim }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </td>
+                                            <td>{{ $list->analytic_process }}</td>
                                             <td>
                                                 <a class="btn btn-primary btn-sm"
-                                                    href="{{ route('site-edit-vision', ['uuid' => $list->uuid]) }}"><i
+                                                    href="{{ route('site-edit-tgranalytic', ['uuid' => $list->uuid]) }}"><i
                                                         class="fas fa-pencil-alt"></i></a>
                                                 <a class="btn btn-danger btn-sm"
-                                                    href="{{ route('site-delete-vision', $list->uuid) }}"
-                                                    title="Delete Data" id="delete"><i class="far fa-trash-alt"></i></a>
+                                                    href="{{ route('site-delete-tgranalytic', $list->uuid) }}"
+                                                    title="Delete Data" id="delete"><i
+                                                        class="far fa-trash-alt"></i></a>
                                             </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
+
                             </table>
                         </div>
                     </div>

@@ -1,9 +1,7 @@
 @extends('admin.layouts.admin_master')
-
 @section('title')
-    BrainStorm
+    Analytics
 @endsection
-
 @section('admin')
     <style>
         .input-group {
@@ -31,60 +29,53 @@
     </script>
     <div class="row">
         <div class="col-lg-12">
-            <form action="{{ route('site-update-tgrbrainstorm') }}" method="POST" id="myForm" enctype="multipart/form-data">
+            <form action="{{ route('site-store-tgranalytic') }}" method="POST" id="myForm" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="uuid" value="{{ $brainstorm->uuid }}">
                 <section class="card">
                     <header class="card-header">
-                        <h2 class="card-title">Founder's Profile and Image</h2>
+                        <h2 class="card-title">Founder`s Profile and Image</h2>
                     </header>
                     <div class="card-body" style="display: block;">
                         <div class="row">
                             <div class="col-lg-12">
-                                <label for="title">Title</label>
-                                <input class="form-control" name="title" value="{{ $brainstorm->title }}"
-                                    placeholder="Title">
+                                <label for="">Title</label>
+                                <input class="form-control" name="title" placeholder="Title">
                                 @error('title')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                             <div class="col-lg-6">
-                                <label for="first_para_brainstorm">First Paragraph</label>
-                                <textarea class="form-control" name="first_para_brainstorm" rows="8" placeholder="Type your message">{{ $brainstorm->first_para_brainstorm }}</textarea>
-                                @error('first_para_brainstorm')
+                                <label for=""></label>
+                                <textarea class="form-control" name="first_para_analytic" rows="8" placeholder="Type your message"></textarea>
+                                @error('first_para_analytic')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                             <div class="col-lg-6">
-                                <label for="second_para_brainstorm">Second Paragraph</label>
-                                <textarea class="form-control" name="second_para_brainstorm" rows="8" placeholder="Type your message">{{ $brainstorm->second_para_brainstorm }}</textarea>
-                                @error('second_para_brainstorm')
+                                <label for=""></label>
+                                <textarea class="form-control" name="second_para_analytic" rows="8" placeholder="Type your message"></textarea>
+                                @error('second_para_analytic')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                             <hr>
                             <div class="col-lg-6 input-group">
-                                <label for="inputDefault">Aim to Achieve:</label>
-                                @foreach (json_decode($brainstorm->aim_by, true) as $aim)
-                                    <div class="col-lg-6 input-group">
-                                        <input type="text" class="form-control" name="aim_by[]"
-                                            value="{{ $aim }}" id="inputDefault">
-                                        <button type="button" class="btn btn-danger remove">Remove</button>
-                                    </div>
-                                @endforeach
+                                <label for="inputDefault">aim to achieve:</label>
+                                <input type="text" class="form-control" name="aim_by[]" id="inputDefault">
                                 <button type="button" class="btn btn-success add-more">Add More</button>
+                                <button type="button" class="btn btn-danger remove">Remove</button>
                             </div>
                             <div class="col-lg-12">
-                                <label for="brainstorm_process">Brainstorm Process</label>
-                                <textarea class="form-control" name="brainstorm_process" rows="8" placeholder="Type your message">{{ $brainstorm->brainstorm_process }}</textarea>
-                                @error('brainstorm_process')
+                                <label for=""></label>
+                                <textarea class="form-control" name="analytic_process" rows="8" placeholder="Type your message"></textarea>
+                                @error('analytic_process')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
                     </div>
                     <footer class="card-footer text-end" style="display: block;">
-                        <button class="btn btn-primary" type="submit">Update</button>
+                        <button class="btn btn-primary" type="submit">Add Comment</button>
                     </footer>
                 </section>
             </form>

@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\purposecontroller;
 use App\Http\Controllers\Admin\SiteConfigurationController;
 use App\Http\Controllers\Admin\visioncontroller;
 use App\Http\Controllers\AuditController;
+use App\Http\Controllers\BrainstormController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\ForceChangeController;
 // use App\Http\Controllers\RoleController;
@@ -151,12 +152,33 @@ Route::prefix('site-configuration')->group(function () {
         Route::post('/update', [FounderController::class, 'update'])->name('site-update-founder');
         Route::get('/delete/{uuid}', [FounderController::class, 'delete'])->name('site-delete-founder');
     });
+    Route::prefix('tgr-brainstorm')->group(function () {
+        Route::get('/', [BrainstormController::class, 'index'])->name('site-index-tgrbrainstorm');
+        Route::get('/add', [SiteConfigurationController::class, 'tgrbrainstorm_add'])->name('tgr-brainstorm-add');
+        Route::post('/store', [BrainstormController::class, 'store'])->name('site-store-tgrbrainstorm');
+        Route::get('/edit/{uuid}', [BrainstormController::class, 'edit'])->name('site-edit-tgrbrainstorm');
+        Route::post('/update', [BrainstormController::class, 'update'])->name('site-update-tgrbrainstorm');
+        Route::get('/delete/{uuid}', [BrainstormController::class, 'delete'])->name('site-delete-tgrbrainstorm');
+    });
+    Route::prefix('tgr-seminars')->group(function () {
+        Route::get('/', [SeminarController::class, 'index'])->name('site-index-tgrseminar');
+        Route::get('/add', [SiteConfigurationController::class, 'tgrseminar_add'])->name('tgr-seminars-add');
+        Route::post('/store', [SeminarController::class, 'store'])->name('site-store-tgrseminar');
+        Route::get('/edit/{uuid}', [SeminarController::class, 'edit'])->name('site-edit-tgrseminar');
+        Route::post('/update', [SeminarController::class, 'update'])->name('site-update-tgrseminar');
+        Route::get('/delete/{uuid}', [SeminarController::class, 'delete'])->name('site-delete-tgrseminar');
+    });
+    Route::prefix('tgr-analytics')->group(function () {
+        Route::get('/', [AnalyticsController::class, 'index'])->name('site-index-tgranalytic');
+        Route::get('/add', [SiteConfigurationController::class, 'tgranalytic_add'])->name('tgr-analytic-add');
+        Route::post('/store', [AnalyticsController::class, 'store'])->name('site-store-tgranalytic');
+        Route::get('/edit/{uuid}', [AnalyticsController::class, 'edit'])->name('site-edit-tgranalytic');
+        Route::post('/update', [AnalyticsController::class, 'update'])->name('site-update-tgranalytic');
+        Route::get('/delete/{uuid}', [AnalyticsController::class, 'delete'])->name('site-delete-tgranalytic');
+    });
     Route::get('/footer', [SiteConfigurationController::class, 'create_footer'])->name('site-footer');
     Route::get('/contact-us', [SiteConfigurationController::class, 'create_contact_us'])->name('site-contact-us');
-    // Route::post('/vision', [UserAccountController::class, 'store'])->name('store-user');
-    // Route::get('/edit/{uuid}', [UserAccountController::class, 'edit'])->name('edit-user');
-    // Route::post('/update', [UserAccountController::class, 'update'])->name('update-user');
-    // Route::get('/delete{uuid}', [UserAccountController::class, 'destroy'])->name('destroy-user');
+
 });
 
 Route::group(['prefix' => 'settings'], function () {

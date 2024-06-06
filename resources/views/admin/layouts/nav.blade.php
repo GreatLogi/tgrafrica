@@ -18,7 +18,7 @@
                     </li>
 
 
-                    <li class="nav-group-label">Contact Us Summary</li>
+                    <li class="nav-group-label">Site Configuration</li>
 
                     <li class="nav-parent">
                         <a class="nav-link" href="#">
@@ -35,12 +35,73 @@
 
                         </ul>
                     </li>
-                    <li class="nav-group-label">Site Configuration</li>
-
                     <li class="nav-parent">
                         <a class="nav-link" href="#">
                             <i class="bx bx-cube" aria-hidden="true"></i>
-                            <span>SITE CONFIGURATION</span>
+                            <span>ADVISORY</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - TGRBRAINSTORM <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-tgrbrainstorm') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('tgr-brainstorm-add') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - TGRANALYSTICS <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-vision') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-vision') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    - TGRSEMINAR <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-index-mission') }}">
+                                            - Record
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{ route('site-mission') }}">
+                                            - Add Record
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a class="nav-link" href="#">
+                            <i class="bx bx-cube" aria-hidden="true"></i>
+                            <span>ABOUT US</span>
                         </a>
                         <ul class="nav nav-children">
 
@@ -51,7 +112,7 @@
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
-                                        <a class="nav-link" href="{{ route('site-index-mission') }}">
+                                        <a class="nav-link" href="{{ route('site-index-founder') }}">
                                             - Record
                                         </a>
                                     </li>
@@ -82,8 +143,8 @@
                             </li>
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
-                                    - Mission <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    - Mission <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>
@@ -100,8 +161,8 @@
                             </li>
                             <li class="nav-parent">
                                 <a class="nav-link" href="#">
-                                    - Purpose <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                        data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    - Purpose <span class="mega-sub-nav-toggle toggled float-end"
+                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
                                     <li>

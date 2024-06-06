@@ -52,19 +52,6 @@ class FounderController extends Controller
 
     public function update(Request $request)
     {
-        // $founder_id = $request->uuid;
-        // $data = Founder::where('uuid', $founder_id)->first();
-        // if (!$data) {
-        //     abort(404);
-        // }
-        // $data->update([
-        //     'purpose' => $request->purpose,
-        // ]);
-        // $notification = [
-        //     'message' => 'purposes Updated Successfully',
-        //     'alert-type' => 'success',
-        // ];
-        // return redirect()->route('site-index-founder')->with($notification);
         $founder_id = $request->uuid;
         $data = Founder::where('uuid', $founder_id)->first();
         if (!$data) {

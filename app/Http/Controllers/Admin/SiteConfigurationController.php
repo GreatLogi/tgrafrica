@@ -36,4 +36,17 @@ class SiteConfigurationController extends Controller
     {
         return view('admin.layouts.aboutus.founder.founder');
     }
+
+    public function tgrbrainstorm_add()
+    {
+        return view('admin.layouts.advisory.tgrbrainstorm.brainstorm');
+    }
+    public function tgrseminar_add()
+    {
+        return view('admin.layouts.advisory.tgrseminars.seminars');
+    }
+    public function tgranalytic_add()
+    {
+        return view('admin.layouts.advisory.tgranalytics.analytics');
+    }
 }
