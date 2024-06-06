@@ -47,16 +47,16 @@
                                 @enderror
                             </div>
                             <div class="col-lg-6">
-                                <label for="first_para_tgrseminar">First Paragraph</label>
-                                <textarea class="form-control" name="first_para_tgrseminar" rows="8" placeholder="Type your message">{{ $tgrseminars->first_para_tgrseminar }}</textarea>
-                                @error('first_para_tgrseminar')
+                                <label for="first_para_seminar">First Paragraph</label>
+                                <textarea class="form-control" name="first_para_seminar" rows="8" placeholder="Type your message">{{ $tgrseminars->first_para_seminar }}</textarea>
+                                @error('first_para_seminar')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                             <div class="col-lg-6">
-                                <label for="second_para_tgrseminar">Second Paragraph</label>
-                                <textarea class="form-control" name="second_para_tgrseminar" rows="8" placeholder="Type your message">{{ $tgrseminars->second_para_tgrseminar }}</textarea>
-                                @error('second_para_tgrseminar')
+                                <label for="second_para_seminar">Second Paragraph</label>
+                                <textarea class="form-control" name="second_para_seminar" rows="8" placeholder="Type your message">{{ $tgrseminars->second_para_seminar }}</textarea>
+                                @error('second_para_seminar')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
@@ -74,7 +74,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <label for="tgrseminar_process">tgrseminar Process</label>
-                                <textarea class="form-control" name="tgrseminar_process" rows="8" placeholder="Type your message">{{ $tgrseminars->tgrseminar_process }}</textarea>
+                                <textarea class="form-control" name="seminar_process" rows="8" placeholder="Type your message">{{ $tgrseminars->seminar_process }}</textarea>
                                 @error('tgrseminar_process')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror

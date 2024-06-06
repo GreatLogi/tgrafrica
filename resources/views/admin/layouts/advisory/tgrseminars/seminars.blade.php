@@ -46,15 +46,15 @@
                             </div>
                             <div class="col-lg-6">
                                 <label for=""></label>
-                                <textarea class="form-control" name="first_para_tgrseminar" rows="8" placeholder="Type your message"></textarea>
-                                @error('first_para_tgrseminar')
+                                <textarea class="form-control" name="first_para_seminar" rows="8" placeholder="Type your message"></textarea>
+                                @error('first_para_seminar')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                             <div class="col-lg-6">
                                 <label for=""></label>
-                                <textarea class="form-control" name="second_para_tgrseminar" rows="8" placeholder="Type your message"></textarea>
-                                @error('second_para_tgrseminar')
+                                <textarea class="form-control" name="second_para_seminar" rows="8" placeholder="Type your message"></textarea>
+                                @error('second_para_seminar')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
@@ -67,8 +67,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <label for=""></label>
-                                <textarea class="form-control" name="tgrseminar_process" rows="8" placeholder="Type your message"></textarea>
-                                @error('tgrseminar_process')
+                                <textarea class="form-control" name="seminar_process" rows="8" placeholder="Type your message"></textarea>
+                                @error('seminar_process')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>

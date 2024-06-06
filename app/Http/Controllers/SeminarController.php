@@ -44,17 +44,17 @@ class SeminarController extends Controller
     public function edit($uuid)
     {
         $tgrseminars = TgrSeminar::where('uuid', $uuid)->first();
-        if (!$seminar) {
+        if (!$tgrseminars) {
             abort(404);
         }
-        return view('admin.layouts.advisory.tgrseminars.edit', compact('seminar'));
+        return view('admin.layouts.advisory.tgrseminars.edit', compact('tgrseminars'));
     }
 
     public function update(Request $request)
     {
         $tgrseminars_id = $request->uuid;
         $tgrseminars = TgrSeminar::where('uuid', $tgrseminars_id)->first();
-        if (!$seminar) {
+        if (!$tgrseminars) {
             abort(404);
         }
         $request->validate([

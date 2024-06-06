@@ -11,7 +11,7 @@
                         <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
                     </div>
-                    <h2 class="card-title">Brainstorm</h2>
+                    <h2 class="card-title">Seminars</h2>
                 </header>
                 <div class="card-body">
                     <div id="datatable-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
@@ -81,8 +81,8 @@
                                         <tr role="row" class="odd">
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $list->title }}</td>
-                                            <td>{{ $list->first_para_tgrseminar }}</td>
-                                            <td>{{ $list->second_para_tgrseminar }}</td>
+                                            <td>{{ $list->first_para_seminar }}</td>
+                                            <td>{{ $list->second_para_seminar }}</td>
                                             <td>
                                                 <ul>
                                                     @foreach (json_decode($list->aim_by, true) as $aim)
@@ -90,13 +90,13 @@
                                                     @endforeach
                                                 </ul>
                                             </td>
-                                            <td>{{ $list->tgrseminar_process }}</td>
+                                            <td>{{ $list->seminar_process }}</td>
                                             <td>
                                                 <a class="btn btn-primary btn-sm"
-                                                    href="{{ route('site-edit-tgrtgrseminar', ['uuid' => $list->uuid]) }}"><i
+                                                    href="{{ route('site-edit-tgrseminar', ['uuid' => $list->uuid]) }}"><i
                                                         class="fas fa-pencil-alt"></i></a>
                                                 <a class="btn btn-danger btn-sm"
-                                                    href="{{ route('site-delete-tgrtgrseminar', $list->uuid) }}"
+                                                    href="{{ route('site-delete-tgrseminar', $list->uuid) }}"
                                                     title="Delete Data" id="delete"><i
                                                         class="far fa-trash-alt"></i></a>
                                             </td>
