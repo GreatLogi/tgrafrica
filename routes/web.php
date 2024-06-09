@@ -9,13 +9,14 @@ use App\Http\Controllers\AuditController;
 use App\Http\Controllers\BonkConsultationController;
 use App\Http\Controllers\BrainstormController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForceChangeController;
-use App\Http\Controllers\Log_in_and_out_Controller;
 // use App\Http\Controllers\RoleController;
+use App\Http\Controllers\Log_in_and_out_Controller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RolesAndPermissionController;
-use App\Http\Controllers\SeminarController;
 // use App\Http\Controllers\UserController;
+use App\Http\Controllers\SeminarController;
 use App\Http\Controllers\UserAccountController;
 use Illuminate\Support\Facades\Route;
 
@@ -79,6 +80,10 @@ Route::prefix('contact-us')->group(function () {
     Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
     Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
 });
+Route::prefix('seminars')->group(function () {
+    Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
+    Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
+});
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
 
     Route::get('brainstorm', function () {
@@ -93,6 +98,10 @@ Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
         return view('website.advisory.seminar');
     })->name('seminar');
 
+    Route::get('seminar-registration', function () {
+        return view('website.advisory.register_seminar');
+    })->name('register-seminar');
+
 });
 
 Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
@@ -104,19 +113,27 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
     })->name('consult');
 
 });
-Route::get('/@.charcoal.trg.@tgrafrica', function () {
+Route::get('/login', function () {
     return view('auth.login');
 });
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin.layouts.index');
-    })->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
+
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified',
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(30));
+//         return view('admin.layouts.index', compact('analyticsData'));
+//     })->name('dashboard');
+// });
 Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-admin');
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');

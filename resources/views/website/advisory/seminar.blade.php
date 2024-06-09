@@ -56,7 +56,7 @@
                             advisor.</p>
 
                         <hr>
-                        <a href="{{ route('contact') }}"
+                        <a href="{{ route('advisory.register-seminar') }}"
                             class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Register Here</a>
 
                     </blockquote>

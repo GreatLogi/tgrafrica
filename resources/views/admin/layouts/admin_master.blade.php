@@ -152,6 +152,18 @@
             }
         @endif
     </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+
     <script src="{{ asset('vendor/jquery/jquery.js') }}"></script>
     <script src="{{ asset('vendor/jquery-browser-mobile/jquery.browser.mobile.js') }}"></script>
     <script src="{{ asset('vendor/jquery-cookie/jquery.cookie.js') }}"></script>
