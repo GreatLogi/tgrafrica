@@ -22,7 +22,7 @@ class BrainstormController extends Controller
     {
         $request->validate([
             'first_para_brainstorm' => 'required|string',
-            'second_para_brainstorm' => 'required|string',
+            // 'second_para_brainstorm' => 'required|string',
             'brainstorm_process' => 'required|string',
             'aim_by' => 'array',
             'aim_by.*' => 'string|nullable',
@@ -30,7 +30,7 @@ class BrainstormController extends Controller
         TgrBrainstorm::create([
             'title' => $request->title,
             'first_para_brainstorm' => $request->first_para_brainstorm,
-            'second_para_brainstorm' => $request->second_para_brainstorm,
+            // 'second_para_brainstorm' => $request->second_para_brainstorm,
             'aim_by' => json_encode($request->aim_by),
             'brainstorm_process' => $request->brainstorm_process,
         ]);
@@ -60,7 +60,7 @@ class BrainstormController extends Controller
         $request->validate([
             'title' => 'required|string',
             'first_para_brainstorm' => 'required|string',
-            'second_para_brainstorm' => 'required|string',
+            // 'second_para_brainstorm' => 'required|string',
             'brainstorm_process' => 'required|string',
             'aim_by' => 'array',
             'aim_by.*' => 'string|nullable',
@@ -68,7 +68,7 @@ class BrainstormController extends Controller
         $brainstorm->update([
             'title' => $request->title,
             'first_para_brainstorm' => $request->first_para_brainstorm,
-            'second_para_brainstorm' => $request->second_para_brainstorm,
+            // 'second_para_brainstorm' => $request->second_para_brainstorm,
             'aim_by' => json_encode($request->aim_by),
             'brainstorm_process' => $request->brainstorm_process,
         ]);

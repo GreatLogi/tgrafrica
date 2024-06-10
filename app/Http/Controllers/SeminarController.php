@@ -22,7 +22,7 @@ class SeminarController extends Controller
     {
         $request->validate([
             'first_para_seminar' => 'required|string',
-            'second_para_seminar' => 'required|string',
+            // 'second_para_seminar' => 'required|string',
             'seminar_process' => 'required|string',
             'aim_by' => 'array',
             'aim_by.*' => 'string|nullable',
@@ -30,7 +30,7 @@ class SeminarController extends Controller
         TgrSeminar::create([
             'title' => $request->title,
             'first_para_seminar' => $request->first_para_seminar,
-            'second_para_seminar' => $request->second_para_seminar,
+            // 'second_para_seminar' => $request->second_para_seminar,
             'aim_by' => json_encode($request->aim_by),
             'seminar_process' => $request->seminar_process,
         ]);
@@ -60,7 +60,7 @@ class SeminarController extends Controller
         $request->validate([
             'title' => 'required|string',
             'first_para_seminar' => 'required|string',
-            'second_para_seminar' => 'required|string',
+            // 'second_para_seminar' => 'required|string',
             'seminar_process' => 'required|string',
             'aim_by' => 'array',
             'aim_by.*' => 'string|nullable',
@@ -68,7 +68,7 @@ class SeminarController extends Controller
         $tgrseminars->update([
             'title' => $request->title,
             'first_para_seminar' => $request->first_para_seminar,
-            'second_para_seminar' => $request->second_para_seminar,
+            // 'second_para_seminar' => $request->second_para_seminar,
             'aim_by' => json_encode($request->aim_by),
             'seminar_process' => $request->seminar_process,
         ]);

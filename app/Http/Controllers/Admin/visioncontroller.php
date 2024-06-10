@@ -16,7 +16,7 @@ class visioncontroller extends Controller
     public function index()
     {
         $visions = Vision::latest()->get();
-        return view('admin.layouts.vision.index', compact('visions'));
+        return view('admin.layouts.aboutus.vision.index', compact('visions'));
     }
 
     public function store(Request $request)
@@ -40,7 +40,7 @@ class visioncontroller extends Controller
         if (!$visions) {
             abort(404);
         }
-        return view('admin.layouts.vision.edit', compact('visions'));
+        return view('admin.layouts.aboutus.vision.edit', compact('visions'));
     }
 
     public function update(Request $request)

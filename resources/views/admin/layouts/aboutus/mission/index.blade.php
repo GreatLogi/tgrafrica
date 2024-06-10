@@ -53,13 +53,13 @@
                                         <th class="sorting_asc" tabindex="0" aria-controls="datatable-default"
                                             rowspan="1" colspan="1" aria-sort="ascending"
                                             aria-label="Rendering engine: activate to sort column descending"
-                                            style="width: 236.667px;">Svc</th>
+                                            style="width:5%;">Svc</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width: 230.333px;">Mission</th>
+                                            style="width:85%;">Mission</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Platform(s): activate to sort column ascending"
-                                            style="width: 295.333px;">Action</th>
+                                            style="width:10%;">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>

@@ -47,19 +47,19 @@
                                 @enderror
                             </div>
                             <div class="col-lg-6">
-                                <label for="first_para_seminar">First Paragraph</label>
+                                <label for="first_para_seminar">Body</label>
                                 <textarea class="form-control" name="first_para_seminar" rows="8" placeholder="Type your message">{{ $tgrseminars->first_para_seminar }}</textarea>
                                 @error('first_para_seminar')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <label for="second_para_seminar">Second Paragraph</label>
                                 <textarea class="form-control" name="second_para_seminar" rows="8" placeholder="Type your message">{{ $tgrseminars->second_para_seminar }}</textarea>
                                 @error('second_para_seminar')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
-                            </div>
+                            </div> --}}
                             <hr>
                             <div class="col-lg-6 input-group">
                                 <label for="inputDefault">Aim to Achieve:</label>

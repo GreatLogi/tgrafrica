@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use OwenIt\Auditing\Contracts\Auditable;
 
-class SeminarRegistration extends Model implements Auditable
+class Message extends Model implements Auditable
 {
     use HasFactory;
     use UuidTrait;
@@ -18,15 +18,13 @@ class SeminarRegistration extends Model implements Auditable
      * @var array<int, string>
      */
     protected $fillable = [
-        'full_name',
-        'email',
-        'country_of_residence',
-        'nationality',
-        'job_category',
-        'job_subcategory',
-        'subscription_amount',
-        'seminar_count',
+        'message', 'user_id',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
     /**
      * The attributes that should be cast.

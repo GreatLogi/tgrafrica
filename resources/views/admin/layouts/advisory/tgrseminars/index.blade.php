@@ -59,10 +59,10 @@
                                             style="width:5%;">Title</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width: 20%;">First Paragraph</th>
-                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            style="width: 40%;">First Paragraph</th>
+                                        {{-- <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width: 20%;">Second Paragraph</th>
+                                            style="width: 20%;">Second Paragraph</th> --}}
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
                                             style="width:20%;">Aim By</th>
@@ -82,7 +82,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $list->title }}</td>
                                             <td>{{ $list->first_para_seminar }}</td>
-                                            <td>{{ $list->second_para_seminar }}</td>
+                                            {{-- <td>{{ $list->second_para_seminar }}</td> --}}
                                             <td>
                                                 <ul>
                                                     @foreach (json_decode($list->aim_by, true) as $aim)

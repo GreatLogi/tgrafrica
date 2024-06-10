@@ -17,6 +17,12 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a class="nav-link" href="{{ route('site-view-chat-tgrbrainstorm') }}">
+                            <i class="bx bx-home-alt" aria-hidden="true"></i>
+                            <span>Brainstorm Chat</span>
+                        </a>
+                    </li>
 
                     <li class="nav-group-label">Site Configuration</li>
 

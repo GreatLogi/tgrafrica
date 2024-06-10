@@ -49,19 +49,19 @@
                                 @enderror
                             </div>
                             <div class="col-lg-6">
-                                <label for="first_para_analytic">First Paragraph</label>
+                                <label for="first_para_analytic">Body</label>
                                 <textarea class="form-control" name="first_para_analytic" rows="8" placeholder="Type your message">{{ $tgranalytics->first_para_analytic }}</textarea>
                                 @error('first_para_analytic')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <label for="second_para_analytic">Second Paragraph</label>
                                 <textarea class="form-control" name="second_para_analytic" rows="8" placeholder="Type your message">{{ $tgranalytics->second_para_analytic }}</textarea>
                                 @error('second_para_analytic')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
-                            </div>
+                            </div> --}}
                             <hr>
                             <div class="col-lg-6 input-group">
                                 <label for="inputDefault">Aim to Achieve:</label>

@@ -22,7 +22,7 @@ class SeminarRegistrationController extends Controller
             'nationality' => 'required',
             'job_subcategory' => 'required',
             'job_category' => 'required',
-           ' subscription_amount' => 'required|numeric',
+            'subscription_amount' => 'required|numeric',
             'seminar_count' => 'required',
         ]);
         SeminarRegistration::create([
@@ -40,6 +40,6 @@ class SeminarRegistrationController extends Controller
             'alert-type' => 'success',
         ];
 
-        return redirect()->route('contact')->with($notification);
+        return redirect()->route('seminar')->with($notification);
     }
 }

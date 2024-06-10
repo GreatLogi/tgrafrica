@@ -22,7 +22,7 @@ class AnalyticsController extends Controller
     {
         $request->validate([
             'first_para_analytic' => 'required|string',
-            'second_para_analytic' => 'required|string',
+            // 'second_para_analytic' => 'required|string',
             'analytic_process' => 'required|string',
             'aim_by' => 'array',
             'aim_by.*' => 'string|nullable',
@@ -30,7 +30,7 @@ class AnalyticsController extends Controller
         TgrAnalytics::create([
             'title' => $request->title,
             'first_para_analytic' => $request->first_para_analytic,
-            'second_para_analytic' => $request->second_para_analytic,
+            // 'second_para_analytic' => $request->second_para_analytic,
             'aim_by' => json_encode($request->aim_by),
             'analytic_process' => $request->analytic_process,
         ]);
@@ -60,7 +60,7 @@ class AnalyticsController extends Controller
         $request->validate([
             'title' => 'required|string',
             'first_para_analytic' => 'required|string',
-            'second_para_analytic' => 'required|string',
+            // 'second_para_analytic' => 'required|string',
             'analytic_process' => 'required|string',
             'aim_by' => 'array',
             'aim_by.*' => 'string|nullable',
@@ -68,7 +68,7 @@ class AnalyticsController extends Controller
         $tgranalytics->update([
             'title' => $request->title,
             'first_para_analytic' => $request->first_para_analytic,
-            'second_para_analytic' => $request->second_para_analytic,
+            // 'second_para_analytic' => $request->second_para_analytic,
             'aim_by' => json_encode($request->aim_by),
             'analytic_process' => $request->analytic_process,
         ]);

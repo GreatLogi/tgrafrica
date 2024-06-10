@@ -51,13 +51,13 @@
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <label for=""></label>
                                 <textarea class="form-control" name="second_para_brainstorm" rows="8" placeholder="Type your message"></textarea>
                                 @error('second_para_brainstorm')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
-                            </div>
+                            </div> --}}
                             <hr>
                             <div class="col-lg-6 input-group">
                                 <label for="inputDefault">aim to achieve:</label>

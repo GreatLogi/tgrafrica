@@ -8,15 +8,17 @@ use App\Http\Controllers\AnalyticsController;
 use App\Http\Controllers\AuditController;
 use App\Http\Controllers\BonkConsultationController;
 use App\Http\Controllers\BrainstormController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\ForceChangeController;
 // use App\Http\Controllers\RoleController;
+use App\Http\Controllers\ForceChangeController;
 use App\Http\Controllers\Log_in_and_out_Controller;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\RolesAndPermissionController;
 // use App\Http\Controllers\UserController;
+use App\Http\Controllers\RolesAndPermissionController;
 use App\Http\Controllers\SeminarController;
+use App\Http\Controllers\SeminarRegistrationController;
 use App\Http\Controllers\UserAccountController;
 use Illuminate\Support\Facades\Route;
 
@@ -83,6 +85,11 @@ Route::prefix('contact-us')->group(function () {
 Route::prefix('seminars')->group(function () {
     Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
     Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
+});
+
+Route::prefix('chat')->group(function () {
+    Route::get('/', [ChatController::class, 'index'])->name('site-view-chat-tgrbrainstorm');
+    Route::post('/chat', [ChatController::class, 'store'])->name('site-store-chat-tgrbrainstorm');
 });
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
 
