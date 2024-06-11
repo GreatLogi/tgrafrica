@@ -28,10 +28,6 @@
     <div class="container py-2">
 
         <div class="row">
-
-            {{--
-                <img class="float-start img-fluid pr-5" width="250" height="211"
-                    src="{{ asset('img/layout-stylesm.png') }}" alt="Lordy Emmen"> --}}
             <div class="col">
                 <div class="overflow-hidden mb-3">
                     <h2 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation"
@@ -40,28 +36,7 @@
 
                     </h2>
                 </div>
-                <p style="text-align: justify">TGR Advisory as a company is guided by the great return philosophy. We
-                    believe that the African diaspora
-                    can play a significant role in the development of Africa. We believe that the diaspora poccess the
-                    skills, expertise and financial capital
-                    needed to support African development. Our long term vision is for the African Diaspora to be mobilised
-                    into a collective economic unit which
-                    can play a significant role in the affairs of African Nations. African development from our perspective
-                    is all about creating an Africa which
-                    is economically self sufficient, an Africa which has its own unique identity that is not dictated by the
-                    West and an Africa which is able to
-                    be respected on the international scene.
-                </p>
-
-                <p style="text-align: justify"> We want to prevent Africa from ever having to go through the experience of
-                    colonialism and imperialism
-                    again and we believe this can only be achieved through economic power. We also want to make Africa a
-                    desirable place to live so that domestic
-                    Africans don’t feel the need to migrate to foreign lands in search of economic opportunities and for
-                    Africa to become such a desirable place
-                    to live that even those in the Diaspora want to return.
-
-                </p>
+                <p style="text-align: justify">{{ $visions->vision}}</p>
             </div>
         </div>
 

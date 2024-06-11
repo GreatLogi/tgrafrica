@@ -20,6 +20,13 @@ use App\Http\Controllers\RolesAndPermissionController;
 use App\Http\Controllers\SeminarController;
 use App\Http\Controllers\SeminarRegistrationController;
 use App\Http\Controllers\UserAccountController;
+use App\Models\Founder;
+use App\Models\Mission;
+use App\Models\Purpose;
+use App\Models\TgrAnalytics;
+use App\Models\TgrBrainstorm;
+use App\Models\TgrSeminar;
+use App\Models\Vision;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -62,22 +69,27 @@ Route::get('partners', function () {
 Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
 
     Route::get('founder', function () {
-        return view('website.about.founder');
+        $founder = Founder::first();
+        return view('website.about.founder', compact('founder'));
     })->name('founder');
 
     Route::get('mission', function () {
-        return view('website.about.mission');
+        $mission = Mission::first();
+        return view('website.about.mission', compact('mission'));
     })->name('mission');
 
     Route::get('vision', function () {
-        return view('website.about.vision');
+        $visions = Vision::first();
+        return view('website.about.vision', compact('visions'));
     })->name('vision');
 
     Route::get('purpose', function () {
-        return view('website.about.purpose');
+        $purpose = Purpose::first();
+        return view('website.about.purpose', compact('purpose'));
     })->name('purpose');
 
 });
+
 Route::prefix('contact-us')->group(function () {
     Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
     Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
@@ -94,15 +106,18 @@ Route::prefix('chat')->group(function () {
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
 
     Route::get('brainstorm', function () {
-        return view('website.advisory.brainstorm');
+        $brainstorm = TgrBrainstorm::first();
+        return view('website.advisory.brainstorm', compact('brainstorm'));
     })->name('brainstorm');
 
     Route::get('analytic', function () {
-        return view('website.advisory.analytic');
+        $analystics = TgrAnalytics::first();
+        return view('website.advisory.analytic', compact('analystics'));
     })->name('analytic');
 
     Route::get('seminar', function () {
-        return view('website.advisory.seminar');
+        $seminar = TgrSeminar::first();
+        return view('website.advisory.seminar', compact('seminar'));
     })->name('seminar');
 
     Route::get('seminar-registration', function () {

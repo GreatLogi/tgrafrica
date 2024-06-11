@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>TGR <strong>Brainstorm</strong></h1>
+                    <h1>{{ $brainstorm->title }}</h1>
                     {{-- <span class="sub-title">Get in touch with us</span> --}}
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
@@ -31,27 +31,13 @@
             <div class="col-lg-8">
                 <div class="overflow-hidden mb-2">
                     <h2 class="font-weight-normal text-7 mb-2 appear-animation" data-appear-animation="maskUp"
-                        data-appear-animation-delay="200">TGR <strong class="font-weight-extra-bold">Brainstorm</strong>
+                        data-appear-animation-delay="200"><b>{{ $brainstorm->title }}</b>
                     </h2>
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">It is likely that you may find yourself in a position along your
-                        pre- transition preparation where you know you want to be a part of the great return
-                        movement back are struggling to find out how it applies to you on a personal level. You are still
-                        trying to figure out ,
-                        what you can do, how you can utilise your skillsets and expertise and how you can contribute towards
-                        the development of Africa. </p>
+                        data-appear-animation-delay="400">{{ $brainstorm->first_para_brainstorm }}</p>
                 </div>
-                <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our goal with TGR Brainstorm
-                    is to help you develop your own unique core purpose as part of the greater collective purpose of the
-                    great return philosophy.
-                    We also want to help you start mapping out potential business ideas along the golden formula framework
-                    which was spoken about in the TGR philosophy. It is important for us that you are able to have a range
-                    of potential business ideas which incorporate
-                    your natural passions, interests, expertise and skillsets in a way that can provide value and be of
-                    service to the Ghanian economy. </p>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
@@ -94,37 +80,9 @@
                                     <div class="card-body mt-3">
 
                                         <ul class="list mt-4 mb-3 text-2">
-                                            <li>
-                                                Collaborating with you to learn more about who you are as an individual and
-                                                your life journey so far.
-                                            </li>
-
-                                            <li>
-                                                Working with you construct a core purpose that serves as as your own
-                                                personal mission statement.
-                                            </li>
-
-                                            <li>
-                                                Gaining an in-depth understand of what you’re passionate about , your
-                                                interests, your skill sets and expertise.
-                                            </li>
-
-                                            <li>
-                                                Finding out which industries and sectors you are most passionate about
-                                                working in.
-                                            </li>
-
-                                            <li>
-                                                Gathering information from key stakeholders, industry experts and key
-                                                players about the nature of those industries/sectors and their challenges
-                                                and opportunities.
-                                            </li>
-
-                                            <li>
-                                                Working with you to generate potential ideas that meet the golden formula
-                                                criteria.
-                                            </li>
-
+                                            @foreach (json_decode($brainstorm->aim_by, true) as $aim)
+                                                <li>{{ $aim }}</li>
+                                            @endforeach
                                         </ul>
 
                                     </div>
@@ -141,21 +99,8 @@
                                 </div>
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
-                                        <p>TGR Brainstorming sessions are split into three key parts which will span a 6
-                                            week period.. The first part is focused on helping you develop a unique core
-                                            purpose in alignment with the collective purpose of the great return community.
-                                            It will serve as the the guiding framework behind the potential business ideas
-                                            that our generated.
-                                            The second part of the brainstorming session will focus on reviewing your
-                                            skillsets, work experience, knowledge and expertise. We would also explore some
-                                            of the industries and sectors that you may be passion about or interested in and
-                                            carry out an investigate research to find out more about the opportunities,
-                                            trends and challenges facing those industries and sectors.</p>
-                                        <p> The third of the brainstorming sessions will focus on working with you to
-                                            generate potential business ideas that are aligned with your unique core purpose
-                                            and achieve the golden formula framework. At the end of the sessions, you should
-                                            find yourself with a minimum 3 potentially viable business ideas which you can
-                                            later investigate further.</p>
+                                        <p>{{ $brainstorm->brainstorm_process }}</p>
+
 
                                     </div>
                                 </div>

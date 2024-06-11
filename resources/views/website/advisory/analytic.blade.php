@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>TGR <strong>Analytics</strong></h1>
+                    <h1>{{ $analystics->title }}</h1>
                     {{-- <span class="sub-title">Get in touch with us</span> --}}
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
@@ -31,25 +31,13 @@
             <div class="col-lg-8">
                 <div class="overflow-hidden mb-2">
                     <h2 class="font-weight-normal text-7 mb-2 appear-animation" data-appear-animation="maskUp"
-                        data-appear-animation-delay="200">TGR <strong class="font-weight-extra-bold">Analytics</strong></h2>
+                        data-appear-animation-delay="200"><b>{{ $analystics->title }}</b></h2>
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">You might find yourself along your transition management journey
-                        where you may have finally discovered potential business ideas which you would like to purse upon
-                        return. However, you lack the adequate research and market intelligence needed to assess the
-                        viability of your business idea. We understand that It is very difficult to take time off from your
-                        busy schedules to travel to Ghana.
-                        The costs involved for an extensive period of time to conduct your own independent investigation may
-                        also be another barrier preventing you from doing so.</p>
+                        data-appear-animation-delay="400">{{ $analystics->first_para_analytic }}</p>
                 </div>
-                <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Depending on family and
-                    friends to conduct such research could be very risky and potentially produce poor quality research. What
-                    we can do for you with TGR Analytics is to make it our responsibility to conduct the necessary market
-                    research and intelligence on your behalf.
-                    Our goal is to provide you with accurate information which would allow you to assess the viability of
-                    your business idea or project you will like to undertake in Ghana. </p>
+
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
@@ -90,26 +78,11 @@
                                 </div>
                                 <div id="collapse11One" class="collapse show">
                                     <div class="card-body mt-3">
-
                                         <ul class="list mt-4 mb-3 text-2">
-                                            <li>
-                                                Providing you with a report on our findings.
-                                            </li>
-
-                                            <li>
-                                                Providing you with recommendations
-                                            </li>
-
-                                            <li>
-                                                Providing you with a business plan
-                                            </li>
-
-                                            <li>
-                                                Providing you with an implementation road map.
-                                            </li>
-
+                                            @foreach (json_decode($analystics->aim_by, true) as $aim)
+                                                <li>{{ $aim }}</li>
+                                            @endforeach
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
@@ -124,20 +97,7 @@
                                 </div>
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
-                                        <p>We begin by arranging a telephone discussion with you to talk about your business
-                                            idea. Once we have the relevant information,
-                                            we will then carry out our own investigative research.. Our findings,
-                                            recommendations as well as business plan and implementation
-                                            road map will be presented to you over scheduled consultations. This would give
-                                            you a chance to ask any relevant questions pertaining to our findings.
-                                            Additionally, we shall consolidate the entire research project into a documented
-                                            format for you to review in your own time. </p>
-
-                                        <p> This document can later be used as business proposal which can sent to potential
-                                            investors. TGR Analytics will take place over a three month period.
-                                            During the period will keep you notified on progress and any developments during
-                                            our research. </p>
-
+                                        <p>{{ $analystics->analytic_process }}</p>
                                     </div>
                                 </div>
                             </div>

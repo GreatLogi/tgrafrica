@@ -203,7 +203,10 @@
 
     </div>
 
-
+    <?php
+    use App\Models\Founder;
+    $founder = Founder::first();
+    ?>
 
 
     <section class="section  section-height-3 border-0 mt-0 mb-0">
@@ -214,23 +217,14 @@
 
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="img-fluid scale-2 pe-5 pe-md-0 my-4"
-                                src="{{ asset('frontend/img/layout-styles.png') }}" alt="layout styles" />
+                            <img class="float-start img-fluid" width="450" height="450"
+                                src="{{ !empty($founder->image) ? asset($founder->image) : asset('upload/user.jpeg') }}"
+                                alt="Lordy Emmen" style="border-radius: 50%; object-fit: cover; margin-right: 20px;">
                         </div>
                         <div class="col-md-8 ps-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong
                                     class="font-weight-extra-bold">Meet</strong> The Founder</h2>
-                            <p class="lead">Lordy Emmen is a diaspora entrepreneur, diaspora activist and author of `The
-                                Great Return`.</p>
-
-                            <p class="text-4" style="text-align: justify">
-                                She is of Ghanian decent and has spent the past 25 years living in the UK where she had a
-                                successful career as a Management Accountant.
-                                Since 2019, along with her husband, she has been able to make investments in the poultry
-                                sector as a result of recognising the dependency
-                                a country like Ghana has on foreign food imports which can be sourced locally.
-                                She and her husband have also made investments in Ghana’s growing real estate market.
-                            </p>
+                            <p class="lead"> {{ substr($founder->founder_profile, 0, 228) }}</p>
                             <a href="{{ route('about.founder') }}"
                                 class="btn btn-dark font-weight-semibold rounded-0 px-5 btn-py-2 text-2 p-relative bottom-3">LEARN
                                 MORE</a>
