@@ -184,7 +184,6 @@ return [
         OwenIt\Auditing\AuditingServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-        Spatie\Analytics\AnalyticsServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -216,7 +215,6 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-        'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
     ])->toArray(),
 
 ];
