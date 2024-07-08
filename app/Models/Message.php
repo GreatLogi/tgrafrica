@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Traits\UuidTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use OwenIt\Auditing\Contracts\Auditable;
 
 class Message extends Model implements Auditable
@@ -17,13 +18,20 @@ class Message extends Model implements Auditable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'message', 'user_id',
-    ];
+    public $table = 'messages';
+    protected $fillable = ['id', 'user_id', 'text'];
 
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function getTimeAttribute(): string
+    {
+        return date(
+            "d M Y, H:i:s",
+            strtotime($this->attributes['created_at'])
+        );
     }
 
     /**

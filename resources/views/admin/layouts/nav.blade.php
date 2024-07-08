@@ -18,9 +18,13 @@
                     </li>
 
                     <li>
-                        <a class="nav-link" href="{{ route('site-view-chat-tgrbrainstorm') }}">
+                        <a class="nav-link" href="{{ route('posts.index') }}">
                             <i class="bx bx-home-alt" aria-hidden="true"></i>
-                            <span>Brainstorm Chat</span>
+                            <span>Brainstorm</span>
+                        </a>
+                        <a class="nav-link" href="{{ route('seminarsindex') }}">
+                            <i class="bx bx-home-alt" aria-hidden="true"></i>
+                            <span>Seminars</span>
                         </a>
                     </li>
 

@@ -44,7 +44,12 @@
                             </ul>
                         </div>
                     @endif
-                    <form action="{{ route('login-admin') }}" method="post">
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <form action="{{ route('login-user') }}" method="post">
                         @csrf
                         <div class="form-group mb-3">
                             <label for="email">Email</label>

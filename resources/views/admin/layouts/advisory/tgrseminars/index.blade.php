@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin_master')
 @section('title')
-    Seminars
+    Subscribe Seminar
 @endsection
 @section('admin')
     <div class="row">
@@ -14,98 +14,40 @@
                     <h2 class="card-title">Seminars</h2>
                 </header>
                 <div class="card-body">
-                    <div id="datatable-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="dataTables_length" id="datatable-default_length"><label><select
-                                            name="datatable-default_length" aria-controls="datatable-default"
-                                            class="form-select form-select-sm select2-hidden-accessible" data-select2-id="1"
-                                            tabindex="-1" aria-hidden="true">
-                                            <option value="10" data-select2-id="3">10</option>
-                                            <option value="25">25</option>
-                                            <option value="50">50</option>
-                                            <option value="100">100</option>
-                                        </select><span class="select2 select2-container select2-container--bootstrap"
-                                            dir="ltr" data-select2-id="2" style="width: 60px;"><span
-                                                class="selection"><span class="select2-selection select2-selection--single"
-                                                    role="combobox" aria-haspopup="true" aria-expanded="false"
-                                                    tabindex="0" aria-disabled="false"
-                                                    aria-labelledby="select2-datatable-default_length-x1-container"><span
-                                                        class="select2-selection__rendered"
-                                                        id="select2-datatable-default_length-x1-container" role="textbox"
-                                                        aria-readonly="true" title="10">10</span><span
-                                                        class="select2-selection__arrow" role="presentation"><b
-                                                            role="presentation"></b></span></span></span><span
-                                                class="dropdown-wrapper" aria-hidden="true"></span></span> records per
-                                        page</label></div>
+                    {{-- <div class="container">
+                        <h1>Seminars</h1>
+                        @foreach ($seminars as $seminar)
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h2>{{ $seminar->title }}</h2>
+                                </div>
+                                <div class="card-body">
+                                    <p>{{ $seminar->description }}</p>
+                                    <a href="{{ route('seminars.subscribe', $seminar->id) }}"
+                                        class="btn btn-primary">Subscribe</a>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div id="datatable-default_filter" class="dataTables_filter"><label><input type="search"
-                                            class="form-control pull-right" placeholder="Search..."
-                                            aria-controls="datatable-default"></label></div>
-                            </div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped mb-0 dataTable no-footer"
-                                id="datatable-default" role="grid" style="width: 852px;">
-                                <thead>
-                                    <tr role="row">
-                                        <th class="sorting_asc" tabindex="0" aria-controls="datatable-default"
-                                            rowspan="1" colspan="1" aria-sort="ascending"
-                                            aria-label="Rendering engine: activate to sort column descending"
-                                            style="width:5%;">No.</th>
-                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
-                                            colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width:5%;">Title</th>
-                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
-                                            colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width: 40%;">First Paragraph</th>
-                                        {{-- <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
-                                            colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width: 20%;">Second Paragraph</th> --}}
-                                        <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
-                                            colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width:20%;">Aim By</th>
-                                        <th class="sorting" tabindex="0" aria-controls="datatable-default"
-                                            rowspan="1" colspan="1"
-                                            aria-label="Browser: activate to sort column ascending" style="width: 25%">
-                                            Process</th>
-                                        <th class="sorting" tabindex="0" aria-controls="datatable-default"
-                                            rowspan="1" colspan="1"
-                                            aria-label="Platform(s): activate to sort column ascending" style="width:5%;">
-                                            Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($tgrseminars as $key => $list)
-                                        <tr role="row" class="odd">
-                                            <td>{{ $key + 1 }}</td>
-                                            <td>{{ $list->title }}</td>
-                                            <td>{{ $list->first_para_seminar }}</td>
-                                            {{-- <td>{{ $list->second_para_seminar }}</td> --}}
-                                            <td>
-                                                <ul>
-                                                    @foreach (json_decode($list->aim_by, true) as $aim)
-                                                        <li>{{ $aim }}</li>
-                                                    @endforeach
-                                                </ul>
-                                            </td>
-                                            <td>{{ $list->seminar_process }}</td>
-                                            <td>
-                                                <a class="btn btn-primary btn-sm"
-                                                    href="{{ route('site-edit-tgrseminar', ['uuid' => $list->uuid]) }}"><i
-                                                        class="fas fa-pencil-alt"></i></a>
-                                                <a class="btn btn-danger btn-sm"
-                                                    href="{{ route('site-delete-tgrseminar', $list->uuid) }}"
-                                                    title="Delete Data" id="delete"><i
-                                                        class="far fa-trash-alt"></i></a>
-                                            </td>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
+                        @endforeach
+                    </div> --}}
 
-                            </table>
-                        </div>
+                    <div class="container">
+                        <h1>Seminars</h1>
+                        @foreach ($seminars as $seminar)
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h2>{{ $seminar->title }}</h2>
+                                </div>
+                                <div class="card-body">
+                                    <p>{{ $seminar->description }}</p>
+                                    @if ($seminar->isSubscribed)
+                                        <span class="btn btn-success">Subscribed</span>
+                                    @else
+                                        <a href="{{ route('seminars.subscribe', $seminar->id) }}"
+                                            class="btn btn-primary">Subscribe</a>
+                                    @endif
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </section>

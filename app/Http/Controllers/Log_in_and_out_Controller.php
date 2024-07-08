@@ -36,10 +36,10 @@ class Log_in_and_out_Controller extends Controller
                 return redirect()->intended('dashboard');
             } else {
                 auth()->logout();
-                return redirect('/@.charcoal.trg.@tgrafrica')->withErrors(['error' => 'Your account is deactivated. Please contact the admin.']);
+                return redirect('/login')->withErrors(['error' => 'Your account is deactivated. Please contact the admin.']);
             }
         }
-        return redirect('/@.charcoal.trg.@tgrafrica')->withErrors(['error' => 'Invalid credentials. Please try again.']);
+        return redirect('/login')->withErrors(['error' => 'Invalid credentials. Please try again.']);
     }
 
     public function Logout()
@@ -58,7 +58,7 @@ class Log_in_and_out_Controller extends Controller
         ];
         DB::table('activity_logs')->insert($activityLog);
         Auth::logout();
-        return redirect('/@.charcoal.trg.@tgrafrica')->with('success', 'User Logout Successfully');
+        return redirect('/login')->with('success', 'User Logout Successfully');
     }
 
     public function verifyaccount()
@@ -69,5 +69,10 @@ class Log_in_and_out_Controller extends Controller
     public function resetpassword()
     {
         return view('auth.forgot-password');
+    }
+
+    public function register()
+    {
+        return view('auth.register');
     }
 }

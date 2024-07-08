@@ -604,8 +604,8 @@
                                 <label class="form-label mb-1 text-2">How much will you be willing to pay for an annual
                                     subscription (in USD)?</label>
                                 <input type="number" value="" data-msg-required="Please enter the amount."
-                                   class="form-control text-3 h-auto py-2" name="subscription_amount"
-                                    min="0"   value="{{ old('subscription_amount') }}">
+                                    class="form-control text-3 h-auto py-2" name="subscription_amount" min="0"
+                                    value="{{ old('subscription_amount') }}">
                                 @error('subscription_amount')
                                     <span class="text text-danger">{{ $message }}</span>
                                 @enderror
@@ -617,8 +617,9 @@
                                 <label class="form-label mb-1 text-2">How many TGR Seminars would you like to receive on an
                                     annual basis to justify subscription?</label>
                                 <input type="number" value=""
-                                    data-msg-required="Please enter the number of seminars."   value="{{ old('seminar_count') }}"
-                                    class="form-control text-3 h-auto py-2" name="seminar_count">
+                                    data-msg-required="Please enter the number of seminars."
+                                    value="{{ old('seminar_count') }}" class="form-control text-3 h-auto py-2"
+                                    name="seminar_count">
                                 @error('seminar_count')
                                     <span class="text text-danger">{{ $message }}</span>
                                 @enderror

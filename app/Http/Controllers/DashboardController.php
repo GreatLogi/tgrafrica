@@ -4,8 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Visitor;
 use Carbon\Carbon;
+
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $visitorCount = Visitor::count();
@@ -18,5 +24,5 @@ class DashboardController extends Controller
 
         return view('admin.layouts.index', compact('visitorCount', 'visitors', 'monthlyVisitorCount'));
     }
-    
+
 }

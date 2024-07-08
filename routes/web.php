@@ -6,19 +6,22 @@ use App\Http\Controllers\Admin\SiteConfigurationController;
 use App\Http\Controllers\Admin\visioncontroller;
 use App\Http\Controllers\AnalyticsController;
 use App\Http\Controllers\AuditController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\BonkConsultationController;
 use App\Http\Controllers\BrainstormController;
-use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ContactUsController;
-use App\Http\Controllers\DashboardController;
 // use App\Http\Controllers\RoleController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForceChangeController;
 use App\Http\Controllers\Log_in_and_out_Controller;
-use App\Http\Controllers\ProfileController;
 // use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\RolesAndPermissionController;
 use App\Http\Controllers\SeminarController;
 use App\Http\Controllers\SeminarRegistrationController;
+use App\Http\Controllers\SubscribeSeminarsController;
 use App\Http\Controllers\UserAccountController;
 use App\Models\Founder;
 use App\Models\Mission;
@@ -65,7 +68,9 @@ Route::get('contact', function () {
 Route::get('partners', function () {
     return view('website.partners');
 })->name('partners');
-
+Route::resource('seminars', SubscribeSeminarsController::class);
+Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');
+Route::get('seminars/{seminar}/subscribe', [SubscribeSeminarsController::class, 'subscribe'])->name('seminars.subscribe');
 Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
 
     Route::get('founder', function () {
@@ -99,10 +104,10 @@ Route::prefix('seminars')->group(function () {
     Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
 });
 
-Route::prefix('chat')->group(function () {
-    Route::get('/', [ChatController::class, 'index'])->name('site-view-chat-tgrbrainstorm');
-    Route::post('/chat', [ChatController::class, 'store'])->name('site-store-chat-tgrbrainstorm');
-});
+// Route::prefix('chat')->group(function () {
+//     Route::get('/', [ChatController::class, 'index'])->name('site-view-chat-tgrbrainstorm');
+//     Route::post('/chat', [ChatController::class, 'store'])->name('site-store-chat-tgrbrainstorm');
+// });
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
 
     Route::get('brainstorm', function () {
@@ -156,10 +161,19 @@ Route::middleware([
 //         return view('admin.layouts.index', compact('analyticsData'));
 //     })->name('dashboard');
 // });
-Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-admin');
+Route::post('/user-account', [RegisterController::class, 'register'])->name('user-account');
+Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');
+// Broadcast::channel('channel_for_everyone', function ($user) {
+//     return true;
+// });
 
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');
+
+Route::get('/register', [Log_in_and_out_Controller::class, 'register'])->name('register-user');
 Route::prefix('site-configuration')->group(function () {
     Route::prefix('purpose')->group(function () {
         Route::get('/', [purposecontroller::class, 'index'])->name('site-index-purpose');
