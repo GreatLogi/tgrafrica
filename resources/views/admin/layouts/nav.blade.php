@@ -45,7 +45,7 @@
 
                         </ul>
                     </li>
-                    <li class="nav-parent">
+                    {{-- <li class="nav-parent">
                         <a class="nav-link" href="#">
                             <i class="bx bx-cube" aria-hidden="true"></i>
                             <span>FEATURES</span>
@@ -69,46 +69,11 @@
                                     </li>
                                 </ul>
                             </li>
-                            {{-- <li class="nav-parent">
-                                <a class="nav-link" href="#">
-                                    - TGRANALYSTICS <span class="mega-sub-nav-toggle toggled float-end"
-                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
-                                </a>
-                                <ul class="nav nav-children">
-                                    <li>
-                                        <a class="nav-link" href="{{ route('site-index-tgranalytic') }}">
-                                            - Record
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('tgr-analytic-add') }}">
-                                            - Add Record
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-parent">
-                                <a class="nav-link" href="#">
-                                    - TGRSEMINAR <span class="mega-sub-nav-toggle toggled float-end"
-                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
-                                </a>
-                                <ul class="nav nav-children">
-                                    <li>
-                                        <a class="nav-link" href="{{ route('site-index-tgrseminar') }}">
-                                            - Record
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('tgr-seminars-add') }}">
-                                            - Add Record
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li> --}}
+
 
                         </ul>
-                    </li>
-                    <li class="nav-parent">
+                    </li> --}}
+                    {{-- <li class="nav-parent">
                         <a class="nav-link" href="#">
                             <i class="bx bx-cube" aria-hidden="true"></i>
                             <span>ADVISORY</span>
@@ -251,7 +216,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-group-label">APPs</li>
 
                     <li class="nav-parent">
@@ -266,6 +231,24 @@
                                         data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                                 <ul class="nav nav-children">
+                                    <li class="nav-parent">
+                                        <a class="nav-link" href="#">
+                                            - TGRSEMINARS <span class="mega-sub-nav-toggle toggled float-end"
+                                                data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                        </a>
+                                        <ul class="nav nav-children">
+                                            <li>
+                                                <a class="nav-link" href="{{ route('all-seminars-videos') }}">
+                                                    - Seminars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="{{ route('tgr-seminars-add') }}">
+                                                    - Add Record
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li>
                                         <a class="nav-link" href="{{ route('index-roles') }}">
                                             - Roles

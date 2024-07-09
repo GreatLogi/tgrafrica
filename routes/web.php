@@ -70,6 +70,10 @@ Route::get('partners', function () {
 })->name('partners');
 Route::resource('seminars', SubscribeSeminarsController::class);
 Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');
+Route::get('/all-seminars-videos', [SubscribeSeminarsController::class, 'all_seminars_record'])->name('all-seminars-videos');
+// Route for deleting seminar video
+Route::get('/seminar/{uuid}/delete', [SubscribeSeminarsController::class, 'delete_seminar_video'])->name('seminar-video-delete');
+
 Route::get('seminars/{seminar}/subscribe', [SubscribeSeminarsController::class, 'subscribe'])->name('seminars.subscribe');
 Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
 
@@ -104,10 +108,6 @@ Route::prefix('seminars')->group(function () {
     Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
 });
 
-// Route::prefix('chat')->group(function () {
-//     Route::get('/', [ChatController::class, 'index'])->name('site-view-chat-tgrbrainstorm');
-//     Route::post('/chat', [ChatController::class, 'store'])->name('site-store-chat-tgrbrainstorm');
-// });
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
 
     Route::get('brainstorm', function () {
@@ -151,23 +151,10 @@ Route::middleware([
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified',
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(30));
-//         return view('admin.layouts.index', compact('analyticsData'));
-//     })->name('dashboard');
-// });
 Route::post('/user-account', [RegisterController::class, 'register'])->name('user-account');
-Route::post('login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
+Route::post('user-login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');
-// Broadcast::channel('channel_for_everyone', function ($user) {
-//     return true;
-// });
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');

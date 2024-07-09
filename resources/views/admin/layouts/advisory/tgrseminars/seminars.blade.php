@@ -33,12 +33,26 @@
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="col-lg-12">
+                            {{-- <div class="col-lg-12">
                                 <label for="video">Upload Video</label>
-                                <input type="file" class="form-control" name="video">
+                                <input type="file" class="form-control" name="video" accept="video/*">
                                 @error('video')
                                     <span class="btn btn-danger">{{ $message }}</span>
                                 @enderror
+                            </div> --}}
+
+                            <div class="col-lg-12">
+                                <label for="video">Upload Video</label>
+                                <input type="file" class="form-control" name="video" accept="video/*" id="video-input">
+                                @error('video')
+                                    <span class="btn btn-danger">{{ $message }}</span>
+                                @enderror
+                                <div id="video-preview" class="mt-3">
+                                    <video width="320" height="240" controls style="display: none;">
+                                        <source id="video-source">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,4 +63,18 @@
             </form>
         </div>
     </div>
+    <script>
+        document.getElementById('video-input').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const videoPreview = document.getElementById('video-preview');
+                const videoSource = document.getElementById('video-source');
+                const videoElement = videoPreview.querySelector('video');
+
+                videoSource.src = URL.createObjectURL(file);
+                videoElement.style.display = 'block';
+                videoElement.load();
+            }
+        });
+    </script>
 @endsection

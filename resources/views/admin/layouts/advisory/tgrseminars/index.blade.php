@@ -10,7 +10,7 @@
                 <div class="card-body">
                     @if ($seminar->isSubscribed)
                         <video width="320" height="240" controls>
-                            <source src="{{ asset($seminar->video) }}" type="video/mp4">
+                           <source src="{{ asset($seminar->video) }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <h2>{{ $seminar->title }}</h2>
