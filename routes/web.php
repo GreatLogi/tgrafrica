@@ -156,7 +156,7 @@ Route::post('user-login', [Log_in_and_out_Controller::class, 'Log_in'])->name('l
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');
 
-Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/trg-africa-brainstorm', [PostController::class, 'index'])->name('posts.index');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');
 

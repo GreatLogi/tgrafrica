@@ -3,44 +3,61 @@
     BrainStorm
 @endsection
 @section('admin')
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <style>
         .input-group {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <div class="row">
         <div class="col-lg-12">
-            <form action="{{ route('posts.store') }}" method="POST" id="myForm" enctype="multipart/form-data">
-                @csrf
-                <section class="card">
-                    <header class="card-header">
-                        <h2 class="card-title">Create a new Post</h2>
-                    </header>
-                    <div class="card-body" style="display: block;">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <label for="">Title</label>
-                                <input class="form-control" name="title" placeholder="Title">
-                                @error('title')
-                                    <span class="btn btn-danger">{{ $message }}</span>
-                                @enderror
+            <!-- Button to open the modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createPostModal">
+                Create a new Brainstorm idea
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="{{ route('posts.store') }}" method="POST" id="myForm"
+                            enctype="multipart/form-data">
+                            @csrf
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="createPostModalLabel">Create a new Post</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div class="col-lg-12">
-                                <label for=""></label>
-                                <textarea class="form-control" name="content" rows="8" placeholder="Type your message"></textarea>
-                                @error('content')
-                                    <span class="btn btn-danger">{{ $message }}</span>
-                                @enderror
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" class="form-control" name="title" placeholder="Title">
+                                    @error('title')
+                                        <span class="btn btn-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <label for="content">Content</label>
+                                    <textarea class="form-control" name="content" rows="8" placeholder="Type your message"></textarea>
+                                    @error('content')
+                                        <span class="btn btn-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Post</button>
+                            </div>
+                        </form>
                     </div>
-                    <footer class="card-footer text-end" style="display: block;">
-                        <button class="btn btn-primary" type="submit">Post</button>
-                    </footer>
-                </section>
-            </form>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -54,7 +71,6 @@
                     </div>
                     <div class="card-body">
                         <p>{{ $post->content }}</p>
-
                         <h6>Replies</h6>
                         @foreach ($post->replies as $reply)
                             <div class="card mt-2">
@@ -65,7 +81,6 @@
                                 </div>
                             </div>
                         @endforeach
-
                         <form action="{{ route('replies.store', $post) }}" method="POST" class="mt-3">
                             @csrf
                             <div class="form-group">
