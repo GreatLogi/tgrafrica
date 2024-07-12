@@ -64,7 +64,9 @@ Route::get('/', function () {
 Route::get('contact', function () {
     return view('website.contact');
 })->name('contact');
-
+Route::get('news', function () {
+    return view('website.news');
+})->name('news');
 Route::get('partners', function () {
     return view('website.partners');
 })->name('partners');

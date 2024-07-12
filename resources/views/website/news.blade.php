@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('website.layouts.main')
 
 @section('title')
     News
@@ -26,11 +26,7 @@
 
 
     <div role="main" class="main">
-
-
-
         <div class="container">
-
             <div class="container py-4">
                 <div class="row">
                     <div class="col">
