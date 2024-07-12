@@ -7,7 +7,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-        style="background-image: url({{ asset('frontend/img/page-header/bc-adv.jpg') }});">
+        style="background-image: url({{ asset('img/page-header/bc-adv.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -35,18 +35,16 @@
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">If you find yourself in a position where you identify with the TGR
-                        Philosophy but require further information so that you can become better
-                        educated on some of the opportunities available to you, then TGR Seminars will be perfect for you as
-                        part of your pre-transition preparation. </p>
+                        data-appear-animation-delay="400">If you identify with the TGR Philosophy and require further
+                        information so that you can become better educated on some of the opportunities available to you,
+                        then you should consider TGR Seminars.</p>
                 </div>
                 <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">The purpose of TGR Seminars is
-                    to provide you with the relevant information you need to know about a vast array of industries
-                    and sectors in Ghana and some of the major opportunities available. We hope that TGR Seminars can become
-                    a potential source of inspiration for you.
-                    TGR Seminars should help you start to identify the particular industries and sectors you would like to
-                    get involved with. </p>
+                    to provide you with the relevant information you need to know about a vast array of industries and
+                    sectors in Ghana and some of the major opportunities available. We hope that TGR Seminars can become a
+                    potential source of inspiration for you. TGR Seminars should help you start to identify the particular
+                    industries and sectors you would like to get involved with.</p>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
@@ -90,8 +88,8 @@
 
                                         <ul class="list mt-4 mb-3 text-2">
                                             <li>
-                                                providing you with an in-depth analytical breakdown of some of the major
-                                                industries and economic trends taking place in Ghana
+                                                Providing you with an in-depth analytical breakdown of some of the major
+                                                industries and economic trends taking place in Ghana.
                                             </li>
 
                                             <li>
@@ -100,6 +98,7 @@
 
                                             <li>
                                                 Present our findings in a clear , concise and easy to understand format.
+                                            </li>
                                             </li>
 
                                         </ul>
@@ -118,21 +117,18 @@
                                 </div>
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
-                                        <p>TGR Seminars will be presented in a pre-recorded video content format which would
-                                            be sent to your email, allowing you the flexibility to watch at your own
-                                            convenience.
-                                            Additionally a full report will also be attached to the presentation which will
-                                            break down our findings for you to read. This would allow you to watch the
-                                            seminars and read the findings in your own time and at your convenience.
-                                            You can also schedule a free consultation or send us an email if you would like
-                                            further answers to questions you may have.</p>
+                                        <p>TGR Seminars is absolutely free. It will be presented in a pre-recorded video
+                                            content format on our website. Additionally, a full report will also be sent to
+                                            your email after each seminar. This would allow you to watch the seminars and
+                                            read the findings in your own time and at your own convenience. You can also
+                                            schedule a free consultation or send us an email if you would like further
+                                            answers to questions you may have.</p>
 
-                                        <p>TGR Seminars is still in its developmental phase and we aim to begin releasing
-                                            seminars in the coming months.
-                                            You can subscribe now to be placed on our waiting list in order to be notified
-                                            when TGR Seminars is officially available
-                                            for you to start learning more about various industries, sectors and business
-                                            opportunities in Africa. </p>
+                                        <p>TGR Seminars is still in its development phase and we aim to begin releasing
+                                            seminars in the coming months. You can subscribe now to be placed on our waiting
+                                            list. You will then be notified when TGR Seminars is officially available for
+                                            you to start learning more about various industries, sectors and business
+                                            opportunities in Ghana.</p>
 
                                     </div>
                                 </div>
@@ -184,6 +180,17 @@
                                         more</a>
                                 </div>
                             </section>
+
+
+                            <section class="toggle">
+                                <a class="toggle-title">Book a Consultation</a>
+                                <div class="toggle-content" style="text-align: justify">
+                                    <p>We understand that we`re all at different stages of our great return journey. We want
+                                        to provide you with all the necessary support along your journey to the best of our
+                                        ability.</p>
+                                    <a href="{{ route('features.consult') }}" class="btn btn-modern btn-dark">Book now</a>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -191,127 +198,4 @@
 
         </div>
     </section>
-    {{-- <div class="container py-5 mt-3">
-
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="overflow-hidden mb-2">
-                    <h2 class="font-weight-normal text-7 mb-2 appear-animation" data-appear-animation="maskUp"
-                        data-appear-animation-delay="200"><b>{{ $seminar->title }}</b></h2>
-                </div>
-                <div class="overflow-hidden mb-4">
-                    <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">{{ $seminar->first_para_seminar }}</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
-                    data-appear-animation-delay="800">
-                    <blockquote>
-                        <p class="mb-0">For more information about TGR Seminars please book a consultation to speak to an
-                            advisor.</p>
-
-                        <hr>
-                        <a href="{{ route('advisory.register-seminar') }}"
-                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Register Here</a>
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <section class="section section-default border-0 m-0">
-        <div class="container py-4">
-            <div class="row pb-4">
-                <div class="col-md-8">
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-                        <h4 class="mt-2 mb-2">Opening <strong>Sections</strong></h4>
-                        <div class="accordion accordion-modern accordion-modern-grey-scale-1 without-bg mt-4"
-                            id="accordion11">
-                            <div class="card card-default mb-2">
-                                <div class="card-header">
-                                    <h4 class="card-title m-0">
-                                        <a class="accordion-toggle text-3" data-bs-toggle="collapse"
-                                            data-bs-parent="#accordion11" href="#collapse11One">
-                                            We aim to achieve this for you by:
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse11One" class="collapse show">
-                                    <div class="card-body mt-3">
-
-                                        <ul class="list mt-4 mb-3 text-2">
-                                            @foreach (json_decode($seminar->aim_by, true) as $aim)
-                                                <li>{{ $aim }}</li>
-                                            @endforeach
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-default mb-2">
-                                <div class="card-header">
-                                    <h4 class="card-title m-0">
-                                        <a class="accordion-toggle text-3" data-bs-toggle="collapse"
-                                            data-bs-parent="#accordion11" href="#collapse11Two">
-                                            Process
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse11Two" class="collapse">
-                                    <div class="card-body mt-3" style="text-align: justify">
-                                        <p>{{ $seminar->seminar_process }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
-                        <div class="owl-carousel owl-theme dots-inside mb-0 pb-0"
-                            data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 4000, 'margin': 10, 'animateOut': 'fadeOut', 'dots': false}">
-                            <div class="pb-5">
-                                <img alt="" class="img-fluid rounded"
-                                    src="{{ asset('frontend/img/generic/g-seminar.jpg') }}">
-                            </div>
-                            <div class="pb-5">
-                                <img alt="" class="img-fluid rounded"
-                                    src="{{ asset('frontend/img/generic/g-seminar2.jpg') }}">
-                            </div>
-                        </div>
-
-                        <div class="toggle toggle-secondary toggle-simple" data-plugin-toggle>
-                            <section class="toggle">
-                                <a class="toggle-title">TGR Analytics</a>
-                                <div class="toggle-content" style="text-align: justify">
-                                    <p>You might find yourself along your transition management journey where you may have
-                                        finally discovered potential business ideas which you would like to purse upon
-                                        return. </p>
-                                    <a href="{{ route('advisory.analytic') }}" class="btn btn-modern btn-dark">Read more</a>
-                                </div>
-                            </section>
-                            <section class="toggle">
-                                <a class="toggle-title">TGR Brainstorm</a>
-                                <div class="toggle-content" style="text-align: justify">
-                                    <p>It is likely that you may find yourself in a position along your pre- transition
-                                        preparation where you know you want to be a part of the great return
-                                        movement back are struggling to find out how it applies to you on a personal level.
-                                        You are still trying to figure out ,
-                                        what you can do, how you can utilise your skillsets and expertise and how you can
-                                        contribute towards the development of Africa. </p>
-                                    <a href="{{ route('advisory.brainstorm') }}" class="btn btn-modern btn-dark">Read
-                                        more</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section> --}}
 @endsection

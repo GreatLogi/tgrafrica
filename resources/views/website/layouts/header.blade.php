@@ -13,7 +13,7 @@
                                     <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
                                             href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
                                     </li>
-
+                                    
                                     <li
                                         class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                         <span class="ws-nowrap"><i class="fas fa-phone"></i> (123) 456-789</span> </li>
@@ -42,8 +42,8 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="{{route('home')}}">
-                                <img alt="TGR" width="120"  data-sticky-width="100"
-                                    src="{{asset('frontend/img/logo-default-slim.png')}}">
+                                <img alt="TGR" width="120"  data-sticky-width="100" 
+                                    src="{{asset('img/logo-default-slim.png')}}">
                             </a>
                         </div>
                     </div>
@@ -58,31 +58,31 @@
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li > <a class="  {{ Request::is('home') ? 'active' : '' }}"
                                                 href="{{route('home')}}"> Home </a>
-
+                                          
                                         </li>
                                         <li class="dropdown"> <a class="dropdown-item dropdown-toggle  {{ Request::is('about*') ? 'active' : '' }}"
                                                 href="javascript:void(0)"> About us </a>
                                                 <ul class="dropdown-menu">
                                                     <li > <a class="dropdown-item"
                                                             href="{{route('about.founder')}}">Founder</a>
-
+                                                      
                                                     </li>
 
                                                     <li > <a class="dropdown-item"
                                                         href="{{route('about.vision')}}">Vision</a>
-
+                                                  
                                                 </li>
 
                                                 <li > <a class="dropdown-item"
                                                     href="{{route('about.mission')}}">Mission</a>
-
+                                              
                                                  </li>
 
                                             <li > <a class="dropdown-item"
                                                 href="{{route('about.purpose')}}">Purpose</a>
-
+                                          
                                         </li>
-
+                                                   
                                                 </ul>
                                         </li>
 
@@ -91,19 +91,19 @@
                                             <ul class="dropdown-menu">
                                                 <li > <a class="dropdown-item"
                                                         href="{{route('advisory.brainstorm')}}">TGR Brainstorm</a>
-
+                                                  
                                                 </li>
 
                                                 <li > <a class="dropdown-item"
                                                     href="{{route('advisory.seminar')}}">TGR Seminars</a>
-
+                                              
                                             </li>
 
                                             <li > <a class="dropdown-item"
                                                 href="{{route('advisory.analytic')}}">TGR Analytics</a>
-
+                                          
                                         </li>
-
+                                               
                                             </ul>
                                     </li>
 
@@ -115,41 +115,41 @@
                                                     <ul class="dropdown-menu">
                                                         <li><a class="dropdown-item"
                                                                 href="{{route('features.book')}}">The Great Return</a></li>
-
+                                                      
                                                     </ul>
                                                 </li>
                                                 <li> <a class="dropdown-item"
                                                         href="#">Interviews</a>
-
+                                                   
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
                                                     href="#">Events</a>
-
+                                               
                                             </li>
 
                                                 <li> <a class="dropdown-item"
                                                     href="{{route('features.consult')}}">Book a Consultation</a>
-
+                                               
                                             </li>
-
-
+                                             
+                                                
                                             </ul>
                                         </li>
-
+                                      
                                         <li > <a class=" "
                                             href="{{route('partners')}}">  Partners </a>
-
+                                      
                                     </li>
 
                                     <li > <a class=" "
                                         href="javascript:void(0)"> Blog </a>
-
+                                  
                                 </li>
 
                                 <li > <a class="  {{ Request::is('contact') ? 'active' : '' }}"
                                     href="{{route('contact')}}">Contact Us </a>
-
+                              
                             </li>
 
 
@@ -178,7 +178,7 @@
                                     </form>
                                 </div>
                             </div>
-
+                           
                         </div>
                     </div>
                 </div>

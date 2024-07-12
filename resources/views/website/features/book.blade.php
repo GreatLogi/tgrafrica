@@ -25,7 +25,6 @@
         </div>
     </section>
     <div class="container pt-5">
-
         <div class="row py-4 mb-2">
             <div class="col-md-6 order-2">
                 <div class="overflow-hidden">
@@ -79,12 +78,14 @@
                 <h2 class="text-color-dark font-weight-normal text-5 mb-2">Book <strong
                         class="font-weight-extra-bold">Description</strong></h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-                    urna varius vitae.</p>
+                <p> Since the mid 2000s there has been a growing movement taken place amongst the African Diaspora
+                    population living in the western world.
+                    Why are thousands of them deciding to abandon the West and relocate back to Africa in order to start new
+                    lives?.</p>
 
-                <p>Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod
-                    placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi
-                    tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <p>In the post-colonial period, we saw a great migration of people from Africa to the west in
+                    search of greater economic opportunities so why are a significant percentage of them deciding to come
+                    back home?.</p>
 
                 <hr class="solid my-5">
 

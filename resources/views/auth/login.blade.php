@@ -10,15 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light"
         rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.css') }}" />
-    <link rel="stylesheet" href="{{ asset('vendor/animate/animate.compat.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/font-awesome/css/all.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('vendor/magnific-popup/magnific-popup.css') }}" />
-    <link rel="stylesheet" href="{{ asset('vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-    <script src="{{ asset('vendor/modernizr/modernizr.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('backend/vendor/bootstrap/css/bootstrap.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/vendor/animate/animate.compat.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/vendor/font-awesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/vendor/boxicons/css/boxicons.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/vendor/magnific-popup/magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/css/theme.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/css/custom.css') }}">
+    <script src="{{ asset('backend/vendor/modernizr/modernizr.js') }}"></script>
     <script src="{{ asset('master/style-switcher/style.switcher.localstorage.js') }}"></script>
 </head>
 
@@ -88,20 +88,20 @@
             <p class="text-center text-muted mt-3 mb-3">&copy; Copyright 2024. All Rights Reserved.</p>
         </div>
     </section>
-    <script src="{{ asset('vendor/jquery/jquery.js') }}"></script>
-    <script src="{{ asset('vendor/jquery-browser-mobile/jquery.browser.mobile.js') }}"></script>
-    <script src="{{ asset('vendor/jquery-cookie/jquery.cookie.js') }}"></script>
-    <script src="{{ asset('master/style-switcher/style.switcher.js') }}"></script>
-    <script src="{{ asset('vendor/popper/umd/popper.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
-    <script src="{{ asset('vendor/common/common.js') }}"></script>
-    <script src="{{ asset('vendor/nanoscroller/nanoscroller.js') }}"></script>
-    <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.js') }}"></script>
-    <script src="{{ asset('vendor/jquery-placeholder/jquery.placeholder.js') }}"></script>
-    <script src="{{ asset('js/theme.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
-    <script src="{{ asset('js/theme.init.js') }}"></script>
+    <script src="{{ asset('backend/vendor/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('backend/vendor/jquery-browser-mobile/jquery.browser.mobile.js') }}"></script>
+    <script src="{{ asset('backend/vendor/jquery-cookie/jquery.cookie.js') }}"></script>
+    <script src="{{ asset('backend/master/style-switcher/style.switcher.js') }}"></script>
+    <script src="{{ asset('backend/vendor/popper/umd/popper.min.js') }}"></script>
+    <script src="{{ asset('backend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('backend/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('backend/vendor/common/common.js') }}"></script>
+    <script src="{{ asset('backend/vendor/nanoscroller/nanoscroller.js') }}"></script>
+    <script src="{{ asset('backend/vendor/magnific-popup/jquery.magnific-popup.js') }}"></script>
+    <script src="{{ asset('backend/vendor/jquery-placeholder/jquery.placeholder.js') }}"></script>
+    <script src="{{ asset('backend/js/theme.js') }}"></script>
+    <script src="{{ asset('backend/js/custom.js') }}"></script>
+    <script src="{{ asset('backend/js/theme.init.js') }}"></script>
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;

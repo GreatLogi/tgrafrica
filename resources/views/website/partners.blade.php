@@ -1,11 +1,13 @@
 @extends('website.layouts.main')
+
 @section('title')
     Partners
 @endsection
+
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-        style="background-image: url({{ asset('frontend/img/page-header/bc-green.jpg') }});">
+        style="background-image: url({{ asset('img/page-header/bc-green.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -77,26 +79,26 @@
             <div class="owl-carousel owl-theme carousel-center-active-item mb-0"
                 data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-1.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-1.png') }}" alt="">
                 </div>
 
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-3.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-3.png') }}" alt="">
                 </div>
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-4.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-4.png') }}" alt="">
                 </div>
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-5.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-5.png') }}" alt="">
                 </div>
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-6.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-6.png') }}" alt="">
                 </div>
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-4.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-4.png') }}" alt="">
                 </div>
                 <div>
-                    <img class="img-fluid" src="{{ asset('frontend/img/logos/logo-2.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('img/logos/logo-2.png') }}" alt="">
                 </div>
             </div>
         </div>

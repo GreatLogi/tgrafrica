@@ -98,8 +98,8 @@
                 <div
                     class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
                     <a href="{{ route('home') }}" class="logo pe-0 pe-lg-3">
-                        <img alt="TGR Logo" src="{{ asset('frontend/img/logo-footer.png') }}" class="opacity-5"
-                            width="49" height="22" data-plugin-options="{'appearEffect': 'fadeIn'}" />
+                        <img alt="TGR Logo" src="{{ asset('img/logo-footer.png') }}" class="opacity-5" width="49"
+                            height="22" data-plugin-options="{'appearEffect': 'fadeIn'}" />
                     </a>
                 </div>
                 <div

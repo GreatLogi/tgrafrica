@@ -7,7 +7,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-        style="background-image: url({{ asset('frontend/img/page-header/page-header-backgrounda.jpg') }});">
+        style="background-image: url({{ asset('img/page-header/page-header-backgrounda.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -40,26 +40,22 @@
 
                     </h2>
                 </div>
-                <p style="text-align: justify">TGR Advisory as a company is guided by the great return philosophy. We
-                    believe that the African diaspora
-                    can play a significant role in the development of Africa. We believe that the diaspora poccess the
-                    skills, expertise and financial capital
-                    needed to support African development. Our long term vision is for the African Diaspora to be mobilised
-                    into a collective economic unit which
-                    can play a significant role in the affairs of African Nations. African development from our perspective
-                    is all about creating an Africa which
-                    is economically self sufficient, an Africa which has its own unique identity that is not dictated by the
-                    West and an Africa which is able to
-                    be respected on the international scene.
+                <p style="text-align: justify">TGR Africa is guided by the great return philosophy. We believe the African
+                    diaspora can play a significant role in the development of Africa.
+                    We believe the diaspora possess the skills, expertise and financial capital needed to support African
+                    development. Our long term vision is for the African Diaspora to be mobilised
+                    into a collective economic unit which can play a significant role in the affairs of African Nations.
+                    African development from our perspective is all about creating an Africa which is
+                    economically self sufficient, an Africa which has its own unique identity that is not dictated by the
+                    West and an Africa which is able to be respected on the international scene.
+                    We want to prevent Africa from ever having to go through the experience of colonialism and imperialism
+                    again and we believe this can only be achieved through economic power.
                 </p>
 
-                <p style="text-align: justify"> We want to prevent Africa from ever having to go through the experience of
-                    colonialism and imperialism
-                    again and we believe this can only be achieved through economic power. We also want to make Africa a
-                    desirable place to live so that domestic
-                    Africans don’t feel the need to migrate to foreign lands in search of economic opportunities and for
-                    Africa to become such a desirable place
-                    to live that even those in the Diaspora want to return.
+                <p style="text-align: justify">We also want to make Africa a desirable place to live so that domestic
+                    Africans don’t feel the need to migrate to foreign lands in search of economic
+                    opportunities and for Africa to become such a desirable place to live that even those in the Diaspora
+                    would want to return.
 
                 </p>
 

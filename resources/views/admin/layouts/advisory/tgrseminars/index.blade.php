@@ -18,7 +18,8 @@
                                 <h2>{{ $seminar->title }}</h2>
                                 <p>{{ $seminar->description }}</p>
                             @else
-                                <p>You need to subscribe to access this seminar.</p>
+                            <span class="badge badge-green">You need to subscribe to access this seminar.</span>
+                                {{-- <p class="text-green">You need to subscribe to access this seminar.</p> --}}
                                 <a href="{{ route('seminars.subscribe', $seminar->id) }}"
                                     class="btn btn-primary">Subscribe</a>
                                 <h2>{{ $seminar->title }}</h2>

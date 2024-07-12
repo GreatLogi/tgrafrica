@@ -5,16 +5,50 @@
 @endsection
 
 @section('content')
+    <style>
+        .ipopup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+    <div id="overlay" style="display: none;">
+        <div id="popup" class="ipopup">
+            <button id="iclose">&times;</button>
+            <h4 class="modal-title" id="defaultModalLabel"><strong>The Great Return</strong> - Book</h4>
+            <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-1.png') }}"
+                width="100px" alt="">
+            <a class="align-items-center" href="http://www.amazon.com/">Grab a copy on Amazon now <span
+                    class="social-icons-amazon">
+                    <a href="http://www.amazon.com/" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
+                </span> </a>
+        </div>
+    </div>
+
     <div role="main" class="main">
         <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
             data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['650px','650px','650px','550px','500px']"
             style="height: 650px;">
             <div class="owl-stage-outer">
                 <div class="owl-stage">
-
                     <!-- Carousel Slide 1 -->
                     <div class="owl-item position-relative"
-                        style="background-image: url(frontend/img/slides/slide-corporate-3-2.jpg); background-size: cover; background-position: center;">
+                        style="background-image: url(img/slides/slide-corporate-3-2.jpg); background-size: cover; background-position: center;">
                         <div class="container position-relative z-index-1 h-100">
                             <div class="row align-items-center h-100">
                                 <div class="col-lg-6 text-center">
@@ -23,7 +57,7 @@
                                             style="color: white" data-appear-animation="fadeInDownShorterPlus"
                                             data-plugin-options="{'minWindowWidth': 0}">
                                             <span class="position-absolute right-100pct top-50pct transform3dy-n50">
-                                                <img src="{{ asset('frontend/img/slides/slide-title-border-light.png') }}"
+                                                <img src="{{ asset('img/slides/slide-title-border-light.png') }}"
                                                     class="w-auto appear-animation"
                                                     data-appear-animation="fadeInRightShorter"
                                                     data-appear-animation-delay="250"
@@ -31,14 +65,14 @@
                                             </span>
                                             A JOURNEY BACK <span class="position-relative">TO <span
                                                     class="position-absolute left-50pct transform3dx-n50 top-0 mt-4"><img
-                                                        src="{{ asset('frontend/img/slides/slide-blue-line.png') }}"
+                                                        src="{{ asset('img/slides/slide-blue-line.png') }}"
                                                         class="w-auto appear-animation"
                                                         data-appear-animation="fadeInLeftShorterPlus"
                                                         data-appear-animation-delay="1000"
                                                         data-plugin-options="{'minWindowWidth': 0}"
                                                         alt="" /></span></span>
                                             <span class="position-absolute left-100pct top-50pct transform3dy-n50">
-                                                <img src="{{ asset('frontend/img/slides/slide-title-border-light.png') }}"
+                                                <img src="{{ asset('img/slides/slide-title-border-light.png') }}"
                                                     class="w-auto appear-animation"
                                                     data-appear-animation="fadeInLeftShorter"
                                                     data-appear-animation-delay="250"
@@ -64,7 +98,7 @@
                         <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"
                             data-appear-animation="kenBurnsToRight" data-appear-animation-duration="13s"
                             data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show
-                            style="background-image: url(frontend/img/slides/slide-corporate-3-a.jpg); background-size: cover; background-position: center;">
+                            style="background-image: url(img/slides/slide-corporate-3-a.jpg); background-size: cover; background-position: center;">
                         </div>
                         <div class="container position-relative z-index-3 h-100">
                             <div class="row justify-content-center align-items-center h-100">
@@ -106,7 +140,7 @@
                         data-appear-animation-delay="200">
                         <div class="row align-items-center justify-content-center justify-content-md-start">
                             <div class="col-4">
-                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('frontend/img/icons/seo-grey.png') }}"
+                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/icons/seo-grey.png') }}"
                                     alt="">
                             </div>
                             <div class="col-lg-8">
@@ -118,8 +152,8 @@
                     <div class="col-md-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeIn">
                         <div class="row align-items-center justify-content-center justify-content-md-start">
                             <div class="col-4">
-                                <img class="img-fluid mb-4 mb-lg-0"
-                                    src="{{ asset('frontend/img/icons/marketing-grey.png') }}" alt="">
+                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/icons/marketing-grey.png') }}"
+                                    alt="">
                             </div>
                             <div class="col-lg-8">
                                 <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Brainstorm</h2>
@@ -131,8 +165,8 @@
                         data-appear-animation-delay="200">
                         <div class="row align-items-center justify-content-center justify-content-md-start">
                             <div class="col-4">
-                                <img class="img-fluid mb-4 mb-lg-0"
-                                    src="{{ asset('frontend/img/icons/support-grey.png') }}" alt="">
+                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/icons/support-grey.png') }}"
+                                    alt="">
                             </div>
                             <div class="col-lg-8">
                                 <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Analytics</h2>
@@ -144,31 +178,29 @@
             </div>
         </section>
 
-
         <section class="section section-height-3 bg-color-grey m-0 border-0 mb-50">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
-                        <h2 class="text-color-dark font-weight-normal text-6 mb-2">Who <strong
-                                class="font-weight-extra-bold">We Are</strong></h2>
-                        <p class="lead pe-lg-5 me-lg-5">We are The Great Return: a global community dedicated to
-                            reconnecting, rebuilding, and revitalizing lives. </p>
-                        <p>We believe that the African diaspora can play a significant role in the development of Africa. We
-                            believe that the diaspora poccess the skills, expertise and financial capital needed to support
-                            African development.</p>
-                        <a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">LEARN
-                            MORE</a>
+                        <h2 class="text-color-dark font-weight-normal text-6 mb-2"> We are <strong
+                                class="font-weight-extra-bold">TGR Africa</strong></h2>
+                        <p class="lead pe-lg-5 me-lg-5">An organisation devoted to acting as the bridge between the African
+                            Diaspora and Africa.
+                            We help the African Diaspora engage with Africa on a business and investment level rather than
+                            We are a global community devoted to rebuilding reconnecting and revitalising lives.</p>
+                        <a href="{{ route('about.mission') }}"
+                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">LEARN MORE</a>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5"
                         style="top: 1.7rem;">
-                        <img src="{{ asset('frontend/img/generic/generic-corporate-3-1.png') }}"
+                        <img src="{{ asset('img/generic/generic-corporate-3-1.png') }}"
                             class="img-fluid position-absolute d-none d-sm-block appear-animation"
                             data-appear-animation="expandIn" data-appear-animation-delay="300"
                             style="top: 10%; left: -50%;" alt="" />
-                        <img src="{{ asset('frontend/img/generic/generic-corporate-3-2.png') }}"
+                        <img src="{{ asset('img/generic/generic-corporate-3-2.png') }}"
                             class="img-fluid position-absolute d-none d-sm-block appear-animation"
                             data-appear-animation="expandIn" style="top: -33%; left: -29%;" alt="" />
-                        <img src="{{ asset('frontend/img/generic/generic-corporate-3-3.png') }}"
+                        <img src="{{ asset('img/generic/generic-corporate-3-3.png') }}"
                             class="img-fluid position-relative appear-animation mb-2" data-appear-animation="expandIn"
                             data-appear-animation-delay="600" alt="" />
                     </div>
@@ -184,8 +216,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <p>
-                            If you would like more information on
-                            <span class="highlighted-word">TGR Analytics</span>
+                            If you are ready to join
+                            <span class="highlighted-word">‘The Great Return’</span>
                             {{-- <span>, please book a consultation or email us.</span> --}}
                         </p>
                     </div>
@@ -203,44 +235,40 @@
 
     </div>
 
-    <?php
-    use App\Models\Founder;
-    $founder = Founder::first();
-    ?>
-
-
     <section class="section  section-height-3 border-0 mt-0 mb-0">
         <div class="container">
-
             <div class="row">
                 <div class="col">
-
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="float-start img-fluid" width="450" height="450"
-                                src="{{ !empty($founder->image) ? asset($founder->image) : asset('upload/user.jpeg') }}"
-                                alt="Lordy Emmen" style="border-radius: 50%; object-fit: cover; margin-right: 20px;">
+                            <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{ asset('img/layout-styles.png') }}"
+                                alt="layout styles" />
                         </div>
                         <div class="col-md-8 ps-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong
                                     class="font-weight-extra-bold">Meet</strong> The Founder</h2>
-                            <p class="lead"> {{ substr($founder->founder_profile, 0, 228) }}</p>
+                            <p class="lead">Lordy Emmen is a diaspora entrepreneur, diaspora activist and author of `The
+                                Great Return`.</p>
+
+                            <p class="text-4" style="text-align: justify">
+                                She is of Ghanian decent and has spent the past 25 years living in the UK where she had a
+                                successful career as a Management Accountant.
+                                Since 2019, along with her husband, she has been able to make investments in the poultry
+                                sector as a result of recognising the dependency
+                                a country like Ghana has on foreign food imports which can be sourced locally.
+                                She and her husband have also made investments in Ghana’s growing real estate market.
+                            </p>
                             <a href="{{ route('about.founder') }}"
                                 class="btn btn-dark font-weight-semibold rounded-0 px-5 btn-py-2 text-2 p-relative bottom-3">LEARN
                                 MORE</a>
 
                         </div>
                     </div>
-
                     <hr class="solid my-5">
-
-
                 </div>
             </div>
         </div>
     </section>
-
-
     <section class="section section-secondary border-0 py-0 m-0 appear-animation" data-appear-animation="fadeIn">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between pb-5 pb-lg-0">
@@ -255,15 +283,12 @@
                     <a href="#" class="btn btn-primary btn-px-5 btn-py-2 text-2">Get it on Amazon</a>
                 </div>
                 <div class="col-9 offset-lg-1 col-lg-5 order-1 order-lg-2 scale-2">
-                    <img class="img-fluid box-shadow-3 my-2 border-radius"
-                        src="{{ asset('frontend/img/gallery/gallery-1.jpg') }}" alt="">
+                    <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-1.jpg') }}"
+                        alt="">
                 </div>
             </div>
         </div>
     </section>
-
-
-
     <section class="section section-no-background section-height-4 border-0 pb-5 m-0 appear-animation"
         data-appear-animation="fadeIn">
         <div class="container">
@@ -281,13 +306,11 @@
                         <div class="row">
                             <div class="col">
                                 <a href="blog-post.html" class="text-decoration-none">
-                                    <img src="{{ asset('frontend/img/blog/blog-corporate-9-1.jpg') }}"
+                                    <img src="{{ asset('img/blog/blog-corporate-9-1.jpg') }}"
                                         class="img-fluid hover-effect-2 mb-3" alt="" />
                                 </a>
                             </div>
                         </div>
-
-
                         <div class="row">
                             <div class="col">
                                 {{-- <p class="text-color-secondary text-2 mb-1">LOREM IPSUM DOLOR SIT</p> --}}
@@ -306,7 +329,7 @@
                         <div class="row">
                             <div class="col">
                                 <a href="blog-post.html" class="text-decoration-none">
-                                    <img src="{{ asset('frontend/img/blog/blog-corporate-9-2.jpg') }}"
+                                    <img src="{{ asset('img/blog/blog-corporate-9-2.jpg') }}"
                                         class="img-fluid hover-effect-2 mb-3" alt="" />
                                 </a>
                             </div>
@@ -329,7 +352,7 @@
                         <div class="row">
                             <div class="col">
                                 <a href="blog-post.html" class="text-decoration-none">
-                                    <img src="{{ asset('frontend/img/blog/blog-corporate-9-3.jpg') }}"
+                                    <img src="{{ asset('img/blog/blog-corporate-9-3.jpg') }}"
                                         class="img-fluid hover-effect-2 mb-3" alt="" />
                                 </a>
                             </div>
@@ -350,9 +373,7 @@
             </div>
         </div>
     </section>
-
     <hr>
-
 
     <section class="call-to-action call-to-action-strong-grey content-align-center call-to-action-in-footer">
         <div class="container">
@@ -372,4 +393,26 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var show_delay = 0; // Show immediately on page load
+            var hide_delay = 30000; // Hide after 30 seconds
+
+            // Show the popup after the specified delay
+            setTimeout(function() {
+                document.getElementById('overlay').style.display = 'block';
+            }, show_delay);
+
+            // Hide the popup after the specified duration
+            setTimeout(function() {
+                document.getElementById('overlay').style.display = 'none';
+            }, show_delay + hide_delay);
+
+            // Close button functionality
+            document.getElementById('iclose').onclick = function() {
+                document.getElementById('overlay').style.display = 'none';
+            };
+        });
+    </script>
 @endsection
