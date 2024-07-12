@@ -111,7 +111,6 @@ Route::prefix('seminars')->group(function () {
 });
 
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
-
     Route::get('brainstorm', function () {
         $brainstorm = TgrBrainstorm::first();
         return view('website.advisory.brainstorm', compact('brainstorm'));
@@ -142,9 +141,13 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
     })->name('consult');
 
 });
+
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
+// Route::get('/login', function () {
+//     return view('auth.login')->name('login');
+// });
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
