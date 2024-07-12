@@ -1,9 +1,7 @@
 @extends('website.layouts.main')
-
 @section('title')
     Home
 @endsection
-
 @section('content')
     <style>
         .ipopup {
