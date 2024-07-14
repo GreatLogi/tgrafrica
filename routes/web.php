@@ -64,9 +64,15 @@ Route::get('/', function () {
 Route::get('contact', function () {
     return view('website.contact');
 })->name('contact');
+
 Route::get('news', function () {
     return view('website.news');
 })->name('news');
+
+Route::get('newssingle', function () {
+    return view('website.newssingle');
+})->name('newssingle');
+
 Route::get('partners', function () {
     return view('website.partners');
 })->name('partners');

@@ -123,13 +123,13 @@
 
                                                     </ul>
                                                 </li>
-                                                <li> <a class="dropdown-item" href="#">Interviews</a>
+                                                {{-- <li> <a class="dropdown-item" href="#">Interviews</a>
 
                                                 </li>
 
                                                 <li> <a class="dropdown-item" href="#">Events</a>
 
-                                                </li>
+                                                </li> --}}
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('features.consult') }}">Book a Consultation</a>
@@ -139,10 +139,10 @@
 
                                             </ul>
                                         </li>
-
+{{-- 
                                         <li> <a class=" " href="{{ route('partners') }}"> Partners </a>
 
-                                        </li>
+                                        </li> --}}
 
                                         <li> <a class=" {{ Request::is('news') ? 'active' : '' }} "
                                                 href="{{ route('news') }}"> Blog </a>

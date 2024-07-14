@@ -35,7 +35,7 @@
                                 <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/the-power.jpg') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -44,7 +44,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">The power of African Diaspora Capital</a>
+                                                <a href="{{ route('newssingle') }}">The power of African Diaspora Capital</a>
                                             </h2>
                                             <p>
                                                 It has been reported that approximately $60 billion is what the African
@@ -74,7 +74,7 @@
                                 <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/cedi.jpg') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -83,7 +83,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">Is The Depreciation of The Ghana Cedi Good or Bad
+                                                <a href="{{ route('newssingle') }}">Is The Depreciation of The Ghana Cedi Good or Bad
                                                 </a>
                                             </h2>
                                             <p>
@@ -123,7 +123,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">Unfair advantages of African Diaspora</a>
+                                                <a href="{{ route('newssingle') }}">Unfair advantages of African Diaspora</a>
                                             </h2>
                                             <p>
                                                 When we compare Africans on the continent to Africans in the diaspora, would
@@ -152,7 +152,7 @@
                                 <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/return.png') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -161,7 +161,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">How the year of return impacted African-Americans
+                                                <a href="{{ route('newssingle') }}">How the year of return impacted African-Americans
                                                     self identity
                                                 </a>
                                             </h2>
@@ -182,7 +182,7 @@
                                                 </span>
                                                 <span><i class="far fa-comments"></i>
                                                     <a href="#">12 Comments</a></span> --}}
-                                                <span class="d-block mt-2"><a href="blog-post.html"
+                                                <span class="d-block mt-2"><a href="{{ route('newssingle') }}"
                                                         class="btn btn-xs btn-light text-1 text-uppercase">Read
                                                         More</a></span>
                                             </div>
@@ -192,7 +192,7 @@
                                 {{-- <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/blog-5.jpg') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -201,7 +201,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">The Blue Sky</a>
+                                                <a href="{{ route('newssingle') }}">The Blue Sky</a>
                                             </h2>
                                             <p>
                                                 Euismod atras vulputate iltricies etri elit. Class
@@ -218,7 +218,7 @@
                                                 </span>
                                                 <span><i class="far fa-comments"></i>
                                                     <a href="#">12 Comments</a></span>
-                                                <span class="d-block mt-2"><a href="blog-post.html"
+                                                <span class="d-block mt-2"><a href="{{ route('newssingle') }}"
                                                         class="btn btn-xs btn-light text-1 text-uppercase">Read
                                                         More</a></span>
                                             </div>
@@ -228,7 +228,7 @@
                                 <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/blog-6.jpg') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -237,7 +237,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">Night Life</a>
+                                                <a href="{{ route('newssingle') }}">Night Life</a>
                                             </h2>
                                             <p>
                                                 Euismod atras vulputate iltricies etri elit. Class
@@ -254,7 +254,7 @@
                                                 </span>
                                                 <span><i class="far fa-comments"></i>
                                                     <a href="#">12 Comments</a></span>
-                                                <span class="d-block mt-2"><a href="blog-post.html"
+                                                <span class="d-block mt-2"><a href="{{ route('newssingle') }}"
                                                         class="btn btn-xs btn-light text-1 text-uppercase">Read
                                                         More</a></span>
                                             </div>
@@ -264,7 +264,7 @@
                                 <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/blog-7.jpg') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -273,7 +273,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">Another World Perspective</a>
+                                                <a href="{{ route('newssingle') }}">Another World Perspective</a>
                                             </h2>
                                             <p>
                                                 Euismod atras vulputate iltricies etri elit. Class
@@ -290,7 +290,7 @@
                                                 </span>
                                                 <span><i class="far fa-comments"></i>
                                                     <a href="#">12 Comments</a></span>
-                                                <span class="d-block mt-2"><a href="blog-post.html"
+                                                <span class="d-block mt-2"><a href="{{ route('newssingle') }}"
                                                         class="btn btn-xs btn-light text-1 text-uppercase">Read
                                                         More</a></span>
                                             </div>
@@ -300,7 +300,7 @@
                                 <div class="col-md-4 col-lg-3">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="blog-post.html">
+                                            <a href="{{ route('newssingle') }}">
                                                 <img src="{{ asset('img/blog/medium/blog-8.jpg') }}"
                                                     class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                     alt="" />
@@ -309,7 +309,7 @@
 
                                         <div class="post-content">
                                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
-                                                <a href="blog-post.html">The Creative Team</a>
+                                                <a href="{{ route('newssingle') }}">The Creative Team</a>
                                             </h2>
                                             <p>
                                                 Euismod atras vulputate iltricies etri elit. Class
@@ -326,7 +326,7 @@
                                                 </span>
                                                 <span><i class="far fa-comments"></i>
                                                     <a href="#">12 Comments</a></span>
-                                                <span class="d-block mt-2"><a href="blog-post.html"
+                                                <span class="d-block mt-2"><a href="{{ route('newssingle') }}"
                                                         class="btn btn-xs btn-light text-1 text-uppercase">Read
                                                         More</a></span>
                                             </div>
