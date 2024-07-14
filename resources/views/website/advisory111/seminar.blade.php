@@ -1,7 +1,7 @@
 @extends('website.layouts.main')
 
 @section('title')
-    Analytics
+    Seminars
 @endsection
 
 @section('content')
@@ -11,14 +11,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>TGR <strong>Analytics</strong></h1>
+                    <h1>TGR <strong>Seminars</strong></h1>
                     {{-- <span class="sub-title">Get in touch with us</span> --}}
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb breadcrumb-light d-block text-md-end">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li>Advisory</li>
-                        <li class="active">Analytics</li>
+                        <li class="active">Seminars</li>
                     </ul>
                 </div>
             </div>
@@ -31,36 +31,31 @@
             <div class="col-lg-8">
                 <div class="overflow-hidden mb-2">
                     <h2 class="font-weight-normal text-7 mb-2 appear-animation" data-appear-animation="maskUp"
-                        data-appear-animation-delay="200">TGR <strong class="font-weight-extra-bold">Analytics</strong></h2>
+                        data-appear-animation-delay="200">TGR <strong class="font-weight-extra-bold">Seminars</strong></h2>
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">You might find yourself along your transition management journey
-                        where you may have finally discovered potential business ideas which you would like to purse upon
-                        return. However, you lack the adequate research and market intelligence needed to assess the
-                        viability of your business idea. We understand that It is very difficult to take time off from your
-                        busy schedules to travel to Ghana.
-                        The costs involved for an extensive period of time to conduct your own independent investigation may
-                        also be another barrier preventing you from doing so.</p>
+                        data-appear-animation-delay="400">If you identify with the TGR Philosophy and require further
+                        information so that you can become better educated on some of the opportunities available to you,
+                        then you should consider TGR Seminars.</p>
                 </div>
                 <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Depending on family and
-                    friends to conduct such research could be very risky and potentially produce poor quality research. What
-                    we can do for you with TGR Analytics is to make it our responsibility to conduct the necessary market
-                    research and intelligence on your behalf.
-                    Our goal is to provide you with accurate information which would allow you to assess the viability of
-                    your business idea or project you will like to undertake in Ghana. </p>
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">The purpose of TGR Seminars is
+                    to provide you with the relevant information you need to know about a vast array of industries and
+                    sectors in Ghana and some of the major opportunities available. We hope that TGR Seminars can become a
+                    potential source of inspiration for you. TGR Seminars should help you start to identify the particular
+                    industries and sectors you would like to get involved with.</p>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
                     <blockquote>
-                        <p class="mb-0">If you would like more information on TGR Analytics, please book a consultation to
-                            speak to one of our advisors.</p>
+                        <p class="mb-0">For more information about TGR Seminars please book a consultation to speak to an
+                            advisor.</p>
 
                         <hr>
                         <a href="{{ route('contact') }}"
-                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book Here</a>
+                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Register Here</a>
 
                     </blockquote>
                 </div>
@@ -84,7 +79,7 @@
                                     <h4 class="card-title m-0">
                                         <a class="accordion-toggle text-3" data-bs-toggle="collapse"
                                             data-bs-parent="#accordion11" href="#collapse11One">
-                                            We aim to achieve this by:
+                                            We aim to achieve this for you by:
                                         </a>
                                     </h4>
                                 </div>
@@ -93,19 +88,17 @@
 
                                         <ul class="list mt-4 mb-3 text-2">
                                             <li>
-                                                Providing you with a report on our findings.
+                                                Providing you with an in-depth analytical breakdown of some of the major
+                                                industries and economic trends taking place in Ghana.
                                             </li>
 
                                             <li>
-                                                Providing you with recommendations
+                                                Gathering data from industry stakeholders, experts and key players.
                                             </li>
 
                                             <li>
-                                                Providing you with a business plan
+                                                Present our findings in a clear , concise and easy to understand format.
                                             </li>
-
-                                            <li>
-                                                Providing you with an implementation road map.
                                             </li>
 
                                         </ul>
@@ -124,19 +117,18 @@
                                 </div>
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
-                                        <p>We begin by arranging a telephone discussion with you to talk about your business
-                                            idea. Once we have the relevant information,
-                                            we will then carry out our own investigative research.. Our findings,
-                                            recommendations as well as business plan and implementation
-                                            road map will be presented to you over scheduled consultations. This would give
-                                            you a chance to ask any relevant questions pertaining to our findings.
-                                            Additionally, we shall consolidate the entire research project into a documented
-                                            format for you to review in your own time. </p>
+                                        <p>TGR Seminars is absolutely free. It will be presented in a pre-recorded video
+                                            content format on our website. Additionally, a full report will also be sent to
+                                            your email after each seminar. This would allow you to watch the seminars and
+                                            read the findings in your own time and at your own convenience. You can also
+                                            schedule a free consultation or send us an email if you would like further
+                                            answers to questions you may have.</p>
 
-                                        <p> This document can later be used as business proposal which can sent to potential
-                                            investors. TGR Analytics will take place over a three month period.
-                                            During the period will keep you notified on progress and any developments during
-                                            our research. </p>
+                                        <p>TGR Seminars is still in its development phase and we aim to begin releasing
+                                            seminars in the coming months. You can subscribe now to be placed on our waiting
+                                            list. You will then be notified when TGR Seminars is officially available for
+                                            you to start learning more about various industries, sectors and business
+                                            opportunities in Ghana.</p>
 
                                     </div>
                                 </div>
@@ -151,24 +143,28 @@
                             data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 4000, 'margin': 10, 'animateOut': 'fadeOut', 'dots': false}">
                             <div class="pb-5">
                                 <img alt="" class="img-fluid rounded"
-                                    src="{{ asset('img/generic/g-analytic.jpg') }}">
+                                    src="{{ asset('img/generic/g-seminar.jpg') }}">
                             </div>
                             <div class="pb-5">
                                 <img alt="" class="img-fluid rounded"
-                                    src="{{ asset('img/generic/g-analytic2.jpg') }}">
+                                    src="{{ asset('img/generic/g-seminar2.jpg') }}">
                             </div>
                         </div>
 
                         <div class="toggle toggle-secondary toggle-simple" data-plugin-toggle>
-
+                            {{-- <section class="toggle active">
+											<a class="toggle-title">Our Benefits</a>
+											<div class="toggle-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet.</p>
+											</div>
+										</section> --}}
                             <section class="toggle">
-                                <a class="toggle-title">TGR Seminars</a>
+                                <a class="toggle-title">TGR Analytics</a>
                                 <div class="toggle-content" style="text-align: justify">
-                                    <p>If you find yourself in a position where you identify with the TGR Philosophy but
-                                        require further information so that you can become
-                                        better educated on some of the opportunities available to you, then TGR Seminars
-                                        will be perfect for you as part of your pre-transition preparation.</p>
-                                    <a href="{{ route('advisory.seminar') }}" class="btn btn-modern btn-dark">Read more</a>
+                                    <p>You might find yourself along your transition management journey where you may have
+                                        finally discovered potential business ideas which you would like to purse upon
+                                        return. </p>
+                                    <a href="{{ route('advisory.analytic') }}" class="btn btn-modern btn-dark">Read more</a>
                                 </div>
                             </section>
                             <section class="toggle">
@@ -182,6 +178,17 @@
                                         contribute towards the development of Africa. </p>
                                     <a href="{{ route('advisory.brainstorm') }}" class="btn btn-modern btn-dark">Read
                                         more</a>
+                                </div>
+                            </section>
+
+
+                            <section class="toggle">
+                                <a class="toggle-title">Book a Consultation</a>
+                                <div class="toggle-content" style="text-align: justify">
+                                    <p>We understand that we`re all at different stages of our great return journey. We want
+                                        to provide you with all the necessary support along your journey to the best of our
+                                        ability.</p>
+                                    <a href="{{ route('features.consult') }}" class="btn btn-modern btn-dark">Book now</a>
                                 </div>
                             </section>
                         </div>

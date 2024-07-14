@@ -70,8 +70,6 @@
     <hr>
 
     <div class="container py-4">
-
-
         <div class="row pt-2 mt-2 mb-5">
             <div class="col-md-7 mb-4 mb-md-0">
 

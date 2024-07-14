@@ -26,9 +26,6 @@ use App\Http\Controllers\UserAccountController;
 use App\Models\Founder;
 use App\Models\Mission;
 use App\Models\Purpose;
-use App\Models\TgrAnalytics;
-use App\Models\TgrBrainstorm;
-use App\Models\TgrSeminar;
 use App\Models\Vision;
 use Illuminate\Support\Facades\Route;
 
@@ -112,18 +109,18 @@ Route::prefix('seminars')->group(function () {
 
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
     Route::get('brainstorm', function () {
-        $brainstorm = TgrBrainstorm::first();
-        return view('website.advisory.brainstorm', compact('brainstorm'));
+
+        return view('website.advisory.brainstorm');
     })->name('brainstorm');
 
     Route::get('analytic', function () {
-        $analystics = TgrAnalytics::first();
-        return view('website.advisory.analytic', compact('analystics'));
+
+        return view('website.advisory.analytic');
     })->name('analytic');
 
     Route::get('seminar', function () {
-        $seminar = TgrSeminar::first();
-        return view('website.advisory.seminar', compact('seminar'));
+
+        return view('website.advisory.seminar');
     })->name('seminar');
 
     Route::get('seminar-registration', function () {

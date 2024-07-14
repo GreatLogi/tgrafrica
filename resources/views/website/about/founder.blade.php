@@ -1,4 +1,4 @@
-@extends('webiste.layouts.main')
+@extends('website.layouts.main')
 
 @section('title')
     Founder

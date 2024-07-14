@@ -1,9 +1,7 @@
 @extends('website.layouts.main')
-
 @section('title')
-    Analytics
+    Consultation
 @endsection
-
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
@@ -11,14 +9,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>TGR <strong>Analytics</strong></h1>
-                    {{-- <span class="sub-title">Get in touch with us</span> --}}
+                    <h1>Book a <strong>Consultation</strong></h1>
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb breadcrumb-light d-block text-md-end">
                         <li><a href="{{ route('home') }}">Home</a></li>
-                        <li>Advisory</li>
-                        <li class="active">Analytics</li>
+                        <li>Features</li>
+                        <li class="active">Consultation</li>
                     </ul>
                 </div>
             </div>
@@ -26,45 +23,26 @@
     </section>
 
     <div class="container py-5 mt-3">
-
         <div class="row">
             <div class="col-lg-8">
                 <div class="overflow-hidden mb-2">
                     <h2 class="font-weight-normal text-7 mb-2 appear-animation" data-appear-animation="maskUp"
-                        data-appear-animation-delay="200">TGR <strong class="font-weight-extra-bold">Analytics</strong></h2>
+                        data-appear-animation-delay="200">Book a <strong
+                            class="font-weight-extra-bold">Consultation</strong></h2>
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">You might find yourself along your transition management journey
-                        where you may have finally discovered potential business ideas which you would like to purse upon
-                        return. However, you lack the adequate research and market intelligence needed to assess the
-                        viability of your business idea. We understand that It is very difficult to take time off from your
-                        busy schedules to travel to Ghana.
-                        The costs involved for an extensive period of time to conduct your own independent investigation may
-                        also be another barrier preventing you from doing so.</p>
+                        data-appear-animation-delay="400">We understand that we`re all at different stages of our great
+                        return journey. We want to provide you with all the necessary support along your journey to the best
+                        of our ability. We believe that success for those of us who have chosen to join the great return
+                        will all depend on the quality of our transition preparation. We take transition preparation very
+                        seriously and our goal is to ensure that we can provide you with all the necessary assistance you
+                        may need.
+                    </p>
                 </div>
-                <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Depending on family and
-                    friends to conduct such research could be very risky and potentially produce poor quality research. What
-                    we can do for you with TGR Analytics is to make it our responsibility to conduct the necessary market
-                    research and intelligence on your behalf.
-                    Our goal is to provide you with accurate information which would allow you to assess the viability of
-                    your business idea or project you will like to undertake in Ghana. </p>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
-                    data-appear-animation-delay="800">
-                    <blockquote>
-                        <p class="mb-0">If you would like more information on TGR Analytics, please book a consultation to
-                            speak to one of our advisors.</p>
 
-                        <hr>
-                        <a href="{{ route('contact') }}"
-                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book Here</a>
-
-                    </blockquote>
-                </div>
             </div>
+
         </div>
 
     </div>
@@ -84,7 +62,7 @@
                                     <h4 class="card-title m-0">
                                         <a class="accordion-toggle text-3" data-bs-toggle="collapse"
                                             data-bs-parent="#accordion11" href="#collapse11One">
-                                            We aim to achieve this by:
+                                            We hope to achieve this by:
                                         </a>
                                     </h4>
                                 </div>
@@ -93,19 +71,21 @@
 
                                         <ul class="list mt-4 mb-3 text-2">
                                             <li>
-                                                Providing you with a report on our findings.
+                                                Giving you a chance to ask any questions pertaining to joining the great
+                                                return.
+
+                                            <li>
+                                                Giving you advice on which advisory services will best suit your needs
+                                                giving your current circumstance
                                             </li>
 
                                             <li>
-                                                Providing you with recommendations
+                                                Provide clarification about our advisory process, fees and expectations.
                                             </li>
 
                                             <li>
-                                                Providing you with a business plan
-                                            </li>
-
-                                            <li>
-                                                Providing you with an implementation road map.
+                                                Sign post you to relevant agencies and organisations who are part of the
+                                                diaspora support services. </li>
                                             </li>
 
                                         </ul>
@@ -124,20 +104,11 @@
                                 </div>
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
-                                        <p>We begin by arranging a telephone discussion with you to talk about your business
-                                            idea. Once we have the relevant information,
-                                            we will then carry out our own investigative research.. Our findings,
-                                            recommendations as well as business plan and implementation
-                                            road map will be presented to you over scheduled consultations. This would give
-                                            you a chance to ask any relevant questions pertaining to our findings.
-                                            Additionally, we shall consolidate the entire research project into a documented
-                                            format for you to review in your own time. </p>
-
-                                        <p> This document can later be used as business proposal which can sent to potential
-                                            investors. TGR Analytics will take place over a three month period.
-                                            During the period will keep you notified on progress and any developments during
-                                            our research. </p>
-
+                                        <p>All you need to do is choose a date and time which suits you. In order for us to
+                                            make sure we can give you the best advice and provide you with relevant support
+                                            that caters to your unique circumstances and needs, you will first need to
+                                            complete a short questionnaire which is designed to evaluate how ready you are
+                                            to join the great return.</p>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +131,12 @@
                         </div>
 
                         <div class="toggle toggle-secondary toggle-simple" data-plugin-toggle>
-
+                            {{-- <section class="toggle active">
+											<a class="toggle-title">Our Benefits</a>
+											<div class="toggle-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet.</p>
+											</div>
+										</section> --}}
                             <section class="toggle">
                                 <a class="toggle-title">TGR Seminars</a>
                                 <div class="toggle-content" style="text-align: justify">
@@ -182,6 +158,16 @@
                                         contribute towards the development of Africa. </p>
                                     <a href="{{ route('advisory.brainstorm') }}" class="btn btn-modern btn-dark">Read
                                         more</a>
+                                </div>
+                            </section>
+
+                            <section class="toggle">
+                                <a class="toggle-title">TGR Analytics</a>
+                                <div class="toggle-content" style="text-align: justify">
+                                    <p>You might find yourself along your transition management journey where you may have
+                                        finally discovered potential business ideas which you would like to purse upon
+                                        return. </p>
+                                    <a href="{{ route('advisory.analytic') }}" class="btn btn-modern btn-dark">Read more</a>
                                 </div>
                             </section>
                         </div>

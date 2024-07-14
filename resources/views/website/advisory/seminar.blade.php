@@ -35,16 +35,18 @@
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">If you identify with the TGR Philosophy and require further
-                        information so that you can become better educated on some of the opportunities available to you,
-                        then you should consider TGR Seminars.</p>
+                        data-appear-animation-delay="400">If you find yourself in a position where you identify with the TGR
+                        Philosophy but require further information so that you can become better
+                        educated on some of the opportunities available to you, then TGR Seminars will be perfect for you as
+                        part of your pre-transition preparation. </p>
                 </div>
                 <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">The purpose of TGR Seminars is
-                    to provide you with the relevant information you need to know about a vast array of industries and
-                    sectors in Ghana and some of the major opportunities available. We hope that TGR Seminars can become a
-                    potential source of inspiration for you. TGR Seminars should help you start to identify the particular
-                    industries and sectors you would like to get involved with.</p>
+                    to provide you with the relevant information you need to know about a vast array of industries
+                    and sectors in Ghana and some of the major opportunities available. We hope that TGR Seminars can become
+                    a potential source of inspiration for you.
+                    TGR Seminars should help you start to identify the particular industries and sectors you would like to
+                    get involved with. </p>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
@@ -88,8 +90,8 @@
 
                                         <ul class="list mt-4 mb-3 text-2">
                                             <li>
-                                                Providing you with an in-depth analytical breakdown of some of the major
-                                                industries and economic trends taking place in Ghana.
+                                                providing you with an in-depth analytical breakdown of some of the major
+                                                industries and economic trends taking place in Ghana
                                             </li>
 
                                             <li>
@@ -98,7 +100,6 @@
 
                                             <li>
                                                 Present our findings in a clear , concise and easy to understand format.
-                                            </li>
                                             </li>
 
                                         </ul>
@@ -117,18 +118,21 @@
                                 </div>
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
-                                        <p>TGR Seminars is absolutely free. It will be presented in a pre-recorded video
-                                            content format on our website. Additionally, a full report will also be sent to
-                                            your email after each seminar. This would allow you to watch the seminars and
-                                            read the findings in your own time and at your own convenience. You can also
-                                            schedule a free consultation or send us an email if you would like further
-                                            answers to questions you may have.</p>
+                                        <p>TGR Seminars will be presented in a pre-recorded video content format which would
+                                            be sent to your email, allowing you the flexibility to watch at your own
+                                            convenience.
+                                            Additionally a full report will also be attached to the presentation which will
+                                            break down our findings for you to read. This would allow you to watch the
+                                            seminars and read the findings in your own time and at your convenience.
+                                            You can also schedule a free consultation or send us an email if you would like
+                                            further answers to questions you may have.</p>
 
-                                        <p>TGR Seminars is still in its development phase and we aim to begin releasing
-                                            seminars in the coming months. You can subscribe now to be placed on our waiting
-                                            list. You will then be notified when TGR Seminars is officially available for
-                                            you to start learning more about various industries, sectors and business
-                                            opportunities in Ghana.</p>
+                                        <p>TGR Seminars is still in its developmental phase and we aim to begin releasing
+                                            seminars in the coming months.
+                                            You can subscribe now to be placed on our waiting list in order to be notified
+                                            when TGR Seminars is officially available
+                                            for you to start learning more about various industries, sectors and business
+                                            opportunities in Africa. </p>
 
                                     </div>
                                 </div>
@@ -178,17 +182,6 @@
                                         contribute towards the development of Africa. </p>
                                     <a href="{{ route('advisory.brainstorm') }}" class="btn btn-modern btn-dark">Read
                                         more</a>
-                                </div>
-                            </section>
-
-
-                            <section class="toggle">
-                                <a class="toggle-title">Book a Consultation</a>
-                                <div class="toggle-content" style="text-align: justify">
-                                    <p>We understand that we`re all at different stages of our great return journey. We want
-                                        to provide you with all the necessary support along your journey to the best of our
-                                        ability.</p>
-                                    <a href="{{ route('features.consult') }}" class="btn btn-modern btn-dark">Book now</a>
                                 </div>
                             </section>
                         </div>

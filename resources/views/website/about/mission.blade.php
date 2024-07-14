@@ -28,10 +28,6 @@
     <div class="container py-2">
 
         <div class="row">
-
-{{--
-                <img class="float-start img-fluid pr-5" width="250" height="211"
-                    src="{{ asset('img/layout-stylesm.png') }}" alt="Lordy Emmen"> --}}
                     <div class="col">
                         <div class="overflow-hidden mb-3">
                             <h2 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation"
