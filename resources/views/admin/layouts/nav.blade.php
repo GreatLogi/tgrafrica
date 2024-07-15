@@ -250,6 +250,11 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <a class="nav-link" href="{{ route('questionnaires-book-consultations') }}">
+                                            - Consultation Questionaires
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a class="nav-link" href="{{ route('index-roles') }}">
                                             - Roles
                                         </a>

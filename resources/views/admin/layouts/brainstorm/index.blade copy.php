@@ -54,7 +54,6 @@
                     </div>
                     <div class="card-body">
                         <p>{{ $post->content }}</p>
-
                         <h6>Replies</h6>
                         @foreach ($post->replies as $reply)
                             <div class="card mt-2">

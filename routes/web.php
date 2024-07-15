@@ -164,6 +164,7 @@ Route::post('/user-account', [RegisterController::class, 'register'])->name('use
 Route::post('user-login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');
+Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('questionnaires-book-consultations');
 Route::post('/submit-questionnaire', [QuestionnaireController::class, 'submitQuestionnaire'])->name('submit-questionnaire');
 Route::get('/trg-africa-brainstorm', [PostController::class, 'index'])->name('posts.index');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
