@@ -17,6 +17,7 @@ use App\Http\Controllers\Log_in_and_out_Controller;
 // use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\QuestionnaireController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\RolesAndPermissionController;
 use App\Http\Controllers\SeminarController;
@@ -163,7 +164,7 @@ Route::post('/user-account', [RegisterController::class, 'register'])->name('use
 Route::post('user-login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
 Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
     ->middleware('auth');
-
+Route::post('/submit-questionnaire', [QuestionnaireController::class, 'submitQuestionnaire'])->name('submit-questionnaire');
 Route::get('/trg-africa-brainstorm', [PostController::class, 'index'])->name('posts.index');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');

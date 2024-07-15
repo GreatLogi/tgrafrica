@@ -49,20 +49,8 @@
                         <p class="mb-0">Please complete the questionnaire below in order to book a free consultation to
                             discuss your TGR needs with one of our advisors.</p>
                         <hr>
-                        @if (session('success'))
-                            <div class="alert alert-success">
-                                {{ session('success') }}
-                            </div>
-                        @endif
-
-                        @if (session('info'))
-                            <div class="alert alert-info">
-                                {{ session('info') }}
-                            </div>
-                        @endif
-
-                        <a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2"
-                            data-bs-toggle="modal" data-bs-target="#questionnaireModal">Click Here</a>
+                        <a href="{{ route('contact') }}"
+                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Click Here</a>
                     </blockquote>
                 </div>
             </div>
@@ -144,82 +132,11 @@
                             </div>
                         </div>
     </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="questionnaireModal" tabindex="-1" aria-labelledby="questionnaireModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="questionnaireModalLabel">Questionnaire</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="questionnaireForm" action="{{ route('submit-questionnaire') }}" method="POST">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        @php
-                            $questions = [
-                                'On a scale of 1-10 how much to do you agree with the great return philosophy',
-                                'On a scale of 1-10 how much do you believe that more people in the diaspora should be informed about the great return',
-                                'On a scale of 1-10 how important to you believe it is for all of us to spread the the great return philosophy to as many people as possible',
-                                'On a scale of 1-10 how much to you believe that you posess valuable skills, knowledge and expertise that can be used to support African development',
-                                'On a scale of 1-10 how prepared are you to adopt an entrepreneurial mindset',
-                                'On a scale of 1-10 how will you rate your current business acumen',
-                                'On a scale of 1-10 how experienced are you in taking leadership positions',
-                                'On a scale of 1-10 how strong are your communication skills',
-                                'On a scale of 1-10 how good are you at problem solving',
-                                'On a scale of 1-10 how good are you at thinking strategically',
-                                'On a scale of 1-10 how good are you with dealing with pressure',
-                                'On a scale of 1-10 how good are you with practising delayed gratification',
-                                'On a scale of 1-10 how much do you see failure as a necessary part of longterm success',
-                                'On a scale of 1-10 how resilient are you',
-                                'On a scale of 1-10 how easy is it for you to visualise a desired outcome before it has yet to be manifested',
-                                'On a scale of 1-10 how willing are you to confront some of the challenges that come with joining the great return',
-                                "On a scale of 1-10 how easy would it be for you to raise a minimum of $10,000 as start up capital",
-                                'On a scale of 1-10 how willing are you to adopt the mentality of a servant in the service of African development',
-                                'On a scale of 1-10 how unfulfilled are you with your current life in the diaspora',
-                                'On a scale of 1-10 how much do you believe that joining TGR will lead to you having more fulfilment and meaning in your life',
-                                'On a scale of 1-10 how much do you believe that Africa could offer you a greater opportunity for wealth and financial freedom compared to the West',
-                                'On a scale of 1-10 how much do you believe moving to Africa will give you a sense of belonging and connection that you desire',
-                                'On a scale of 1-10 how connected do you feel to Africa',
-                                'On a scale of 1-10 how important is being African part of your identity',
-                                'On a scale of 1-10 how unappreciated do you feel living in the diaspora',
-                                'On a scale of 1-10 how important do you believe it is to invest in your pre-transition preparation when relocating back to Africa',
-                                'On s scale of 1-10 how much do you believe that the more prepared you are the higher the likelihood of your TGR success',
-                                'On a scale of 1-10 how knowledgeable are you about the economic opportunities available to you in Africa',
-                                'On a scale of 1-10 how beneficial will it be for you to be better educated about Africa',
-                                'On a scale of 1-10 how confident are you in generating potential business ideas that you can become passionate about, that not only compliment your skills and expertise but also support African development',
-                                'On a scale of 1-10 how much clarity do you have about what your unique purpose in Africa will be which is also in alignment with the collective purpose of The Great Return',
-                                'On a scale of 1-10 how well have you researched potential business ideas in order to assess their viability and whether they can work successfully in Africa',
-                                'On a scale of 1-10 how developed is your business strategy for implementing your idea',
-                                'On a scale of 1-10 how beneficial will it be for you to receive assistance in evaluating some of your business ideas',
-                            ];
-                        @endphp
-
-                        @foreach ($questions as $index => $question)
-                            <div class="mb-3">
-                                <label for="question{{ $index }}" class="form-label">{{ $question }}</label>
-                                <select class="form-control" id="question{{ $index }}"
-                                    name="question{{ $index }}" required>
-                                    @for ($i = 1; $i <= 10; $i++)
-                                        <option value="{{ $i }}">{{ $i }}</option>
-                                    @endfor
-                                </select>
-                            </div>
-                        @endforeach
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </section>
 @endsection
