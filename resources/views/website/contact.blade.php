@@ -115,11 +115,9 @@
                         <h4 class="pt-5">Business <strong>Hours</strong></h4>
                         <ul class="list list-icons list-dark mt-2">
                             <li><i class="far fa-clock top-6"></i> Monday - Friday: 9am to 5pm</li>
-
                             <li><i class="far fa-clock top-6"></i>Saturday - Sunday: Closed</li>
                         </ul>
                     </div>
-
                     <h4 class="pt-5">Get in <strong>Touch</strong></h4>
                     <p class="lead mb-0 text-4">Don't hesitate to contact us through Email and WhatsApp for any further
                         inquiries.</p>
