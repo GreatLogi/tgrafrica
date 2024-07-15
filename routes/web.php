@@ -45,16 +45,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified',
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard');
-//     })->name('dashboard');
-// });
-
 Route::get('/', function () {
     return view('website.index');
 })->name('home');
@@ -169,8 +159,8 @@ Route::post('/submit-questionnaire', [QuestionnaireController::class, 'submitQue
 Route::get('/trg-africa-brainstorm', [PostController::class, 'index'])->name('posts.index');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');
-
 Route::get('/register', [Log_in_and_out_Controller::class, 'register'])->name('register-user');
+
 Route::prefix('site-configuration')->group(function () {
     Route::prefix('purpose')->group(function () {
         Route::get('/', [purposecontroller::class, 'index'])->name('site-index-purpose');
