@@ -24,16 +24,10 @@
         </div>
     </section>
 
-
     <div role="main" class="main">
-
-
-
         <div class="container">
-
             <div class="row py-4">
                 <div class="col-lg-6">
-
                     <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2>
                     <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
 
@@ -99,7 +93,6 @@
 
                 </div>
                 <div class="col-lg-6">
-
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
                         <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
                         <ul class="list list-icons list-icons-style-2 mt-2 ">
@@ -118,7 +111,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
                         <h4 class="pt-5">Business <strong>Hours</strong></h4>
                         <ul class="list list-icons list-dark mt-2">
@@ -131,18 +123,12 @@
                     <h4 class="pt-5">Get in <strong>Touch</strong></h4>
                     <p class="lead mb-0 text-4">Don't hesitate to contact us through Email and WhatsApp for any further
                         inquiries.</p>
-
                 </div>
-
             </div>
-
         </div>
-
-        <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.808489180186!2d-0.3112837!3d5.595292400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa28facd87981%3A0x9b4cf1cd23412f79!2sGB33%20Nii%20Tsoku%20Komletse%20Abbey%20St%2C%20Ghana!5e0!3m2!1sen!2sca!4v1720936608065!5m2!1sen!2sca"
             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     </div>
 @endsection
