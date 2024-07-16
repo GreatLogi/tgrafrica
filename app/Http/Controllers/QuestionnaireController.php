@@ -42,8 +42,8 @@ class QuestionnaireController extends Controller
 
     public function index()
     {
-        $consulation_questionaires=QuestionnaireResponse::latest()->get();
-        return view('admin.systemsetting.questionaires.index',compact('consulation_questionaires'));
+        $consulation_questionaires = QuestionnaireResponse::latest()->get();
+        return view('admin.systemsetting.questionaires.index', compact('consulation_questionaires'));
     }
 
     public function submitQuestionnaire(Request $request)
@@ -51,6 +51,9 @@ class QuestionnaireController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
+            'country_of_residence' => 'required',
+            'nationality' => 'required',
+            'contact' => 'required',
         ]);
         $existingResponse = QuestionnaireResponse::where('name', $request->input('name'))
             ->orWhere('email', $request->input('email'))
@@ -71,6 +74,9 @@ class QuestionnaireController extends Controller
         QuestionnaireResponse::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
+            'contact' => $request->input('contact'),
+            'country_of_residence' => $request->input('country_of_residence'),
+            'nationality' => $request->input('nationality'),
             'responses' => json_encode($data),
             'scores' => $percentageScore,
         ]);

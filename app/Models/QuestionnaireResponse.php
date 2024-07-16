@@ -22,6 +22,9 @@ class QuestionnaireResponse extends Model implements Auditable
         'email',
         'responses',
         'scores',
+        'country_of_residence',
+        'nationality',
+        'contact',
     ];
 
     /**

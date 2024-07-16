@@ -18,6 +18,9 @@ return new class extends Migration
             $table->uuid()->index();
             $table->string('name')->nullable();
             $table->string('email')->nullable();
+            $table->string('country_of_residence')->nullable();
+            $table->string('nationality')->nullable();
+            $table->string('contact')->nullable();
             $table->text('responses')->nullable();
             $table->string('scores')->nullable();
             $table->timestamps();

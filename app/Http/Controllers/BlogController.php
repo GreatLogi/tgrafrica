@@ -8,14 +8,7 @@ use App\Models\Comment;
 class BlogController extends Controller
 {
 
-    // public function show($uuid)
-    // {
-    //     $blog = Blog::where('uuid', $uuid)->first();
-    //     if (!$blog) {
-    //         abort(404);
-    //     }
-    //     return view('website.newssingle', compact('blog'));
-    // }
+    
     public function show($uuid)
     {
         $blog = Blog::where('uuid', $uuid)->firstOrFail();

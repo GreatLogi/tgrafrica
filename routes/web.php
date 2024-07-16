@@ -58,7 +58,10 @@ Route::get('news', function () {
     $latest_blogs = Blog::latest()->paginate(6);
     return view('website.news', compact('latest_blogs'));
 })->name('news');
+Route::post('news/comment/{comment}/reply', [CommentController::class, 'reply'])->name('news.reply');
+
 Route::post('news/{uuid}/comment', [CommentController::class, 'store'])->name('news.comment');
+ 
 Route::get('news/{uuid}', [BlogController::class, 'show'])->name('newssingle');
 // Route::get('news/{uuid}', function ($uuid) {
 //     $blog = Blog::findOrFail($uuid);

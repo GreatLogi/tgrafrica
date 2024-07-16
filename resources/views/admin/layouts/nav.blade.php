@@ -10,13 +10,14 @@
         <div class="nano-content">
             <nav id="menu" class="nav-main" role="navigation">
                 <ul class="nav nav-main">
-                    <li>
-                        <a class="nav-link" href="{{ route('dashboard') }}">
-                            <i class="bx bx-home-alt" aria-hidden="true"></i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-
+                    @role('superadmin')
+                        <li>
+                            <a class="nav-link" href="{{ route('dashboard') }}">
+                                <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                    @endrole
                     <li>
                         <a class="nav-link" href="{{ route('posts.index') }}">
                             <i class="bx bx-home-alt" aria-hidden="true"></i>
@@ -217,83 +218,83 @@
                             </li>
                         </ul>
                     </li> --}}
-                    <li class="nav-group-label">APPs</li>
-
-                    <li class="nav-parent">
-                        <a class="nav-link" href="#">
-                            <i class="bx bx-cube" aria-hidden="true"></i>
-                            <span>SYSTEM SETTINGS</span>
-                        </a>
-                        <ul class="nav nav-children">
-                            <li class="nav-parent">
-                                <a class="nav-link" href="#">
-                                    - Settings <span class="mega-sub-nav-toggle toggled float-end"
-                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
-                                </a>
-                                <ul class="nav nav-children">
-                                    <li class="nav-parent">
-                                        <a class="nav-link" href="#">
-                                            - TGRSEMINARS <span class="mega-sub-nav-toggle toggled float-end"
-                                                data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
-                                        </a>
-                                        <ul class="nav nav-children">
-                                            <li>
-                                                <a class="nav-link" href="{{ route('all-seminars-videos') }}">
-                                                    - Seminars
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link" href="{{ route('tgr-seminars-add') }}">
-                                                    - Add Record
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('questionnaires-book-consultations') }}">
-                                            - Consultation Questionaires
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('admin.blogs.index') }}">
-                                            - Blogs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('index-roles') }}">
-                                            - Roles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('profileview') }}">
-                                            - Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="ui-elements-icons-line-icons.html">
-                                            - Password Update
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ route('index-user') }}">
-                                            - User Account
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
-                                            - Audit Trail
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="ui-elements-icons-box-icons.html">
-                                            - User Log Activities
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
+                    @role('superadmin')
+                        <li class="nav-group-label">APPs</li>
+                        <li class="nav-parent">
+                            <a class="nav-link" href="#">
+                                <i class="bx bx-cube" aria-hidden="true"></i>
+                                <span>SYSTEM SETTINGS</span>
+                            </a>
+                            <ul class="nav nav-children">
+                                <li class="nav-parent">
+                                    <a class="nav-link" href="#">
+                                        - Settings <span class="mega-sub-nav-toggle toggled float-end"
+                                            data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li class="nav-parent">
+                                            <a class="nav-link" href="#">
+                                                - TGRSEMINARS <span class="mega-sub-nav-toggle toggled float-end"
+                                                    data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                            </a>
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a class="nav-link" href="{{ route('all-seminars-videos') }}">
+                                                        - Seminars
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="{{ route('tgr-seminars-add') }}">
+                                                        - Add Record
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="{{ route('questionnaires-book-consultations') }}">
+                                                - Consultation Questionaires
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="{{ route('admin.blogs.index') }}">
+                                                - Blogs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="{{ route('index-roles') }}">
+                                                - Roles
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="{{ route('profileview') }}">
+                                                - Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="ui-elements-icons-line-icons.html">
+                                                - Password Update
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="{{ route('index-user') }}">
+                                                - User Account
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="ui-elements-icons-box-icons.html">
+                                                - Audit Trail
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="ui-elements-icons-box-icons.html">
+                                                - User Log Activities
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    @endrole
                 </ul>
             </nav>
         </div>

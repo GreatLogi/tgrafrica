@@ -56,13 +56,22 @@
                                             style="width:5%;">No.</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width:20%;">Title</th>
+                                            style="width:20%;">Name</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
-                                            style="width:60%;">Email</th>
+                                            style="width:10%;">Email</th>
                                         <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
                                             colspan="1" aria-label="Browser: activate to sort column ascending"
                                             style="width:20%;">Percentation</th>
+                                            <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width:20%;">Country Of Residedence</th>
+                                            <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width:10%;">Nationality</th>
+                                            <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1"
+                                            colspan="1" aria-label="Browser: activate to sort column ascending"
+                                            style="width:15%;">Contact</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -72,6 +81,9 @@
                                             <td>{{ $list->name }}</td>
                                             <td>{{ $list->email }}</td>
                                             <td>{{ $list->scores }} %</td>
+                                            <td>{{ $list->country_of_residence}}</td>
+                                            <td>{{ $list->nationality}} %</td>
+                                            <td>{{ $list->contact }} %</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
