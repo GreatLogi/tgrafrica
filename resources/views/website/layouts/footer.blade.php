@@ -67,7 +67,7 @@
                                 <a
                                     href="https://www.okler.net/cdn-cgi/l/email-protection#4e232f27220e2b362f233e222b602d2123"><span
                                         class="__cf_email__"
-                                        data-cfemail="ec818d8580ac89948d819c8089c28f8381">[email&#160;protected]</span></a>
+                                        data-cfemail="ec818d8580ac89948d819c8089c28f8381">info@tgrafrica.com</span></a>
                             </p>
                         </li>
                     </ul>
@@ -77,16 +77,19 @@
                 <h5 class="text-3 mb-3">FOLLOW US</h5>
                 <ul class="social-icons">
                     <li class="social-icons-facebook">
-                        <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-                                class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="social-icons-twitter">
-                        <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                class="fab fa-x-twitter"></i></a>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fprofile.php%3Fid%3D61559081140764%26__cft__[0]%3DAZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg&tabs=timeline&width=200&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=5035938946497779"
+                            width="200" height="70" style="border:none;overflow:hidden" scrolling="no"
+                            frameborder="0" allowfullscreen="true" data-theme="dark"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </li>
                     <li class="social-icons-linkedin">
-                        <a href="http://www.youtube.com/" target="_blank" title="Youtube"><i
-                                class="fab fa-youtube"></i></a>
+                        <script src="https://apis.google.com/js/platform.js"></script>
+                        <div class="g-ytsubscribe" data-channelid="UCnl1Z1PExMQGPiwUEhbQCWQ" data-layout="full"
+                            data-theme="dark" data-count="hidden"></div>
+                    </li>
+
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -104,7 +107,8 @@
                 </div>
                 <div
                     class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-                    <p>© Copyright 2024. All Rights Reserved.</p>
+                    <p>© Copyright 2024. All Rights Reserved. | By <a href="www.wantechsolutions.com">Wan Tech
+                            Solutions</a> </p>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
                     <nav id="sub-menu">
