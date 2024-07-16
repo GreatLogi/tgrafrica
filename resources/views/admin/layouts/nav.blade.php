@@ -255,6 +255,11 @@
                                         </a>
                                     </li>
                                     <li>
+                                        <a class="nav-link" href="{{ route('admin.blogs.index') }}">
+                                            - Blogs
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a class="nav-link" href="{{ route('index-roles') }}">
                                             - Roles
                                         </a>

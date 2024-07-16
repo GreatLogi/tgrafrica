@@ -30,12 +30,10 @@
                 <div class="col-lg-6">
                     <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2>
                     <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
-
                     <form class="contact-form" action="{{ route('site-store-contact-us') }}" method="POST">
                         <div class="contact-form-success alert alert-success d-none mt-4">
                             <strong>Success!</strong> Your message has been sent to us.
                         </div>
-
                         <div class="contact-form-error alert alert-danger d-none mt-4">
                             <strong>Error!</strong> There was an error sending your message.
                             <span class="mail-error-message text-1 d-block"></span>

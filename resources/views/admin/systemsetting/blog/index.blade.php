@@ -1,14 +1,12 @@
 @extends('admin.layouts.admin_master')
-@section('title')
-    Seminars
-@endsection
+@section('title', 'Blogs')
 @section('admin')
     <header class="page-header page-header-left-inline-breadcrumb">
-        <h2 class="font-weight-bold text-6">All Seminars Videos</h2>
+        <h2 class="font-weight-bold text-6">All Blogs</h2>
         <div class="right-wrapper">
             <ol class="breadcrumbs">
                 <li><span>Home</span></li>
-                <li><span>Seminar</span></li>
+                <li><span>Blog</span></li>
             </ol>
             <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
         </div>
@@ -21,10 +19,9 @@
                         <div class="datatable-header">
                             <div class="row align-items-center mb-3">
                                 <div class="col-12 col-lg-auto mb-3 mb-lg-0">
-                                    <a href="{{ route('tgr-seminars-add') }}"
-                                        class="btn btn-success btn-md font-weight-semibold btn-py-2 px-4">+ Add Seminar</a>
+                                    <a href="{{ route('admin.blogs.create') }}"
+                                        class="btn btn-success btn-md font-weight-semibold btn-py-2 px-4">+ Add Blog</a>
                                 </div>
-
                             </div>
                         </div>
                         <table class="table table-ecommerce-simple table-striped mb-0" id="datatable-ecommerce-list"
@@ -32,35 +29,33 @@
                             <thead>
                                 <tr>
                                     <th width="5%">ID</th>
-                                    <th width="10%">Title</th>
-                                    <th width="60%">Description</th>
-                                    <th width="20%">Vidoe</th>
-                                    <th width="5%">Action</th>
+                                    <th width="15%">Title</th>
+                                    <th width="70%">Content</th>
+                                    <th width="1O%">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($all_seminars_vidoes as $seminar)
+                                @foreach ($all_blogs as $blog)
                                     <tr>
                                         <td>{{ $loop->index + 1 }}</td>
-                                        <td>{{ $seminar->title }}</td>
-                                        <td>{{ $seminar->description }}</td>
-                                        <td><video width="120" height="120" controls>
-                                                <source src="{{ asset($seminar->video) }}" type="video/mp4">
-                                        </td>
+                                        <td>{{ $blog->title }}</td>
+                                        <td>{{ $blog->content }}</td>
                                         <td>
+                                            <a href="{{ route('admin.blogs.edit', $blog->uuid) }}"
+                                                class="badge badge-primary text-white">Edit</a>
+
                                             <a class="badge badge-danger text-white" id="delete"
-                                                href="{{ route('seminar-video-delete', $seminar->uuid) }}">
+                                                href="{{ route('admin.blogs.destroy', $blog->uuid) }}">
                                                 Delete
                                             </a>
+
                                         </td>
                                     </tr>
                                 @endforeach
                             </tbody>
                         </table>
-                        </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

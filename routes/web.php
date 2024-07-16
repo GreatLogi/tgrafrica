@@ -7,14 +7,15 @@ use App\Http\Controllers\Admin\visioncontroller;
 use App\Http\Controllers\AnalyticsController;
 use App\Http\Controllers\AuditController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BonkConsultationController;
 use App\Http\Controllers\BrainstormController;
-use App\Http\Controllers\ContactUsController;
 // use App\Http\Controllers\RoleController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForceChangeController;
 use App\Http\Controllers\Log_in_and_out_Controller;
-// use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\QuestionnaireController;
@@ -24,10 +25,10 @@ use App\Http\Controllers\SeminarController;
 use App\Http\Controllers\SeminarRegistrationController;
 use App\Http\Controllers\SubscribeSeminarsController;
 use App\Http\Controllers\UserAccountController;
+use App\Models\Blog;
 use App\Models\Founder;
 use App\Models\Mission;
 use App\Models\Purpose;
-use App\Models\Vision;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,12 +55,19 @@ Route::get('contact', function () {
 })->name('contact');
 
 Route::get('news', function () {
-    return view('website.news');
+    $latest_blogs = Blog::latest()->paginate(6);
+    return view('website.news', compact('latest_blogs'));
 })->name('news');
+Route::post('news/{uuid}/comment', [CommentController::class, 'store'])->name('news.comment');
+Route::get('news/{uuid}', [BlogController::class, 'show'])->name('newssingle');
+// Route::get('news/{uuid}', function ($uuid) {
+//     $blog = Blog::findOrFail($uuid);
+//     return view('website.newssingle', compact('blog'));
+// })->name('newssingle');
 
-Route::get('newssingle', function () {
-    return view('website.newssingle');
-})->name('newssingle');
+// Route::get('news-details', function () {
+//     return view('website.newssingle');
+// })->name('newssingle');
 
 Route::get('partners', function () {
     return view('website.partners');
@@ -69,7 +77,6 @@ Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index']
 Route::get('/all-seminars-videos', [SubscribeSeminarsController::class, 'all_seminars_record'])->name('all-seminars-videos');
 // Route for deleting seminar video
 Route::get('/seminar/{uuid}/delete', [SubscribeSeminarsController::class, 'delete_seminar_video'])->name('seminar-video-delete');
-
 Route::get('seminars/{seminar}/subscribe', [SubscribeSeminarsController::class, 'subscribe'])->name('seminars.subscribe');
 Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
 
@@ -106,20 +113,15 @@ Route::prefix('seminars')->group(function () {
 
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
     Route::get('brainstorm', function () {
-
         return view('website.advisory.brainstorm');
     })->name('brainstorm');
-
     Route::get('analytic', function () {
-
         return view('website.advisory.analytic');
     })->name('analytic');
 
     Route::get('seminar', function () {
-
         return view('website.advisory.seminar');
     })->name('seminar');
-
     Route::get('seminar-registration', function () {
         return view('website.advisory.register_seminar');
     })->name('register-seminar');
@@ -160,7 +162,16 @@ Route::get('/trg-africa-brainstorm', [PostController::class, 'index'])->name('po
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');
 Route::get('/register', [Log_in_and_out_Controller::class, 'register'])->name('register-user');
-
+// routes/web.php
+Route::prefix('admin')->name('admin.')->group(function () {
+    // Route::resource('blogs', BlogController::class);
+    Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
+    Route::get('/add', [BlogController::class, 'create'])->name('blogs.create');
+    Route::post('/store', [BlogController::class, 'store'])->name('blogs.store');
+    Route::get('/edit/{uuid}', [BlogController::class, 'edit'])->name('blogs.edit');
+    Route::post('/update', [BlogController::class, 'update'])->name('blogs.update');
+    Route::get('/delete/{uuid}', [BlogController::class, 'delete'])->name('blogs.destroy');
+});
 Route::prefix('site-configuration')->group(function () {
     Route::prefix('purpose')->group(function () {
         Route::get('/', [purposecontroller::class, 'index'])->name('site-index-purpose');
