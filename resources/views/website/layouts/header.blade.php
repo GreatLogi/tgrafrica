@@ -8,17 +8,15 @@
                         <div class="header-row">
                             <nav class="header-nav-top">
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
-                                            href="javascript:void(0)"><i class="fas fa-angle-right"></i>Book a
-                                            Consultation</a> </li>
-                                    <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
-                                            href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
-                                    </li>
-
                                     <li
                                         class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
-                                        <span class="ws-nowrap"><i class="fas fa-phone"></i> (123) 456-789</span>
+                                        <span class="ws-nowrap"><i class="fas fa-phone"></i>+233209298306 | </span>
                                     </li>
+                                    <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
+                                            href="javascript:void(0)"><i class="fas fa-angle-right"></i>Login</a> </li>
+                                    {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
+                                            href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
+                                    </li> --}}
                                 </ul>
                             </nav>
                         </div>
@@ -26,10 +24,11 @@
                     <div class="header-column justify-content-end">
                         <div class="header-row">
                             <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
-                                <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
-                                        title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
-                                        title="Twitter"><i class="fab fa-x-twitter"></i></a></li>
+                                <li class="social-icons-facebook"><a
+                                        href="https://web.facebook.com/profile.php?id=61559081140764&__cft__[0]=AZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg"
+                                        target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                {{-- <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                                        title="Twitter"><i class="fab fa-x-twitter"></i></a></li> --}}
                                 <li class="social-icons-youtube"><a href="http://www.youtube.com/" target="_blank"
                                         title="Youtube"><i class="fab fa-youtube"></i></a></li>
                             </ul>
@@ -139,7 +138,7 @@
 
                                             </ul>
                                         </li>
-{{-- 
+                                        {{-- 
                                         <li> <a class=" " href="{{ route('partners') }}"> Partners </a>
 
                                         </li> --}}
@@ -164,10 +163,9 @@
                         </div>
                         <div
                             class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-                            <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a
-                                    href="#" class="header-nav-features-toggle text-decoration-none"
-                                    data-focus="headerSearch" aria-label="Search"><i
-                                        class="fas fa-search header-nav-top-icon"></i></a>
+                            <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a href="#"
+                                    class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"
+                                    aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
                                 <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
                                     <form role="search"
                                         action="https://www.okler.net/previews/porto/10.2.0/page-search-results.html"

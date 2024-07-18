@@ -25,25 +25,17 @@
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <h5 class="text-3 mb-3">LATEST POSTS</h5>
                 <ul class="list-unstyled mb-0">
-                    <li class="mb-2 pb-1">
-                        <a href="#">
-                            <p class="text-3 text-color-light opacity-8 mb-0">
-                                <i class="fas fa-angle-right text-color-secondary"></i><strong
-                                    class="ms-2 font-weight-semibold">News 1</strong>
-                            </p>
-                            <p class="text-2 mb-0">12:55 AM Dec 19th</p>
-                        </a>
-                    </li>
-                    <li class="mb-2 pb-1">
-                        <a href="#">
-                            <p class="text-3 text-color-light opacity-8 mb-0">
-                                <i class="fas fa-angle-right text-color-secondary"></i><strong
-                                    class="ms-2 font-weight-semibold">News 2</strong>
-                            </p>
-                            <p class="text-2 mb-0">12:55 AM Dec 19th</p>
-                        </a>
-                    </li>
-
+                    @foreach ($latest_blogs as $blog)
+                        <li class="mb-2 pb-1">
+                            <a href="#">
+                                <p class="text-3 text-color-light opacity-8 mb-0">
+                                    <i class="fas fa-angle-right text-color-secondary"></i><strong
+                                        class="ms-2 font-weight-semibold">{{ Str::limit($blog->title, 15, '...') }}</strong>
+                                </p>
+                                <p class="text-2 mb-0"></p>
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
@@ -58,16 +50,14 @@
                         <li class="mb-1">
                             <i class="fab fa-whatsapp text-color-secondary"></i>
                             <p class="m-0">
-                                <a href="tel:8001234567">+233 (0) 123-4567</a>
+                                <a href="tel:+233209398306">+233209398306</a>
                             </p>
                         </li>
                         <li class="mb-1">
                             <i class="far fa-envelope text-color-secondary"></i>
                             <p class="m-0">
-                                <a
-                                    href="https://www.okler.net/cdn-cgi/l/email-protection#4e232f27220e2b362f233e222b602d2123"><span
-                                        class="__cf_email__"
-                                        data-cfemail="ec818d8580ac89948d819c8089c28f8381">info@tgrafrica.com</span></a>
+                                <a href="mailto:info@tgrafrica.com"><span class="__cf_email__"
+                                        data-cfemail="#">info@tgrafrica.com</span></a>
                             </p>
                         </li>
                     </ul>
