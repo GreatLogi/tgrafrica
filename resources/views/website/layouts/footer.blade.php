@@ -24,7 +24,7 @@
             </div>
             <?php
             use App\Models\Blog;
-            $latest_blogs = Blog::latest()->paginate(6);
+            $latest_blogs = Blog::latest()->paginate(4);
             ?>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <h5 class="text-3 mb-3">LATEST POSTS</h5>
