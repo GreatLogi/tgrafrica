@@ -22,14 +22,19 @@
                     </div>
                 </form>
             </div>
+            <?php
+            use App\Models\Blog;
+            $latest_blogs = Blog::latest()->paginate(6);
+            ?>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <h5 class="text-3 mb-3">LATEST POSTS</h5>
                 <ul class="list-unstyled mb-0">
                     @foreach ($latest_blogs as $blog)
                         <li class="mb-2 pb-1">
-                            <a href="#">
+                            <a href="{{ route('newssingle', $blog->uuid) }}">
                                 <p class="text-3 text-color-light opacity-8 mb-0">
-                                    <i class="fas fa-angle-right text-color-secondary"></i><strong
+                                    <i class="fas fa-angle-right text-color-secondary"></i>
+                                    <strong
                                         class="ms-2 font-weight-semibold">{{ Str::limit($blog->title, 15, '...') }}</strong>
                                 </p>
                                 <p class="text-2 mb-0"></p>
@@ -56,8 +61,7 @@
                         <li class="mb-1">
                             <i class="far fa-envelope text-color-secondary"></i>
                             <p class="m-0">
-                                <a href="mailto:info@tgrafrica.com"><span class="__cf_email__"
-                                        data-cfemail="#">info@tgrafrica.com</span></a>
+                                <a href="mailto:info@tgrafrica.com">info@tgrafrica.com</a>
                             </p>
                         </li>
                     </ul>
@@ -78,9 +82,6 @@
                         <div class="g-ytsubscribe" data-channelid="UCnl1Z1PExMQGPiwUEhbQCWQ" data-layout="full"
                             data-theme="dark" data-count="hidden"></div>
                     </li>
-
-                    </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -97,26 +98,23 @@
                 </div>
                 <div
                     class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-                    <p>© Copyright 2024. All Rights Reserved. | By <a href="www.wantechsolutions.com">Wan Tech
-                            Solutions</a> </p>
+                    <p>© Copyright 2024. All Rights Reserved. | By <a href="http://www.wantechsolutions.com">Wan Tech
+                            Solutions</a></p>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
                     <nav id="sub-menu">
                         <ul>
                             <li>
                                 <i class="fas fa-angle-right"></i><a href="javascript:void(0)"
-                                    class="ms-1 text-decoration-none">
-                                    FAQ's</a>
+                                    class="ms-1 text-decoration-none">FAQ's</a>
                             </li>
                             <li>
                                 <i class="fas fa-angle-right"></i><a href="javascript:void(0)"
-                                    class="ms-1 text-decoration-none">
-                                    Available Books</a>
+                                    class="ms-1 text-decoration-none">Available Books</a>
                             </li>
                             <li>
                                 <i class="fas fa-angle-right"></i><a href="javascript:void(0)"
-                                    class="ms-1 text-decoration-none">
-                                    Contact Us</a>
+                                    class="ms-1 text-decoration-none">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
