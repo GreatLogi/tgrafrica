@@ -13,7 +13,7 @@
                                         <span class="ws-nowrap"><i class="fas fa-phone"></i>+233209298306 | </span>
                                     </li>
                                     <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
-                                            href="javascript:void(0)"><i class="fas fa-angle-right"></i>Login</a> </li>
+                                            href="{{ route('login') }}"><i class="fas fa-angle-right"></i>Login</a> </li>
                                     {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
                                             href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
                                     </li> --}}
@@ -138,7 +138,7 @@
 
                                             </ul>
                                         </li>
-                                        {{-- 
+                                        {{--
                                         <li> <a class=" " href="{{ route('partners') }}"> Partners </a>
 
                                         </li> --}}
