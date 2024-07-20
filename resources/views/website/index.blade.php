@@ -308,13 +308,13 @@
                         @foreach ($latest_blogs as $blog)
                             <div class="col-md-4 col-lg-3">
                                 <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
+                                    {{-- <div class="post-image">
                                         <a href="{{ route('newssingle', $blog->uuid) }}">
                                             <img src="{{ asset('img/blog/medium/' . $blog->image) }}"
                                                 class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
                                                 alt="{{ $blog->title }}" />
                                         </a>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="post-content">
                                         <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">

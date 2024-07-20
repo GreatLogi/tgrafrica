@@ -100,12 +100,11 @@
                                 <p class="m-0">Gbawe Zero, Greater Accra</p>
                             </li>
                             <li><i class="fas fa-phone top-6 text-color-secondary"></i> <strong
-                                    class="text-dark">Phone:</strong> (123) 456-789</li>
+                                    class="text-dark">Phone:</strong><a href="tel:+233209398306"> +233209398306</li></a>
                             <li><i class="fas fa-envelope top-6 text-color-secondary"></i> <strong
-                                    class="text-dark">Email:</strong> <a
-                                    href="https://www.okler.net/cdn-cgi/l/email-protection#91fcf0f8fdd1f4e9f0fce1fdf4bff2fefc"><span
+                                    class="text-dark">Email:</strong> <a href="mailto:info@tgrafrica.com"><span
                                         class="__cf_email__"
-                                        data-cfemail="3558545c5975504d54584559501b565a58">[email&#160;protected]</span></a>
+                                        data-cfemail="3558545c5975504d54584559501b565a58">info@tgrafrica.com</span></a>
                             </li>
                         </ul>
                     </div>
@@ -122,9 +121,9 @@
                 </div>
             </div>
         </div>
-        <iframe
+        {{-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.808489180186!2d-0.3112837!3d5.595292400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa28facd87981%3A0x9b4cf1cd23412f79!2sGB33%20Nii%20Tsoku%20Komletse%20Abbey%20St%2C%20Ghana!5e0!3m2!1sen!2sca!4v1720936608065!5m2!1sen!2sca"
             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
     </div>
 @endsection
