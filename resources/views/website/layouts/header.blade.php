@@ -10,10 +10,12 @@
                                 <ul class="nav nav-pills">
                                     <li
                                         class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
-                                        <span class="ws-nowrap"><i class="fas fa-phone"></i>+233209298306 | </span>
+                                        <a href="tel:+233209298306"><span class="ws-nowrap"><i
+                                                    class="fas fa-phone"></i>+233209298306 | </span></a>
                                     </li>
                                     <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
-                                            href="{{ route('login') }}"><i class="fas fa-angle-right"></i>Login</a> </li>
+                                            href="{{ route('login') }}"><i class="fas fa-angle-right"></i>Login</a>
+                                    </li>
                                     {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
                                             href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
                                     </li> --}}
@@ -24,13 +26,14 @@
                     <div class="header-column justify-content-end">
                         <div class="header-row">
                             <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
-                                <li class="social-icons-facebook"><a
+                                <li class="social-icons-facebook" style="border-radius: 40%"><a
                                         href="https://web.facebook.com/profile.php?id=61559081140764&__cft__[0]=AZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg"
                                         target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                 {{-- <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
                                         title="Twitter"><i class="fab fa-x-twitter"></i></a></li> --}}
-                                <li class="social-icons-youtube"><a href="http://www.youtube.com/" target="_blank"
-                                        title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                <li class="social-icons-youtube" style="border-radius: 40%"><a
+                                        href="http://www.youtube.com/@TGRAfrica" target="_blank" title="Youtube"><i
+                                            class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,13 +96,12 @@
                                                 href="javascript:void(0)">Advisory</a>
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
-                                                        href="{{ route('advisory.brainstorm') }}">TGR Brainstorm</a>
+                                                        href="{{ route('advisory.seminar') }}">TGR Seminars</a>
 
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
-                                                        href="{{ route('advisory.seminar') }}">TGR Seminars</a>
-
+                                                        href="{{ route('advisory.brainstorm') }}">TGR Brainstorm</a>
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
@@ -167,9 +169,7 @@
                                     class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"
                                     aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
                                 <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
-                                    <form role="search"
-                                        action="https://www.okler.net/previews/porto/10.2.0/page-search-results.html"
-                                        method="get">
+                                    <form role="search" action="#" method="get">
                                         <div class="simple-search input-group"> <input class="form-control text-1"
                                                 id="headerSearch" name="q" type="search" value=""
                                                 placeholder="Search..."> <button class="btn" type="submit"
