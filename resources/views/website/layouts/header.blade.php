@@ -151,10 +151,7 @@
 
                                         <li> <a class="  {{ Request::is('contact') ? 'active' : '' }}"
                                                 href="{{ route('contact') }}">Contact Us </a>
-
                                         </li>
-
-
                                     </ul>
                                 </nav>
                             </div>
@@ -178,7 +175,6 @@
                                     </form>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
