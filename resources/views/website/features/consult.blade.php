@@ -34,20 +34,21 @@
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">We understand that we are all at different stages of our great
+                        data-appear-animation-delay="400">We understand that we`re all at different stages of our great
                         return journey. We want to provide you with all the necessary support along your journey to the best
                         of our ability. We believe that success for those of us who have chosen to join the great return
-                        will all depend on the quality of our pre-transition preparation.
-                        We take pre-transition preparation very seriously and our goal is to ensure that we can provide you
-                        with all the necessary assistance along your journey. </p>
+                        will all depend on the quality of our transition preparation. We take transition preparation very
+                        seriously and our goal is to ensure that we can provide you with all the necessary assistance you
+                        may need.</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
                     <blockquote>
-                        <p class="mb-0">Please complete the questionnaire below in order to book a free consultation to
-                            discuss your TGR needs with one of our advisors.</p>
+                        <p class="mb-0">To Book a Consultation, we would like you to answer some few questionnaire in the
+                            next page. This will take about 2 minutes of your time. Please click the button below to proceed
+                        </p>
                         <hr>
                         @if (session('success'))
                             <div class="alert alert-success">
@@ -73,7 +74,7 @@
             <div class="row pb-4">
                 <div class="col-md-8">
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-                        <h4 class="mt-2 mb-2">Opening <strong>Sections</strong></h4>
+                        {{-- <h4 class="mt-2 mb-2">We hope <strong> to achieve this by;</strong></h4> --}}
                         <div class="accordion accordion-modern accordion-modern-grey-scale-1 without-bg mt-4"
                             id="accordion11">
                             <div class="card card-default mb-2">
@@ -89,16 +90,15 @@
                                     <div class="card-body mt-3">
                                         <ul class="list mt-4 mb-3 text-2">
                                             <li>
-                                                Give you a chance to ask any questions pertaining to getting involved in the
-                                                great return.
+                                                Giving you a chance to ask any questions pertaining to joining the great
+                                                return.
                                             </li>
                                             <li>
-                                                Give you advice on which TGR Advisory services will best suit your needs
+                                                Giving you advice on which advisory services will best suit your needs
                                                 giving your current circumstance
                                             </li>
                                             <li>
-                                                Provide you with clarification about our advisory process, fees and
-                                                expectations.
+                                                Providing clarification about our advisory process, fees and expectations.
                                             </li>
                                             <li>
                                                 Sign post you to relevant agencies and organisations who are part of the
@@ -120,11 +120,13 @@
                                 <div id="collapse11Two" class="collapse">
                                     <div class="card-body mt-3" style="text-align: justify">
                                         <p>All you need to do is choose a date and time which suits you. In order for us to
-                                            make sure we can give you the best advice and
-                                            provide you with the relevant support that caters to your unique circumstances
-                                            and needs,
-                                            you will first need to complete a short questionnaire which is designed to
-                                            evaluate how ready you are to join the great return. </p>
+                                            make sure we can give you the best advice and provide you with relevant support
+                                            that caters to your unique circumstances and needs, you will first need to
+                                            complete a short questionnaire which is designed to evaluate how ready you are
+                                            to join the great return.</p>
+                                        <p> Please complete the questionnaire below in order to book a free consultation to
+                                            discuss your TGR needs with one of our advisors
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +153,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="questionnaireModalLabel">Questionnaire</h5>
+                    <h5 class="modal-title" id="questionnaireModalLabel">Please answer the Questionnaire below</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

@@ -109,6 +109,11 @@
 
                                                 </li>
 
+                                                <li> <a class="dropdown-item"
+                                                        href="{{ route('features.consult') }}">Book a Consultation</a>
+
+                                                </li>
+
                                             </ul>
                                         </li>
 
@@ -131,13 +136,6 @@
                                                 <li> <a class="dropdown-item" href="#">Events</a>
 
                                                 </li> --}}
-
-                                                <li> <a class="dropdown-item"
-                                                        href="{{ route('features.consult') }}">Book a Consultation</a>
-
-                                                </li>
-
-
                                             </ul>
                                         </li>
                                         {{--
