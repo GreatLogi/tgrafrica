@@ -57,7 +57,7 @@
 
                         <hr>
                         <a href="{{ route('contact') }}"
-                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Register Here</a>
+                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Subscribe Now</a>
 
                     </blockquote>
                 </div>

@@ -27,8 +27,6 @@ use App\Http\Controllers\SubscribeSeminarsController;
 use App\Http\Controllers\UserAccountController;
 use App\Models\Blog;
 use App\Models\Founder;
-use App\Models\Mission;
-use App\Models\Purpose;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,7 +59,7 @@ Route::get('news', function () {
 Route::post('news/comment/{comment}/reply', [CommentController::class, 'reply'])->name('news.reply');
 
 Route::post('news/{uuid}/comment', [CommentController::class, 'store'])->name('news.comment');
- 
+
 Route::get('news/{uuid}', [BlogController::class, 'show'])->name('newssingle');
 // Route::get('news/{uuid}', function ($uuid) {
 //     $blog = Blog::findOrFail($uuid);
@@ -89,18 +87,16 @@ Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
     })->name('founder');
 
     Route::get('mission', function () {
-        $mission = Mission::first();
-        return view('website.about.mission', compact('mission'));
+
+        return view('website.about.mission');
     })->name('mission');
 
     Route::get('vision', function () {
-        $visions = Vision::first();
-        return view('website.about.vision', compact('visions'));
+        return view('website.about.vision');
     })->name('vision');
 
     Route::get('purpose', function () {
-        $purpose = Purpose::first();
-        return view('website.about.purpose', compact('purpose'));
+        return view('website.about.purpose');
     })->name('purpose');
 
 });

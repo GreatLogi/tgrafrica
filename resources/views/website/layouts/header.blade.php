@@ -67,24 +67,18 @@
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.founder') }}">Founder</a>
-
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.vision') }}">Vision</a>
-
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.mission') }}">Mission</a>
-
                                                 </li>
-
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.purpose') }}">Purpose</a>
-
                                                 </li>
-
                                             </ul>
                                         </li>
 
@@ -93,20 +87,15 @@
                                                 href="javascript:void(0)">Advisory</a>
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
+                                                    href="{{ route('advisory.seminar') }}">TGR Seminars</a>
+                                            </li>
+                                                <li> <a class="dropdown-item"
                                                         href="{{ route('advisory.brainstorm') }}">TGR Brainstorm</a>
 
                                                 </li>
-
-                                                <li> <a class="dropdown-item"
-                                                        href="{{ route('advisory.seminar') }}">TGR Seminars</a>
-
-                                                </li>
-
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('advisory.analytic') }}">TGR Analytics</a>
-
                                                 </li>
-
                                             </ul>
                                         </li>
 

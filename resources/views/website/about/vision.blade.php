@@ -1,9 +1,7 @@
 @extends('website.layouts.main')
-
 @section('title')
     Vision
 @endsection
-
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
@@ -26,9 +24,7 @@
     </section>
 
     <div class="container py-2">
-
         <div class="row">
-
             {{--
                 <img class="float-start img-fluid pr-5" width="250" height="211"
                     src="{{ asset('img/layout-stylesm.png') }}" alt="Lordy Emmen"> --}}

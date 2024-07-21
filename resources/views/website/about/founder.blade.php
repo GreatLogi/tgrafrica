@@ -1,7 +1,7 @@
 @extends('website.layouts.main')
 
 @section('title')
-    Founder
+    Founders
 @endsection
 
 @section('content')
@@ -11,14 +11,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>Founder <strong></strong></h1>
+                    <h1>Founders <strong></strong></h1>
                     {{-- <span class="sub-title">Get in touch with us</span> --}}
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb breadcrumb-light d-block text-md-end">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li>About</li>
-                        <li class="active">Founder</li>
+                        <li class="active">Founders</li>
                     </ul>
                 </div>
             </div>
