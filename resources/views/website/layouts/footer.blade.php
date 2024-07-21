@@ -5,11 +5,11 @@
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <h5 class="text-3 mb-3">NEWSLETTER</h5>
                 <p class="pe-1">
-                    Keep up on our always evolving products and services.
+                    Be the first to be informed...
                     <br> Enter your e-mail address and subscribe to our newsletter.
                 </p>
                 <div class="alert alert-success d-none" id="newsletterSuccess">
-                    <strong>Success!</strong> You've been added to our email list.
+                    <strong>Success!</strong> <br>News letter Subscription successful. <br> Thank you.
                 </div>
                 <div class="alert alert-danger d-none" id="newsletterError"></div>
                 <form id="newsletterForm" action="#" method="POST" class="me-4 mb-3 mb-md-0">

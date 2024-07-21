@@ -29,7 +29,7 @@
                         </a>
                     </li>
 
-                    <li class="nav-group-label">Site Configuration</li>
+                    <li class="nav-group-label">Features</li>
 
                     <li class="nav-parent">
                         <a class="nav-link" href="#">
@@ -39,7 +39,7 @@
                         <ul class="nav nav-children">
                             <li class="nav-parent">
                                 <a class="nav-link" href="{{ route('contact-us') }}">
-                                    - Contact Us Summary <span class="mega-sub-nav-toggle toggled float-end"
+                                    > Contact Us Summary <span class="mega-sub-nav-toggle toggled float-end"
                                         data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                 </a>
                             </li>

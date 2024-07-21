@@ -1,4 +1,4 @@
-@extends('website.layouts.main')
+<!-- @extends('website.layouts.main')
 
 @section('title')
     Consultation
@@ -139,4 +139,4 @@
 
     </div>
     </section>
-@endsection
+@endsection -->

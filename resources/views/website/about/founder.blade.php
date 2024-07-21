@@ -59,14 +59,15 @@
 
             </div>
         </div>
-<hr>
+        <hr>
         <div class="row mt-2">
             <div class="col">
 
 
                 <img class="float-start img-fluid" width="450" height="11"
-                    src="{{ asset('img/layout-stylescoo.png') }}" alt="Lordy Emmen">
-                <p style="text-align: justify"><strong>Agyegewe Chanayireh co Founder and COO</strong>Agyegewe Chanayireh is the co founder and Chief Operations Officer of TGR Africa. He also helped
+                    src="{{ asset('img/layout-stylescoo.png') }}" alt="Agyegewe Chanayireh">
+                <p style="text-align: justify"><strong>Agyegewe Chanayireh Co-Founder and COO</strong>Agyegewe Chanayireh is
+                    the co founder and Chief Operations Officer of TGR Africa. He also helped
                     co-write ` The Great Return` along side business partner <strong>Lordy Emmen.</strong>
                     Agyegewe`s interest in joining the
                     great return begun in his students days at the University of Manchester where he studied Modern Middle
@@ -85,9 +86,6 @@
                     products that can effectively channel diaspora capital into highly productive areas that will facilitate
                     further development of African economies.
                 </p>
-
-
-
             </div>
         </div>
 

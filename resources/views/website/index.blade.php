@@ -244,7 +244,7 @@
                         </div>
                         <div class="col-md-8 ps-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong
-                                    class="font-weight-extra-bold">Meet</strong> The Founder</h2>
+                                    class="font-weight-extra-bold">Meet</strong> The Founders</h2>
                             <p class="lead">Lordy Emmen is a diaspora entrepreneur, diaspora activist and author of `The
                                 Great Return`.</p>
 
@@ -295,78 +295,43 @@
 
                 <div class="text-center">
                     <div class="col">
-                        <h2 class="font-weight-normal text-6 mt-4">Our <strong
-                                class="font-weight-extra-bold">News</strong></h2>
+                        <h2 class="font-weight-normal text-6 mt-4">Latest <strong
+                                class="font-weight-extra-bold">Blog</strong></h2>
                     </div>
                 </div>
-                <div class="col-sm-8 col-md-4 mb-4 mb-md-0">
-                    <article>
-                        <div class="row">
-                            <div class="col">
-                                <a href="blog-post.html" class="text-decoration-none">
-                                    <img src="{{ asset('img/blog/blog-corporate-9-1.jpg') }}"
-                                        class="img-fluid hover-effect-2 mb-3" alt="" />
-                                </a>
+                <?php
+                use App\Models\Blog;
+                $latest_blogs = Blog::latest()->paginate(4);
+                ?>
+                <div class="blog-posts">
+                    <div class="row">
+                        @foreach ($latest_blogs as $blog)
+                            <div class="col-md-4 col-lg-3">
+                                <article class="post post-medium border-0 pb-0 mb-5">
+                                    {{-- <div class="post-image">
+                                        <a href="{{ route('newssingle', $blog->uuid) }}">
+                                            <img src="{{ asset('img/blog/medium/' . $blog->image) }}"
+                                                class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                alt="{{ $blog->title }}" />
+                                        </a>
+                                    </div> --}}
+
+                                    <div class="post-content">
+                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2">
+                                            <a href="{{ route('newssingle', $blog->uuid) }}">{{ $blog->title }}</a>
+                                        </h2>
+                                        <p>{{ Str::limit($blog->content, 100, '...') }}</p>
+                                        <div class="post-meta">
+                                            <span class="d-block mt-2">
+                                                <a href="{{ route('newssingle', $blog->uuid) }}"
+                                                    class="btn btn-xs btn-light text-1 text-uppercase">Read More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                {{-- <p class="text-color-secondary text-2 mb-1">LOREM IPSUM DOLOR SIT</p> --}}
-                                <h4 class="line-height-5 ls-0"><a href="blog-post.html"
-                                        class="text-dark text-decoration-none">News 1</a></h4>
-                                <p class="text-color-dark opacity-7 mb-3">Lorem ipsum dolor sit amet, coctetur adipiscing
-                                    elit.</p>
-                                <a href="#" class="read-more text-color-secondary font-weight-semibold text-2">VIEW
-                                    MORE <i class="fas fa-chevron-right text-3 ms-2"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-8 col-md-4 mb-4 mb-md-0">
-                    <article>
-                        <div class="row">
-                            <div class="col">
-                                <a href="blog-post.html" class="text-decoration-none">
-                                    <img src="{{ asset('img/blog/blog-corporate-9-2.jpg') }}"
-                                        class="img-fluid hover-effect-2 mb-3" alt="" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                {{-- <p class="text-color-secondary text-2 mb-1">LOREM IPSUM DOLOR SIT</p> --}}
-                                <h4 class="line-height-5 ls-0"><a href="blog-post.html"
-                                        class="text-dark text-decoration-none">News 2</a></h4>
-                                <p class="text-color-dark opacity-7 mb-3">Lorem ipsum dolor sit amet, coctetur adipiscing
-                                    elit.</p>
-                                <a href="#" class="read-more text-color-secondary font-weight-semibold text-2">VIEW
-                                    MORE <i class="fas fa-chevron-right text-3 ms-2"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-8 col-md-4">
-                    <article>
-                        <div class="row">
-                            <div class="col">
-                                <a href="blog-post.html" class="text-decoration-none">
-                                    <img src="{{ asset('img/blog/blog-corporate-9-3.jpg') }}"
-                                        class="img-fluid hover-effect-2 mb-3" alt="" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                {{-- <p class="text-color-secondary text-2 mb-1">LOREM IPSUM DOLOR SIT</p> --}}
-                                <h4 class="line-height-5 ls-0"><a href="blog-post.html"
-                                        class="text-dark text-decoration-none">News 3</a></h4>
-                                <p class="text-color-dark opacity-7 mb-3">Lorem ipsum dolor sit amet, coctetur adipiscing
-                                    elit.</p>
-                                <a href="#" class="read-more text-color-secondary font-weight-semibold text-2">VIEW
-                                    MORE <i class="fas fa-chevron-right text-3 ms-2"></i></a>
-                            </div>
-                        </div>
-                    </article>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
     </header>
 
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-4">
             <section class="card">
                 <header class="card-header">
                     <h2 class="card-title">Website Visitors</h2>
