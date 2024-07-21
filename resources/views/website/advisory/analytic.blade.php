@@ -54,11 +54,12 @@
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
                     <blockquote>
-                        <p class="mb-0">If you are interested in knowing more about TGR Analytics, please contact one of
-                            our experts</p>
+                        <p class="mb-0">If you would like more information on TGR Analytics, please book a consultation to
+                            speak to one of our advisors
+                        </p>
                         <hr>
                         <a href="{{ route('contact') }}"
-                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Click Here</a>
+                            class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book a Consultation</a>
 
                     </blockquote>
                 </div>
