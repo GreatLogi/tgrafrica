@@ -54,7 +54,7 @@
                             advisor.</p>
 
                         <hr>
-                        <a href="{{ route('contact') }}"
+                        <a href="{{ route('register-user') }}"
                             class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Subscribe Now</a>
 
                     </blockquote>
