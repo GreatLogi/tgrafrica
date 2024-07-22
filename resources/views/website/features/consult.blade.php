@@ -5,6 +5,9 @@
 @endsection
 
 @section('content')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
         style="background-image: url({{ asset('img/page-header/bc-green.jpg') }});">
@@ -37,17 +40,20 @@
                         data-appear-animation-delay="400">We understand that we`re all at different stages of our great
                         return journey. We want to provide you with all the necessary support along your journey to the best
                         of our ability. We believe that success for those of us who have chosen to join the great return
-                        will all depend on the quality of our transition preparation. We take transition preparation very
+                        will all depend on the quality of our transition preparation.We take transition preparation very
                         seriously and our goal is to ensure that we can provide you with all the necessary assistance you
                         may need.</p>
+
+
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
                     <blockquote>
-                        <p class="mb-0">To Book a Consultation, we would like you to answer some few questionnaire in the
-                            next page. This will take about 2 minutes of your time. Please click the button below to proceed
+                        <p class="mb-0">Please complete the questionnaire by clicking on thr button,book a free
+                            consultation to
+                            discuss your TGR needs with one of our advisors.
                         </p>
                         <hr>
                         @if (session('success'))
@@ -95,10 +101,10 @@
                                             </li>
                                             <li>
                                                 Giving you advice on which advisory services will best suit your needs
-                                                giving your current circumstance
+                                                giving your current circumstance.
                                             </li>
                                             <li>
-                                                Providing clarification about our advisory process, fees and expectations.
+                                                Provide clarification about our advisory process, fees and expectations.
                                             </li>
                                             <li>
                                                 Sign post you to relevant agencies and organisations who are part of the
@@ -124,9 +130,7 @@
                                             that caters to your unique circumstances and needs, you will first need to
                                             complete a short questionnaire which is designed to evaluate how ready you are
                                             to join the great return.</p>
-                                        <p> Please complete the questionnaire below in order to book a free consultation to
-                                            discuss your TGR needs with one of our advisors
-                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -175,646 +179,787 @@
                             <div class="row">
                                 <div class="form-group col-sm-6 mb-3">
                                     <label class="form-label mb-1 text-2">Country Of Residence</label>
+
                                     <select class="form-control text-3 h-auto py-2" name="country_of_residence">
                                         <option value="" disabled
                                             {{ old('country_of_residence') ? '' : 'selected' }}>
-                                            Select your country</option>
+                                            Select your country
+                                        </option>
                                         <option value="Afghanistan"
                                             {{ old('country_of_residence') == 'Afghanistan' ? 'selected' : '' }}>
-                                            Afghanistan
+                                            Afghanistan (+93)
                                         </option>
                                         <option value="Albania"
-                                            {{ old('country_of_residence') == 'Albania' ? 'selected' : '' }}>Albania
+                                            {{ old('country_of_residence') == 'Albania' ? 'selected' : '' }}>
+                                            Albania (+355)
                                         </option>
                                         <option value="Algeria"
-                                            {{ old('country_of_residence') == 'Algeria' ? 'selected' : '' }}>Algeria
+                                            {{ old('country_of_residence') == 'Algeria' ? 'selected' : '' }}>
+                                            Algeria (+213)
                                         </option>
                                         <option value="Andorra"
-                                            {{ old('country_of_residence') == 'Andorra' ? 'selected' : '' }}>Andorra
+                                            {{ old('country_of_residence') == 'Andorra' ? 'selected' : '' }}>
+                                            Andorra (+376)
                                         </option>
                                         <option value="Angola"
                                             {{ old('country_of_residence') == 'Angola' ? 'selected' : '' }}>
-                                            Angola</option>
+                                            Angola (+244)
+                                        </option>
                                         <option value="Antigua and Barbuda"
                                             {{ old('country_of_residence') == 'Antigua and Barbuda' ? 'selected' : '' }}>
-                                            Antigua and Barbuda</option>
+                                            Antigua and Barbuda (+1-268)
+                                        </option>
                                         <option value="Argentina"
                                             {{ old('country_of_residence') == 'Argentina' ? 'selected' : '' }}>
-                                            Argentina
+                                            Argentina (+54)
                                         </option>
                                         <option value="Armenia"
-                                            {{ old('country_of_residence') == 'Armenia' ? 'selected' : '' }}>Armenia
+                                            {{ old('country_of_residence') == 'Armenia' ? 'selected' : '' }}>
+                                            Armenia (+374)
                                         </option>
                                         <option value="Australia"
                                             {{ old('country_of_residence') == 'Australia' ? 'selected' : '' }}>
-                                            Australia
+                                            Australia (+61)
                                         </option>
                                         <option value="Austria"
-                                            {{ old('country_of_residence') == 'Austria' ? 'selected' : '' }}>Austria
+                                            {{ old('country_of_residence') == 'Austria' ? 'selected' : '' }}>
+                                            Austria (+43)
                                         </option>
                                         <option value="Azerbaijan"
                                             {{ old('country_of_residence') == 'Azerbaijan' ? 'selected' : '' }}>
-                                            Azerbaijan
+                                            Azerbaijan (+994)
                                         </option>
                                         <option value="Bahamas"
-                                            {{ old('country_of_residence') == 'Bahamas' ? 'selected' : '' }}>Bahamas
+                                            {{ old('country_of_residence') == 'Bahamas' ? 'selected' : '' }}>
+                                            Bahamas (+1-242)
                                         </option>
                                         <option value="Bahrain"
-                                            {{ old('country_of_residence') == 'Bahrain' ? 'selected' : '' }}>Bahrain
+                                            {{ old('country_of_residence') == 'Bahrain' ? 'selected' : '' }}>
+                                            Bahrain (+973)
                                         </option>
                                         <option value="Bangladesh"
                                             {{ old('country_of_residence') == 'Bangladesh' ? 'selected' : '' }}>
-                                            Bangladesh
+                                            Bangladesh (+880)
                                         </option>
                                         <option value="Barbados"
-                                            {{ old('country_of_residence') == 'Barbados' ? 'selected' : '' }}>Barbados
+                                            {{ old('country_of_residence') == 'Barbados' ? 'selected' : '' }}>
+                                            Barbados (+1-246)
                                         </option>
                                         <option value="Belarus"
-                                            {{ old('country_of_residence') == 'Belarus' ? 'selected' : '' }}>Belarus
+                                            {{ old('country_of_residence') == 'Belarus' ? 'selected' : '' }}>
+                                            Belarus (+375)
                                         </option>
                                         <option value="Belgium"
-                                            {{ old('country_of_residence') == 'Belgium' ? 'selected' : '' }}>Belgium
+                                            {{ old('country_of_residence') == 'Belgium' ? 'selected' : '' }}>
+                                            Belgium (+32)
                                         </option>
                                         <option value="Belize"
                                             {{ old('country_of_residence') == 'Belize' ? 'selected' : '' }}>
-                                            Belize</option>
+                                            Belize (+501)
+                                        </option>
                                         <option value="Benin"
                                             {{ old('country_of_residence') == 'Benin' ? 'selected' : '' }}>
-                                            Benin</option>
+                                            Benin (+229)
+                                        </option>
                                         <option value="Bhutan"
                                             {{ old('country_of_residence') == 'Bhutan' ? 'selected' : '' }}>
-                                            Bhutan</option>
+                                            Bhutan (+975)
+                                        </option>
                                         <option value="Bolivia"
-                                            {{ old('country_of_residence') == 'Bolivia' ? 'selected' : '' }}>Bolivia
+                                            {{ old('country_of_residence') == 'Bolivia' ? 'selected' : '' }}>
+                                            Bolivia (+591)
                                         </option>
                                         <option value="Bosnia and Herzegovina"
                                             {{ old('country_of_residence') == 'Bosnia and Herzegovina' ? 'selected' : '' }}>
-                                            Bosnia and Herzegovina</option>
+                                            Bosnia and Herzegovina (+387)
+                                        </option>
                                         <option value="Botswana"
-                                            {{ old('country_of_residence') == 'Botswana' ? 'selected' : '' }}>Botswana
+                                            {{ old('country_of_residence') == 'Botswana' ? 'selected' : '' }}>
+                                            Botswana (+267)
                                         </option>
                                         <option value="Brazil"
                                             {{ old('country_of_residence') == 'Brazil' ? 'selected' : '' }}>
-                                            Brazil</option>
+                                            Brazil (+55)
+                                        </option>
                                         <option value="Brunei"
                                             {{ old('country_of_residence') == 'Brunei' ? 'selected' : '' }}>
-                                            Brunei</option>
+                                            Brunei (+673)
+                                        </option>
                                         <option value="Bulgaria"
-                                            {{ old('country_of_residence') == 'Bulgaria' ? 'selected' : '' }}>Bulgaria
+                                            {{ old('country_of_residence') == 'Bulgaria' ? 'selected' : '' }}>
+                                            Bulgaria (+359)
                                         </option>
                                         <option value="Burkina Faso"
                                             {{ old('country_of_residence') == 'Burkina Faso' ? 'selected' : '' }}>
-                                            Burkina Faso
+                                            Burkina Faso (+226)
                                         </option>
                                         <option value="Burundi"
-                                            {{ old('country_of_residence') == 'Burundi' ? 'selected' : '' }}>Burundi
-                                        </option>
-                                        <option value="Cabo Verde"
-                                            {{ old('country_of_residence') == 'Cabo Verde' ? 'selected' : '' }}>Cabo
-                                            Verde
+                                            {{ old('country_of_residence') == 'Burundi' ? 'selected' : '' }}>
+                                            Burundi (+257)
                                         </option>
                                         <option value="Cambodia"
-                                            {{ old('country_of_residence') == 'Cambodia' ? 'selected' : '' }}>Cambodia
+                                            {{ old('country_of_residence') == 'Cambodia' ? 'selected' : '' }}>
+                                            Cambodia (+855)
                                         </option>
                                         <option value="Cameroon"
-                                            {{ old('country_of_residence') == 'Cameroon' ? 'selected' : '' }}>Cameroon
+                                            {{ old('country_of_residence') == 'Cameroon' ? 'selected' : '' }}>
+                                            Cameroon (+237)
                                         </option>
                                         <option value="Canada"
                                             {{ old('country_of_residence') == 'Canada' ? 'selected' : '' }}>
-                                            Canada</option>
+                                            Canada (+1)
+                                        </option>
+                                        <option value="Cape Verde"
+                                            {{ old('country_of_residence') == 'Cape Verde' ? 'selected' : '' }}>
+                                            Cape Verde (+238)
+                                        </option>
                                         <option value="Central African Republic"
                                             {{ old('country_of_residence') == 'Central African Republic' ? 'selected' : '' }}>
-                                            Central African Republic</option>
+                                            Central African Republic (+236)
+                                        </option>
                                         <option value="Chad"
                                             {{ old('country_of_residence') == 'Chad' ? 'selected' : '' }}>
-                                            Chad</option>
+                                            Chad (+235)
+                                        </option>
                                         <option value="Chile"
                                             {{ old('country_of_residence') == 'Chile' ? 'selected' : '' }}>
-                                            Chile</option>
+                                            Chile (+56)
+                                        </option>
                                         <option value="China"
                                             {{ old('country_of_residence') == 'China' ? 'selected' : '' }}>
-                                            China</option>
+                                            China (+86)
+                                        </option>
                                         <option value="Colombia"
-                                            {{ old('country_of_residence') == 'Colombia' ? 'selected' : '' }}>Colombia
+                                            {{ old('country_of_residence') == 'Colombia' ? 'selected' : '' }}>
+                                            Colombia (+57)
                                         </option>
                                         <option value="Comoros"
-                                            {{ old('country_of_residence') == 'Comoros' ? 'selected' : '' }}>Comoros
+                                            {{ old('country_of_residence') == 'Comoros' ? 'selected' : '' }}>
+                                            Comoros (+269)
                                         </option>
-                                        <option value="Congo (Congo-Brazzaville)"
-                                            {{ old('country_of_residence') == 'Congo (Congo-Brazzaville)' ? 'selected' : '' }}>
-                                            Congo (Congo-Brazzaville)</option>
+                                        <option value="Congo"
+                                            {{ old('country_of_residence') == 'Congo' ? 'selected' : '' }}>
+                                            Congo (+242)
+                                        </option>
                                         <option value="Costa Rica"
-                                            {{ old('country_of_residence') == 'Costa Rica' ? 'selected' : '' }}>Costa
-                                            Rica
+                                            {{ old('country_of_residence') == 'Costa Rica' ? 'selected' : '' }}>
+                                            Costa Rica (+506)
                                         </option>
                                         <option value="Croatia"
-                                            {{ old('country_of_residence') == 'Croatia' ? 'selected' : '' }}>Croatia
+                                            {{ old('country_of_residence') == 'Croatia' ? 'selected' : '' }}>
+                                            Croatia (+385)
                                         </option>
                                         <option value="Cuba"
                                             {{ old('country_of_residence') == 'Cuba' ? 'selected' : '' }}>
-                                            Cuba</option>
+                                            Cuba (+53)
+                                        </option>
                                         <option value="Cyprus"
                                             {{ old('country_of_residence') == 'Cyprus' ? 'selected' : '' }}>
-                                            Cyprus</option>
-                                        <option value="Czechia (Czech Republic)"
-                                            {{ old('country_of_residence') == 'Czechia (Czech Republic)' ? 'selected' : '' }}>
-                                            Czechia (Czech Republic)</option>
-                                        <option value="Democratic Republic of the Congo"
-                                            {{ old('country_of_residence') == 'Democratic Republic of the Congo' ? 'selected' : '' }}>
-                                            Democratic Republic of the Congo</option>
+                                            Cyprus (+357)
+                                        </option>
+                                        <option value="Czech Republic"
+                                            {{ old('country_of_residence') == 'Czech Republic' ? 'selected' : '' }}>
+                                            Czech Republic (+420)
+                                        </option>
                                         <option value="Denmark"
-                                            {{ old('country_of_residence') == 'Denmark' ? 'selected' : '' }}>Denmark
+                                            {{ old('country_of_residence') == 'Denmark' ? 'selected' : '' }}>
+                                            Denmark (+45)
                                         </option>
                                         <option value="Djibouti"
-                                            {{ old('country_of_residence') == 'Djibouti' ? 'selected' : '' }}>Djibouti
+                                            {{ old('country_of_residence') == 'Djibouti' ? 'selected' : '' }}>
+                                            Djibouti (+253)
                                         </option>
                                         <option value="Dominica"
-                                            {{ old('country_of_residence') == 'Dominica' ? 'selected' : '' }}>Dominica
+                                            {{ old('country_of_residence') == 'Dominica' ? 'selected' : '' }}>
+                                            Dominica (+1-767)
                                         </option>
                                         <option value="Dominican Republic"
                                             {{ old('country_of_residence') == 'Dominican Republic' ? 'selected' : '' }}>
-                                            Dominican Republic</option>
+                                            Dominican Republic (+1-809)
+                                        </option>
                                         <option value="Ecuador"
-                                            {{ old('country_of_residence') == 'Ecuador' ? 'selected' : '' }}>Ecuador
+                                            {{ old('country_of_residence') == 'Ecuador' ? 'selected' : '' }}>
+                                            Ecuador (+593)
                                         </option>
                                         <option value="Egypt"
                                             {{ old('country_of_residence') == 'Egypt' ? 'selected' : '' }}>
-                                            Egypt</option>
+                                            Egypt (+20)
+                                        </option>
                                         <option value="El Salvador"
-                                            {{ old('country_of_residence') == 'El Salvador' ? 'selected' : '' }}>El
-                                            Salvador
+                                            {{ old('country_of_residence') == 'El Salvador' ? 'selected' : '' }}>
+                                            El Salvador (+503)
                                         </option>
                                         <option value="Equatorial Guinea"
                                             {{ old('country_of_residence') == 'Equatorial Guinea' ? 'selected' : '' }}>
-                                            Equatorial Guinea</option>
+                                            Equatorial Guinea (+240)
+                                        </option>
                                         <option value="Eritrea"
-                                            {{ old('country_of_residence') == 'Eritrea' ? 'selected' : '' }}>Eritrea
+                                            {{ old('country_of_residence') == 'Eritrea' ? 'selected' : '' }}>
+                                            Eritrea (+291)
                                         </option>
                                         <option value="Estonia"
-                                            {{ old('country_of_residence') == 'Estonia' ? 'selected' : '' }}>Estonia
+                                            {{ old('country_of_residence') == 'Estonia' ? 'selected' : '' }}>
+                                            Estonia (+372)
                                         </option>
-                                        <option value="Eswatini (fmr. Swaziland)"
-                                            {{ old('country_of_residence') == 'Eswatini (fmr. Swaziland)' ? 'selected' : '' }}>
-                                            Eswatini (fmr. Swaziland)</option>
+                                        <option value="Eswatini"
+                                            {{ old('country_of_residence') == 'Eswatini' ? 'selected' : '' }}>
+                                            Eswatini (+268)
+                                        </option>
                                         <option value="Ethiopia"
-                                            {{ old('country_of_residence') == 'Ethiopia' ? 'selected' : '' }}>Ethiopia
+                                            {{ old('country_of_residence') == 'Ethiopia' ? 'selected' : '' }}>
+                                            Ethiopia (+251)
                                         </option>
                                         <option value="Fiji"
                                             {{ old('country_of_residence') == 'Fiji' ? 'selected' : '' }}>
-                                            Fiji</option>
+                                            Fiji (+679)
+                                        </option>
                                         <option value="Finland"
-                                            {{ old('country_of_residence') == 'Finland' ? 'selected' : '' }}>Finland
+                                            {{ old('country_of_residence') == 'Finland' ? 'selected' : '' }}>
+                                            Finland (+358)
                                         </option>
                                         <option value="France"
-                                            {{ old('country_of_residence') == 'France' ? 'selected' : '' }}>France
+                                            {{ old('country_of_residence') == 'France' ? 'selected' : '' }}>
+                                            France (+33)
                                         </option>
                                         <option value="Gabon"
                                             {{ old('country_of_residence') == 'Gabon' ? 'selected' : '' }}>
-                                            Gabon</option>
+                                            Gabon (+241)
+                                        </option>
                                         <option value="Gambia"
-                                            {{ old('country_of_residence') == 'Gambia' ? 'selected' : '' }}>Gambia
+                                            {{ old('country_of_residence') == 'Gambia' ? 'selected' : '' }}>
+                                            Gambia (+220)
                                         </option>
                                         <option value="Georgia"
-                                            {{ old('country_of_residence') == 'Georgia' ? 'selected' : '' }}>Georgia
+                                            {{ old('country_of_residence') == 'Georgia' ? 'selected' : '' }}>
+                                            Georgia (+995)
                                         </option>
                                         <option value="Germany"
-                                            {{ old('country_of_residence') == 'Germany' ? 'selected' : '' }}>Germany
+                                            {{ old('country_of_residence') == 'Germany' ? 'selected' : '' }}>
+                                            Germany (+49)
                                         </option>
                                         <option value="Ghana"
                                             {{ old('country_of_residence') == 'Ghana' ? 'selected' : '' }}>
-                                            Ghana</option>
+                                            Ghana (+233)
+                                        </option>
                                         <option value="Greece"
-                                            {{ old('country_of_residence') == 'Greece' ? 'selected' : '' }}>Greece
+                                            {{ old('country_of_residence') == 'Greece' ? 'selected' : '' }}>
+                                            Greece (+30)
                                         </option>
                                         <option value="Grenada"
-                                            {{ old('country_of_residence') == 'Grenada' ? 'selected' : '' }}>Grenada
+                                            {{ old('country_of_residence') == 'Grenada' ? 'selected' : '' }}>
+                                            Grenada (+1-473)
                                         </option>
                                         <option value="Guatemala"
                                             {{ old('country_of_residence') == 'Guatemala' ? 'selected' : '' }}>
-                                            Guatemala
+                                            Guatemala (+502)
                                         </option>
                                         <option value="Guinea"
-                                            {{ old('country_of_residence') == 'Guinea' ? 'selected' : '' }}>Guinea
+                                            {{ old('country_of_residence') == 'Guinea' ? 'selected' : '' }}>
+                                            Guinea (+224)
                                         </option>
                                         <option value="Guinea-Bissau"
                                             {{ old('country_of_residence') == 'Guinea-Bissau' ? 'selected' : '' }}>
-                                            Guinea-Bissau</option>
+                                            Guinea-Bissau (+245)
+                                        </option>
                                         <option value="Guyana"
-                                            {{ old('country_of_residence') == 'Guyana' ? 'selected' : '' }}>Guyana
+                                            {{ old('country_of_residence') == 'Guyana' ? 'selected' : '' }}>
+                                            Guyana (+592)
                                         </option>
                                         <option value="Haiti"
                                             {{ old('country_of_residence') == 'Haiti' ? 'selected' : '' }}>
-                                            Haiti</option>
+                                            Haiti (+509)
+                                        </option>
                                         <option value="Honduras"
-                                            {{ old('country_of_residence') == 'Honduras' ? 'selected' : '' }}>Honduras
+                                            {{ old('country_of_residence') == 'Honduras' ? 'selected' : '' }}>
+                                            Honduras (+504)
                                         </option>
                                         <option value="Hungary"
-                                            {{ old('country_of_residence') == 'Hungary' ? 'selected' : '' }}>Hungary
+                                            {{ old('country_of_residence') == 'Hungary' ? 'selected' : '' }}>
+                                            Hungary (+36)
                                         </option>
                                         <option value="Iceland"
-                                            {{ old('country_of_residence') == 'Iceland' ? 'selected' : '' }}>Iceland
+                                            {{ old('country_of_residence') == 'Iceland' ? 'selected' : '' }}>
+                                            Iceland (+354)
                                         </option>
                                         <option value="India"
                                             {{ old('country_of_residence') == 'India' ? 'selected' : '' }}>
-                                            India</option>
+                                            India (+91)
+                                        </option>
                                         <option value="Indonesia"
                                             {{ old('country_of_residence') == 'Indonesia' ? 'selected' : '' }}>
-                                            Indonesia
+                                            Indonesia (+62)
                                         </option>
                                         <option value="Iran"
                                             {{ old('country_of_residence') == 'Iran' ? 'selected' : '' }}>
-                                            Iran</option>
+                                            Iran (+98)
+                                        </option>
                                         <option value="Iraq"
                                             {{ old('country_of_residence') == 'Iraq' ? 'selected' : '' }}>
-                                            Iraq</option>
+                                            Iraq (+964)
+                                        </option>
                                         <option value="Ireland"
-                                            {{ old('country_of_residence') == 'Ireland' ? 'selected' : '' }}>Ireland
+                                            {{ old('country_of_residence') == 'Ireland' ? 'selected' : '' }}>
+                                            Ireland (+353)
                                         </option>
                                         <option value="Israel"
-                                            {{ old('country_of_residence') == 'Israel' ? 'selected' : '' }}>Israel
+                                            {{ old('country_of_residence') == 'Israel' ? 'selected' : '' }}>
+                                            Israel (+972)
                                         </option>
                                         <option value="Italy"
                                             {{ old('country_of_residence') == 'Italy' ? 'selected' : '' }}>
-                                            Italy</option>
+                                            Italy (+39)
+                                        </option>
                                         <option value="Jamaica"
-                                            {{ old('country_of_residence') == 'Jamaica' ? 'selected' : '' }}>Jamaica
+                                            {{ old('country_of_residence') == 'Jamaica' ? 'selected' : '' }}>
+                                            Jamaica (+1-876)
                                         </option>
                                         <option value="Japan"
                                             {{ old('country_of_residence') == 'Japan' ? 'selected' : '' }}>
-                                            Japan</option>
+                                            Japan (+81)
+                                        </option>
                                         <option value="Jordan"
-                                            {{ old('country_of_residence') == 'Jordan' ? 'selected' : '' }}>Jordan
+                                            {{ old('country_of_residence') == 'Jordan' ? 'selected' : '' }}>
+                                            Jordan (+962)
                                         </option>
                                         <option value="Kazakhstan"
                                             {{ old('country_of_residence') == 'Kazakhstan' ? 'selected' : '' }}>
-                                            Kazakhstan
+                                            Kazakhstan (+7)
                                         </option>
                                         <option value="Kenya"
                                             {{ old('country_of_residence') == 'Kenya' ? 'selected' : '' }}>
-                                            Kenya</option>
+                                            Kenya (+254)
+                                        </option>
                                         <option value="Kiribati"
-                                            {{ old('country_of_residence') == 'Kiribati' ? 'selected' : '' }}>Kiribati
+                                            {{ old('country_of_residence') == 'Kiribati' ? 'selected' : '' }}>
+                                            Kiribati (+686)
+                                        </option>
+                                        <option value="Korea, North"
+                                            {{ old('country_of_residence') == 'Korea, North' ? 'selected' : '' }}>
+                                            Korea, North (+850)
+                                        </option>
+                                        <option value="Korea, South"
+                                            {{ old('country_of_residence') == 'Korea, South' ? 'selected' : '' }}>
+                                            Korea, South (+82)
+                                        </option>
+                                        <option value="Kosovo"
+                                            {{ old('country_of_residence') == 'Kosovo' ? 'selected' : '' }}>
+                                            Kosovo (+383)
                                         </option>
                                         <option value="Kuwait"
-                                            {{ old('country_of_residence') == 'Kuwait' ? 'selected' : '' }}>Kuwait
+                                            {{ old('country_of_residence') == 'Kuwait' ? 'selected' : '' }}>
+                                            Kuwait (+965)
                                         </option>
                                         <option value="Kyrgyzstan"
                                             {{ old('country_of_residence') == 'Kyrgyzstan' ? 'selected' : '' }}>
-                                            Kyrgyzstan
+                                            Kyrgyzstan (+996)
                                         </option>
                                         <option value="Laos"
                                             {{ old('country_of_residence') == 'Laos' ? 'selected' : '' }}>
-                                            Laos</option>
+                                            Laos (+856)
+                                        </option>
                                         <option value="Latvia"
-                                            {{ old('country_of_residence') == 'Latvia' ? 'selected' : '' }}>Latvia
+                                            {{ old('country_of_residence') == 'Latvia' ? 'selected' : '' }}>
+                                            Latvia (+371)
                                         </option>
                                         <option value="Lebanon"
-                                            {{ old('country_of_residence') == 'Lebanon' ? 'selected' : '' }}>Lebanon
+                                            {{ old('country_of_residence') == 'Lebanon' ? 'selected' : '' }}>
+                                            Lebanon (+961)
                                         </option>
                                         <option value="Lesotho"
-                                            {{ old('country_of_residence') == 'Lesotho' ? 'selected' : '' }}>Lesotho
+                                            {{ old('country_of_residence') == 'Lesotho' ? 'selected' : '' }}>
+                                            Lesotho (+266)
                                         </option>
                                         <option value="Liberia"
-                                            {{ old('country_of_residence') == 'Liberia' ? 'selected' : '' }}>Liberia
+                                            {{ old('country_of_residence') == 'Liberia' ? 'selected' : '' }}>
+                                            Liberia (+231)
                                         </option>
                                         <option value="Libya"
-                                            {{ old('country_of_residence') == 'Libya' ? 'selected' : '' }}>Libya
+                                            {{ old('country_of_residence') == 'Libya' ? 'selected' : '' }}>
+                                            Libya (+218)
                                         </option>
                                         <option value="Liechtenstein"
                                             {{ old('country_of_residence') == 'Liechtenstein' ? 'selected' : '' }}>
-                                            Liechtenstein</option>
+                                            Liechtenstein (+423)
+                                        </option>
                                         <option value="Lithuania"
                                             {{ old('country_of_residence') == 'Lithuania' ? 'selected' : '' }}>
-                                            Lithuania
+                                            Lithuania (+370)
                                         </option>
                                         <option value="Luxembourg"
                                             {{ old('country_of_residence') == 'Luxembourg' ? 'selected' : '' }}>
-                                            Luxembourg
+                                            Luxembourg (+352)
                                         </option>
                                         <option value="Madagascar"
                                             {{ old('country_of_residence') == 'Madagascar' ? 'selected' : '' }}>
-                                            Madagascar
+                                            Madagascar (+261)
                                         </option>
                                         <option value="Malawi"
-                                            {{ old('country_of_residence') == 'Malawi' ? 'selected' : '' }}>Malawi
+                                            {{ old('country_of_residence') == 'Malawi' ? 'selected' : '' }}>
+                                            Malawi (+265)
                                         </option>
                                         <option value="Malaysia"
-                                            {{ old('country_of_residence') == 'Malaysia' ? 'selected' : '' }}>Malaysia
+                                            {{ old('country_of_residence') == 'Malaysia' ? 'selected' : '' }}>
+                                            Malaysia (+60)
                                         </option>
                                         <option value="Maldives"
-                                            {{ old('country_of_residence') == 'Maldives' ? 'selected' : '' }}>Maldives
+                                            {{ old('country_of_residence') == 'Maldives' ? 'selected' : '' }}>
+                                            Maldives (+960)
                                         </option>
                                         <option value="Mali"
                                             {{ old('country_of_residence') == 'Mali' ? 'selected' : '' }}>
-                                            Mali</option>
+                                            Mali (+223)
+                                        </option>
                                         <option value="Malta"
-                                            {{ old('country_of_residence') == 'Malta' ? 'selected' : '' }}>Malta
+                                            {{ old('country_of_residence') == 'Malta' ? 'selected' : '' }}>
+                                            Malta (+356)
                                         </option>
                                         <option value="Marshall Islands"
                                             {{ old('country_of_residence') == 'Marshall Islands' ? 'selected' : '' }}>
-                                            Marshall
-                                            Islands</option>
+                                            Marshall Islands (+692)
+                                        </option>
                                         <option value="Mauritania"
                                             {{ old('country_of_residence') == 'Mauritania' ? 'selected' : '' }}>
-                                            Mauritania
+                                            Mauritania (+222)
                                         </option>
                                         <option value="Mauritius"
                                             {{ old('country_of_residence') == 'Mauritius' ? 'selected' : '' }}>
-                                            Mauritius
+                                            Mauritius (+230)
                                         </option>
                                         <option value="Mexico"
-                                            {{ old('country_of_residence') == 'Mexico' ? 'selected' : '' }}>Mexico
+                                            {{ old('country_of_residence') == 'Mexico' ? 'selected' : '' }}>
+                                            Mexico (+52)
                                         </option>
                                         <option value="Micronesia"
                                             {{ old('country_of_residence') == 'Micronesia' ? 'selected' : '' }}>
-                                            Micronesia
+                                            Micronesia (+691)
                                         </option>
                                         <option value="Moldova"
-                                            {{ old('country_of_residence') == 'Moldova' ? 'selected' : '' }}>Moldova
+                                            {{ old('country_of_residence') == 'Moldova' ? 'selected' : '' }}>
+                                            Moldova (+373)
                                         </option>
                                         <option value="Monaco"
-                                            {{ old('country_of_residence') == 'Monaco' ? 'selected' : '' }}>Monaco
+                                            {{ old('country_of_residence') == 'Monaco' ? 'selected' : '' }}>
+                                            Monaco (+377)
                                         </option>
                                         <option value="Mongolia"
-                                            {{ old('country_of_residence') == 'Mongolia' ? 'selected' : '' }}>Mongolia
+                                            {{ old('country_of_residence') == 'Mongolia' ? 'selected' : '' }}>
+                                            Mongolia (+976)
                                         </option>
                                         <option value="Montenegro"
                                             {{ old('country_of_residence') == 'Montenegro' ? 'selected' : '' }}>
-                                            Montenegro
+                                            Montenegro (+382)
                                         </option>
                                         <option value="Morocco"
-                                            {{ old('country_of_residence') == 'Morocco' ? 'selected' : '' }}>Morocco
+                                            {{ old('country_of_residence') == 'Morocco' ? 'selected' : '' }}>
+                                            Morocco (+212)
                                         </option>
                                         <option value="Mozambique"
                                             {{ old('country_of_residence') == 'Mozambique' ? 'selected' : '' }}>
-                                            Mozambique
+                                            Mozambique (+258)
                                         </option>
-                                        <option value="Myanmar (Burma)"
-                                            {{ old('country_of_residence') == 'Myanmar (Burma)' ? 'selected' : '' }}>
-                                            Myanmar
-                                            (Burma)</option>
+                                        <option value="Myanmar"
+                                            {{ old('country_of_residence') == 'Myanmar' ? 'selected' : '' }}>
+                                            Myanmar (+95)
+                                        </option>
                                         <option value="Namibia"
-                                            {{ old('country_of_residence') == 'Namibia' ? 'selected' : '' }}>Namibia
+                                            {{ old('country_of_residence') == 'Namibia' ? 'selected' : '' }}>
+                                            Namibia (+264)
                                         </option>
                                         <option value="Nauru"
-                                            {{ old('country_of_residence') == 'Nauru' ? 'selected' : '' }}>Nauru
+                                            {{ old('country_of_residence') == 'Nauru' ? 'selected' : '' }}>
+                                            Nauru (+674)
                                         </option>
                                         <option value="Nepal"
-                                            {{ old('country_of_residence') == 'Nepal' ? 'selected' : '' }}>Nepal
+                                            {{ old('country_of_residence') == 'Nepal' ? 'selected' : '' }}>
+                                            Nepal (+977)
                                         </option>
                                         <option value="Netherlands"
                                             {{ old('country_of_residence') == 'Netherlands' ? 'selected' : '' }}>
-                                            Netherlands
+                                            Netherlands (+31)
                                         </option>
                                         <option value="New Zealand"
-                                            {{ old('country_of_residence') == 'New Zealand' ? 'selected' : '' }}>New
-                                            Zealand
+                                            {{ old('country_of_residence') == 'New Zealand' ? 'selected' : '' }}>
+                                            New Zealand (+64)
                                         </option>
                                         <option value="Nicaragua"
                                             {{ old('country_of_residence') == 'Nicaragua' ? 'selected' : '' }}>
-                                            Nicaragua
+                                            Nicaragua (+505)
                                         </option>
                                         <option value="Niger"
-                                            {{ old('country_of_residence') == 'Niger' ? 'selected' : '' }}>Niger
+                                            {{ old('country_of_residence') == 'Niger' ? 'selected' : '' }}>
+                                            Niger (+227)
                                         </option>
                                         <option value="Nigeria"
-                                            {{ old('country_of_residence') == 'Nigeria' ? 'selected' : '' }}>Nigeria
-                                        </option>
-                                        <option value="North Korea"
-                                            {{ old('country_of_residence') == 'North Korea' ? 'selected' : '' }}>North
-                                            Korea
+                                            {{ old('country_of_residence') == 'Nigeria' ? 'selected' : '' }}>
+                                            Nigeria (+234)
                                         </option>
                                         <option value="North Macedonia"
                                             {{ old('country_of_residence') == 'North Macedonia' ? 'selected' : '' }}>
-                                            North
-                                            Macedonia</option>
+                                            North Macedonia (+389)
+                                        </option>
                                         <option value="Norway"
-                                            {{ old('country_of_residence') == 'Norway' ? 'selected' : '' }}>Norway
+                                            {{ old('country_of_residence') == 'Norway' ? 'selected' : '' }}>
+                                            Norway (+47)
                                         </option>
                                         <option value="Oman"
                                             {{ old('country_of_residence') == 'Oman' ? 'selected' : '' }}>
-                                            Oman</option>
+                                            Oman (+968)
+                                        </option>
                                         <option value="Pakistan"
-                                            {{ old('country_of_residence') == 'Pakistan' ? 'selected' : '' }}>Pakistan
+                                            {{ old('country_of_residence') == 'Pakistan' ? 'selected' : '' }}>
+                                            Pakistan (+92)
                                         </option>
                                         <option value="Palau"
-                                            {{ old('country_of_residence') == 'Palau' ? 'selected' : '' }}>Palau
-                                        </option>
-                                        <option value="Palestine"
-                                            {{ old('country_of_residence') == 'Palestine' ? 'selected' : '' }}>
-                                            Palestine
+                                            {{ old('country_of_residence') == 'Palau' ? 'selected' : '' }}>
+                                            Palau (+680)
                                         </option>
                                         <option value="Panama"
-                                            {{ old('country_of_residence') == 'Panama' ? 'selected' : '' }}>Panama
+                                            {{ old('country_of_residence') == 'Panama' ? 'selected' : '' }}>
+                                            Panama (+507)
                                         </option>
                                         <option value="Papua New Guinea"
                                             {{ old('country_of_residence') == 'Papua New Guinea' ? 'selected' : '' }}>
-                                            Papua
-                                            New Guinea</option>
+                                            Papua New Guinea (+675)
+                                        </option>
                                         <option value="Paraguay"
-                                            {{ old('country_of_residence') == 'Paraguay' ? 'selected' : '' }}>Paraguay
+                                            {{ old('country_of_residence') == 'Paraguay' ? 'selected' : '' }}>
+                                            Paraguay (+595)
                                         </option>
                                         <option value="Peru"
                                             {{ old('country_of_residence') == 'Peru' ? 'selected' : '' }}>
-                                            Peru</option>
+                                            Peru (+51)
+                                        </option>
                                         <option value="Philippines"
                                             {{ old('country_of_residence') == 'Philippines' ? 'selected' : '' }}>
-                                            Philippines
+                                            Philippines (+63)
                                         </option>
                                         <option value="Poland"
-                                            {{ old('country_of_residence') == 'Poland' ? 'selected' : '' }}>Poland
+                                            {{ old('country_of_residence') == 'Poland' ? 'selected' : '' }}>
+                                            Poland (+48)
                                         </option>
                                         <option value="Portugal"
-                                            {{ old('country_of_residence') == 'Portugal' ? 'selected' : '' }}>Portugal
+                                            {{ old('country_of_residence') == 'Portugal' ? 'selected' : '' }}>
+                                            Portugal (+351)
                                         </option>
                                         <option value="Qatar"
-                                            {{ old('country_of_residence') == 'Qatar' ? 'selected' : '' }}>Qatar
+                                            {{ old('country_of_residence') == 'Qatar' ? 'selected' : '' }}>
+                                            Qatar (+974)
                                         </option>
                                         <option value="Romania"
-                                            {{ old('country_of_residence') == 'Romania' ? 'selected' : '' }}>Romania
+                                            {{ old('country_of_residence') == 'Romania' ? 'selected' : '' }}>
+                                            Romania (+40)
                                         </option>
                                         <option value="Russia"
-                                            {{ old('country_of_residence') == 'Russia' ? 'selected' : '' }}>Russia
+                                            {{ old('country_of_residence') == 'Russia' ? 'selected' : '' }}>
+                                            Russia (+7)
                                         </option>
                                         <option value="Rwanda"
-                                            {{ old('country_of_residence') == 'Rwanda' ? 'selected' : '' }}>Rwanda
+                                            {{ old('country_of_residence') == 'Rwanda' ? 'selected' : '' }}>
+                                            Rwanda (+250)
                                         </option>
                                         <option value="Saint Kitts and Nevis"
                                             {{ old('country_of_residence') == 'Saint Kitts and Nevis' ? 'selected' : '' }}>
-                                            Saint Kitts and Nevis</option>
+                                            Saint Kitts and Nevis (+1-869)
+                                        </option>
                                         <option value="Saint Lucia"
-                                            {{ old('country_of_residence') == 'Saint Lucia' ? 'selected' : '' }}>Saint
-                                            Lucia
+                                            {{ old('country_of_residence') == 'Saint Lucia' ? 'selected' : '' }}>
+                                            Saint Lucia (+1-758)
                                         </option>
                                         <option value="Saint Vincent and the Grenadines"
                                             {{ old('country_of_residence') == 'Saint Vincent and the Grenadines' ? 'selected' : '' }}>
-                                            Saint Vincent and the Grenadines</option>
+                                            Saint Vincent and the Grenadines (+1-784)
+                                        </option>
                                         <option value="Samoa"
-                                            {{ old('country_of_residence') == 'Samoa' ? 'selected' : '' }}>Samoa
+                                            {{ old('country_of_residence') == 'Samoa' ? 'selected' : '' }}>
+                                            Samoa (+685)
                                         </option>
                                         <option value="San Marino"
-                                            {{ old('country_of_residence') == 'San Marino' ? 'selected' : '' }}>San
-                                            Marino
+                                            {{ old('country_of_residence') == 'San Marino' ? 'selected' : '' }}>
+                                            San Marino (+378)
                                         </option>
                                         <option value="Sao Tome and Principe"
                                             {{ old('country_of_residence') == 'Sao Tome and Principe' ? 'selected' : '' }}>
-                                            Sao
-                                            Tome and Principe</option>
+                                            Sao Tome and Principe (+239)
+                                        </option>
                                         <option value="Saudi Arabia"
                                             {{ old('country_of_residence') == 'Saudi Arabia' ? 'selected' : '' }}>
-                                            Saudi Arabia
+                                            Saudi Arabia (+966)
                                         </option>
                                         <option value="Senegal"
-                                            {{ old('country_of_residence') == 'Senegal' ? 'selected' : '' }}>Senegal
+                                            {{ old('country_of_residence') == 'Senegal' ? 'selected' : '' }}>
+                                            Senegal (+221)
                                         </option>
                                         <option value="Serbia"
-                                            {{ old('country_of_residence') == 'Serbia' ? 'selected' : '' }}>Serbia
+                                            {{ old('country_of_residence') == 'Serbia' ? 'selected' : '' }}>
+                                            Serbia (+381)
                                         </option>
                                         <option value="Seychelles"
                                             {{ old('country_of_residence') == 'Seychelles' ? 'selected' : '' }}>
-                                            Seychelles
+                                            Seychelles (+248)
                                         </option>
                                         <option value="Sierra Leone"
                                             {{ old('country_of_residence') == 'Sierra Leone' ? 'selected' : '' }}>
-                                            Sierra Leone
+                                            Sierra Leone (+232)
                                         </option>
                                         <option value="Singapore"
                                             {{ old('country_of_residence') == 'Singapore' ? 'selected' : '' }}>
-                                            Singapore
+                                            Singapore (+65)
                                         </option>
                                         <option value="Slovakia"
-                                            {{ old('country_of_residence') == 'Slovakia' ? 'selected' : '' }}>Slovakia
+                                            {{ old('country_of_residence') == 'Slovakia' ? 'selected' : '' }}>
+                                            Slovakia (+421)
                                         </option>
                                         <option value="Slovenia"
-                                            {{ old('country_of_residence') == 'Slovenia' ? 'selected' : '' }}>Slovenia
+                                            {{ old('country_of_residence') == 'Slovenia' ? 'selected' : '' }}>
+                                            Slovenia (+386)
                                         </option>
                                         <option value="Solomon Islands"
                                             {{ old('country_of_residence') == 'Solomon Islands' ? 'selected' : '' }}>
-                                            Solomon
-                                            Islands</option>
+                                            Solomon Islands (+677)
+                                        </option>
                                         <option value="Somalia"
-                                            {{ old('country_of_residence') == 'Somalia' ? 'selected' : '' }}>Somalia
+                                            {{ old('country_of_residence') == 'Somalia' ? 'selected' : '' }}>
+                                            Somalia (+252)
                                         </option>
                                         <option value="South Africa"
                                             {{ old('country_of_residence') == 'South Africa' ? 'selected' : '' }}>
-                                            South Africa
-                                        </option>
-                                        <option value="South Korea"
-                                            {{ old('country_of_residence') == 'South Korea' ? 'selected' : '' }}>South
-                                            Korea
+                                            South Africa (+27)
                                         </option>
                                         <option value="South Sudan"
-                                            {{ old('country_of_residence') == 'South Sudan' ? 'selected' : '' }}>South
-                                            Sudan
+                                            {{ old('country_of_residence') == 'South Sudan' ? 'selected' : '' }}>
+                                            South Sudan (+211)
                                         </option>
                                         <option value="Spain"
-                                            {{ old('country_of_residence') == 'Spain' ? 'selected' : '' }}>Spain
+                                            {{ old('country_of_residence') == 'Spain' ? 'selected' : '' }}>
+                                            Spain (+34)
                                         </option>
                                         <option value="Sri Lanka"
-                                            {{ old('country_of_residence') == 'Sri Lanka' ? 'selected' : '' }}>Sri
-                                            Lanka
+                                            {{ old('country_of_residence') == 'Sri Lanka' ? 'selected' : '' }}>
+                                            Sri Lanka (+94)
                                         </option>
                                         <option value="Sudan"
-                                            {{ old('country_of_residence') == 'Sudan' ? 'selected' : '' }}>Sudan
+                                            {{ old('country_of_residence') == 'Sudan' ? 'selected' : '' }}>
+                                            Sudan (+249)
                                         </option>
                                         <option value="Suriname"
-                                            {{ old('country_of_residence') == 'Suriname' ? 'selected' : '' }}>Suriname
+                                            {{ old('country_of_residence') == 'Suriname' ? 'selected' : '' }}>
+                                            Suriname (+597)
                                         </option>
                                         <option value="Sweden"
-                                            {{ old('country_of_residence') == 'Sweden' ? 'selected' : '' }}>Sweden
+                                            {{ old('country_of_residence') == 'Sweden' ? 'selected' : '' }}>
+                                            Sweden (+46)
                                         </option>
                                         <option value="Switzerland"
                                             {{ old('country_of_residence') == 'Switzerland' ? 'selected' : '' }}>
-                                            Switzerland
+                                            Switzerland (+41)
                                         </option>
                                         <option value="Syria"
-                                            {{ old('country_of_residence') == 'Syria' ? 'selected' : '' }}>Syria
+                                            {{ old('country_of_residence') == 'Syria' ? 'selected' : '' }}>
+                                            Syria (+963)
                                         </option>
                                         <option value="Taiwan"
-                                            {{ old('country_of_residence') == 'Taiwan' ? 'selected' : '' }}>Taiwan
+                                            {{ old('country_of_residence') == 'Taiwan' ? 'selected' : '' }}>
+                                            Taiwan (+886)
                                         </option>
                                         <option value="Tajikistan"
                                             {{ old('country_of_residence') == 'Tajikistan' ? 'selected' : '' }}>
-                                            Tajikistan
+                                            Tajikistan (+992)
                                         </option>
                                         <option value="Tanzania"
-                                            {{ old('country_of_residence') == 'Tanzania' ? 'selected' : '' }}>Tanzania
+                                            {{ old('country_of_residence') == 'Tanzania' ? 'selected' : '' }}>
+                                            Tanzania (+255)
                                         </option>
                                         <option value="Thailand"
-                                            {{ old('country_of_residence') == 'Thailand' ? 'selected' : '' }}>Thailand
+                                            {{ old('country_of_residence') == 'Thailand' ? 'selected' : '' }}>
+                                            Thailand (+66)
                                         </option>
                                         <option value="Timor-Leste"
                                             {{ old('country_of_residence') == 'Timor-Leste' ? 'selected' : '' }}>
-                                            Timor-Leste
+                                            Timor-Leste (+670)
                                         </option>
                                         <option value="Togo"
                                             {{ old('country_of_residence') == 'Togo' ? 'selected' : '' }}>
-                                            Togo</option>
+                                            Togo (+228)
+                                        </option>
                                         <option value="Tonga"
-                                            {{ old('country_of_residence') == 'Tonga' ? 'selected' : '' }}>Tonga
+                                            {{ old('country_of_residence') == 'Tonga' ? 'selected' : '' }}>
+                                            Tonga (+676)
                                         </option>
                                         <option value="Trinidad and Tobago"
                                             {{ old('country_of_residence') == 'Trinidad and Tobago' ? 'selected' : '' }}>
-                                            Trinidad and Tobago</option>
+                                            Trinidad and Tobago (+1-868)
+                                        </option>
                                         <option value="Tunisia"
-                                            {{ old('country_of_residence') == 'Tunisia' ? 'selected' : '' }}>Tunisia
+                                            {{ old('country_of_residence') == 'Tunisia' ? 'selected' : '' }}>
+                                            Tunisia (+216)
                                         </option>
                                         <option value="Turkey"
-                                            {{ old('country_of_residence') == 'Turkey' ? 'selected' : '' }}>Turkey
+                                            {{ old('country_of_residence') == 'Turkey' ? 'selected' : '' }}>
+                                            Turkey (+90)
                                         </option>
                                         <option value="Turkmenistan"
                                             {{ old('country_of_residence') == 'Turkmenistan' ? 'selected' : '' }}>
-                                            Turkmenistan
+                                            Turkmenistan (+993)
                                         </option>
                                         <option value="Tuvalu"
-                                            {{ old('country_of_residence') == 'Tuvalu' ? 'selected' : '' }}>Tuvalu
+                                            {{ old('country_of_residence') == 'Tuvalu' ? 'selected' : '' }}>
+                                            Tuvalu (+688)
                                         </option>
                                         <option value="Uganda"
-                                            {{ old('country_of_residence') == 'Uganda' ? 'selected' : '' }}>Uganda
+                                            {{ old('country_of_residence') == 'Uganda' ? 'selected' : '' }}>
+                                            Uganda (+256)
                                         </option>
                                         <option value="Ukraine"
-                                            {{ old('country_of_residence') == 'Ukraine' ? 'selected' : '' }}>Ukraine
+                                            {{ old('country_of_residence') == 'Ukraine' ? 'selected' : '' }}>
+                                            Ukraine (+380)
                                         </option>
                                         <option value="United Arab Emirates"
                                             {{ old('country_of_residence') == 'United Arab Emirates' ? 'selected' : '' }}>
-                                            United Arab Emirates</option>
+                                            United Arab Emirates (+971)
+                                        </option>
                                         <option value="United Kingdom"
                                             {{ old('country_of_residence') == 'United Kingdom' ? 'selected' : '' }}>
-                                            United
-                                            Kingdom</option>
+                                            United Kingdom (+44)
+                                        </option>
                                         <option value="United States"
                                             {{ old('country_of_residence') == 'United States' ? 'selected' : '' }}>
-                                            United
-                                            States</option>
+                                            United States (+1)
+                                        </option>
                                         <option value="Uruguay"
-                                            {{ old('country_of_residence') == 'Uruguay' ? 'selected' : '' }}>Uruguay
+                                            {{ old('country_of_residence') == 'Uruguay' ? 'selected' : '' }}>
+                                            Uruguay (+598)
                                         </option>
                                         <option value="Uzbekistan"
                                             {{ old('country_of_residence') == 'Uzbekistan' ? 'selected' : '' }}>
-                                            Uzbekistan
+                                            Uzbekistan (+998)
                                         </option>
                                         <option value="Vanuatu"
-                                            {{ old('country_of_residence') == 'Vanuatu' ? 'selected' : '' }}>Vanuatu
+                                            {{ old('country_of_residence') == 'Vanuatu' ? 'selected' : '' }}>
+                                            Vanuatu (+678)
                                         </option>
                                         <option value="Vatican City"
                                             {{ old('country_of_residence') == 'Vatican City' ? 'selected' : '' }}>
-                                            Vatican City
+                                            Vatican City (+379)
                                         </option>
                                         <option value="Venezuela"
                                             {{ old('country_of_residence') == 'Venezuela' ? 'selected' : '' }}>
-                                            Venezuela
+                                            Venezuela (+58)
                                         </option>
                                         <option value="Vietnam"
-                                            {{ old('country_of_residence') == 'Vietnam' ? 'selected' : '' }}>Vietnam
+                                            {{ old('country_of_residence') == 'Vietnam' ? 'selected' : '' }}>
+                                            Vietnam (+84)
                                         </option>
                                         <option value="Yemen"
-                                            {{ old('country_of_residence') == 'Yemen' ? 'selected' : '' }}>Yemen
+                                            {{ old('country_of_residence') == 'Yemen' ? 'selected' : '' }}>
+                                            Yemen (+967)
                                         </option>
                                         <option value="Zambia"
-                                            {{ old('country_of_residence') == 'Zambia' ? 'selected' : '' }}>Zambia
+                                            {{ old('country_of_residence') == 'Zambia' ? 'selected' : '' }}>
+                                            Zambia (+260)
                                         </option>
                                         <option value="Zimbabwe"
-                                            {{ old('country_of_residence') == 'Zimbabwe' ? 'selected' : '' }}>Zimbabwe
+                                            {{ old('country_of_residence') == 'Zimbabwe' ? 'selected' : '' }}>
+                                            Zimbabwe (+263)
                                         </option>
                                     </select>
                                 </div>
@@ -882,11 +1027,29 @@
                                 </select>
                             </div>
                         @endforeach
-
+                        <hr>
+                        <h2>Kindly choose a Convince Time and Date for Your Consulation</h2>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Preferred Time</label>
+                            <input type="text" class="form-control" id="time" name="time" required>
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr("#time", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "H:i"
+            });
+        });
+    </script>
 @endsection

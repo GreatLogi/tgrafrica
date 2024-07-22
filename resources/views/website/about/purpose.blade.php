@@ -40,24 +40,14 @@
 
                     </h2>
                 </div>
-                <p style="text-align: justify">At TGR Africa, our purpose is to try and remove some of the key barriers that
-                    prevents the African diaspora from being able to invest in Africa. We believe our advisory services will
-                    be able to make it easier for more people in the diaspora to feel confident about being able to return
-                    back home and set us successful enterprises. We also aim to make it easier for the diaspora to have
-                    access to Investment vehicles that will make investing in Africa safer. We want to give the diaspora
-                    access to some of the most innovative and fastest growing startups that will play a major role in the
-                    development of Africa. We view ourselves as being part of the diaspora support services, designed to
-                    help facilitate engagement between the African Diaspora and Africa.
+                <p style="text-align: justify">At TGR Africa, our purpose is to try and remove some of the key barriers that prevents the African diaspora from being able to invest in Africa. We believe our advisory services will be able to make it easier for more people in the diaspora to feel confident about being able to return back home and set us successful enterprises.  We also aim to make it easier for the diaspora to have access to Investment vehicles that will make investing in Africa safer.
                 </p>
 
-                <p style="text-align: justify"> Our primary focus will centre on business and investment advisory because we
-                    believe these are the two key areas where there have traditionally been very high barriers preventing
-                    the diaspora from engaging successfully. We also believe business and investment are the two key areas
-                    of engagement that offer long term sustainable economic benefits to Africa and that is why we must
-                    remove as many barriers as possible that prevents those in the diaspora from doing so.
+                <p style="text-align: justify"> We want to give the diaspora access to some of the most innovative and fastest growing startups that will play a major role in the development of Africa. We view ourselves as being part of the diaspora support services, designed to help facilitate engagement between the African Diaspora and Africa. Our primary focus will centre on business and investment advisory because we believe these are the two key areas where there have traditionally been very high barriers preventing the diaspora from engaging successfully.
                 </p>
 
-
+                <p style="text-align: justify">We also believe  business and investment are the two key areas of engagement that offer long term sustainable economic benefits to Africa and that is why we must remove as many barriers as possible that prevents those in the diaspora from doing so. 
+                </p>
 
             </div>
         </div>

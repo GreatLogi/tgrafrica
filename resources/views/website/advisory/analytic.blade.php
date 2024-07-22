@@ -54,8 +54,8 @@
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
                     <blockquote>
-                        <p class="mb-0">If you are interested in knowing more about TGR Analytics, please contact one of
-                            our experts</p>
+                        <p class="mb-0">If you would like more information on TGR Analytics, please book a consultation to
+                            speak to one of our advisors</p>
                         <hr>
                         <a href="{{ route('contact') }}"
                             class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Click Here</a>
@@ -103,7 +103,7 @@
                                             </li>
 
                                             <li>
-                                                Providing you with a shadow test of your idea
+                                                Providing you with an implementation road map.
                                             </li>
 
                                         </ul>
@@ -127,16 +127,13 @@
                                             investigative research.. Our findings, recommendations, business plan, shadow
                                             test and implementation road map will be presented to you over scheduled
                                             consultations. This would give you a chance to ask any relevant questions
-                                            pertaining to our findings. Additionally, we shall consolidate the entire
-                                            research project into a documented format for you to review in your own time.
+                                            pertaining to our findings.
                                         </p>
-
-                                        <p> This document can later be used as a business proposal which can sent to
-                                            potential investors. TGR Analytics will take place over a 6 to 8 week period.
-                                            During this period we will keep you notified on progress and any developments
-                                            during our research. <br>If you would like more information on TGR Analytics,
-                                            please book a consultation to speak to one of our advisors
-
+                                        <P>Additionally, we shall consolidate the entire research project into a documented
+                                            format for you to review in your own time. This document can later be used as a
+                                            business proposal which can sent to potential investors. </P>
+                                        <p> TGR Analytics will take place over a 6 to 8 week period. During this period we
+                                            will keep you notified on progress and any developments during our research.
                                         </p>
 
                                     </div>

@@ -3,7 +3,7 @@
         <div class="footer-ribbon"><span>Get in Touch</span></div>
         <div class="row py-5 my-4">
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <h5 class="text-3 mb-3">NEWSLETTER</h5>
+                <h5 class="text-3 mb-3">To Book a Seminar</h5>
                 <p class="pe-1">
                     Be the first to be informed...
                     <br> Enter your e-mail address and subscribe to our newsletter.

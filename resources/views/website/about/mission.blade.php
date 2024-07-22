@@ -26,14 +26,12 @@
     </section>
 
     <div class="container py-2">
-
         <div class="row">
             <div class="col">
                 <div class="overflow-hidden mb-3">
                     <h2 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation"
                         data-appear-animation="maskUp">
                         <span>Mission </span>
-
                     </h2>
                 </div>
                 <p style="text-align: justify">In order for this to be achieved, we believe the resources of the diaspora

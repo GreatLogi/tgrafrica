@@ -35,29 +35,25 @@
                 </div>
                 <div class="overflow-hidden mb-4">
                     <p class="lead mb-0 appear-animation" style="text-align: justify" data-appear-animation="maskUp"
-                        data-appear-animation-delay="400">It is likely that you may find yourself in a position along your
-                        pre- transition preparation where you know you want to be a part of the great return
-                        movement back are struggling to find out how it applies to you on a personal level. You are still
-                        trying to figure out ,
-                        what you can do, how you can utilise your skillsets and expertise and how you can contribute towards
-                        the development of Africa. </p>
+                        data-appear-animation-delay="400">It is likely that you may find yourself at a stage of your
+                        transition journey where you know you want to be a part of the great return back are currently
+                        struggling to figure out how you can get involved. You may be still trying to work out what you can
+                        do, how you can utilise your skillsets and expertise and how you can contribute towards the
+                        development of Africa.</p>
                 </div>
                 <p class="text-color-light-3 mb-4 appear-animation" style="text-align: justify"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our goal with TGR Brainstorm
                     is to help you develop your own unique core purpose as part of the greater collective purpose of the
-                    great return philosophy.
-                    We also want to help you start mapping out potential business ideas along the golden formula framework
-                    which was spoken about in the TGR philosophy. It is important for us that you are able to have a range
-                    of potential business ideas which incorporate
-                    your natural passions, interests, expertise and skillsets in a way that can provide value and be of
-                    service to the Ghanian economy. </p>
+                    great return philosophy. We also want to help you start mapping out potential business ideas along the
+                    golden formula framework. It is important for us that you are able to have a range of potential business
+                    ideas which incorporate your natural passions, interests, expertise and skillsets in a way that can
+                    provide value and can be of service to the development of Africa.</p>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
                     <blockquote>
-                        <p class="mb-0">For more information about TGR Brainstorm please book a consultation to speak to
-                            an advisor.</p>
+                        <p class="mb-0">For more information about TGR Brainstorm please book a consultation to speak to an advisor .</p>
 
                         <hr>
                         <a href="javascript:void(0)" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book
@@ -98,8 +94,8 @@
                                             </li>
 
                                             <li>
-                                                Working with you construct a core purpose that serves as as your own
-                                                personal mission statement.
+                                                Working with you to construct a core unique purpose that serves as as your
+                                                own personal mission statement.
                                             </li>
 
                                             <li>
@@ -141,20 +137,19 @@
                                     <div class="card-body mt-3" style="text-align: justify">
                                         <p>TGR Brainstorming sessions are split into three key parts which will span a 6
                                             week period.. The first part is focused on helping you develop a unique core
-                                            purpose in alignment with the collective purpose of the great return community.
-                                            It will serve as the the guiding framework behind the potential business ideas
-                                            that our generated.
-                                            The second part of the brainstorming session will focus on reviewing your
-                                            skillsets, work experience, knowledge and expertise. We would also explore some
-                                            of the industries and sectors that you may be passion about or interested in and
-                                            carry out an investigate research to find out more about the opportunities,
-                                            trends and challenges facing those industries and sectors.</p>
-                                        <p> The third of the brainstorming sessions will focus on working with you to
-                                            generate potential business ideas that are aligned with your unique core purpose
-                                            and achieve the golden formula framework. At the end of the sessions, you should
-                                            find yourself with a minimum 3 potentially viable business ideas which you can
-                                            later investigate further.</p>
-
+                                            purpose in alignment with the collective purpose of the great return philosophy.
+                                            It will serve as the the guiding framework behind potential business ideas that
+                                            our generated. The second part of the brainstorming session will focus on
+                                            reviewing your skillsets, work experience, knowledge and expertise. We would
+                                            also explore some of the industries and sectors that you may be passion about or
+                                            are interested in. This will serve as the basis of our investigate research to
+                                            find out more about the opportunities and trends within those industries and
+                                            sectors.</p>
+                                        <p>The third part of the brainstorming sessions will focus on working with you to
+                                            generate potential business ideas that are guided by the golden formula
+                                            framework, which also align with your unique core purpose. At the end of the
+                                            sessions, you should find yourself with a minimum three viable business ideas
+                                            which you can later investigate further.</p>
                                     </div>
                                 </div>
                             </div>
