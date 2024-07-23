@@ -140,9 +140,7 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
-// Route::get('/login', function () {
-//     return view('auth.login')->name('login');
-// });
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

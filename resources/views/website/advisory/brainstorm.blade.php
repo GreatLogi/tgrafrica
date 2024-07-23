@@ -12,7 +12,6 @@
             <div class="row">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
                     <h1>TGR <strong>Brainstorm</strong></h1>
-                    {{-- <span class="sub-title">Get in touch with us</span> --}}
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb breadcrumb-light d-block text-md-end">
@@ -56,7 +55,7 @@
                         <p class="mb-0">For more information about TGR Brainstorm please book a consultation to speak to an advisor .</p>
 
                         <hr>
-                        <a href="javascript:void(0)" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book
+                        <a href="{{ route('register-user') }}" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book
                             Here</a>
 
                     </blockquote>

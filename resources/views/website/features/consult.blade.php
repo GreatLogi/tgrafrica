@@ -1031,11 +1031,11 @@
                         <h2>Kindly choose a Convince Time and Date for Your Consulation</h2>
                         <div class="mb-3">
                             <label for="date" class="form-label">Preferred Date</label>
-                            <input type="date" class="form-control" id="date" name="date" required>
+                            <input type="date" class="form-control" id="date" name="response_date" required>
                         </div>
                         <div class="mb-3">
                             <label for="time" class="form-label">Preferred Time</label>
-                            <input type="text" class="form-control" id="time" name="time" required>
+                            <input type="text" class="form-control" id="time" name="response_time" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

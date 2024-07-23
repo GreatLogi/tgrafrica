@@ -25,6 +25,7 @@ class RegisterController extends Controller
             'nationality' => $request->nationality,
             'country_of_residence' => $request->country_of_residence,
             'password' => Hash::make($request->password),
+            'status' => 0,
         ]);
         return redirect()->route('login')->with('success', 'Registration successful! Please log in.');
     }

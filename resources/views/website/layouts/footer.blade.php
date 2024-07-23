@@ -1,12 +1,17 @@
 <footer id="footer">
+    @php
+        use Carbon\Carbon;
+    @endphp
+
     <div class="container">
         <div class="footer-ribbon"><span>Get in Touch</span></div>
         <div class="row py-5 my-4">
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <h5 class="text-3 mb-3">To Book a Seminar</h5>
+                <h5 class="text-3 mb-3">TGR Africa Seminar</h5>
                 <p class="pe-1">
-                    Be the first to be informed...
-                    <br> Enter your e-mail address and subscribe to our newsletter.
+                    If you identify with the TGR Philosophy and require further information so that you can become
+                    better educated on some of the opportunities available to you, then you should consider TGR
+                    Seminars.
                 </p>
                 <div class="alert alert-success d-none" id="newsletterSuccess">
                     <strong>Success!</strong> <br>News letter Subscription successful. <br> Thank you.
@@ -98,9 +103,18 @@
                 </div>
                 <div
                     class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+                    <p>© Copyright {{ Carbon::now()->year }} {{ Carbon::now()->format('j M Y, g:i A') }}. All Rights Reserved. | By <a
+                            href="http://www.wantechsolutions.com">Wan Tech Solutions</a></p>
+                </div>
+                {{-- <div class="col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <p></p>
+                </div> --}}
+
+                {{-- <div
+                    class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
                     <p>© Copyright 2024. All Rights Reserved. | By <a href="http://www.wantechsolutions.com">Wan Tech
                             Solutions</a></p>
-                </div>
+                </div> --}}
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
                     <nav id="sub-menu">
                         <ul>
@@ -113,7 +127,7 @@
                                     class="ms-1 text-decoration-none">Available Books</a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i><a href="javascript:void(0)"
+                                <i class="fas fa-angle-right"></i><a href="{{ route('contact') }}"
                                     class="ms-1 text-decoration-none">Contact Us</a>
                             </li>
                         </ul>
