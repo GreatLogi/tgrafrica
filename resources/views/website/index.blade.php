@@ -25,6 +25,8 @@
             z-index: 999;
         }
     </style>
+
+    <!-- Book popup -->
     <div id="overlay" style="display: none;">
         <div id="popup" class="ipopup">
             <button id="iclose">&times;</button>
@@ -37,7 +39,7 @@
                 </span> </a>
         </div>
     </div>
-
+    <!-- End of Book popup -->
     <div role="main" class="main">
         <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
             data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['650px','650px','650px','550px','500px']"

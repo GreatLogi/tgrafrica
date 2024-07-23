@@ -65,6 +65,39 @@
         </div>
         @include('website.layouts.footer')
     </div>
+
+    <style>
+        /* Whatsapp */
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 50%;
+            right: 10px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            /* box-shadow: 2px 2px 3px #ff7e7e; */
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        /* End of whatsapp */
+    </style>
+    <!-- Whatsapp Button -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+233209398306&text=Welcome to TGR Africa Official WhatsApp Platform."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- End of whatsapp Button -->
+
     <!-- Vendor -->
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script>
     <script src="{{ asset('vendor/plugins/js/plugins.min.js') }}"></script>

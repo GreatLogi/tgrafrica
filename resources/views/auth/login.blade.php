@@ -85,7 +85,12 @@
 
                 </div>
             </div>
-            <p class="text-center text-muted mt-3 mb-3">&copy; Copyright 2024. All Rights Reserved.</p>
+            @php
+                use Carbon\Carbon;
+            @endphp
+
+            <p class="text-center text-muted mt-3 mb-3">&copy;Copyright {{ Carbon::now()->year }}. All Rights
+                Reserved.</p>
         </div>
     </section>
     <script src="{{ asset('backend/vendor/jquery/jquery.js') }}"></script>
