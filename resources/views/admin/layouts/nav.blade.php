@@ -28,26 +28,26 @@
                             <span>Seminars</span>
                         </a>
                     </li>
-
-                    <li class="nav-group-label">Features</li>
-
-                    <li class="nav-parent">
-                        <a class="nav-link" href="#">
-                            <i class="bx bx-cube" aria-hidden="true"></i>
-                            <span>CONTACT US</span>
-                        </a>
-                        <ul class="nav nav-children">
-                            <li class="nav-parent">
-                                <a class="nav-link" href="{{ route('contact-us') }}">
-                                    > Contact Us Summary <span class="mega-sub-nav-toggle toggled float-end"
-                                        data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-
                     @role('superadmin')
+                        <li class="nav-group-label">Features</li>
+
+                        <li class="nav-parent">
+                            <a class="nav-link" href="#">
+                                <i class="bx bx-cube" aria-hidden="true"></i>
+                                <span>CONTACT US</span>
+                            </a>
+                            <ul class="nav nav-children">
+                                <li class="nav-parent">
+                                    <a class="nav-link" href="{{ route('contact-us') }}">
+                                        > Contact Us Summary <span class="mega-sub-nav-toggle toggled float-end"
+                                            data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
                         <li class="nav-group-label">APPs</li>
                         <li class="nav-parent">
                             <a class="nav-link" href="#">
