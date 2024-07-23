@@ -22,7 +22,6 @@ use App\Http\Controllers\QuestionnaireController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\RolesAndPermissionController;
 use App\Http\Controllers\SeminarController;
-use App\Http\Controllers\SeminarRegistrationController;
 use App\Http\Controllers\SubscribeSeminarsController;
 use App\Http\Controllers\UserAccountController;
 use App\Models\Blog;
@@ -75,6 +74,8 @@ Route::get('partners', function () {
 })->name('partners');
 Route::resource('seminars', SubscribeSeminarsController::class);
 Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');
+Route::post('/subscribed-users', [SubscribeSeminarsController::class, 'users_subscribed_semiars'])->name('subscribed-users');
+Route::get('/users/subscribed/seminars', [SubscribeSeminarsController::class, 'users_subscribed'])->name('users-subscribed-semiars');
 Route::get('/all-seminars-videos', [SubscribeSeminarsController::class, 'all_seminars_record'])->name('all-seminars-videos');
 // Route for deleting seminar video
 Route::get('/seminar/{uuid}/delete', [SubscribeSeminarsController::class, 'delete_seminar_video'])->name('seminar-video-delete');

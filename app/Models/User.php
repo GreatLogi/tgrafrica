@@ -37,7 +37,10 @@ class User extends Authenticatable implements Auditable
         'country_of_residence',
         'nationality',
     ];
-
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
     /**
      * The attributes that should be hidden for serialization.
      *

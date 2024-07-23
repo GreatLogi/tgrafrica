@@ -7,6 +7,7 @@ use App\Models\Subscription;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+use Yajra\DataTables\DataTables;
 
 class SubscribeSeminarsController extends Controller
 {
@@ -91,5 +92,23 @@ class SubscribeSeminarsController extends Controller
             ->exists();
 
         return view('admin.layouts.advisory.tgrseminars.show', compact('seminar', 'isSubscribed'));
+    }
+
+    public function users_subscribed_semiars(Request $request)
+    {
+        $subscriptions = Subscription::with(['user', 'seminar'])->get();
+        return DataTables::of($subscriptions)
+            ->addColumn('user_name', function ($subscription) {
+                return $subscription->user->name;
+            })
+            ->addColumn('seminar_title', function ($subscription) {
+                return $subscription->seminar->title;
+            })
+            ->make(true);
+    }
+
+    public function users_subscribed()
+    {
+        return view('admin.systemsetting.seminars.seminar_subscribed');
     }
 }

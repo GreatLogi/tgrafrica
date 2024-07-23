@@ -21,7 +21,15 @@ class Subscription extends Model implements Auditable
         'user_id',
         'seminar_id',
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
+    public function seminar()
+    {
+        return $this->belongsTo(Seminar::class);
+    }
     /**
      * The attributes that should be cast.
      *

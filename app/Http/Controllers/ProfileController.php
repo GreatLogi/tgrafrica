@@ -83,7 +83,7 @@ class ProfileController extends Controller
                 'message' => 'Changed Made Successfully',
                 'alert-type' => 'success',
             ];
-            return redirect()->route('users.index')->with($notification);
+            return redirect()->route('index-user')->with($notification);
         }
     }
 
@@ -97,7 +97,7 @@ class ProfileController extends Controller
                 'message' => 'Change Made Successfully',
                 'alert-type' => 'success',
             ];
-            return redirect()->route('users.index')->with($notification);
+            return redirect()->route('index-user')->with($notification);
         }
     }
 }

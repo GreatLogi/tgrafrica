@@ -20,7 +20,10 @@ class Seminar extends Model implements Auditable
             'description',
             'video',
         ];
-
+        public function subscriptions()
+        {
+            return $this->hasMany(Subscription::class);
+        }
         /**
         * The attributes that should be cast.
         *
