@@ -221,7 +221,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="get-started text-start text-lg-end">
-                            <a href="#" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3">Book a
+                            <a href="{{ route('features.consult') }}"
+                                class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3">Book a
                                 Consultation</a>
 
                         </div>
@@ -233,40 +234,70 @@
 
     </div>
 
-    <section class="section  section-height-3 border-0 mt-0 mb-0">
+    <section class="section section-height-3 border-0 mt-0 mb-0">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-12 text-center">
+                    <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Meet</strong> The
+                        Founders</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Founder 1 -->
+                <div class="col-md-6">
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
                             <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{ asset('img/layout-styles.png') }}"
-                                alt="layout styles" />
+                                alt="Lordy Emmen" />
                         </div>
                         <div class="col-md-8 ps-md-5">
-                            <h2 class="font-weight-normal text-6 mb-3"><strong
-                                    class="font-weight-extra-bold">Meet</strong> The Founders</h2>
-                            <p class="lead">Lordy Emmen is a diaspora entrepreneur, diaspora activist and author of `The
-                                Great Return`.</p>
-
-                            <p class="text-4" style="text-align: justify">
-                                She is of Ghanian decent and has spent the past 25 years living in the UK where she had a
+                            <p class="text-4" style="text-align: justify;">
+                                <strong> Lordy Emmen</strong> is a diaspora entrepreneur, diaspora activist, and author of
+                                "The
+                                <strong> Great Return".</strong>
+                                She is of Ghanaian descent and has spent the past 25 years living in the UK where she had a
                                 successful career as a Management Accountant.
                                 Since 2019, along with her husband, she has been able to make investments in the poultry
-                                sector as a result of recognising the dependency
+                                sector as a result of recognizing the dependency
                                 a country like Ghana has on foreign food imports which can be sourced locally.
-                                She and her husband have also made investments in Ghana’s growing real estate market.
                             </p>
-                            <a href="{{ route('about.founder') }}"
-                                class="btn btn-dark font-weight-semibold rounded-0 px-5 btn-py-2 text-2 p-relative bottom-3">LEARN
-                                MORE</a>
-
                         </div>
                     </div>
                     <hr class="solid my-5">
                 </div>
+                <!-- Founder 2 -->
+                <div class="col-md-6">
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInRightShorter">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img class="img-fluid scale-2 pe-5 pe-md-0 my-4"
+                                src="{{ asset('img/layout-stylescoo.png') }}" alt="Agyegewe Chanayireh" />
+                        </div>
+                        <div class="col-md-8 ps-md-5">
+                            <p class="text-4" style="text-align: justify;">
+                                <strong>Agyegewe Chanayireh</strong>, Co-Founder and COO of TGR Africa, co-wrote "The Great
+                                Return" with business partner Lordy Emmen.
+                                His interest in joining the great return began during his student days at the University of
+                                Manchester, where he studied Modern Middle Eastern History.
+                                The course was intended to prepare him to work as a foreign diplomat in the Middle East on
+                                behalf of the British Government, and through his studies, he was awakened to
+                                colonialism and imperialism and the long-term consequences they have had on the developing
+                                world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{{ route('about.founder') }}"
+                        class="btn btn-dark font-weight-semibold rounded-0 px-5 btn-py-2 text-2 p-relative bottom-3">Read
+                        More About Founders</a>
+                </div>
             </div>
         </div>
     </section>
+
+
     <section class="section section-secondary border-0 py-0 m-0 appear-animation" data-appear-animation="fadeIn">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between pb-5 pb-lg-0">
@@ -361,17 +392,13 @@
         document.addEventListener("DOMContentLoaded", function() {
             var show_delay = 0; // Show immediately on page load
             var hide_delay = 30000; // Hide after 30 seconds
-
-            // Show the popup after the specified delay
             setTimeout(function() {
                 document.getElementById('overlay').style.display = 'block';
             }, show_delay);
-
             // Hide the popup after the specified duration
             setTimeout(function() {
                 document.getElementById('overlay').style.display = 'none';
             }, show_delay + hide_delay);
-
             // Close button functionality
             document.getElementById('iclose').onclick = function() {
                 document.getElementById('overlay').style.display = 'none';

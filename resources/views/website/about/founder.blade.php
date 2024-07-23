@@ -62,8 +62,6 @@
         <hr>
         <div class="row mt-2">
             <div class="col">
-
-
                 <img class="float-start img-fluid" width="450" height="11"
                     src="{{ asset('img/layout-stylescoo.png') }}" alt="Agyegewe Chanayireh">
                 <p style="text-align: justify"><strong>Agyegewe Chanayireh Co-Founder and COO</strong>Agyegewe Chanayireh is
