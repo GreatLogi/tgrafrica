@@ -144,7 +144,7 @@
                                     alt="">
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Advisory</h2>
+                                <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Seminars</h2>
                                 <p class="mb-0">Empowering returnees with comprehensive support and expert guidance.</p>
                             </div>
                         </div>
@@ -259,9 +259,10 @@
                                 <strong> Great Return".</strong>
                                 She is of Ghanaian descent and has spent the past 25 years living in the UK where she had a
                                 successful career as a Management Accountant.
-                                Since 2019, along with her husband, she has been able to make investments in the poultry
+                                Since 2019, along... 
+                                <!-- with her husband, she has been able to make investments in the poultry
                                 sector as a result of recognizing the dependency
-                                a country like Ghana has on foreign food imports which can be sourced locally.
+                                a country like Ghana has on foreign food imports which can be sourced locally. -->
                             </p>
                         </div>
                     </div>
@@ -279,14 +280,17 @@
                                 <strong>Agyegewe Chanayireh</strong>, Co-Founder and COO of TGR Africa, co-wrote "The Great
                                 Return" with business partner Lordy Emmen.
                                 His interest in joining the great return began during his student days at the University of
-                                Manchester, where he studied Modern Middle Eastern History.
+                                Manchester, where he studied Modern... 
+                                <!-- Middle Eastern History.
                                 The course was intended to prepare him to work as a foreign diplomat in the Middle East on
                                 behalf of the British Government, and through his studies, he was awakened to
                                 colonialism and imperialism and the long-term consequences they have had on the developing
-                                world.
+                                world. -->
                             </p>
                         </div>
                     </div>
+                                        <hr class="solid my-5">
+
                 </div>
             </div>
             <div class="row">

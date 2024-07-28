@@ -1,6 +1,5 @@
 <!doctype html>
-<html class="modern fixed has-top-menu has-left-sidebar-half" data-style-switcher-options="{'changeLogo': false}"
-    lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="modern fixed has-top-menu has-left-sidebar-half" data-style-switcher-options="{'changeLogo': false}" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +11,7 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Web Fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet"
-        type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet" type="text/css">
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="{{ asset('backend/vendor/bootstrap/css/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ asset('backend/vendor/animate/animate.compat.css') }}">
@@ -27,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('backend/vendor/datatables/media/css/dataTables.bootstrap5.css') }}" />
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ asset('backend/css/theme.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/css/dashmix.min.css') }}" />
     <!-- Theme Layout -->
     <link rel="stylesheet" href="{{ asset('backend/css/layouts/modern.css') }}" />
     <!-- Theme Custom CSS -->
@@ -35,8 +34,7 @@
     <script src="{{ asset('backend/vendor/modernizr/modernizr.js') }}"></script>
     <script src="{{ asset('master/style-switcher/style.switcher.localstorage.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
-    <link rel="stylesheet"
-        type="text/css"href=" https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href=" https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" />
@@ -67,21 +65,21 @@
                             <ul>
                                 <li>
                                     <time datetime="2021-04-19T00:00+00:00">04/19/2021</time>
-                                    <span>Company Meeting</span>
+                                    <span>Meeting</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="sidebar-widget widget-friends">
-                            <h6>Friends</h6>
+                            <h6>Upcomming Consultations</h6>
                             <ul>
                                 <li class="status-online">
                                     <figure class="profile-picture">
                                         <img src="img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
                                     </figure>
                                     <div class="profile-info">
-                                        <span class="name">Joseph Doe Junior</span>
-                                        <span class="title">Hey, how are you?</span>
+                                        <span class="name">Clement Mahama</span>
+                                        <span class="title"> Consultation is due on ; Date, Time</span>
                                     </div>
                                 </li>
                                 <li class="status-online">
@@ -89,26 +87,8 @@
                                         <img src="img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
                                     </figure>
                                     <div class="profile-info">
-                                        <span class="name">Joseph Doe Junior</span>
-                                        <span class="title">Hey, how are you?</span>
-                                    </div>
-                                </li>
-                                <li class="status-offline">
-                                    <figure class="profile-picture">
-                                        <img src="img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
-                                    </figure>
-                                    <div class="profile-info">
-                                        <span class="name">Joseph Doe Junior</span>
-                                        <span class="title">Hey, how are you?</span>
-                                    </div>
-                                </li>
-                                <li class="status-offline">
-                                    <figure class="profile-picture">
-                                        <img src="img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
-                                    </figure>
-                                    <div class="profile-info">
-                                        <span class="name">Joseph Doe Junior</span>
-                                        <span class="title">Hey, how are you?</span>
+                                        <span class="name">Isaac Totimeh</span>
+                                        <span class="title">Consultation is due on ; Date, Time</span>
                                     </div>
                                 </li>
                             </ul>
@@ -132,24 +112,24 @@
     <script type="text/javascript" src=" https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
     <script type="text/javascript" src=" https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
     <script>
-        @if (Session::has('message'))
-            var type = "{{ Session::get('alert-type', 'info') }}"
-            switch (type) {
-                case 'info':
-                    toastr.info(" {{ Session::get('message') }} ");
-                    break;
+        @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type', 'info') }}"
+        switch (type) {
+            case 'info':
+                toastr.info(" {{ Session::get('message') }} ");
+                break;
 
-                case 'success':
-                    toastr.success(" {{ Session::get('message') }} ");
-                    break;
+            case 'success':
+                toastr.success(" {{ Session::get('message') }} ");
+                break;
 
-                case 'warning':
-                    toastr.warning(" {{ Session::get('message') }} ");
-                    break;
-                case 'error':
-                    toastr.error(" {{ Session::get('message') }} ");
-                    break;
-            }
+            case 'warning':
+                toastr.warning(" {{ Session::get('message') }} ");
+                break;
+            case 'error':
+                toastr.error(" {{ Session::get('message') }} ");
+                break;
+        }
         @endif
     </script>
     <!-- Google Analytics -->

@@ -981,7 +981,7 @@
                                 'On a scale of 1-10 how much to do you agree with the great return philosophy',
                                 'On a scale of 1-10 how much do you believe that more people in the diaspora should be informed about the great return',
                                 'On a scale of 1-10 how important to you believe it is for all of us to spread the the great return philosophy to as many people as possible',
-                                'On a scale of 1-10 how much to you believe that you posess valuable skills, knowledge and expertise that can be used to support African development',
+                                'On a scale of 1-10 how much to you believe that you possess valuable skills, knowledge and expertise that can be used to support African development',
                                 'On a scale of 1-10 how prepared are you to adopt an entrepreneurial mindset',
                                 'On a scale of 1-10 how will you rate your current business acumen',
                                 'On a scale of 1-10 how experienced are you in taking leadership positions',
@@ -990,7 +990,7 @@
                                 'On a scale of 1-10 how good are you at thinking strategically',
                                 'On a scale of 1-10 how good are you with dealing with pressure',
                                 'On a scale of 1-10 how good are you with practising delayed gratification',
-                                'On a scale of 1-10 how much do you see failure as a necessary part of longterm success',
+                                'On a scale of 1-10 how much do you see failure as a necessary part of long term success',
                                 'On a scale of 1-10 how resilient are you',
                                 'On a scale of 1-10 how easy is it for you to visualise a desired outcome before it has yet to be manifested',
                                 'On a scale of 1-10 how willing are you to confront some of the challenges that come with joining the great return',
@@ -1028,7 +1028,7 @@
                             </div>
                         @endforeach
                         <hr>
-                        <h2>Kindly choose a Convince Time and Date for Your Consulation</h2>
+                        <h2>Kindly choose a Convenient Time and Date for Your Consultation</h2>
                         <div class="mb-3">
                             <label for="date" class="form-label">Preferred Date</label>
                             <input type="date" class="form-control" id="date" name="response_date" required>

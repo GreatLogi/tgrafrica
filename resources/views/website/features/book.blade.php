@@ -89,12 +89,12 @@
 
                 <strong class="text-uppercase text-1 me-3 text-dark float-start position-relative top-2">Share</strong>
                 <ul class="social-icons">
-                    <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
+                    <li class="social-icons-facebook"><a href="http://https://web.facebook.com/profile.php?id=61559081140764&__cft__[0]=AZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg" target="_blank" title="Facebook"><i
                                 class="fab fa-facebook-f"></i></a></li>
-                    <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-                                class="fab fa-x-twitter"></i></a></li>
-                    <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                                class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-icons-youtube"><a href="https://www.youtube.com/@TGRAfrica" target="_blank" title="Youtube"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <!-- <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                class="fab fa-linkedin-in"></i></a></li> -->
                 </ul>
 
             </div>
