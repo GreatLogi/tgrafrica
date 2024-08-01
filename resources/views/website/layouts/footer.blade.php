@@ -79,9 +79,9 @@
                         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fprofile.php%3Fid%3D61559081140764%26__cft__[0]%3DAZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg&tabs=timeline&width=200&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=5035938946497779" width="200" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" data-theme="dark" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </li>
                     <li class="social-icons-linkedin">
-                        <script src="https://apis.google.com/js/platform.js"></script>
+                        <script async src="https://apis.google.com/js/platform.js"></script>
 
-                        <div class="g-ytsubscribe" data-channelid="UCnl1Z1PExMQGPiwUEhbQCWQ" data-layout="full" data-count="show" rel="noopener noreferrer" theme="dark"></div>
+                        <div class="g-ytsubscribe" data-channelid="UCnl1Z1PExMQGPiwUEhbQCWQ" data-layout="full" data-count="default" rel="noopener noreferrer"></div>
                     </li>
                 </ul>
             </div>
