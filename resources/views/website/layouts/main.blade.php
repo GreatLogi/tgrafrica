@@ -7,8 +7,7 @@
     <title>@yield('title')</title>
     <meta name="keywords" content="TGR Africa, The Great Return, Wan Tech Solutions Co. Ltd." />
     <meta name="description" content="TGR Africa, The Great Return, Wan Tech Solutions Co. Ltd.">
-    <meta name="Wan Tech Solutions Co.Ltd." content="okler.net">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://apis.google.com; frame-src 'self' https://www.youtube.com">
+    <meta name="Wan Tech Solutions Co.Ltd." content="wantechsolutions">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
