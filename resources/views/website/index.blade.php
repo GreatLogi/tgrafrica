@@ -31,7 +31,7 @@ Home
     <div id="popup" class="ipopup">
         <button id="iclose">&times;</button>
         <h4 class="modal-title" id="defaultModalLabel"><strong>The <br>Great <br>Return</strong></h4>
-        <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/tgrbook.png') }}" width="100px" alt="">
+        <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/team/team-7.jpg') }}" width="100px" alt="">
         <a class="align-items-center" href="http://www.amazon.com/">Grab a copy on Amazon now <span class="social-icons-amazon">
                 <a href="http://www.amazon.com/" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
             </span> </a>
