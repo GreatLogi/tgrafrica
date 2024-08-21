@@ -216,7 +216,7 @@ Home
             <div class="col-md-6">
                 <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{ asset('img/layout-styles.png') }}" alt="Lordy Emmen" />
+                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{ asset('img/lordy.png') }}" alt="Lordy Emmen" />
                     </div>
                     <div class="col-md-8 ps-md-5">
                         <p class="text-4" style="text-align: justify;">
@@ -238,7 +238,7 @@ Home
             <div class="col-md-6">
                 <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInRightShorter">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{ asset('img/layout-stylescoo.png') }}" alt="Agyegewe Chanayireh" />
+                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{ asset('img/clement.png') }}" alt="Agyegewe Chanayireh" />
                     </div>
                     <div class="col-md-8 ps-md-5">
                         <p class="text-4" style="text-align: justify;">
