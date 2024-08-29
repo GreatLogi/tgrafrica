@@ -36,7 +36,10 @@ class ContactUsController extends Controller
             'message' => 'Your message has been sent to us.',
             'alert-type' => 'success',
         ];
-
-        return redirect()->route('contact')->with($notification);
+        return redirect()->route('contact-thank-you-message')->with($notification);
+    }
+    public function thankyoucontact()
+    {
+        return view('website.thankyoucontact');
     }
 }

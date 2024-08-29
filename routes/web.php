@@ -156,6 +156,7 @@ Route::get('/register', [Log_in_and_out_Controller::class, 'register'])->name('r
 Route::prefix('contact-us')->group(function () {
     Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
     Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
+    Route::get('/thank-you-for-contacting-tgr', [ContactUsController::class, 'thankyoucontact'])->name('contact-thank-you-message');
 });
 // Route::prefix('seminars')->group(function () {
 //     Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
