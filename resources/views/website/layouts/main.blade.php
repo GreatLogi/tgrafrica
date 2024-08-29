@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"
-    data-style-switcher-options="{'showBordersStyle': true, 'showLayoutStyle': true, 'showBackgroundColor': true}">
+<html lang="en" data-style-switcher-options="{'showBordersStyle': true, 'showLayoutStyle': true, 'showBackgroundColor': true}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
-    <meta name="keywords" content="WebSite Template" />
-    <meta name="description" content="Porto - Multipurpose Website Template">
-    <meta name="author" content="okler.net">
+    <meta name="keywords" content="TGR Africa, The Great Return, Wan Tech Solutions Co. Ltd." />
+    <meta name="description" content="TGR Africa, The Great Return, Wan Tech Solutions Co. Ltd.">
+    <meta name="Wan Tech Solutions Co.Ltd." content="wantechsolutions">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
     <!-- Web Fonts  -->
-    <link id="googleFonts"
-        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap"
-        rel="stylesheet" type="text/css">
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Vendor CSS -->
 
     <!-- Dashboard MIX  -->
@@ -91,8 +88,7 @@
     </style>
     <!-- Whatsapp Button -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=+233209398306&text=Welcome to TGR Africa Official WhatsApp Platform."
-        class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+233209398306&text=Welcome to TGR Africa Official WhatsApp Platform." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 

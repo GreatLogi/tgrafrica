@@ -8,8 +8,7 @@
     <meta name="description" content="TGR-ADMIN">
     <meta name="author" content="TGR-ADMIN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light"
-        rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('backend/vendor/bootstrap/css/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ asset('backend/vendor/animate/animate.compat.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/vendor/font-awesome/css/all.min.css') }}" />
@@ -30,32 +29,30 @@
             </a>
             <div class="panel card-sign">
                 <div class="card-title-sign mt-3 text-end">
-                    <h2 class="title text-uppercase font-weight-bold m-0"><i
-                            class="bx bx-user-circle me-1 text-6 position-relative top-5"></i> Sign In</h2>
+                    <h2 class="title text-uppercase font-weight-bold m-0"><i class="bx bx-user-circle me-1 text-6 position-relative top-5"></i> Sign In</h2>
                 </div>
                 <div class="card-body">
                     @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
+                    <div class="alert alert-danger">
+                        <strong>Whoops!</strong> Please Enter a Correct User Name and Password<br><br>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
                     @endif
                     @if (session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
                     @endif
                     <form action="{{ route('login-user') }}" method="post">
                         @csrf
                         <div class="form-group mb-3">
                             <label for="email">Email</label>
                             <div class="input-group">
-                                <input id="email" name="email" type="email" :value="old('email')" required
-                                    autofocus class="form-control form-control-lg" autocomplete="email" />
+                                <input id="email" name="email" type="email" :value="old('email')" required autofocus class="form-control form-control-lg" autocomplete="email" />
                                 <span class="input-group-text">
                                     <i class="bx bx-user text-4"></i>
                                 </span>
@@ -67,8 +64,7 @@
                                 <a href="pages-recover-password.html" class="float-end">Lost Password?</a>
                             </div>
                             <div class="input-group">
-                                <input id="password" name="password" type="password"
-                                    class="form-control form-control-lg" autocomplete="current-password" />
+                                <input id="password" name="password" type="password" class="form-control form-control-lg" autocomplete="current-password" />
                                 <span class="input-group-text">
                                     <i class="bx bx-lock text-4"></i>
                                 </span>
@@ -86,11 +82,11 @@
                 </div>
             </div>
             @php
-                use Carbon\Carbon;
+            use Carbon\Carbon;
             @endphp
 
             <p class="text-center text-muted mt-3 mb-3">&copy;Copyright {{ Carbon::now()->year }}. All Rights
-                Reserved.</p>
+                Reserved | TGR Africa | Developed by <a href="www.wantechsolutions.com">Wan Tech Solutions</a></p>
         </div>
     </section>
     <script src="{{ asset('backend/vendor/jquery/jquery.js') }}"></script>
