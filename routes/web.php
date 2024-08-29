@@ -51,15 +51,6 @@ Route::get('contact', function () {
     return view('website.contact');
 })->name('contact');
 
-Route::get('news', function () {
-    $latest_blogs = Blog::latest()->paginate(6);
-    return view('website.news', compact('latest_blogs'));
-})->name('news');
-Route::post('news/comment/{comment}/reply', [CommentController::class, 'reply'])->name('news.reply');
-
-Route::post('news/{uuid}/comment', [CommentController::class, 'store'])->name('news.comment');
-
-Route::get('news/{uuid}', [BlogController::class, 'show'])->name('newssingle');
 // Route::get('news/{uuid}', function ($uuid) {
 //     $blog = Blog::findOrFail($uuid);
 //     return view('website.newssingle', compact('blog'));
@@ -72,14 +63,7 @@ Route::get('news/{uuid}', [BlogController::class, 'show'])->name('newssingle');
 Route::get('partners', function () {
     return view('website.partners');
 })->name('partners');
-Route::resource('seminars', SubscribeSeminarsController::class);
-Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');
-Route::post('/subscribed-users', [SubscribeSeminarsController::class, 'users_subscribed_semiars'])->name('subscribed-users');
-Route::get('/users/subscribed/seminars', [SubscribeSeminarsController::class, 'users_subscribed'])->name('users-subscribed-semiars');
-Route::get('/all-seminars-videos', [SubscribeSeminarsController::class, 'all_seminars_record'])->name('all-seminars-videos');
-// Route for deleting seminar video
-Route::get('/seminar/{uuid}/delete', [SubscribeSeminarsController::class, 'delete_seminar_video'])->name('seminar-video-delete');
-Route::get('seminars/{seminar}/subscribe', [SubscribeSeminarsController::class, 'subscribe'])->name('seminars.subscribe');
+
 Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
 
     Route::get('founder', function () {
@@ -100,15 +84,6 @@ Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
         return view('website.about.purpose');
     })->name('purpose');
 
-});
-
-Route::prefix('contact-us')->group(function () {
-    Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
-    Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
-});
-Route::prefix('seminars')->group(function () {
-    Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
-    Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
 });
 
 Route::group(['prefix' => 'advisory/', 'as' => 'advisory.'], function () {
@@ -141,7 +116,10 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
-
+Route::post('/user-account', [RegisterController::class, 'register'])->name('user-account');
+Route::post('user-login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
+Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
+    ->middleware('auth');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -149,11 +127,23 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
+Route::get('news', function () {
+    $latest_blogs = Blog::latest()->paginate(6);
+    return view('website.news', compact('latest_blogs'));
+})->name('news');
 
-Route::post('/user-account', [RegisterController::class, 'register'])->name('user-account');
-Route::post('user-login', [Log_in_and_out_Controller::class, 'Log_in'])->name('login-user');
-Route::get('logout', [Log_in_and_out_Controller::class, 'Logout'])->name('logout')
-    ->middleware('auth');
+Route::resource('seminars', SubscribeSeminarsController::class);
+Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');
+Route::post('/subscribed-users', [SubscribeSeminarsController::class, 'users_subscribed_semiars'])->name('subscribed-users');
+Route::get('/users/subscribed/seminars', [SubscribeSeminarsController::class, 'users_subscribed'])->name('users-subscribed-semiars');
+Route::get('/all-seminars-videos', [SubscribeSeminarsController::class, 'all_seminars_record'])->name('all-seminars-videos');
+// Route for deleting seminar video
+Route::get('/seminar/{uuid}/delete', [SubscribeSeminarsController::class, 'delete_seminar_video'])->name('seminar-video-delete');
+Route::get('seminars/{seminar}/subscribe', [SubscribeSeminarsController::class, 'subscribe'])->name('seminars.subscribe');
+Route::post('news/comment/{comment}/reply', [CommentController::class, 'reply'])->name('news.reply');
+Route::post('news/{uuid}/comment', [CommentController::class, 'store'])->name('news.comment');
+Route::get('news/{uuid}', [BlogController::class, 'show'])->name('newssingle');
+
 Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('questionnaires-book-consultations');
 Route::post('/submit-questionnaire', [QuestionnaireController::class, 'submitQuestionnaire'])->name('submit-questionnaire');
 Route::get('/trg-africa-brainstorm', [PostController::class, 'index'])->name('posts.index');
@@ -161,6 +151,15 @@ Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');
 Route::get('/register', [Log_in_and_out_Controller::class, 'register'])->name('register-user');
 // routes/web.php
+
+Route::prefix('contact-us')->group(function () {
+    Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
+    Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
+});
+Route::prefix('seminars')->group(function () {
+    Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
+    Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
+});
 Route::prefix('admin')->name('admin.')->group(function () {
     // Route::resource('blogs', BlogController::class);
     Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
