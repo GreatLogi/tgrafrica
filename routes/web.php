@@ -72,7 +72,6 @@ Route::group(['prefix' => 'about/', 'as' => 'about.'], function () {
     })->name('founder');
 
     Route::get('mission', function () {
-
         return view('website.about.mission');
     })->name('mission');
 
@@ -110,7 +109,9 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
     Route::get('consult', function () {
         return view('website.features.consult');
     })->name('consult');
-
+    Route::get('thank-you', function () {
+        return view('website.features.thankyou');
+    })->name('thank_you');
 });
 
 Route::get('/login', function () {
@@ -156,10 +157,10 @@ Route::prefix('contact-us')->group(function () {
     Route::post('contact-us', [ContactUsController::class, 'store'])->name('site-store-contact-us');
     Route::get('/', [ContactUsController::class, 'index'])->name('contact-us');
 });
-Route::prefix('seminars')->group(function () {
-    Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
-    Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
-});
+// Route::prefix('seminars')->group(function () {
+//     Route::post('seminar-registration', [SeminarRegistrationController::class, 'store'])->name('site-store-seminar-registration');
+//     Route::get('/', [SeminarRegistrationController::class, 'index'])->name('contact-us');
+// });
 Route::prefix('admin')->name('admin.')->group(function () {
     // Route::resource('blogs', BlogController::class);
     Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
