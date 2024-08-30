@@ -284,7 +284,7 @@ Home
                 <a href="#" class="btn btn-primary btn-px-5 btn-py-2 text-2">Get it on Amazon</a>
             </div>
             <div class="col-9 offset-lg-1 col-lg-5 order-1 order-lg-2 scale-2">
-                <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-1.jpg') }}" alt="">
+                <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-1.png') }}" alt="">
             </div>
         </div>
     </div>
