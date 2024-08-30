@@ -122,7 +122,7 @@ Home
             <button role="button" class="owl-dot"><span></span></button>
         </div>
     </div>
-    <section class="section bg-color-light border-0 m-0">
+    <!-- <section class="section bg-color-light border-0 m-0">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
@@ -160,7 +160,7 @@ Home
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="section section-height-3 bg-color-grey m-0 border-0 mb-50">
         <div class="container">
