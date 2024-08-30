@@ -18,14 +18,14 @@
                     <strong>Success!</strong> <br>News letter Subscription successful. <br> Thank you.
                 </div>
                 <div class="alert alert-danger d-none" id="newsletterError"></div>
-                <form id="newsletterForm" action="#" method="POST" class="me-4 mb-3 mb-md-0">
+                <!-- <form id="newsletterForm" action="#" method="POST" class="me-4 mb-3 mb-md-0">
                     <div class="input-group input-group-rounded">
                         <input class="form-control form-control-sm bg-light" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="email" />
                         <button class="btn btn-light text-color-dark" type="submit">
                             <strong>GO!</strong>
                         </button>
                     </div>
-                </form>
+                </form> -->
             </div>
             <?php
 
