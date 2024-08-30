@@ -64,9 +64,9 @@ Founders
         <div class="col">
             <img class="float-start img-fluid" width="450" height="11"
                 src="{{ asset('img/clement.png') }}" alt="Agyegewe Chanayireh">
-            <p style="text-align: justify"><strong>Agyegewe Chanayireh Co-Founder and COO</strong>Agyegewe Chanayireh is
-                the co founder and Chief Operations Officer of TGR Africa. He also helped
-                co-write ` The Great Return` along side business partner <strong>Lordy Emmen.</strong>
+            <p style="text-align: justify"><strong>Agyegewe Chanayireh | Co-Founder & COO </strong></p>
+            <p>Agyegewe Chanayireh is the Co-Founder and Chief Operations Officer of TGR Africa.
+                He also helped co-write ‘The Great Return’ alongside his business partner <strong>Lordy Emmen.</strong>
                 Agyegewe`s interest in joining the
                 great return begun in his students days at the University of Manchester where he studied Modern Middle
                 Eastern History. The course was intended to prepare him to work as a foreign diplomat in the Middle East
