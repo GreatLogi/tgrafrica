@@ -32,7 +32,7 @@ Contact
                 <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
                 <form class="contact-form" action="{{ route('site-store-contact-us') }}" method="POST">
                     <div class="contact-form-success alert alert-success d-none mt-4">
-                        <strong>Success!</strong> Your message has been sent to us.
+                        <strong>Success!</strong> Your message has been sent. A consultant will contact you soon
                     </div>
                     <div class="contact-form-error alert alert-danger d-none mt-4">
                         <strong>Error!</strong> There was an error sending your message.
@@ -56,14 +56,14 @@ Contact
                     <div class="row">
                         <div class="form-group col-lg-6">
                             <label class="form-label mb-1 text-2">Country Of Residence</label>
-                            <input type="text" value="" data-msg-required="Please enter your name."
+                            <input type="text" value="" data-msg-required="Please enter your current country."
                                 maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
                         </div>
                         <div class="form-group col-lg-6">
                             <label class="form-label mb-1 text-2">Nationality</label>
-                            <input type="email" value="" data-msg-required="Please enter your email address."
-                                data-msg-email="Please enter a valid email address." maxlength="100"
-                                class="form-control text-3 h-auto py-2" name="email" required>
+                            <input type="text" value="" data-msg-required="Please enter your email address."
+                                data-msg-email="Please enter your Nationality" maxlength="100"
+                                class="form-control text-3 h-auto py-2" name="nationality" required>
                         </div>
                     </div>
 

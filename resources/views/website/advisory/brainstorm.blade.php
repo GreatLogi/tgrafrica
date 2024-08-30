@@ -59,7 +59,7 @@ Brainstorm
 
                     <hr>
                     <a href="{{ route('register-user') }}" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book
-                        Here</a>
+                        a Consultation</a>
 
                 </blockquote>
             </div>

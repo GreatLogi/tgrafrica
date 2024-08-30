@@ -7,11 +7,12 @@
         <div class="footer-ribbon"><span>Get in Touch</span></div>
         <div class="row py-5 my-4">
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <h5 class="text-3 mb-3">TGR Africa Seminar</h5>
+                <h5 class="text-3 mb-3">The Great Return</h5>
                 <p class="pe-1">
-                    If you identify with the TGR Philosophy and require further information so that you can become
-                    better educated on some of the opportunities available to you, then you should consider TGR
-                    Seminars.
+                    Our primary focus is to help facilitate
+                    engagement between the African Diaspora and Africa on a business
+                    and investment level. We believe these two key areas offer the best solution
+                    for sustainable long term development in Africa.
                 </p>
                 <div class="alert alert-success d-none" id="newsletterSuccess">
                     <strong>Success!</strong> <br>News letter Subscription successful. <br> Thank you.
@@ -52,14 +53,14 @@
                 <div class="contact-details">
                     <h5 class="text-3 mb-3">CONTACT US</h5>
                     <ul class="list list-icons list-icons-lg">
-                        <li class="mb-1">
+                        <!-- <li class="mb-1">
                             <i class="fa fa-phone text-color-secondary"></i>
                             <p class="m-0">
                                 <a href="tel:+233209398306">+233209398306</a>
                             </p>
-                            <!-- <p class="m-0">GB33 Nii Tsoku Komletse, Abbey St</p>
-                            <p class="m-0">Gbawe Zero, Greater Accra</p> -->
-                        </li>
+                            <p class="m-0">GB33 Nii Tsoku Komletse, Abbey St</p>
+                            <p class="m-0">Gbawe Zero, Greater Accra</p>
+                        </li>-->
                         <li class="mb-1">
                             <i class="fab fa-whatsapp text-color-secondary"></i>
                             <p class="m-0">

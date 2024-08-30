@@ -8,6 +8,10 @@ Consultation
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+<style>
+    #questionnaireModal {}
+</style>
+
 <section
     class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
     style="background-image: url({{ asset('img/page-header/bc-green.jpg') }});">
@@ -61,15 +65,13 @@ Consultation
                         {{ session('success') }}
                     </div>
                     @endif
-
                     @if (session('info'))
                     <div class="alert alert-info">
                         {{ session('info') }}
                     </div>
                     @endif
-
                     <a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2"
-                        data-bs-toggle="modal" data-bs-target="#questionnaireModal">Click Here</a>
+                        data-bs-toggle="modal" data-bs-target="#questionnaireModal">Book a Consultation</a>
                 </blockquote>
             </div>
         </div>
