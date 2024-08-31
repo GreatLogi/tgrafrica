@@ -33,27 +33,45 @@ Founders
 
             <img class="float-start img-fluid" width="450" height="11" src="{{ asset('img/lordy.png') }}"
                 alt="Lordy Emmen">
-            <p style="text-align: justify"><strong>Lordy Emmen</strong> is a diaspora entrepreneur, diaspora activist
-                and author of<strong> `The Great Return`</strong>.
-                She is of Ghanian decent and has spent the past 25 years living in the UK where she had a successful
-                career as a Management Accountant.
-                Since 2019, along with her husband, she has been able to make investments in the poultry sector as a
-                result of recognising the dependency
-                a country like Ghana has on foreign food imports which can be sourced locally.
-                She and her husband have also made investments in Ghana’s growing real estate market.
-                <br>
-                Her experience in joining the great return , doing business in Africa and being passionate about African
-                developed served as the inspiration
-                behind the creation of <strong>TGR Africa</strong>. Lordy is a strong advocate for the diasporas
-                involvement in African Development and believes that we in
-                the diaspora can play a significant role in the economic transformation of Africa. When it comes to
-                doing business in Africa,
-                her guiding philosophy is to find innovative ways to make profit through the fulfilment of purpose.
-                <br>
-                She believes that we in the Diaspora have a great opportunity to reap significant economic rewards if we
-                are willing to take up
-                the challenge of investing in<strong> African development</strong>.
+            <style style="text-align: justify"></style>
+            <strong>Lordy Emmen | Founder & CEO of TGR Africa</strong><br>
+            <strong>Lordy Emmen</strong>is a diaspora entrepreneur, a diaspora
+            engagement and investment activist, a self-proclaimed African Development Ambassador
+            and author of the book <strong> `The Great Return`</strong>.<br>
+            She is of Ghanian decent, born and bred in
+            Ghana where she lived up until she completed her undergraduate degree at the University
+            of Ghana, Legon, with a BA in Economics and Resource Study. She moved to join her husband
+            in the UK where she has lived with her family and worked for over 24 years. She has had a
+            successful career in the finance and accountancy field in the UK for well over 20 years.
+            <p>
+                She studied and become a chartered certified accountant with ACCA (Association of Chartered
+                Certified Accountants England & Wales) and later gained fellowship status (FCCA). <br>Her work
+                experience spans some of the largest organisations in both the public and private sectors
+                such as the NHS as well as small companies such as a firm of chartered accountants.
+                Prominent roles have included Financial Controller and Finance Business Partner for UK’s
+                leading ports group ABP, where, for sections of the group, she led the delivery of FP&A
+                including budgets, 5-year plans and financial controls.
             </p>
+            <p>
+                Since 2019, along with her husband, she has made investments in the poultry sector in
+                Ghana recognising the dependency a country like Ghana has on foreign food imports which
+                can easily be produced locally.<br>
+                Her experience in joining the great return, doing business in Africa and being
+                passionate about African development served as the inspiration for the creation of <Strong>TGR Africa.</Strong>
+                Lordy is a strong advocate for the diaspora’s involvement in and diaspora mobilization for
+                African development and believes that we in the diaspora can play a significant role in the
+                economic transformation of Africa. <br>When it comes to doing business in Africa, her guiding
+                philosophy is to find innovative ways to make profit through the fulfilment of purpose.
+                She believes that we in the diaspora have a great opportunity to reap significant
+                economic rewards if we are willing to take up the challenge of investing in <strong>African development</strong>.
+            </p>
+
+
+
+
+
+
+
 
 
 

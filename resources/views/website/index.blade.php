@@ -223,16 +223,13 @@ Home
                     </div>
                     <div class="col-md-8 ps-md-5">
                         <p class="text-4" style="text-align: justify;">
-                            <strong> Lordy Emmen</strong> is a diaspora entrepreneur, diaspora activist, and author of
-                            "The
-                            <strong> Great Return".</strong>
-                            She is of Ghanaian descent and has spent the past 25 years living in the UK where she had a
-                            successful career as a Management Accountant.
-                            Since 2019, along...
-                            <!-- with her husband, she has been able to make investments in the poultry
-                                sector as a result of recognizing the dependency
-                                a country like Ghana has on foreign food imports which can be sourced locally. -->
+                            <strong>Lordy Emmen | Founder & CEO of TGR Africa </strong>
                         </p>
+                        <p><strong>Lordy Emmen</strong> is a diaspora entrepreneur, a diaspora engagement and investment activist,
+                            a self-proclaimed African Development Ambassador and author of the book <strong>‘The Great Return’</strong>.
+                            She is of Ghanian decent, born and bred in Ghana where she lived up until she completed her
+                            undergraduate degree at the University of Ghana, Legon,..
+                            <!--with a BA in Economics and Resource -->
                     </div>
                 </div>
                 <hr class="solid my-5">
@@ -245,10 +242,14 @@ Home
                     </div>
                     <div class="col-md-8 ps-md-5">
                         <p class="text-4" style="text-align: justify;">
-                            <strong>Agyegewe Chanayireh</strong>, Co-Founder and COO of TGR Africa, co-wrote "The Great
-                            Return" with business partner Lordy Emmen.
-                            His interest in joining the great return began during his student days at the University of
-                            Manchester, where he studied Modern...
+                            <strong>Agyegewe Chanayireh | Co-Founder & COO</strong>
+                        </p>
+                        <p><strong>Agyegewe Chanayireh</strong> is the Co-Founder and Chief Operations Officer
+                            of <strong>TGR Africa</strong>. He also
+                            helped co-write <strong>‘The Great Return’</strong> alongside his business
+                            partner<strong>Lordy Emmen</strong>.
+                            Agyegewe’s interest in joining the great return begun in his students’
+                            days at the University of Manchester where he studied Modern Middle Eastern History...
                             <!-- Middle Eastern History.
                                 The course was intended to prepare him to work as a foreign diplomat in the Middle East on
                                 behalf of the British Government, and through his studies, he was awakened to
