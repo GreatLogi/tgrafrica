@@ -8,10 +8,6 @@ Consultation
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-<style>
-    #questionnaireModal {}
-</style>
-
 <section
     class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
     style="background-image: url({{ asset('img/page-header/bc-green.jpg') }});">
