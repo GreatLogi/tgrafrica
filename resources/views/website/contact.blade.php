@@ -5,6 +5,13 @@ Contact
 @endsection
 
 @section('content')
+
+@if (session('success'))
+<div style="color: green;">
+    {{ session('success') }}
+</div>
+@endif
+
 <section
     class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
     style="background-image: url(img/page-header/page-header-background.jpg);">
@@ -32,7 +39,7 @@ Contact
             <div class="col-lg-8">
                 <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2>
                 <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
-                <form action="{{ route('site-store-contact-us') }}" method="POST">
+                <form action="{{ route('contact.submit') }}" method="POST">
                     @csrf
                     <div class="contact-form-success alert alert-success d-none mt-4">
                         <strong>Success!</strong> Your message has been sent to us.

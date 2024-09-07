@@ -43,6 +43,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+//Sending Emails through contact page
+use App\Http\Controllers\ContactController;
+
+Route::post('/contact-submit', [ContactController::class, 'submit'])->name('contact.submit');
+
+
+
 Route::get('/', function () {
     return view('website.index');
 })->name('home');
@@ -50,6 +57,7 @@ Route::get('/', function () {
 Route::get('contact', function () {
     return view('website.contact');
 })->name('contact');
+Route::post('/contact/send', [ContactUsController::class, 'send'])->name('contact.send');
 
 // Route::get('news/{uuid}', function ($uuid) {
 //     $blog = Blog::findOrFail($uuid);
