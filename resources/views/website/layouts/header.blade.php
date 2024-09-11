@@ -69,7 +69,7 @@
                                                 href="javascript:void(0)"> About us </a>
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
-                                                        href="{{ route('about.founder') }}">Founder</a>
+                                                        href="{{ route('about.founder') }}">Founders</a>
                                                 </li>
 
                                                 <li> <a class="dropdown-item"

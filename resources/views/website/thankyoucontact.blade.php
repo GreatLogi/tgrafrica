@@ -28,7 +28,7 @@ Thank You
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
                 <img src="{{ asset('frontend/img/tanx.png') }}" alt="Thank You" class="img-fluid mb-4">
-                <p class="lead">for contacting TGR Africa. A consultant will contact you soon...</p>
+                <p class="lead">for contacting TGR Africa. An adivisor will contact you soon...</p>
                 <a href="{{ route('home') }}" class="btn btn-primary mt-3">Go Home</a>
             </div>
         </div>

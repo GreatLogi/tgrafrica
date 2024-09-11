@@ -108,13 +108,13 @@ Contact
                             <p class="m-0">GB33 Nii Tsoku Komletse, Abbey St</p>
                             <p class="m-0">Gbawe Zero, Greater Accra</p>
                         </li> -->
-                        <li><i class="fas fa-phone top-6 text-color-secondary"></i>
+                        <!--<li><i class="fas fa-phone top-6 text-color-secondary"></i>
                             <strong class="text-dark">Phone:</strong>
-                            <a href="tel:+233209398306"> +233209398306</a>
+                            <a href="tel:+233209398306"> +233209398306</a> -->
                         </li>
                         <li><i class="fab fa-whatsapp top-6 text-color-secondary"></i>
                             <strong class="text-dark">WhatsApp:</strong>
-                            <a href="tel:+233209398306"> +233209398306</a>
+                            <a href="tel:+233500200335"> +233500200335</a>
                         </li>
                         <li><i class="fas fa-envelope top-6 text-color-secondary"></i> <strong
                                 class="text-dark">Email:</strong> <a href="mailto:info@tgrafrica.com"><span
