@@ -8,6 +8,12 @@ body {
 	background: #ecedf0;
 	width: 100%;
 }
+/* .add{
+	background-color: #242424;
+	width: 20%;
+	
+} */
+
 
 html {
 	overflow-x: hidden !important;
@@ -223,7 +229,7 @@ a:active {
 
 	/* Layout Fixed - Inner Wrapper */
 	html.fixed .inner-wrapper {
-		padding-top: 110px;
+		padding-top: 5px;
 	}
 
 	/* Layout Fixed - Content Body */

@@ -58,9 +58,8 @@ Brainstorm
                         an advisor.</p>
 
                     <hr>
-                    <a href="{{ route('register-user') }}" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book
-                        a Consultation</a>
-
+                    <a href="{{ route('contact') }}"
+                        class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">Book a Consultation</a>
                 </blockquote>
             </div>
         </div>

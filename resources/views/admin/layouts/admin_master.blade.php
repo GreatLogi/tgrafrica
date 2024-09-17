@@ -165,6 +165,44 @@
     <script src="{{ asset('backend/js/theme.js') }}"></script>
     <script src="{{ asset('backend/js/custom.js') }}"></script>
     <script src="{{ asset('backend/js/theme.init.js') }}"></script>
+    <!-- Vendor JS -->
+    <script src="{{asset('backend/js/vendors.min.js')}}"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+    <script src="{{asset('backend/vendor/chart.js-master/Chart.min.js')}}"></script>
+	<script src="{{asset('backend/js/pages/widget-charts2.js')}}"></script>
+
+
+
+    <!-- Specific Page Vendor -->
+    <script src="{{asset('backend/vendor/jquery-appear/jquery.appear.js')}}"></script>
+    <script src="{{asset('backend/vendor/jquery.easy-pie-chart/jquery.easypiechart.js')}}"></script>
+    <script src="{{asset('backend/vendor/flot/jquery.flot.js')}}"></script>
+    <script src="{{asset('backend/vendor/flot.tooltip/jquery.flot.tooltip.js')}}"></script>
+    <script src="{{asset('backend/vendor/flot/jquery.flot.pie.js')}}"></script>
+    <script src="{{asset('backend/vendor/flot/jquery.flot.categories.js')}}"></script>
+    <script src="{{asset('backend/vendor/flot/jquery.flot.resize.js')}}"></script>
+    <script src="{{asset('backend/vendor/jquery-sparkline/jquery.sparkline.js')}}"></script>
+    <script src="{{asset('backend/vendor/raphael/raphael.js')}}"></script>
+    <script src="{{asset('backend/vendor/morris/morris.js')}}"></script>
+    <script src="{{asset('backend/vendor/gauge/gauge.js')}}"></script>
+    <script src="{{asset('backend/vendor/snap.svg/snap.svg.js')}}"></script>
+    <script src="{{asset('backend/vendor/liquid-meter/liquid.meter.js')}}"></script>
+    <script src="{{asset('backend/vendor/chartist/chartist.js')}}"></script>
+		
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+
+    <script src="{{asset('backend/js/examples/examples.charts.js')}}"></script>
+
+
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -181,6 +219,151 @@
         ga('create', 'UA-42715764-8', 'auto');
         ga('send', 'pageview');
     </script>
+
+
+    	<!-- Examples -->
+		<style>
+			#ChartistCSSAnimation .ct-series.ct-series-a .ct-line {
+				fill: none;
+				stroke-width: 4px;
+				stroke-dasharray: 5px;
+				-webkit-animation: dashoffset 1s linear infinite;
+				-moz-animation: dashoffset 1s linear infinite;
+				animation: dashoffset 1s linear infinite;
+			}
+
+			#ChartistCSSAnimation .ct-series.ct-series-b .ct-point {
+				-webkit-animation: bouncing-stroke 0.5s ease infinite;
+				-moz-animation: bouncing-stroke 0.5s ease infinite;
+				animation: bouncing-stroke 0.5s ease infinite;
+			}
+
+			#ChartistCSSAnimation .ct-series.ct-series-b .ct-line {
+				fill: none;
+				stroke-width: 3px;
+			}
+
+			#ChartistCSSAnimation .ct-series.ct-series-c .ct-point {
+				-webkit-animation: exploding-stroke 1s ease-out infinite;
+				-moz-animation: exploding-stroke 1s ease-out infinite;
+				animation: exploding-stroke 1s ease-out infinite;
+			}
+
+			#ChartistCSSAnimation .ct-series.ct-series-c .ct-line {
+				fill: none;
+				stroke-width: 2px;
+				stroke-dasharray: 40px 3px;
+			}
+
+			@-webkit-keyframes dashoffset {
+				0% {
+					stroke-dashoffset: 0px;
+				}
+
+				100% {
+					stroke-dashoffset: -20px;
+				};
+			}
+
+			@-moz-keyframes dashoffset {
+				0% {
+					stroke-dashoffset: 0px;
+				}
+
+				100% {
+					stroke-dashoffset: -20px;
+				};
+			}
+
+			@keyframes dashoffset {
+				0% {
+					stroke-dashoffset: 0px;
+				}
+
+				100% {
+					stroke-dashoffset: -20px;
+				};
+			}
+
+			@-webkit-keyframes bouncing-stroke {
+				0% {
+					stroke-width: 5px;
+				}
+
+				50% {
+					stroke-width: 10px;
+				}
+
+				100% {
+					stroke-width: 5px;
+				};
+			}
+
+			@-moz-keyframes bouncing-stroke {
+				0% {
+					stroke-width: 5px;
+				}
+
+				50% {
+					stroke-width: 10px;
+				}
+
+				100% {
+					stroke-width: 5px;
+				};
+			}
+
+			@keyframes bouncing-stroke {
+				0% {
+					stroke-width: 5px;
+				}
+
+				50% {
+					stroke-width: 10px;
+				}
+
+				100% {
+					stroke-width: 5px;
+				};
+			}
+
+			@-webkit-keyframes exploding-stroke {
+				0% {
+					stroke-width: 2px;
+					opacity: 1;
+				}
+
+				100% {
+					stroke-width: 20px;
+					opacity: 0;
+				};
+			}
+
+			@-moz-keyframes exploding-stroke {
+				0% {
+					stroke-width: 2px;
+					opacity: 1;
+				}
+
+				100% {
+					stroke-width: 20px;
+					opacity: 0;
+				};
+			}
+
+			@keyframes exploding-stroke {
+				0% {
+					stroke-width: 2px;
+					opacity: 1;
+				}
+
+				100% {
+					stroke-width: 20px;
+					opacity: 0;
+				};
+			}
+		</style>
+
 </body>
 
 </html>

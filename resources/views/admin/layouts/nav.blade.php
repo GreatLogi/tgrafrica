@@ -30,18 +30,10 @@
                     <li class="nav-group-label">Contact</li>
 
                     <li class="nav-parent">
-                        <a class="nav-link" href="#">
-                            <i class="bx bx-cube" aria-hidden="true"></i>
-                            <span>Notifications</span>
+                        <a class="nav-link" href="{{ route('contact-us') }}">
+                             Summary <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                         </a>
-                        <ul class="nav nav-children">
-                            <li class="nav-parent">
-                                <a class="nav-link" href="{{ route('contact-us') }}">
-                                    Summary <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
-                                </a>
-                            </li>
-
-                        </ul>
+                        
                     </li>
 
 

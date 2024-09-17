@@ -1,7 +1,7 @@
 /*
 Name: 			UI Elements / Charts - Examples
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version: 	4.0.0
+Theme Version: 	4.2.0
 */
 
 (function($) {

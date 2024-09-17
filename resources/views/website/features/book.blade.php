@@ -36,14 +36,14 @@ Books
                     data-appear-animation="maskUp" data-appear-animation-delay="500">Book</p>
             </div>
             <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                Since the mid 2000s there has been a growing movement taken place amongst the African Diaspora
-                population living in the western world.
-                Why are thousands of them deciding to abandon the West and relocate back to Africa in order to start new
-                lives?.</p>
+                Since 2019, there has been a growing movement taking place amongst the
+                African Diaspora population living in the Western world. Why are thousands of them
+                deciding to abandon the West and relocate back to Africa and start new lives?</p>
             <p class="pb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                In the post-colonial period, we saw a great migration of people from Africa to the west in
-                search of greater economic opportunities so why are a significant percentage of them deciding to come
-                back home?.</p>
+                In the
+                post-colonial period, we saw a great migration of people from Africa to the West in
+                search of greater economic opportunity; so why are a significant percentage of them
+                deciding to come back home?.</p>
             <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter"
                 data-appear-animation-delay="900">
             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
@@ -63,12 +63,11 @@ Books
             </div>
         </div>
         <div class="col-md-6 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-            <img src="{{ asset('img/gallery/gallery-2.png') }}" class="img-fluid mb-2" alt="" style="width: 1080px; height: 500px;">
+            <img src="{{ asset('img/gallery/gallery-2.png') }}" class="img-fluid mb-2" alt="" style="width: 500px; height: 650px;">
         </div>
     </div>
 </div>
 <hr>
-
 <!-- <div class="container py-4">
     <div class="row pt-2 mt-2 mb-5">
         <div class="col-md-7 mb-4 mb-md-0">
