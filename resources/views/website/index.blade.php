@@ -278,10 +278,9 @@ Home
             <div class="col-lg-5 order-2 order-lg-1 pt-4 pt-lg-0 pb-5 pb-lg-0 mt-5 mt-lg-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
                 <h2 class="font-weight-bold text-color-light text-7 mb-2">The Great Return</h2>
                 <p class="lead font-weight-light text-color-light text-4">Book</p>
-                <p class="font-weight-light text-color-light text-2 mb-4 opacity-7">Since the mid 2000s there has been
-                    a growing movement taken place amongst the African Diaspora population living in the western world.
-                    Why are thousands of them deciding to abandon the West and relocate back to Africa in order to start
-                    new lives?.</p>
+                <p class="font-weight-light text-color-light text-2 mb-4 opacity-7">Since 2019, there has been a growing movement taking place amongst the
+                    African Diaspora population living in the Western world. Why are thousands of them
+                    deciding to abandon the West and relocate back to Africa and start new lives?</p>
                 <a href="#" class="btn btn-primary btn-px-5 btn-py-2 text-2">Get it on Amazon</a>
             </div>
             <div class="col-9 offset-lg-1 col-lg-5 order-1 order-lg-2 scale-2">
