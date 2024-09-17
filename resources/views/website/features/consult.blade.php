@@ -19,7 +19,7 @@ Consultation
             <div class="col-md-4 order-1 order-md-2 align-self-center">
                 <ul class="breadcrumb breadcrumb-light d-block text-md-end">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>Features</li>
+                    <li>Advisory</li>
                     <li class="active">Consultation</li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@ Consultation
             <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                 data-appear-animation-delay="800">
                 <blockquote>
-                    <p class="mb-0">Please complete the questionnaire by clicking on thr button,book a free
+                    <p class="mb-0">Book a free
                         consultation to
                         discuss your TGR needs with one of our advisors.
                     </p>
@@ -152,7 +152,7 @@ Consultation
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="questionnaireModalLabel">Please complete the questionnaire by clicking on this button. Book a free consultation to
+                <h5 class="modal-title" id="questionnaireModalLabel">Book a free consultation to
                     discuss your TGR needs with one of our advisors.</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
