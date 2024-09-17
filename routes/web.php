@@ -274,7 +274,7 @@ Route::group(['prefix' => 'settings'], function () {
         Route::get('/inactivation{id}', [ProfileController::class, 'Inactive'])->name('user.inactive');
         Route::get('/activation{id}', [ProfileController::class, 'Active'])->name('user.active');
     });
-    // Route::get('/login-activities', [LogactivityController::class, 'login_and_logout_activities'])->name('login_and_logout');
+
     Route::prefix('audit-trail')->group(function () {
         Route::get('/', [AuditController::class, 'ViewAudit'])->name('audit.trail');
         Route::get('/user-audit', [AuditController::class, 'AuthAudit'])->name('user-audit-trail');
