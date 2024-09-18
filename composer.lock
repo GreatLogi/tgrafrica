@@ -9938,7 +9938,6 @@
         },
         {
             "name": "phpunit/phpunit",
-<<<<<<< HEAD
             "version": "10.5.34",
             "source": {
                 "type": "git",
@@ -9949,18 +9948,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3c69d315bdf79080c8e115b69d1961c6905b0e18",
                 "reference": "3c69d315bdf79080c8e115b69d1961c6905b0e18",
-=======
-            "version": "10.5.33",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4def7a9cda75af9c2bc179ed53a8e41313e7f7cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4def7a9cda75af9c2bc179ed53a8e41313e7f7cf",
-                "reference": "4def7a9cda75af9c2bc179ed53a8e41313e7f7cf",
->>>>>>> 9d780ab10239ed5b8cdec2067a879f045f4d9dfe
                 "shasum": ""
             },
             "require": {
@@ -10032,11 +10019,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.34"
-=======
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.33"
->>>>>>> 9d780ab10239ed5b8cdec2067a879f045f4d9dfe
             },
             "funding": [
                 {
@@ -10052,11 +10035,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
             "time": "2024-09-13T05:19:38+00:00"
-=======
-            "time": "2024-09-09T06:06:56+00:00"
->>>>>>> 9d780ab10239ed5b8cdec2067a879f045f4d9dfe
         },
         {
             "name": "sebastian/cli-parser",
