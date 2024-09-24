@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -13,8 +12,6 @@ class ContactUsNotification extends Mailable
 {
     use Queueable, SerializesModels;
     public $messageContent;
-
-
 
     /**
      * Create a new message instance.
@@ -34,8 +31,10 @@ class ContactUsNotification extends Mailable
     public function build()
     {
         return $this->subject('New Contact Message - TGR Africa')
-                    ->view('emails.contact')
-                    ->with(['messageContent' => $this->messageContent]);
+            ->view('emails.contact')
+            ->with([
+                'messageContent' => $this->messageContent ?? [],
+            ]);
     }
 
     /**
@@ -43,12 +42,6 @@ class ContactUsNotification extends Mailable
      *
      * @return \Illuminate\Mail\Mailables\Content
      */
-    public function content()
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
 
     /**
      * Get the attachments for the message.
