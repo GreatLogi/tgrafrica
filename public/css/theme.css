@@ -48,6 +48,11 @@ html {
         scroll-behavior: auto;
     }
 }
+
+.add{
+    background-color: blue;
+}
+
 body {
     background-color: var(--light);
     color: var(--default);

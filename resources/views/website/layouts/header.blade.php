@@ -29,8 +29,8 @@
                                 <li class="social-icons-facebook" style="border-radius: 40%"><a
                                         href="https://web.facebook.com/profile.php?id=61559081140764&__cft__[0]=AZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg"
                                         target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                {{-- <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
-                                        title="Twitter"><i class="fab fa-x-twitter"></i></a></li> --}}
+                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                                        title="X"><i class="fab fa-x-twitter"></i></a></li>
                                 <li class="social-icons-youtube" style="border-radius: 40%"><a
                                         href="http://www.youtube.com/@TGRAfrica" target="_blank" title="Youtube"><i
                                             class="fab fa-youtube"></i></a></li>
@@ -69,25 +69,19 @@
                                                 href="javascript:void(0)"> About us </a>
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
-                                                        href="{{ route('about.founder') }}">Founder</a>
-
+                                                        href="{{ route('about.founder') }}">Founders</a>
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.vision') }}">Vision</a>
-
                                                 </li>
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.mission') }}">Mission</a>
-
                                                 </li>
-
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.purpose') }}">Purpose</a>
-
                                                 </li>
-
                                             </ul>
                                         </li>
 
@@ -96,9 +90,13 @@
                                                 href="javascript:void(0)">Advisory</a>
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
-                                                        href="{{ route('advisory.seminar') }}">TGR Seminars</a>
+                                                        href="{{ route('features.consult') }}">Book a Consultation</a>
 
                                                 </li>
+                                                <!-- <li> <a class="dropdown-item"
+                                                        href="{{ route('advisory.seminar') }}">TGR Seminars</a>
+
+                                                </li> -->
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('advisory.brainstorm') }}">TGR Brainstorm</a>
@@ -106,14 +104,7 @@
 
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('advisory.analytic') }}">TGR Analytics</a>
-
                                                 </li>
-
-                                                <li> <a class="dropdown-item"
-                                                        href="{{ route('features.consult') }}">Book a Consultation</a>
-
-                                                </li>
-
                                             </ul>
                                         </li>
 

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'meteocons';
-	src:url('../fonts/meteocons%EF%B9%96lbb2co.eot');
-	src:url('../fonts/meteocons%EF%B9%96.eot#iefixlbb2co') format('embedded-opentype'),
-		url('../fonts/meteocons%EF%B9%96lbb2co.woff') format('woff'),
-		url('../fonts/meteocons%EF%B9%96lbb2co.ttf') format('truetype'),
-		url('../fonts/meteocons%EF%B9%96lbb2co.svg#meteocons') format('svg');
+	src:url('../fonts/meteoconsbc3c.eot?lbb2co');
+	src:url('../fonts/meteoconsd41d.eot?#iefixlbb2co') format('embedded-opentype'),
+		url('../fonts/meteoconsbc3c.woff?lbb2co') format('woff'),
+		url('../fonts/meteoconsbc3c.ttf?lbb2co') format('truetype'),
+		url('../fonts/meteoconsbc3c.svg?lbb2co#meteocons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

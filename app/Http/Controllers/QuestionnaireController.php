@@ -80,6 +80,7 @@ class QuestionnaireController extends Controller
             'responses' => json_encode($data),
             'scores' => $percentageScore,
         ]);
-        return back()->with('success', 'Thank You for Booking a consultation with TGR. TGR will get back to you as soon as possible.');
+        return redirect()->route('features.thank_you')->with('success', 'Thank You for Booking a consultation with TGR. TGR will get back to you as soon as possible.');
+        // return back()->with('success', 'Thank You for Booking a consultation with TGR. TGR will get back to you as soon as possible.');
     }
 }

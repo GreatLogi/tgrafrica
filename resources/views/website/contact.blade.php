@@ -5,6 +5,12 @@
 @endsection
 
 @section('content')
+    @if (session('success'))
+        <div style="color: green;">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
         style="background-image: url(img/page-header/page-header-background.jpg);">
@@ -24,13 +30,16 @@
         </div>
     </section>
 
+
+
     <div role="main" class="main">
         <div class="container">
             <div class="row py-4">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2>
                     <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
-                    <form class="contact-form" action="{{ route('site-store-contact-us') }}" method="POST">
+                    <form action="{{ route('site-store-contact-us') }}" method="POST">
+                        @csrf
                         <div class="contact-form-success alert alert-success d-none mt-4">
                             <strong>Success!</strong> Your message has been sent to us.
                         </div>
@@ -43,12 +52,12 @@
                             <div class="form-group col-lg-6">
                                 <label class="form-label mb-1 text-2">Full Name</label>
                                 <input type="text" value="" data-msg-required="Please enter your name."
-                                    maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
+                                    class="form-control text-3 h-auto py-2" name="full_name" required>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label class="form-label mb-1 text-2">Email Address</label>
                                 <input type="email" value="" data-msg-required="Please enter your email address."
-                                    data-msg-email="Please enter a valid email address." maxlength="100"
+                                    data-msg-email="Please enter a valid email address."
                                     class="form-control text-3 h-auto py-2" name="email" required>
                             </div>
                         </div>
@@ -57,13 +66,12 @@
                             <div class="form-group col-lg-6">
                                 <label class="form-label mb-1 text-2">Country Of Residence</label>
                                 <input type="text" value="" data-msg-required="Please enter your name."
-                                    maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
+                                    class="form-control text-3 h-auto py-2" name="country_of_residence" required>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label class="form-label mb-1 text-2">Nationality</label>
-                                <input type="email" value="" data-msg-required="Please enter your email address."
-                                    data-msg-email="Please enter a valid email address." maxlength="100"
-                                    class="form-control text-3 h-auto py-2" name="email" required>
+                                <input type="text" value="" data-msg-required="Please enter your nationality."
+                                    class="form-control text-3 h-auto py-2" name="nationality" required>
                             </div>
                         </div>
 
@@ -83,24 +91,30 @@
                         </div>
                         <div class="row">
                             <div class="form-group col">
-                                <input type="submit" value="Send Message" class="btn btn-secondary btn-modern"
-                                    data-loading-text="Loading...">
+                                <button type="submit" class="btn btn-secondary btn-modern">Message
+                                    TGR</button>
                             </div>
                         </div>
                     </form>
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
-                        <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
+                        <h4 class="mt-2 mb-1">Let's <strong>Talk</strong></h4>
                         <ul class="list list-icons list-icons-style-2 mt-2 ">
-                            <li><i class="fas fa-map-marker-alt top-6 text-color-secondary"></i> <strong
+                            <!-- <li><i class="fas fa-map-marker-alt top-6 text-color-secondary"></i> <strong
                                     class="text-dark">Address:</strong>
                                 <p class="m-0">GB33 Nii Tsoku Komletse, Abbey St</p>
                                 <p class="m-0">Gbawe Zero, Greater Accra</p>
+                            </li> -->
+                            <!--<li><i class="fas fa-phone top-6 text-color-secondary"></i>
+                                <strong class="text-dark">Phone:</strong>
+                                <a href="tel:+233209398306"> +233209398306</a> -->
                             </li>
-                            <li><i class="fas fa-phone top-6 text-color-secondary"></i> <strong
-                                    class="text-dark">Phone:</strong><a href="tel:+233209398306"> +233209398306</li></a>
+                            <li><i class="fab fa-whatsapp top-6 text-color-secondary"></i>
+                                <strong class="text-dark">WhatsApp:</strong>
+                                <a href="tel:+233500200335"> +233500200335</a>
+                            </li>
                             <li><i class="fas fa-envelope top-6 text-color-secondary"></i> <strong
                                     class="text-dark">Email:</strong> <a href="mailto:info@tgrafrica.com"><span
                                         class="__cf_email__"

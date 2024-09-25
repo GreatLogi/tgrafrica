@@ -36,10 +36,10 @@ class Log_in_and_out_Controller extends Controller
                 return redirect()->intended('dashboard');
             } else {
                 auth()->logout();
-                return redirect('/login')->withErrors(['error' => 'Your account is deactivated. Please contact the admin.']);
+                return redirect()->route('login')->withErrors(['error' => 'Your account is not active Yet.']);
             }
         }
-        return redirect('/login')->withErrors(['error' => 'Invalid credentials. Please try again.']);
+        return redirect()->route('login')->withErrors(['error' => 'Invalid credentials. Please try again.']);
     }
 
     public function Logout()
