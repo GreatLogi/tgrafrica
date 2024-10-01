@@ -50,7 +50,6 @@ class ContactUsController extends Controller
             'message' => 'required',
             'subject' => 'required',
         ]);
-
         // Save the data to the database
         ContactUs::create($validated);
         // Email content

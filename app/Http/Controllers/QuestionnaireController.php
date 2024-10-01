@@ -2,8 +2,10 @@
 declare (strict_types = 1);
 namespace App\Http\Controllers;
 
+use App\Mail\ConsultationBookingNotification;
 use App\Models\QuestionnaireResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class QuestionnaireController extends Controller
 {
@@ -48,7 +50,7 @@ class QuestionnaireController extends Controller
 
     public function submitQuestionnaire(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'country_of_residence' => 'required',
@@ -80,7 +82,20 @@ class QuestionnaireController extends Controller
             'responses' => json_encode($data),
             'scores' => $percentageScore,
         ]);
-        return redirect()->route('features.thank_you')->with('success', 'Thank You for Booking a consultation with TGR. TGR will get back to you as soon as possible.');
+
+        $messageContent = [
+            'full_name' => $validated['name'],
+            'email' => $validated['email'],
+            'contact' => $validated['contact'],
+            'country_of_residence' => $validated['country_of_residence'],
+            'nationality' => $validated['nationality'],
+            'percentageScore' => $percentageScore,
+        ];
+
+        Mail::to('info@tgrafrica.com')->send(new ConsultationBookingNotification($messageContent));
+        // Send auto-reply to user
+        Mail::to($validated['email'])->send(new ConsultationBookingNotification($messageContent));
+        return redirect()->route('features.thank_you')->with('success', 'Thank you for booking a consultation with TGR. We will get back to you as soon as possible.');
         // return back()->with('success', 'Thank You for Booking a consultation with TGR. TGR will get back to you as soon as possible.');
     }
 }
