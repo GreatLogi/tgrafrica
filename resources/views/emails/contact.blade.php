@@ -1,4 +1,4 @@
-@extends('website.layouts.main')
+{{-- @extends('website.layouts.main')
 @section('title')
     Contact
 @endsection
@@ -9,4 +9,59 @@
     <p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
     <p><strong>Subject:</strong> {{ $messageContent['subject'] ?? 'N/A' }}</p>
     <p><strong>Message:</strong> {{ $messageContent['message'] ?? 'N/A' }}</p>
-@endsection
+@endsection --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h1>
+        <p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
+        <p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
+        <p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
+        <p><strong>Subject:</strong> {{ $messageContent['subject'] ?? 'N/A' }}</p>
+        <p><strong>Message:</strong> {{ $messageContent['message'] ?? 'N/A' }}</p>
+    </div>
+</body>
+
+</html>

@@ -38,7 +38,7 @@ class ContactUsController extends Controller
     //     // Redirect back with a success message
     //     return redirect()->back()->with('success', 'Your message has been sent successfully!');
     // }
-    
+
     public function store(Request $request)
     {
         // Validate request data
@@ -59,7 +59,7 @@ class ContactUsController extends Controller
         Mail::to('info@tgrafrica.com')->send(new \App\Mail\ContactUsNotification($messageContent));
         // Send auto-reply to the user
         Mail::to($validated['email'])->send(new \App\Mail\AutoReplyNotification($messageContent));
-        return redirect()->route('thankyoucontact')->with('success', 'Your message has been sent successfully! We will get back to you soon.');
+        return redirect()->route('contact-thank-you-message')->with('success', 'Your message has been sent successfully! We will get back to you soon.');
     }
 
     public function thankyoucontact()
