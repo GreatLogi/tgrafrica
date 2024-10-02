@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-style-switcher-options="{'showBordersStyle': true, 'showLayoutStyle': true, 'showBackgroundColor': true}">
+<html lang="en"
+    data-style-switcher-options="{'showBordersStyle': true, 'showLayoutStyle': true, 'showBackgroundColor': true}">
 
 <head>
     <meta charset="utf-8">
@@ -15,10 +16,13 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
     <!-- Web Fonts  -->
-    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap" rel="stylesheet" type="text/css">
+    <link id="googleFonts"
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap"
+        rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Vendor CSS -->
 
     <!-- Dashboard MIX  -->
@@ -60,8 +64,56 @@
         <div role="main" class="main">
             @yield('content')
         </div>
-        @include('website.layouts.footer')
+        <div class="modal fade" id="prospertousModal" tabindex="-1" aria-labelledby="prospertousModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="prospertousModalLabel">TGR Prospertous (SEND YOUR EMAIL TO TGR TEAM
+                            TO RECEIVE TGR PROSPERTOUS)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="prospertousForm" action="{{ route('prospertous.store') }}" method="POST">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control" id="emailInput" required
+                                    placeholder="Enter your email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+    @include('website.layouts.footer')
+    </div>
+
+    {{-- <script>
+        document.getElementById('prospertousForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            fetch('{{ route('prospertous.store') }}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    $('#prospertousModal').modal('hide');
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script> --}}
 
     <style>
         /* Whatsapp */
@@ -88,7 +140,8 @@
     </style>
     <!-- Whatsapp Button -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=+233209398306&text=Welcome to TGR Africa Official WhatsApp Platform." class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+233209398306&text=Welcome to TGR Africa Official WhatsApp Platform."
+        class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 

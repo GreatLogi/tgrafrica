@@ -79,9 +79,7 @@
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.mission') }}">Mission</a>
                                                 </li>
-                                                <li> <a class="dropdown-item"
-                                                        href="{{ route('about.purpose') }}">Purpose</a>
-                                                </li>
+
                                             </ul>
                                         </li>
 
@@ -141,6 +139,10 @@
                                         <li> <a class="  {{ Request::is('contact') ? 'active' : '' }}"
                                                 href="{{ route('contact') }}">Contact Us </a>
                                         </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="nav-link" data-bs-toggle="modal"
+                                                data-bs-target="#prospertousModal">TGR Prospertous</a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -151,9 +153,10 @@
                         </div>
                         <div
                             class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-                            <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a href="#"
-                                    class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"
-                                    aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
+                            <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a
+                                    href="#" class="header-nav-features-toggle text-decoration-none"
+                                    data-focus="headerSearch" aria-label="Search"><i
+                                        class="fas fa-search header-nav-top-icon"></i></a>
                                 <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
                                     <form role="search" action="#" method="get">
                                         <div class="simple-search input-group"> <input class="form-control text-1"

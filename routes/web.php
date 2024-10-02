@@ -12,12 +12,15 @@ use App\Http\Controllers\BonkConsultationController;
 use App\Http\Controllers\BrainstormController;
 // use App\Http\Controllers\RoleController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForceChangeController;
 use App\Http\Controllers\Log_in_and_out_Controller;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProspertousController;
+use App\Http\Controllers\ProspertousRequestController;
 use App\Http\Controllers\QuestionnaireController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\RolesAndPermissionController;
@@ -26,7 +29,6 @@ use App\Http\Controllers\SubscribeSeminarsController;
 use App\Http\Controllers\UserAccountController;
 use App\Models\Blog;
 use App\Models\Founder;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,11 +46,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //Sending Emails through contact page
-use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Route;
 
 Route::post('/contact-submit', [ContactController::class, 'submit'])->name('contact.submit');
-
-
 
 Route::get('/', function () {
     return view('website.index');
@@ -141,6 +141,7 @@ Route::get('news', function () {
     return view('website.news', compact('latest_blogs'));
 })->name('news');
 
+Route::post('/prospertous', [ProspertousRequestController::class, 'store'])->name('prospertous.store');
 Route::resource('seminars', SubscribeSeminarsController::class);
 Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');
 Route::post('/subscribed-users', [SubscribeSeminarsController::class, 'users_subscribed_semiars'])->name('subscribed-users');
@@ -180,6 +181,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/delete/{uuid}', [BlogController::class, 'delete'])->name('blogs.destroy');
 });
 Route::prefix('site-configuration')->group(function () {
+    Route::prefix('prospertous')->group(function () {
+        Route::get('/', [ProspertousController::class, 'index'])->name('prospertous-index');
+        Route::get('/add', [ProspertousController::class, 'create'])->name('add-prospertous');
+        Route::post('/store', [ProspertousController::class, 'store'])->name('store-prospertous');
+        Route::get('/delete/{uuid}', [ProspertousController::class, 'delete'])->name('site-delete-tgrbrainstorm');
+    });
     Route::prefix('purpose')->group(function () {
         Route::get('/', [purposecontroller::class, 'index'])->name('site-index-purpose');
         Route::get('/add', [SiteConfigurationController::class, 'create_purpose'])->name('site-purpose');
