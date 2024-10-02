@@ -64,7 +64,7 @@
                         <li class="mb-1">
                             <i class="fab fa-whatsapp text-color-secondary"></i>
                             <p class="m-0">
-                                <a href="tel:+233209398306">+233209398306</a>
+                                <a href="tel:+233500200335">+233500200335</a>
                             </p>
                         </li>
                         <li class="mb-1">

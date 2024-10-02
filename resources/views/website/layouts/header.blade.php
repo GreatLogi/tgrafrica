@@ -8,14 +8,14 @@
                         <div class="header-row">
                             <nav class="header-nav-top">
                                 <ul class="nav nav-pills">
-                                    <li
+                                    <!-- <li
                                         class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                         <a href="tel:+233209298306"><span class="ws-nowrap"><i
                                                     class="fas fa-phone"></i>+233209298306 | </span></a>
                                     </li>
                                     <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
                                             href="{{ route('login') }}"><i class="fas fa-angle-right"></i>Login</a>
-                                    </li>
+                                    </li> -->
                                     {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
                                             href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
                                     </li> --}}
@@ -27,7 +27,7 @@
                         <div class="header-row">
                             <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
                                 <li class="social-icons-facebook" style="border-radius: 40%"><a
-                                        href="https://web.facebook.com/profile.php?id=61559081140764&__cft__[0]=AZUq_JhwXt78n3dLKy4eHyXVPdiFO521vSa3jEDlQOyTlC7k3kMh6BDHTUyHnJXq8AdWYhQaMVgDpeP617r7vIDpoY9mbmYKSZaRfMOI1TPHEqRRqev0j5O6egsxBNaT9W7xP-3fyZFHZt7RBhoXdZwQydiuVqts4btc-QeESndC2nJWuNq3UbuYNN8KtA7HEauGXqbRiFhkvXkucvvGfL8M0_9EW1OEkOuQko8wu8Tmp0HMnW1hWio_x75a8bRyswg"
+                                        href="https://www.facebook.com/profile.php?id=61559081140764"
                                         target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                 <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
                                         title="X"><i class="fab fa-x-twitter"></i></a></li>
