@@ -139,9 +139,14 @@
                                         <li> <a class="  {{ Request::is('contact') ? 'active' : '' }}"
                                                 href="{{ route('contact') }}">Contact Us </a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)" class="nav-link" data-bs-toggle="modal"
-                                                data-bs-target="#prospertousModal">TGR Prospertous</a>
+                                        <li class="dropdown"> <a class="dropdown-item dropdown-toggle" href="#">
+                                                Investors Community</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="javascript:void(0)" class="nav-link" data-bs-toggle="modal"
+                                                        data-bs-target="#prospertousModal">Download Prospectus</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </nav>
