@@ -12,8 +12,21 @@
     <div
         style="max-width: 600px; background-color: #ffffff; padding: 20px; margin: auto; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <h2 style="color: #2c3e50;">Thank You, {{ $messageContent['full_name'] }}!</h2>
-        <p>We have successfully received your request for a consultation. Our team will reach out to you shortly to
-            confirm the details.</p>
+        <p>You have successfully booked a with TGR Africa.</p>
+        <p>An advisor will contact on the date and time specified in your booking.
+            Please make sure to add us on WhatsApp as all consultations will be done via
+            WhatsApp number +233500200335</p>
+        <p>Do not forget to Like and Follow us on our social media handles below;</p>
+        <p>
+            <li class="social-icons-facebook"><a
+                    href="https://www.facebook.com/profile.php?id=61559081140764"
+                    target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                    title="X"><i class="fab fa-x-twitter"></i>Twitter</a></li>
+            <li class="social-icons-youtube" style="border-radius: 40%"><a
+                    href="http://www.youtube.com/@TGRAfrica" target="_blank" title="Youtube"><i
+                        class="fab fa-youtube"></i>Youtube</a></li>
+        </p>
         <p>Best regards,<br>The TGR Africa Team</p>
     </div>
 </body>

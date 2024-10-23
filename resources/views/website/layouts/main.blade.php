@@ -58,19 +58,80 @@
     </script>
 </head>
 
+
+{
+<!-- <style>
+    .modal-body {
+        background-color: #fff;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        /* Set max width for larger screens */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #prospertousModal {
+        background-color: #fff;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        /* Set max width for larger screens */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-header {
+        padding: 16px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-body {
+        padding: 16px;
+    }
+
+    .modal-footer {
+        padding: 16px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .close-button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .action-button:hover {
+        background-color: #0056b3;
+    }
+</style> -->
+}
+
 <body data-plugin-page-transition>
     <div class="body">
         @include('website.layouts.header')
         <div role="main" class="main">
             @yield('content')
         </div>
-        <div class="modal fade" id="prospertousModal" tabindex="-1" aria-labelledby="prospertousModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="prospertousModal" tabindex="-1" aria-labelledby="prospertousModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="prospertousModalLabel">TGR Prospertous (SEND YOUR EMAIL TO TGR TEAM
-                            TO RECEIVE TGR PROSPERTOUS)</h5>
+                        <h4 class="modal-title" id="prospertousModalLabel">Enter Your Email address to receive TGR Investors Community Prospectus PDF.</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -78,8 +139,7 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="emailInput" class="form-label">Email address</label>
-                                <input type="email" name="email" class="form-control" id="emailInput" required
-                                    placeholder="Enter your email">
+                                <input type="email" name="email" class="form-control" id="emailInput" required placeholder="Enter your email">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -90,29 +150,31 @@
                 </div>
             </div>
         </div>
-
     </div>
     @include('website.layouts.footer')
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
     {{-- <script>
         document.getElementById('prospertousForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const formData = new FormData(this);
             fetch('{{ route('prospertous.store') }}', {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    alert(data.message);
-                    $('#prospertousModal').modal('hide');
-                })
-                .catch(error => console.error('Error:', error));
-        });
+    method: 'POST',
+    body: formData,
+    headers: {
+    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+    }
+    })
+    .then(response => response.json())
+    .then(data => {
+    alert(data.message);
+    $('#prospertousModal').modal('hide');
+    })
+    .catch(error => console.error('Error:', error));
+    });
     </script> --}}
 
     <style>
@@ -146,7 +208,6 @@
     </a>
 
     <!-- End of whatsapp Button -->
-
     <!-- Vendor -->
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script>
     <script src="{{ asset('vendor/plugins/js/plugins.min.js') }}"></script>

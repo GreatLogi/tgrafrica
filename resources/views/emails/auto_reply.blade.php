@@ -48,7 +48,18 @@
 <body>
     <div class="content">
         <h1>Thank You, {{ $messageContent['full_name'] }}!</h1>
-        <p>We have received your message and will get back to you as soon as possible.</p>
+        <p>We have received your mail, a consultant will contact you shortly.</p>
+        <p>Do not forget to Like and Follow us on our social media handles below;</p>
+        <p>
+            <li class="social-icons-facebook"><a
+                    href="https://www.facebook.com/profile.php?id=61559081140764"
+                    target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                    title="X"><i class="fab fa-x-twitter"></i>Twitter</a></li>
+            <li class="social-icons-youtube" style="border-radius: 40%"><a
+                    href="http://www.youtube.com/@TGRAfrica" target="_blank" title="Youtube"><i
+                        class="fab fa-youtube"></i>Youtube</a></li>
+        </p>
         <p>Best regards,<br>TGR Africa Team</p>
     </div>
 </body>
