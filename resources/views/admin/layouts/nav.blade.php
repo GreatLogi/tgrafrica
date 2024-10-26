@@ -30,20 +30,7 @@
                     @role('superadmin')
                         <li class="nav-group-label">Contact</li>
 
-                        <li class="nav-parent">
-                            <a class="nav-link" href="{{ route('contact-us') }}">
-                                Summary <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                    data-target=".mega-sub-nav-sub-menu-1"></span>
-                            </a>
 
-                        </li>
-                        <li class="nav-parent">
-                            <a class="nav-link" href="{{ route('prospertous-index') }}">
-                                Prospertous <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                    data-target=".mega-sub-nav-sub-menu-1"></span>
-                            </a>
-
-                        </li>
 
                         <li class="nav-group-label">Menu</li>
                         <li class="nav-parent">
@@ -84,6 +71,20 @@
                                             </a>
                                         </li>
                                     </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a class="nav-link" href="{{ route('contact-us') }}">
+                                        Summary <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
+                                            data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    </a>
+
+                                </li>
+                                <li class="nav-parent">
+                                    <a class="nav-link" href="{{ route('prospertous-index') }}">
+                                        Prospertous <span class="mega-sub-nav-toggle toggled float-end"
+                                            data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    </a>
+
                                 </li>
                             </ul>
                         </li>

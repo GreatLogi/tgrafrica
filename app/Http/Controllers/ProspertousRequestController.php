@@ -9,17 +9,40 @@ use Illuminate\Support\Facades\Mail;
 
 class ProspertousRequestController extends Controller
 {
+    // public function store(Request $request)
+    // {
+    //     $request->validate([
+    //         'email' => 'required|email|unique:prospertous_requests,email',
+    //     ]);
+    //     // Save the email to the database
+    //     $prospertousRequest = new ProspertousRequest();
+    //     $prospertousRequest->email = $request->email;
+    //     $prospertousRequest->save();
+    //     $pdfPath = public_path('upload/prospertous/Blue Simple Professional CV Resume.pdf');
+    //     Mail::send(new ProspertousMail($request->email, $pdfPath));
+    //     return redirect()->back()->with('success', 'Prospertous PDF sent successfully!');
+    //     // return response()->json(['message' => 'Prospertous PDF sent successfully!']);
+    // }
+
     public function store(Request $request)
     {
         $request->validate([
-            'email' => 'required|email|unique:prospertous_requests,email',
+            'email' => 'required|email',
         ]);
+
         // Save the email to the database
         $prospertousRequest = new ProspertousRequest();
         $prospertousRequest->email = $request->email;
         $prospertousRequest->save();
+
+        // Define the PDF path
         $pdfPath = public_path('upload/prospertous/Blue Simple Professional CV Resume.pdf');
+
+        // Send the email with the PDF attached
         Mail::send(new ProspertousMail($request->email, $pdfPath));
-        return response()->json(['message' => 'Prospertous PDF sent successfully!']);
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Prospertous PDF sent successfully!');
     }
+
 }

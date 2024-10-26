@@ -21,12 +21,23 @@ class ProspertousMail extends Mailable
 
     public function build()
     {
-        return $this->to($this->email)
-            ->subject('TGR Prospertous')
+        return $this->to('investorscommunity@tgrafrica.com')
+            ->subject('TGR Prospertous Request')
             ->attach($this->pdfPath, [
                 'as' => 'prospertous.pdf',
                 'mime' => 'application/pdf',
             ])
-            ->view('emails.prospertous');
+            ->view('emails.prospertous')
+            ->with(['requesterEmail' => $this->email]);
     }
+    // public function build()
+    // {
+    //     return $this->to($this->email)
+    //         ->subject('TGR Prospertous')
+    //         ->attach($this->pdfPath, [
+    //             'as' => 'prospertous.pdf',
+    //             'mime' => 'application/pdf',
+    //         ])
+    //         ->view('emails.prospertous');
+    // }
 }
