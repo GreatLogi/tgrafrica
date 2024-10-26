@@ -10,12 +10,17 @@ Home
         left: 50%;
         transform: translate(-50%, -50%);
         background: white;
-        padding: 20px;
+        padding: 0px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         height: 400px;
-        width: 800px;
-
+        width: 500px;
+        max-width: 100%;
+        /* Ensures it doesn't overflow horizontally */
+        max-height: 100%;
+        /* Ensures it doesn't overflow vertically */
+        overflow: auto;
+        /* Adds scroll if content overflows */
     }
 
     #overlay {
@@ -27,18 +32,59 @@ Home
         background: rgba(0, 0, 0, 0.5);
         z-index: 999;
     }
+
+    /* Close button styling */
+    #iclose {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    /* Media queries for adjusting size on smaller screens */
+    @media (max-width: 768px) {
+        .ipopup {
+            width: 90%;
+            height: auto;
+            /* Let the height adjust naturally */
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+            /* Makes the image responsive */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .ipopup {
+            width: 95%;
+            height: auto;
+            /* Full width on smaller screens */
+            padding: 10px;
+        }
+
+        #iclose {
+            font-size: 1.2rem;
+        }
+    }
 </style>
 
 <!-- Book popup -->
 <div id="overlay" style="display: none;">
-    <div id="popup" class="ipopup">
-        <button id="iclose">&times;</button>
-        <h4 class="modal-title" id="defaultModalLabel"><strong>The Great Return</strong></h4>
-        <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-2.png') }}" style="height: 270px; width: 240px;" alt="">
-        <a class="align-items-center" href="http://www.amazon.com/">Grab a copy on Amazon now <span class="social-icons-amazon">
-                <a href="http://www.amazon.com/" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
-            </span> </a>
-    </div>
+    <di class="col-md-6 col-sm-12 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
+        <div id="popup" class="ipopup">
+            <button id="iclose">&times;</button>
+            <h4 class="modal-title" id="defaultModalLabel"><strong>The Great Return</strong></h4>
+            <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-2.png') }}" href="https://a.co/d/f5xmi3p" style="height: 275px; width: 230px;" alt=""> <br>
+            <a class="align-items-center" href="https://a.co/d/bg4dL5s" style="font-size: large;">Grab a copy on Amazon now <span class="social-icons-amazon">
+                    <a href="https://a.co/d/bg4dL5s" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
+                </span> </a>
+        </div>
+    </di>
 </div>
 
 <script>
@@ -281,7 +327,7 @@ Home
                 <p class="font-weight-light text-color-light text-2 mb-4 opacity-7">Since 2019, there has been a growing movement taking place amongst the
                     African Diaspora population living in the Western world. Why are thousands of them
                     deciding to abandon the West and relocate back to Africa and start new lives?</p>
-                <a href="#" class="btn btn-primary btn-px-5 btn-py-2 text-2">Get it on Amazon</a>
+                <a href="https://a.co/d/bg4dL5s" class="btn btn-primary btn-px-5 btn-py-2 text-2">Get it on Amazon</a>
             </div>
             <div class="col-9 offset-lg-1 col-lg-5 order-1 order-lg-2 scale-2">
                 <img class="img-fluid box-shadow-3 my-2 border-radius" src="{{ asset('img/gallery/gallery-1.png') }}" alt="">

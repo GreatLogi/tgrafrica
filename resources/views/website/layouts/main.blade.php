@@ -131,7 +131,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="prospertousModalLabel">Enter Your Email address to receive TGR Investors Community Prospectus PDF.</h4>
+                        <h6 class="modal-title" id="prospertousModalLabel">Enter Your Email address to receive the Investors Community Prospectus PDF.</h6>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -141,7 +141,7 @@
                                 <label for="emailInput" class="form-label">Email address</label>
                                 <input type="email" name="email" class="form-control" id="emailInput" required placeholder="Enter your email">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Receive</button>
                         </form>
                     </div>
                     <div class="modal-footer">

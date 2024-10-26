@@ -16,6 +16,10 @@
         <p>An advisor will contact on the date and time specified in your booking.
             Please make sure to add us on WhatsApp as all consultations will be done via
             WhatsApp number +233500200335</p>
+
+        <p><a class="align-items-center" href="https://a.co/d/304LrIC" style="font-size: large;">Grab a copy <b>"The Great Return"</b> Book on Amazon now <span class="social-icons-amazon">
+                    <a href="https://a.co/d/304LrIC" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
+                </span> </a></p>
         <p>Do not forget to Like and Follow us on our social media handles below;</p>
         <p>
             <li class="social-icons-facebook"><a

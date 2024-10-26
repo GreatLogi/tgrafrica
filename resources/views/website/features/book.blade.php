@@ -49,13 +49,13 @@ Books
             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
                 data-appear-animation-delay="1000">
                 <div class="col-lg-6">
-                    <a href="#" class="btn btn-modern btn-dark mt-3">Grab a copy</a>
+                    <a href="https://www.amazon.com/gp/aw/d/B0DJL5JL4M/ref=tmm_pap_swatch_0?ie=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.saabk6HZlzd5TRRMGca8HQ.GtgXo7jDeK7vj5B2uijBKgZF1NDncQ6rSIWoinJKMRQ&qid=1728312008&sr=8-1" class="btn btn-modern btn-dark mt-3">Grab a copy</a>
                     {{-- <a href="{{route('contact')}}" class="btn btn-modern btn-primary mt-3">Contact Us</a> --}}
                 </div>
                 <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                     <strong class="text-uppercase text-1 me-3 text-dark">Amazon</strong>
                     <ul class="social-icons float-lg-end">
-                        <li class="social-icons-amazon"><a href="http://www.amazon.com/" target="_blank"
+                        <li class="social-icons-amazon"><a href="https://www.amazon.com/gp/aw/d/B0DJL5JL4M/ref=tmm_pap_swatch_0?ie=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.saabk6HZlzd5TRRMGca8HQ.GtgXo7jDeK7vj5B2uijBKgZF1NDncQ6rSIWoinJKMRQ&qid=1728312008&sr=8-1" target="_blank"
                                 title="amazon"><i class="fab fa-amazon"></i></a></li>
 
                     </ul>

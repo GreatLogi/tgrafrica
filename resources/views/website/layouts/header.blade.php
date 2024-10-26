@@ -144,7 +144,7 @@
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <a href="javascript:void(0)" class="nav-link" data-bs-toggle="modal"
-                                                        data-bs-target="#prospertousModal">Download Prospectus</a>
+                                                        data-bs-target="#prospertousModal">Prospectus</a>
                                                 </li>
                                             </ul>
                                         </li>
