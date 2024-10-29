@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\ContactusController;
+use App\Http\Controllers\Api\ContactUs\TgrContactFromUsersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::prefix('contact-us')->group(function () {
-    Route::post('/contact-us', [ContactusController::class, 'contact_us_summary'])->name('contact-us-summary');
+    Route::POST('/contact-us', [TgrContactFromUsersController::class,'contact_us_summary'])->name('contact-us-from-users');
 });

@@ -182,6 +182,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 });
 Route::prefix('site-configuration')->group(function () {
     Route::prefix('prospertous')->group(function () {
+        Route::get('/requested/list', [ProspertousRequestController::class, 'index'])->name('requested-list');
         Route::get('/', [ProspertousController::class, 'index'])->name('prospertous-index');
         Route::get('/add', [ProspertousController::class, 'create'])->name('add-prospertous');
         Route::post('/store', [ProspertousController::class, 'store'])->name('store-prospertous');

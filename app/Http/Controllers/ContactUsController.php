@@ -10,7 +10,8 @@ class ContactUsController extends Controller
 {
     public function index()
     {
-        return view('admin.layouts.contactus.contact_us');
+        $data = ContactUs::latest()->paginate(10);
+        return view('admin.layouts.contactus.contact_us', compact('data'));
     }
 
     // public function store(Request $request)

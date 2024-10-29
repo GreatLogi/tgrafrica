@@ -11,7 +11,7 @@ return [
     | messages sent by your application. Alternative mailers may be setup
     | and used as needed; however, this mailer will be used by default.
     |
-    */
+     */
 
     'default' => env('MAIL_MAILER', 'smtp'),
 
@@ -31,20 +31,44 @@ return [
     | Supported: "smtp", "sendmail", "mailgun", "ses",
     |            "postmark", "log", "array", "failover"
     |
-    */
+     */
 
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
-            'timeout' => null,
-            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+            'host' => env('MAIL_HOST', 'premium221.web-hosting.com'),
+            'port' => env('MAIL_PORT', 465),
+            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+            'username' => env('MAIL_USERNAME', 'info@tgrafrica.com'),
+            'password' => env('MAIL_PASSWORD', 'T@nG0M@m@S3@T3r'),
         ],
 
+        'investors' => [
+            'transport' => 'smtp',
+            'host' => 'premium221.web-hosting.com',
+            'port' => 465,
+            'encryption' => 'ssl',
+            'username' => 'investorscommunity@tgrafrica.com',
+            'password' => 'L@k3S!d33st@t3',
+        ],
+        // 'smtp' => [
+        //     'transport' => 'smtp',
+        //     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+        //     'port' => env('MAIL_PORT', 587),
+        //     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+        //     'username' => env('MAIL_USERNAME'),
+        //     'password' => env('MAIL_PASSWORD'),
+        //     'timeout' => null,
+        //     'local_domain' => env('MAIL_EHLO_DOMAIN'),
+        // ],
+        // 'investors' => [
+        //     'transport' => 'smtp',
+        //     'host' => 'premium221.web-hosting.com',
+        //     'port' => 465,
+        //     'encryption' => 'ssl',
+        //     'username' => 'investorscommunity@tgrafrica.com',
+        //     'password' => 'L@k3S!d33st@t3',
+        // ],
         'ses' => [
             'transport' => 'ses',
         ],
@@ -95,7 +119,7 @@ return [
     | the same address. Here, you may specify a name and address that is
     | used globally for all e-mails that are sent by your application.
     |
-    */
+     */
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
@@ -111,7 +135,7 @@ return [
     | theme and component paths here, allowing you to customize the design
     | of the emails. Or, you may simply stick with the Laravel defaults!
     |
-    */
+     */
 
     'markdown' => [
         'theme' => 'default',

@@ -74,14 +74,21 @@
                                 </li>
                                 <li class="nav-parent">
                                     <a class="nav-link" href="{{ route('contact-us') }}">
-                                        Summary <span class="mega-sub-nav-toggle toggled float-end" data-toggle="collapse"
-                                            data-target=".mega-sub-nav-sub-menu-1"></span>
+                                        List of Contact Us <span class="mega-sub-nav-toggle toggled float-end"
+                                            data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                     </a>
 
                                 </li>
                                 <li class="nav-parent">
                                     <a class="nav-link" href="{{ route('prospertous-index') }}">
                                         Prospertous <span class="mega-sub-nav-toggle toggled float-end"
+                                            data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
+                                    </a>
+
+                                </li>
+                                <li class="nav-parent">
+                                    <a class="nav-link" href="{{ route('requested-list') }}">
+                                        Requested List of Prospertus <span class="mega-sub-nav-toggle toggled float-end"
                                             data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                     </a>
 
