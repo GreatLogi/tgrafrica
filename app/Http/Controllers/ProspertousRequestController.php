@@ -40,7 +40,7 @@ class ProspertousRequestController extends Controller
         $prospertousRequest->save();
 
         // Define the PDF path
-        $pdfPath = public_path('upload/prospertous/Blue Simple Professional CV Resume.pdf');
+        $pdfPath = public_path('upload/prospertous/Investors_Prospectus.pdf');
 
         // Send the email with the PDF attached
         Mail::send(new ProspertousMail($request->email, $pdfPath));

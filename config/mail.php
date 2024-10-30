@@ -41,15 +41,23 @@ return [
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('MAIL_USERNAME', 'info@tgrafrica.com'),
             'password' => env('MAIL_PASSWORD', 'T@nG0M@m@S3@T3r'),
+            'from' => [
+                'address' => env('MAIL_FROM_ADDRESS', 'info@tgrafrica.com'),
+                'name' => env('MAIL_FROM_NAME', 'TGR Africa'),
+            ],
         ],
 
         'investors' => [
             'transport' => 'smtp',
-            'host' => 'premium221.web-hosting.com',
-            'port' => 465,
-            'encryption' => 'ssl',
-            'username' => 'investorscommunity@tgrafrica.com',
-            'password' => 'L@k3S!d33st@t3',
+            'host' => env('INVESTOR_MAIL_HOST', 'premium221.web-hosting.com'),
+            'port' => env('INVESTOR_MAIL_PORT', 465),
+            'encryption' => env('INVESTOR_MAIL_ENCRYPTION', 'ssl'),
+            'username' => env('INVESTOR_MAIL_USERNAME', 'investorscommunity@tgrafrica.com'),
+            'password' => env('INVESTOR_MAIL_PASSWORD', 'L@k3S!d33st@t3'),
+            'from' => [
+                'address' => env('MAIL_FROM_ADDRESS', 'investorscommunity@tgrafrica.com'),
+                'name' => env('MAIL_FROM_NAME', 'TGR Investors Community'),
+            ],
         ],
         // 'smtp' => [
         //     'transport' => 'smtp',

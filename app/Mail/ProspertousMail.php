@@ -27,7 +27,7 @@ class ProspertousMail extends Mailable
             ->to($this->email)
             ->subject('TGR Prospertous Request')
             ->attach($this->pdfPath, [
-                'as' => 'prospertous.pdf',
+            'as' => 'Investors_Prospectus.pdf',
                 'mime' => 'application/pdf',
             ])
             ->view('emails.prospertous')
