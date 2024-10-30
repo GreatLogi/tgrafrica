@@ -21,13 +21,9 @@ class ProspertousMail extends Mailable
 
     public function build()
     {
-
-        config([
-            'mail.mailers.smtp.username' => 'investorscommunity@tgrafrica.com',
-            'mail.mailers.smtp.password' => 'L@k3S!d33st@t3',
-            'mail.from.address' => 'investorscommunity@tgrafrica.com',
-        ]);
-        return $this->from('investorscommunity@tgrafrica.com')
+        return $this
+            ->mailer('investors') 
+            ->from('investorscommunity@tgrafrica.com', 'TGR Africa')
             ->to($this->email)
             ->subject('TGR Prospertous Request')
             ->attach($this->pdfPath, [

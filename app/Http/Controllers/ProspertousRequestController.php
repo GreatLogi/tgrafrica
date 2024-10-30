@@ -23,7 +23,11 @@ class ProspertousRequestController extends Controller
     //     return redirect()->back()->with('success', 'Prospertous PDF sent successfully!');
     //     // return response()->json(['message' => 'Prospertous PDF sent successfully!']);
     // }
-
+    public function index()
+    {
+        $data = ProspertousRequest::latest()->paginate(10);
+        return view('admin.layouts.listofquestedpropertus.prospertusquested', compact('data'));
+    }
     public function store(Request $request)
     {
         $request->validate([

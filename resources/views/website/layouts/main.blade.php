@@ -142,7 +142,7 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="emailInput" class="form-label">Email address</label>
-                                <input type="email" name="email" class="form-control" id="emailInput" required
+                                <input type="email" name="email" class="form-control" id="emailInput"
                                     placeholder="Enter your email">
                             </div>
                             <button type="submit" class="btn btn-primary">Receive</button>
@@ -186,6 +186,7 @@
             @endif
         });
     </script>
+
     {{-- <script>
         document.getElementById('prospertousForm').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -194,8 +195,7 @@
     method: 'POST',
     body: formData,
     headers: {
-    'X-CSRF-TOKEN': '{{ csrf_token() }}'
-    }
+    'X-CSRF-TOKEN': '{{ csrf_token() }}'}
     })
     .then(response => response.json())
     .then(data => {
