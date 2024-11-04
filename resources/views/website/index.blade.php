@@ -7,6 +7,7 @@ Home
     .ipopup {
         position: fixed;
         top: 50%;
+        /* Center vertically by default */
         left: 50%;
         transform: translate(-50%, -50%);
         background: white;
@@ -16,11 +17,11 @@ Home
         height: 400px;
         width: 500px;
         max-width: 100%;
-        /* Ensures it doesn't overflow horizontally */
+        /* Prevents overflow */
         max-height: 100%;
-        /* Ensures it doesn't overflow vertically */
+        /* Prevents overflow */
         overflow: auto;
-        /* Adds scroll if content overflows */
+        /* Scroll if content overflows */
     }
 
     #overlay {
@@ -44,27 +45,37 @@ Home
         cursor: pointer;
     }
 
-    /* Media queries for adjusting size on smaller screens */
+    /* Adjust for screens 768px and below */
     @media (max-width: 768px) {
         .ipopup {
             width: 90%;
+            top: 20%;
+            /* Center closer to the top */
+            transform: translate(-50%, 0);
+            /* Remove vertical centering */
             height: auto;
-            /* Let the height adjust naturally */
+            /* Adjust height */
         }
 
         .img-fluid {
             width: 100%;
             height: auto;
-            /* Makes the image responsive */
+            /* Responsive image */
         }
     }
 
+    /* Adjust for screens 576px and below */
     @media (max-width: 576px) {
         .ipopup {
             width: 95%;
-            height: auto;
             /* Full width on smaller screens */
+            top: 10%;
+            /* Higher positioning */
+            transform: translate(-50%, 0);
+            /* Center horizontally only */
             padding: 10px;
+            height: auto;
+            /* Dynamic height */
         }
 
         #iclose {
@@ -72,6 +83,7 @@ Home
         }
     }
 </style>
+
 
 <!-- Book popup -->
 <div id="overlay" style="display: none;">

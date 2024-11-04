@@ -16,9 +16,9 @@
                                     <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
                                             href="{{ route('login') }}"><i class="fas fa-angle-right"></i>Login</a>
                                     </li> -->
-                                    {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
+                                    <!-- {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
                                             href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
-                                    </li> --}}
+                                    </li> --}} -->
                                 </ul>
                             </nav>
                         </div>
