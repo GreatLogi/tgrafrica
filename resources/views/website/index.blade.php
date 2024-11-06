@@ -82,6 +82,39 @@ Home
             font-size: 1.2rem;
         }
     }
+
+    /*New adjustment*/
+    @media (max-width: 768px) {
+    #header {
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+
+    .header-nav-top ul.nav {
+        display: flex;
+        flex-direction: column; /* Stack nav items */
+        padding: 0;
+    }
+
+    .header-body {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #header {
+        position: relative;
+        top: 0;
+        height: auto;
+    }
+
+    .header-nav-top ul.nav {
+        display: flex;
+        justify-content: space-between; /* Spread items evenly */
+    }
+}
+
 </style>
 
 
