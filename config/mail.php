@@ -55,8 +55,8 @@ return [
             'username' => env('INVESTOR_MAIL_USERNAME', 'investorscommunity@tgrafrica.com'),
             'password' => env('INVESTOR_MAIL_PASSWORD', 'L@k3S!d33st@t3'),
             'from' => [
-                'address' => env('MAIL_FROM_ADDRESS', 'investorscommunity@tgrafrica.com'),
-                'name' => env('MAIL_FROM_NAME', 'TGR Investors Community'),
+                'address' => env('INVESTOR_MAIL_FROM_ADDRESS', 'investorscommunity@tgrafrica.com'),
+                'name' => env('INVESTOR_MAIL_FROM_NAME', 'TGR Africa'),
             ],
         ],
         // 'smtp' => [
