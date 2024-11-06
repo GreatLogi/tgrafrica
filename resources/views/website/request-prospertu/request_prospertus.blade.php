@@ -9,6 +9,27 @@ Request Prospertus
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+<style>
+    /* Background color for the contact form wrapper */
+    .slider-contact-form-wrapper {
+        background-color: #ed5348 !important;
+    }
+
+    /* Styling the button to appear blue */
+    .slider-contact-form-wrapper .btn-danger {
+        background-color: white !important;
+        border-color: #000000 !important;
+        color: #000000;
+    }
+
+    /* Optional: Modify button hover effect */
+    .slider-contact-form-wrapper .btn-danger:hover {
+        background-color: grey !important;
+        border-color: white !important;
+    }
+</style>
+
+
 <!-- <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
         style="background-image: url(img/page-header/page-header-background.jpg);">
@@ -41,7 +62,7 @@ Request Prospertus
                                     data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250"
                                     data-plugin-options="{'minWindowWidth': 0}" alt="" />
                             </span>
-                            The Great Return<span class="position-relative">Africa<span
+                            The Great Return <span class="position-relative">Africa<span
                                     class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"></span></span>
                             <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
                                 <img src="img/slides/slide-title-border.png" class="w-auto appear-animation"

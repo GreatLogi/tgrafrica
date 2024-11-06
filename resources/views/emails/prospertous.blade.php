@@ -6,9 +6,10 @@
 </head>
 
 <body>
-    <h3>Investors Community Prospectus.</h3>
+    <h3>TGR Investors Community Prospectus.</h3>
     <p>Thank you for your request,</p>
-    <p>We have attached the TGR Investors Community Prospectus PDF as you requested.</p>
+    <p>Thankyou for your request.
+        We have attached the investors community prospectus for you to download</p>
     <p><a class="align-items-center" href="https://a.co/d/304LrIC" style="font-size: large;">Grab a copy <b>"The Great Return"</b> Book on Amazon now <span class="social-icons-amazon">
                 <a href="https://a.co/d/304LrIC" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
             </span> </a></p>
