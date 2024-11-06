@@ -4,25 +4,6 @@
         <div class="header-top">
             <div class="container">
                 <div class="header-row py-2">
-                    <div class="header-column justify-content-start">
-                        <div class="header-row">
-                            <nav class="header-nav-top">
-                                <ul class="nav nav-pills">
-                                    <!-- <li
-                                        class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
-                                        <a href="tel:+233209298306"><span class="ws-nowrap"><i
-                                                    class="fas fa-phone"></i>+233209298306 | </span></a>
-                                    </li>
-                                    <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link ps-0"
-                                            href="{{ route('login') }}"><i class="fas fa-angle-right"></i>Login</a>
-                                    </li> -->
-                                    <!-- {{-- <li class="nav-item nav-item-anim-icon d-none d-md-block"> <a class="nav-link"
-                                            href="javascript:void(0)"><i class="fas fa-angle-right"></i>TGR Seminars</a>
-                                    </li> --}} -->
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
                     <div class="header-column justify-content-end">
                         <div class="header-row">
                             <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
@@ -52,17 +33,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-column justify-content-end">
+                <div class="header-column justify-content-center">
                     <div class="header-row">
-                        <div
-                            class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+                        <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
                             <div
                                 class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li> <a class="  {{ Request::is('home') ? 'active' : '' }}"
                                                 href="{{ route('home') }}"> Home </a>
-
                                         </li>
                                         <li class="dropdown"> <a
                                                 class="dropdown-item dropdown-toggle  {{ Request::is('about*') ? 'active' : '' }}"
@@ -89,13 +68,7 @@
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('features.consult') }}">Book a Consultation</a>
-
                                                 </li>
-                                                <!-- <li> <a class="dropdown-item"
-                                                        href="{{ route('advisory.seminar') }}">TGR Seminars</a>
-
-                                                </li> -->
-
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('advisory.brainstorm') }}">TGR Brainstorm</a>
                                                 </li>
@@ -123,7 +96,6 @@
                                                         <li><a class="dropdown-item"
                                                                 href="{{ route('features.book') }}">The Great
                                                                 Return</a></li>
-
                                                     </ul>
                                                 </li>
                                                 {{-- <li> <a class="dropdown-item" href="#">Interviews</a>
