@@ -5,6 +5,7 @@
 [x-cloak] {
     display: none;
 }
+<<<<<<< HEAD
 
 
 /*Adjustments*/
@@ -67,3 +68,22 @@
         overflow-y: auto;  /* Add vertical scroll */
     }
 }
+<<<<<<< HEAD
+=======
+
+
+  /* Light Theme */
+  .theme-light {
+      background-color: white;
+      color: black;
+  }
+
+  /* Dark Theme */
+  .theme-dark {
+      background-color: black;
+      color: white;
+  }
+
+=======
+>>>>>>> parent of 75c6bbf (New pull)
+>>>>>>> ec8a2b4 (Header Resizing)
