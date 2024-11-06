@@ -22,7 +22,8 @@ class ProspertousMail extends Mailable
     public function build()
     {
         return $this
-            ->from('info@tgrafrica.com', 'TGR Africa')
+            ->mailer('investors')
+            ->from('investorscommunity@tgrafrica.com', 'TGR Africa')
             ->to($this->email)
             ->subject('TGR Prospertous Request')
             ->attach($this->pdfPath, [
@@ -32,6 +33,20 @@ class ProspertousMail extends Mailable
             ->view('emails.prospertous')
             ->with(['requesterEmail' => $this->email]);
     }
+
+    // public function build()
+    // {
+    //     return $this
+    //         ->from('info@tgrafrica.com', 'TGR Africa')
+    //         ->to($this->email)
+    //         ->subject('TGR Prospertous Request')
+    //         ->attach($this->pdfPath, [
+    //             'as' => 'Investors_Prospectus.pdf',
+    //             'mime' => 'application/pdf',
+    //         ])
+    //         ->view('emails.prospertous')
+    //         ->with(['requesterEmail' => $this->email]);
+    // }
 
     // public function build()
     // {

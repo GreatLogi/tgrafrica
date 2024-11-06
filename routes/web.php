@@ -29,6 +29,7 @@ use App\Http\Controllers\SubscribeSeminarsController;
 use App\Http\Controllers\UserAccountController;
 use App\Models\Blog;
 use App\Models\Founder;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,7 +47,6 @@ use App\Models\Founder;
 // });
 
 //Sending Emails through contact page
-use Illuminate\Support\Facades\Route;
 
 Route::post('/contact-submit', [ContactController::class, 'submit'])->name('contact.submit');
 
@@ -122,6 +122,10 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
     })->name('thank_you');
 });
 
+Route::get('/request-propertus', function () {
+    return view('website.request-prospertu.request_prospertus');
+})->name('request-propertus');
+
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
@@ -141,6 +145,7 @@ Route::get('news', function () {
     return view('website.news', compact('latest_blogs'));
 })->name('news');
 
+// Route::post('/prospertous', [ProspertousRequestController::class, 'store'])->name('prospertous.store');
 Route::post('/prospertous', [ProspertousRequestController::class, 'store'])->name('prospertous.store');
 Route::resource('seminars', SubscribeSeminarsController::class);
 Route::get('/subscribe-serminars', [SubscribeSeminarsController::class, 'index'])->name('seminarsindex');

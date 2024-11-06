@@ -145,6 +145,9 @@
                                 <input type="email" name="email" class="form-control" id="emailInput"
                                     placeholder="Enter your email">
                             </div>
+                            @error('email')
+                                <span class="badge badge-danger">{{ $message }}</span>
+                            @enderror
                             <button type="submit" class="btn btn-primary">Receive</button>
                         </form>
                     </div>
@@ -155,37 +158,15 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="successModalLabel">Success</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>PROSPECTUS SENT TO YOUR EMAIL SUCCESSFULLY</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     @include('website.layouts.footer')
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Show success modal if session contains 'success' message
-            @if (session('success'))
-                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
-            @endif
-        });
-    </script>
+   
 
     {{-- <script>
         document.getElementById('prospertousForm').addEventListener('submit', function(event) {
