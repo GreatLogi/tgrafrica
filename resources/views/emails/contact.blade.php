@@ -4,11 +4,11 @@
 @endsection
 @section('content')
     <h1>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h1>
-    <p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
-    <p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
-    <p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
-    <p><strong>Subject:</strong> {{ $messageContent['subject'] ?? 'N/A' }}</p>
-    <p><strong>Message:</strong> {{ $messageContent['message'] ?? 'N/A' }}</p>
+<p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
+<p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
+<p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
+<p><strong>Subject:</strong> {{ $messageContent['subject'] ?? 'N/A' }}</p>
+<p><strong>Message:</strong> {{ $messageContent['message'] ?? 'N/A' }}</p>
 @endsection --}}
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +25,7 @@
             color: #333;
             padding: 20px;
         }
+
         .content {
             background-color: #fff;
             padding: 20px;

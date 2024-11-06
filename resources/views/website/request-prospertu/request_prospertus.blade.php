@@ -73,8 +73,8 @@ Request Prospertus
                         <h1 class="text-color-light font-weight-extra-bold text-12 mb-2 appear-animation"
                             data-appear-animation="blurIn" data-appear-animation-delay="1300"
                             data-plugin-options="{'minWindowWidth': 0}">Investors Community Prospectus</h1>
-                        <p class="text-4 text-color-light font-weight-light opacity-7 mb-0" data-plugin-animated-letters
-                            data-plugin-options="{'startDelay': 3500, 'minWindowWidth': 0}">Dedicated to Rebuilding, Reconnecting and Revitalising the African Diasporas</p>
+                        <!-- <p class="text-4 text-color-light font-weight-light opacity-7 mb-0" data-plugin-animated-letters
+                            data-plugin-options="{'startDelay': 3500, 'minWindowWidth': 0}">Dedicated to Rebuilding, Reconnecting and Revitalising the African Diasporas</p> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
