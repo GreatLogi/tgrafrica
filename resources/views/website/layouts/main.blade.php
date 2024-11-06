@@ -59,7 +59,7 @@
 </head>
 
 
-{
+
 <!-- <style>
     .modal-body {
         background-color: #fff;
@@ -119,7 +119,7 @@
         background-color: #0056b3;
     }
 </style> -->
-}
+
 
 <body data-plugin-page-transition>
     <div class="body">
@@ -180,9 +180,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Show success modal if session contains 'success' message
-            @if (session('success'))
-                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
+            @if(session('success'))
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            successModal.show();
             @endif
         });
     </script>
@@ -231,7 +231,7 @@
     </style>
     <!-- Whatsapp Button -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=+233209398306&text=Welcome to TGR Africa Official WhatsApp Platform."
+    <a href="https://api.whatsapp.com/send?phone=+233500200335&text=Welcome to TGR Africa Official WhatsApp Platform."
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>

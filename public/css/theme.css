@@ -120,7 +120,7 @@ li {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: left;
     transition: ease height 300ms;
 }
 @media (max-width: 991px) {
@@ -131,16 +131,16 @@ li {
     }
 }
 #header .header-container.header-container-height-xs {
-    height: 80px;
+    height: 70px;
 }
 #header .header-container.header-container-height-sm {
-    height: 100px;
+    height: 90px;
 }
 #header .header-container.header-container-height-md {
-    height: 125px;
+    height: 115px;
 }
 #header .header-container.header-container-height-lg {
-    height: 145px;
+    height: 135px;
 }
 #header .container {
     position: relative;
@@ -185,7 +185,7 @@ li {
 #header .header-column .header-extra-info li .header-extra-info-icon {
     font-size: 32px;
     font-size: 2rem;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 #header .header-column .header-extra-info li .header-extra-info-text label {
     display: block;
@@ -237,8 +237,8 @@ li {
 }
 #header .header-top.header-top-borders .nav-item-borders {
     border-right: 1px solid rgba(0, 0, 0, 0.06);
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #header .header-top.header-top-borders .nav-item-borders:first-child {
     padding-left: 0;
@@ -297,6 +297,9 @@ li {
     padding: 16px 0;
     padding: 1rem 0;
     min-height: 70px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
 }
 #header .header-nav-top {
     display: flex;
@@ -529,7 +532,7 @@ li {
     background: rgba(0, 0, 0, 0.03);
     content: none;
     width: 1px;
-    height: 16px;
+    height: 10px;
     position: absolute;
     display: block;
     top: 50%;
@@ -538,7 +541,7 @@ li {
 }
 #header .header-nav-features.header-nav-features-divisor-lg:before,
 #header .header-nav-features.header-nav-features-divisor-lg:after {
-    height: 72px;
+    height: 62px;
 }
 #header .header-nav-features.header-nav-features-light:before,
 #header .header-nav-features.header-nav-features-light:after {
@@ -6337,7 +6340,7 @@ html.sticky-header-enabled.sticky-header-active
         align-items: center;
     }
     #header.header-narrow .header-nav.header-nav-stripe {
-        min-height: 70px;
+        min-height: 60px;
     }
 }
 body[data-plugin-section-scroll] #header .header-body {
@@ -6346,9 +6349,9 @@ body[data-plugin-section-scroll] #header .header-body {
 html[dir="rtl"] #header .header-search .btn-light {
     right: -35px;
 }
-@media (max-width: 991px) {
+@media (max-width: 900px) {
     html.safari #header .header-body {
-        overflow: visible !important;
+        overflow: hidden !important;
     }
 }
 #header
