@@ -188,6 +188,9 @@
             <i class="fas fa-chevron-down text-color-dark"></i>
         </a>
 
+        <button onclick="toggleTheme()">Change Theme</button>
+
+
         <div class="dropdown-menu">
             <ul class="list-unstyled">
                 <li>

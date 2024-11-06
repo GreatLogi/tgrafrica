@@ -67,3 +67,17 @@
         overflow-y: auto;  /* Add vertical scroll */
     }
 }
+
+
+  /* Light Theme */
+  .theme-light {
+      background-color: white;
+      color: black;
+  }
+
+  /* Dark Theme */
+  .theme-dark {
+      background-color: black;
+      color: white;
+  }
+
