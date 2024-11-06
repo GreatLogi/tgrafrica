@@ -293,14 +293,54 @@ li {
     image-rendering: -webkit-optimize-contrast;
     transform: translateZ(0);
 }
-#header .header-nav {
+/* #header .header-nav {
     padding: 16px 0;
     padding: 1rem 0;
     min-height: 70px;
     flex-wrap: wrap;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: space-between;
+ } */
+
+ #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays on top */
+    background-color: #ffffff; /* Or the background color you prefer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
+
+#header .header-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    min-height: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #header .header-nav {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 480px) {
+    #header .header-nav {
+        padding: 0.5rem;
+    }
+}
+
+body {
+    padding-top: 5px; /* Adjusts for the fixed header height */
+}
+
+
 #header .header-nav-top {
     display: flex;
     align-self: stretch;

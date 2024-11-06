@@ -67,69 +67,6 @@
         margin-right: 10px;
         /* Space between profile info and dropdown arrow */
     }
-
-   < /*Newly added adjustment*/
-    /* General Header Styling */
-#header {
-    width: 100%;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-/* Mobile adjustments for small screens */
-@media (max-width: 768px) {
-    #header {
-        position: relative;
-        height: auto;
-        top: 0;
-    }
-
-    .header-nav-main nav ul#mainNav {
-        flex-direction: column; /* Stack nav items vertically */
-        padding: 0;
-    }
-
-    .header-logo img {
-        width: 80px; /* Adjust logo size for smaller screens */
-    }
-
-    .header-nav-features {
-        display: none; /* Hide search icon to save space */
-    }
-
-    /* Adjust padding and margins to avoid overflow */
-    .header-body {
-        padding: 10px;
-    }
-
-    .header-column {
-        flex: 1 1 100%;
-    }
-}
-
-/* Tablet adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #header {
-        height: auto;
-        position: relative;
-        top: 0;
-    }
-
-    .header-nav-main nav ul#mainNav {
-        justify-content: space-around;
-    }
-
-    .header-logo img {
-        width: 100px; /* Adjust logo size */
-    }
-
-    .dropdown-menu {
-        max-height: 200px; /* Set a max height */
-        overflow-y: auto;  /* Add vertical scroll */
-    }
-}
-
-
 </style>
 
 <div class="logo-container">
