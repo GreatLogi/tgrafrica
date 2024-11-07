@@ -3,7 +3,7 @@
     Contact
 @endsection
 @section('content')
-    <h1>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h1>
+<h5>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h5>
 <p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
 <p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
 <p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
@@ -35,15 +35,15 @@
             margin: auto;
         }
 
-        h1 {
+        h5 {
             color: #2c3e50;
-            font-size: 24px;
+            font-size: 14px;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 10px;
         }
 
         p {
-            font-size: 16px;
+            font-size: 12px;
             margin: 10px 0;
         }
 
@@ -55,7 +55,7 @@
 
 <body>
     <div class="content">
-        <h1>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h1>
+        <h5>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h5>
         <p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
         <p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
         <p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>

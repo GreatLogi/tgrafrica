@@ -25,7 +25,7 @@ class ProspertousMail extends Mailable
             ->mailer('investors')
             ->from('investorscommunity@tgrafrica.com', 'TGR Africa')
             ->to($this->email)
-            ->subject('TGR Prospertous Request')
+            ->subject('Prospectus')
             ->attach($this->pdfPath, [
                 'as' => 'Investors_Prospectus.pdf',
                 'mime' => 'application/pdf',
