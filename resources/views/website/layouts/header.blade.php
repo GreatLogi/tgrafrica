@@ -81,14 +81,13 @@
                                             </ul>
                                         </li>
                                         <li class="dropdown"> <a class="dropdown-item dropdown-toggle" href="#">
-                                            Investors Community</a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="{{ route('request-propertus') }}" class="nav-link"
-                                                    >Prospectus</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                                Investors Community</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="{{ route('request-propertus') }}" class="nav-link">Prospectus</a>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li class="dropdown"> <a class="dropdown-item dropdown-toggle" href="#">
                                                 Features </a>
                                             <ul class="dropdown-menu">
@@ -152,4 +151,5 @@
             </div>
         </div>
     </div>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </header>

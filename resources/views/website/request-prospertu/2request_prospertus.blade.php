@@ -129,21 +129,11 @@ Request Prospertus
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Check if there is a success message in the session and the modal element exists
+        // Show success modal if session contains 'success' message
         @if(session('success'))
-        const successModalElement = document.getElementById('successModal');
-        if (successModalElement) {
-            const successModal = new bootstrap.Modal(successModalElement);
-            successModal.show();
-
-            // Clean up any modal-related overlays or classes after closing
-            successModalElement.addEventListener('hidden.bs.modal', function() {
-                document.body.classList.remove('modal-open'); // Remove 'modal-open' class
-                document.querySelector('.modal-backdrop')?.remove(); // Remove any remaining backdrop
-            });
-        }
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
         @endif
     });
 </script>
-
 @endsection

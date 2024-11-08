@@ -2,15 +2,14 @@
 <html>
 
 <head>
-    <title>TGR Community Prospectus</title>
+    <title>Prospectus</title>
 </head>
 
 <body>
     <!-- <h3></h3> -->
     <p>Thankyou for your request.
         We have attached the community prospectus for you to download</p>
-    <p><a class="align-items-center" href="https://a.co/d/304LrIC" style="font-size: large;">Grab a copy <b>"The Great
-                Return"</b> Book on Amazon now <span class="social-icons-amazon">
+    <p><a class="align-items-center" href="https://a.co/d/304LrIC" style="font-size: large;">Grab a copy <b>"The Great Return"</b> Book on Amazon now <span class="social-icons-amazon">
                 <a href="https://a.co/d/304LrIC" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
             </span> </a></p>
     <!-- <p>Do not forget to Like and Follow us on our social media handles below;</p>
