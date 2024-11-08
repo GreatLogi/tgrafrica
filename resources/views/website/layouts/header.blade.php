@@ -58,7 +58,9 @@
                                                 <li> <a class="dropdown-item"
                                                         href="{{ route('about.mission') }}">Mission</a>
                                                 </li>
-
+                                                <li> <a class="dropdown-item"
+                                                    href="{{ route('about.purpose') }}">Purpose</a>
+                                            </li>
                                             </ul>
                                         </li>
 
