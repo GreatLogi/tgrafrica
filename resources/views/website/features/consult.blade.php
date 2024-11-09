@@ -1159,7 +1159,7 @@ Consultation
     }
 
     /* Reduced width for Date and Time container */
-    .date-time-container .input {
+    .date-time-container #input {
         max-width: 30px;
         /* Adjust width as needed */
         margin: 0 auto;

@@ -118,7 +118,7 @@ Request Prospertus
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>PROSPECTUS SENT TO YOUR EMAIL SUCCESSFULLY</p>
+                <p>Prospectus have been sent to your email successfully. <br> If you haven't receive yet, kindly check spam box.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
