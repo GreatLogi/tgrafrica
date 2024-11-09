@@ -47,11 +47,11 @@
 
 <body>
     <div class="content">
-        <h1>Thank You, {{ $messageContent['full_name'] }}!</h1>
+        <h5>Thank You, {{ $messageContent['full_name'] }}!</h5>
         <p>We have received your mail, a consultant will contact you shortly.</p>
-        <p><a class="align-items-center" href="https://a.co/d/304LrIC" style="font-size: large;">Grab a copy <b>"The Great Return"</b> Book on Amazon now <span class="social-icons-amazon">
+        <!-- <p><a class="align-items-center" href="https://a.co/d/304LrIC" style="font-size: large;">Grab a copy <b>"The Great Return"</b> Book on Amazon now <span class="social-icons-amazon">
                     <a href="https://a.co/d/304LrIC" target="_blank" title="amazon"><i class="fab fa-amazon"></i></a>
-                </span> </a></p>
+                </span> </a></p> -->
         <!-- <p>Do not forget to Like and Follow us on our social media handles below;</p>
         <p>
             <li class="social-icons-facebook"><a
