@@ -33,18 +33,16 @@ class ProspertousRequestController extends Controller
         $request->validate([
             'email' => 'required|email',
         ]);
-
         // Save the email to the database
         $prospertousRequest = new ProspertousRequest();
         $prospertousRequest->email = $request->email;
         $prospertousRequest->save();
-
         // Define the PDF path
         $pdfPath = public_path('upload/prospertous/Investors_Prospectus.pdf');
         // Send the email with the PDF attached
         Mail::send(new ProspertousMail($request->email, $pdfPath));
         // Redirect back with a success message
-        return redirect()->back()->with('success', 'Prospertous PDF sent successfully!');
+        return redirect()->back()->with('success', 'Prospectous PDF sent successfully!');
     }
 
 }
