@@ -40,7 +40,8 @@ class ProspertousRequestController extends Controller
         // Define the PDF path
         $pdfPath = public_path('upload/prospertous/Investors_Prospectus.pdf');
         // Send the email with the PDF attached
-        Mail::send(new ProspertousMail($request->email, $pdfPath));
+        Mail::mailer('investors')->to($request->email)->send(new ProspertousMail($request->email, $pdfPath));
+        // Mail::send(new ProspertousMail($request->email, $pdfPath));
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Prospectous PDF sent successfully!');
     }
