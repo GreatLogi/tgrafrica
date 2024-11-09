@@ -77,6 +77,7 @@ class QuestionnaireController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'contact' => $request->input('contact'),
+            'response_time_and_date' => $request->input('response_time_and_date'),
             'country_of_residence' => $request->input('country_of_residence'),
             'nationality' => $request->input('nationality'),
             'responses' => json_encode($data),

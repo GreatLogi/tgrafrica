@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('questionnaire_responses', function (Blueprint $table) {
-            $table->date('response_date')->nullable();
-            $table->time('response_time')->nullable();
+            $table->dateTime('response_time_and_date')->nullable();
         });
     }
 
@@ -27,8 +26,8 @@ return new class extends Migration
     public function down()
     {
         Schema::table('questionnaire_responses', function (Blueprint $table) {
-            $table->dropColumn('response_date');
-            $table->dropColumn('response_time');
+            $table->dropColumn('response_time_and_date');
+
         });
     }
 };

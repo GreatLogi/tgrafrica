@@ -55,66 +55,8 @@ return [
             'username' => env('INVESTOR_MAIL_USERNAME', 'investorscommunity@tgrafrica.com'),
             'password' => env('INVESTOR_MAIL_PASSWORD', 'L@k3S!d33st@t3'),
             'from' => [
-                'address' => env('MAIL_FROM_ADDRESS', 'investorscommunity@tgrafrica.com'),
-                'name' => env('MAIL_FROM_NAME', 'TGR Investors Community'),
-            ],
-        ],
-        
-        // 'smtp' => [
-        //     'transport' => 'smtp',
-        //     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-        //     'port' => env('MAIL_PORT', 587),
-        //     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-        //     'username' => env('MAIL_USERNAME'),
-        //     'password' => env('MAIL_PASSWORD'),
-        //     'timeout' => null,
-        //     'local_domain' => env('MAIL_EHLO_DOMAIN'),
-        // ],
-        // 'investors' => [
-        //     'transport' => 'smtp',
-        //     'host' => 'premium221.web-hosting.com',
-        //     'port' => 465,
-        //     'encryption' => 'ssl',
-        //     'username' => 'investorscommunity@tgrafrica.com',
-        //     'password' => 'L@k3S!d33st@t3',
-        // ],
-        'ses' => [
-            'transport' => 'ses',
-        ],
-
-        'mailgun' => [
-            'transport' => 'mailgun',
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
-        ],
-
-        'postmark' => [
-            'transport' => 'postmark',
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
-        ],
-
-        'sendmail' => [
-            'transport' => 'sendmail',
-            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
-        ],
-
-        'log' => [
-            'transport' => 'log',
-            'channel' => env('MAIL_LOG_CHANNEL'),
-        ],
-
-        'array' => [
-            'transport' => 'array',
-        ],
-
-        'failover' => [
-            'transport' => 'failover',
-            'mailers' => [
-                'smtp',
-                'log',
+                'address' => env('INVESTOR_MAIL_FROM_ADDRESS', 'investorscommunity@tgrafrica.com'),
+                'name' => env('INVESTOR_MAIL_FROM_NAME', 'TGR Investors Community'),
             ],
         ],
     ],

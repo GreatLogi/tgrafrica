@@ -27,6 +27,7 @@ class QuestionnaireResponse extends Model implements Auditable
         'contact',
         'response_date',
         'response_time',
+        'response_time_and_date',
     ];
 
     /**

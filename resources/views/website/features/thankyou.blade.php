@@ -9,7 +9,7 @@ Thank You
     <div class="container">
         <div class="row">
             <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                <h1>Our <strong>News</strong></h1>
+                <h1>Read<strong> Our News</strong></h1>
                 <span class="sub-title">Read more about us</span>
             </div>
             <div class="col-md-4 order-1 order-md-2 align-self-center">
