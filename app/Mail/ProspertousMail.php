@@ -33,7 +33,6 @@ class ProspertousMail extends Mailable
             ->view('emails.prospertous')
             ->with(['requesterEmail' => $this->email]);
     }
-
     // public function build()
     // {
     //     return $this
