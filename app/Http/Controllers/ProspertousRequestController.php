@@ -33,17 +33,37 @@ class ProspertousRequestController extends Controller
         $request->validate([
             'email' => 'required|email',
         ]);
+
         // Save the email to the database
         $prospertousRequest = new ProspertousRequest();
         $prospertousRequest->email = $request->email;
         $prospertousRequest->save();
-        // Define the PDF path
-        $pdfPath = public_path('upload/prospertous/Investors_Prospectus.pdf');
-        // Send the email with the PDF attached
-        Mail::mailer('investors')->to($request->email)->send(new ProspertousMail($request->email, $pdfPath));
-        // Mail::send(new ProspertousMail($request->email, $pdfPath));
-        // Redirect back with a success message
-        return redirect()->back()->with('success', 'Prospectous PDF sent successfully!');
+
+        // Define the PDF URL
+        // $pdfUrl = asset('upload/prospertous/Investors_Prospectus.pdf');
+        $pdfUrl = url('upload/prospertous/Investors_Prospectus.pdf');
+        // Send the email with the PDF link
+        Mail::mailer('investors')->to($request->email)->send(new ProspertousMail($request->email, $pdfUrl));
+
+        return redirect()->back()->with('success', 'Prospectus PDF link sent successfully!');
     }
 
+    // public function store(Request $request)
+    // {
+    //     $request->validate([
+    //         'email' => 'required|email',
+    //     ]);
+    //     // Save the email to the database
+    //     $prospertousRequest = new ProspertousRequest();
+    //     $prospertousRequest->email = $request->email;
+    //     $prospertousRequest->save();
+    //     // Define the PDF path
+    //     $pdfPath = public_path('upload/prospertous/Investors_Prospectus.pdf');
+    //     // Send the email with the PDF attached
+    //     Mail::mailer('investors')->to($request->email)->send(new ProspertousMail($request->email, $pdfPath));
+
+    //     return redirect()->back()->with('success', 'Prospectous PDF sent successfully!');
+    // }
+    // Mail::send(new ProspertousMail($request->email, $pdfPath));
+    // Redirect back with a success message
 }
