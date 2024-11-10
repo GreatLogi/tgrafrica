@@ -1051,6 +1051,24 @@ Consultation
         position: relative;
     }
 
+    .date-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start */
+    max-width: fit-content; /* Ensures the container fits its content */
+}
+
+.date-time-container input[type="datetime-local"] {
+    width: 200px; /* Set a specific width that suits your design */
+    padding: 10px; /* Maintain padding for aesthetics */
+}
+
+@media (max-width: 576px) {
+    .date-time-container input[type="datetime-local"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
     .custom-modal-header .modal-title {
         color: white;
         font-size: 1rem;
