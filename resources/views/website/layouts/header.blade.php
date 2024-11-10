@@ -1,12 +1,12 @@
 <header id="header" class="header-effect-shrink"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+    data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
     <div class="header-body border-top-0">
         <div class="header-top">
             <div class="container">
                 <div class="header-row py-2">
                     <div class="header-column justify-content-end">
                         <div class="header-row">
-                            <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
+                            <ul class="header-social-icons social-icons social-icons-clean">
                                 <li class="social-icons-facebook" style="border-radius: 40%"><a
                                         href="https://www.facebook.com/profile.php?id=61559081140764"
                                         target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
@@ -59,8 +59,8 @@
                                                         href="{{ route('about.mission') }}">Mission</a>
                                                 </li>
                                                 <li> <a class="dropdown-item"
-                                                    href="{{ route('about.purpose') }}">Purpose</a>
-                                            </li>
+                                                        href="{{ route('about.purpose') }}">Purpose</a>
+                                                </li>
                                             </ul>
                                         </li>
 

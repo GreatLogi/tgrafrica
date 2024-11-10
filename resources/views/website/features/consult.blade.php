@@ -151,17 +151,14 @@ Consultation
 </section>
 
 
-<div class="modal fade" id="questionnaireModal" tabindex="-1" aria-labelledby="questionnaireModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="questionnaireModal" tabindex="-1" aria-labelledby="questionnaireModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header" style="background-color: #ed5348; text-align:justify">
-                <h5 class=" modal-title" id="questionnaireModalLabe" style="color: white;">Book a free consultation to
-                    discuss your TGR needs with an advisor.</h5>
-                <button style="color: white;" type="button" class="btn-close" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+            <div class="modal-header justify-content-center custom-modal-header">
+                <h5 class="modal-title text-center">Book a free consultation to discuss your TGR needs with an advisor.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body custom-modal-body">
                 <form id="questionnaireForm" action="{{ route('submit-questionnaire') }}" method="POST">
                     @csrf
                     <div class="row mb-3">
@@ -1047,10 +1044,69 @@ Consultation
 </div>
 <!-- Modal design styling -->
 <style>
-    /* Centered title */
+    /* Modal Header */
+    .custom-modal-header {
+        background-color: #ed5348;
+        padding: 10px;
+        position: relative;
+    }
+
+    .date-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start */
+    max-width: fit-content; /* Ensures the container fits its content */
+}
+
+.date-time-container input[type="datetime-local"] {
+    width: 200px; /* Set a specific width that suits your design */
+    padding: 10px; /* Maintain padding for aesthetics */
+}
+
+@media (max-width: 576px) {
+    .date-time-container input[type="datetime-local"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+    .custom-modal-header .modal-title {
+        color: white;
+        font-size: 1rem;
+        font-weight: normal;
+        flex: 1;
+        text-align: center;
+    }
+
+    .custom-modal-header .btn-close {
+        color: white;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+    }
+
+    /* Modal Body Spacing */
+    .custom-modal-body {
+        padding: 5px;
+        margin: 0 1rem;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 576px) {
+        .custom-modal-body {
+            padding: 5px;
+        }
+
+        .custom-modal-header .modal-title {
+            font-size: 12px;
+        }
+    }
+
+    /* End of Modal body CSS  */
+
+    /*Form on modal CSS Centered title */
     .row .col-md-6 {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 1px;
+        padding-left: 1px;
     }
 
     @media (max-width: 768px) {
