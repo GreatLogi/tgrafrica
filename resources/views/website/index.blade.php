@@ -119,6 +119,21 @@ Home
             /* Spread items evenly */
         }
     }
+
+    @media (max-width: 768px) {
+
+        .header-top .container,
+        .header-container .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-logo img {
+            width: 100px;
+            /* Adjust logo size for mobile */
+        }
+    }
 </style>
 
 
