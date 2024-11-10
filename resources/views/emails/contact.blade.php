@@ -4,11 +4,11 @@
 @endsection
 @section('content')
 <h5>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h5>
-<p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
-<p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
-<p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
-<p><strong>Subject:</strong> {{ $messageContent['subject'] ?? 'N/A' }}</p>
-<p><strong>Message:</strong> {{ $messageContent['message'] ?? 'N/A' }}</p>
+<p>Email: {{ $messageContent['email'] ?? 'N/A' }}</p>
+<p>Country of Residence: {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
+<p>Nationality: {{ $messageContent['nationality'] ?? 'N/A' }}</p>
+<p>Subject: {{ $messageContent['subject'] ?? 'N/A' }}</p>
+<p>Message: {{ $messageContent['message'] ?? 'N/A' }}</p>
 @endsection --}}
 <!DOCTYPE html>
 <html lang="en">
@@ -56,11 +56,11 @@
 <body>
     <div class="content">
         <h5>New Contact Message from {{ $messageContent['full_name'] ?? 'N/A' }}</h5>
-        <p><strong>Email:</strong> {{ $messageContent['email'] ?? 'N/A' }}</p>
-        <p><strong>Country of Residence:</strong> {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
-        <p><strong>Nationality:</strong> {{ $messageContent['nationality'] ?? 'N/A' }}</p>
-        <p><strong>Subject:</strong> {{ $messageContent['subject'] ?? 'N/A' }}</p>
-        <p><strong>Message:</strong> {{ $messageContent['message'] ?? 'N/A' }}</p>
+        <p>Email: {{ $messageContent['email'] ?? 'N/A' }}</p>
+        <p>Country of Residence: {{ $messageContent['country_of_residence'] ?? 'N/A' }}</p>
+        <p>Nationality: {{ $messageContent['nationality'] ?? 'N/A' }}</p>
+        <p>Subject: {{ $messageContent['subject'] ?? 'N/A' }}</p>
+        <p>Message: {{ $messageContent['message'] ?? 'N/A' }}</p>
     </div>
 </body>
 
