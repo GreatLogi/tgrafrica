@@ -269,45 +269,6 @@
                 <button role="button" class="owl-dot"><span></span></button>
             </div>
         </div>
-        <!-- <section class="section bg-color-light border-0 m-0">
-            <div class="container">
-                <div class="row text-center text-md-start">
-                    <div class="col-md-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-                        <div class="row align-items-center justify-content-center justify-content-md-start">
-                            <div class="col-4">
-                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/icons/seo-grey.png') }}" alt="">
-                            </div>
-                            <div class="col-lg-8">
-                                <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Seminars</h2>
-                                <p class="mb-0">Empowering returnees with comprehensive support and expert guidance.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeIn">
-                        <div class="row align-items-center justify-content-center justify-content-md-start">
-                            <div class="col-4">
-                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/icons/marketing-grey.png') }}" alt="">
-                            </div>
-                            <div class="col-lg-8">
-                                <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Brainstorm</h2>
-                                <p class="mb-0">Innovative minds converging to shape the future of returnees.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-                        <div class="row align-items-center justify-content-center justify-content-md-start">
-                            <div class="col-4">
-                                <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/icons/support-grey.png') }}" alt="">
-                            </div>
-                            <div class="col-lg-8">
-                                <h2 class="font-weight-bold text-5 line-height-5 mb-1">TGR Analytics</h2>
-                                <p class="mb-0">Utilizing data insights to optimize pathways for returnees' success.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section class="section section-height-3 bg-color-grey m-0 border-0 mb-50">
             <div class="container">

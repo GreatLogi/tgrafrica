@@ -57,13 +57,13 @@ class QuestionnaireController extends Controller
             'nationality' => 'required',
             'contact' => 'required',
         ]);
-        $existingResponse = QuestionnaireResponse::where('name', $request->input('name'))
-            ->orWhere('email', $request->input('email'))
-            ->first();
+        // $existingResponse = QuestionnaireResponse::where('name', $request->input('name'))
+        //     ->orWhere('email', $request->input('email'))
+        //     ->first();
 
-        if ($existingResponse) {
-            return back()->with('info', 'Thank for your interest.Your previous application is still under review.A consultant will contact you as soon as possible.');
-        }
+        // if ($existingResponse) {
+        //     return back()->with('info', 'Thank for your interest.Your previous application is still under review.A consultant will contact you as soon as possible.');
+        // }
         $data = $request->except('_token', 'name', 'email');
         $totalQuestions = count($data);
         $totalScore = 0;

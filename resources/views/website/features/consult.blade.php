@@ -7,6 +7,19 @@
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <style>
+        .flatpickr-calendar {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: 1px solid #ddd;
+        }
+
+        .date-time-container {
+            overflow: visible;
+            position: relative;
+            width: 100%;
+        }
+    </style>
 
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
@@ -1051,10 +1064,15 @@
                             <label for="date" class="form-label">Preferred Date</label>
                             <input type="date" class="form-control" id="date" name="response_date" required>
                         </div> --}}
-                        <div class="mb-3 date-time-container">
+                        {{-- <div class="mb-3 date-time-container">
                             <label for="time" class="form-label">Preferred Date and Time (Please key in your preferred
                                 time at your location).</label>
                             <input type="datetime-local" class="form-control modern-date-time" id="time"
+                                name="response_time_and_date" placeholder="Select date and time" required>
+                        </div> --}}
+                        <div class="mb-3 date-time-container">
+                            <label for="time" class="form-label">Preferred Date and Time</label>
+                            <input type="text" class="form-control modern-date-time" id="time"
                                 name="response_time_and_date" placeholder="Select date and time" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -1073,6 +1091,37 @@
             @endif
         });
     </script>
+
+    {{-- <script>
+        flatpickr("#time", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            minDate: "today",
+            animate: false,
+            onOpen: function(selectedDates, dateStr, instance) {
+                instance.calendarContainer.style.position = "absolute";
+            }
+        });
+    </script> --}}
+
+    <script>
+        flatpickr("#time", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            minDate: "today",
+            animate: false,
+            onOpen: function(selectedDates, dateStr, instance) {
+                const calendar = instance.calendarContainer;
+                calendar.style.position = "absolute";
+
+                const rect = instance._input.getBoundingClientRect();
+                calendar.style.left = `${rect.left}px`;
+                calendar.style.top = `${rect.bottom + window.scrollY}px`;
+            }
+        });
+    </script>
+
+
     <style>
         /* Modal Header */
         .custom-modal-header {
