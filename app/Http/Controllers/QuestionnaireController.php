@@ -62,7 +62,7 @@ class QuestionnaireController extends Controller
             ->first();
 
         if ($existingResponse) {
-            return back()->with('info', 'TGR will contact you as soon as possible. TGR is processing your application.');
+            return back()->with('info', 'Thank for your interest.Your previous application is still under review.A consultant will contact you as soon as possible.');
         }
         $data = $request->except('_token', 'name', 'email');
         $totalQuestions = count($data);

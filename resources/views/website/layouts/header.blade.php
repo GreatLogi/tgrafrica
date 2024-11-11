@@ -8,8 +8,8 @@
                         <div class="header-row">
                             <ul class="header-social-icons social-icons social-icons-clean">
                                 <li class="social-icons-facebook" style="border-radius: 40%"><a
-                                        href="https://www.facebook.com/profile.php?id=61559081140764"
-                                        target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        href="https://www.facebook.com/profile.php?id=61559081140764" target="_blank"
+                                        title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                 <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
                                         title="X"><i class="fab fa-x-twitter"></i></a></li>
                                 <li class="social-icons-youtube" style="border-radius: 40%"><a
@@ -35,13 +35,14 @@
                 </div>
                 <div class="header-column justify-content-center">
                     <div class="header-row">
-                        <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+                        <div
+                            class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
                             <div
                                 class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li> <a class="  {{ Request::is('home') ? 'active' : '' }}"
-                                                href="{{ route('home') }}"> Home </a>
+                                                href="{{ route('home') }}">TRG Africa</a>
                                         </li>
                                         <li class="dropdown"> <a
                                                 class="dropdown-item dropdown-toggle  {{ Request::is('about*') ? 'active' : '' }}"
@@ -84,7 +85,8 @@
                                                 Investors Community</a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a href="{{ route('request-propertus') }}" class="nav-link">Prospectus</a>
+                                                    <a href="{{ route('request-propertus') }}"
+                                                        class="nav-link">Prospectus</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -131,10 +133,9 @@
                         </div>
                         <div
                             class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-                            <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a
-                                    href="#" class="header-nav-features-toggle text-decoration-none"
-                                    data-focus="headerSearch" aria-label="Search"><i
-                                        class="fas fa-search header-nav-top-icon"></i></a>
+                            <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a href="#"
+                                    class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"
+                                    aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
                                 <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
                                     <form role="search" action="#" method="get">
                                         <div class="simple-search input-group"> <input class="form-control text-1"

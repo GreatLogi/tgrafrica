@@ -57,6 +57,7 @@ Route::get('/', function () {
 Route::get('contact', function () {
     return view('website.contact');
 })->name('contact');
+
 Route::post('/contact/send', [ContactUsController::class, 'send'])->name('contact.send');
 
 // Route::get('news/{uuid}', function ($uuid) {
@@ -114,7 +115,7 @@ Route::group(['prefix' => 'features/', 'as' => 'features.'], function () {
     Route::get('book', function () {
         return view('website.features.book');
     })->name('book');
-    Route::get('consult', function () {
+    Route::get('consultation', function () {
         return view('website.features.consult');
     })->name('consult');
     Route::get('thank-you', function () {
