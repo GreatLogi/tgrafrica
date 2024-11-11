@@ -43,10 +43,9 @@
                         We believe success in joining the great return will depend on the quality of our
                         transition preparation. We take transition preparation very seriously and our goal is to
                         ensure that we can provide you with all the necessary assistance you may need.</p>
-
-
                 </div>
             </div>
+
             <div class="col-lg-4">
                 <div class="testimonial testimonial-secondary appear-animation" data-appear-animation="fadeIn"
                     data-appear-animation-delay="800">
@@ -61,7 +60,6 @@
                                 {{ session('success') }}
                             </div>
                         @endif
-
                         <a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2"
                             data-bs-toggle="modal" data-bs-target="#questionnaireModal">Book a Consultation</a>
                     </blockquote>
@@ -69,6 +67,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1063,7 +1062,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal design styling -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1073,6 +1071,7 @@
             @endif
         });
     </script>
+    <!-- Modal design styling -->
     <style>
         /* Modal Header */
         .custom-modal-header {
@@ -1081,71 +1080,135 @@
             position: relative;
         }
 
-        .modal-content {
-            width: 90%;
-            /* Use a percentage for responsiveness */
-            max-width: 600px;
-            /* Set a maximum width */
-            max-height: 80vh;
-            /* Prevent overflow */
-            overflow-y: auto;
-            /* Enable scrolling if content overflows */
-            border-radius: 8px;
-            /* Rounded corners */
-        }
-
-        /* Flexbox to align children */
-        .modal-body {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            /* Increased padding for better spacing */
-        }
-
         .date-time-container {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-bottom: 1rem;
-            /* Add margin to separate from other content */
+            /* Aligns items to the start */
+            max-width: fit-content;
+            /* Ensures the container fits its content */
         }
 
         .date-time-container input[type="datetime-local"] {
-            width: 100%;
-            /* Make it responsive */
+            width: 200px;
+            /* Set a specific width that suits your design */
             padding: 10px;
+            /* Maintain padding for aesthetics */
         }
 
-        /* Responsive adjustments for smaller screens */
         @media (max-width: 576px) {
-            .modal-content {
-                width: 95%;
-                /* Slightly wider on small screens */
+            .date-time-container input[type="datetime-local"] {
+                width: 100%;
+                /* Full width on smaller screens */
+            }
+        }
+
+        .custom-modal-header .modal-title {
+            color: white;
+            font-size: 1rem;
+            font-weight: normal;
+            flex: 1;
+            text-align: center;
+        }
+
+        .custom-modal-header .btn-close {
+            color: white;
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+        }
+
+        /* Modal Body Spacing */
+        .custom-modal-body {
+            padding: 5px;
+            margin: 0 1rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 576px) {
+            .custom-modal-body {
+                padding: 5px;
             }
 
             .custom-modal-header .modal-title {
                 font-size: 12px;
             }
+        }
 
-            .form-title,
-            .sub-title {
-                font-size: 1.1rem;
-            }
+        /* End of Modal body CSS  */
 
-            .form-control,
-            .submit-btn {
-                font-size: 14px;
+        /*Form on modal CSS Centered title */
+        .row .col-md-6 {
+            padding-right: 1px;
+            padding-left: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .row .col-md-6 {
+                padding-right: 0;
+                padding-left: 0;
+                margin-bottom: 1rem;
             }
         }
 
         /* General Form Styling */
         #questionnaireForm {
-            width: 100%;
-            /* Full width within modal */
+            max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
             background-color: #f8f9fa;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        /* General Form Styles */
+        #questionnaireForm {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        #questionnaireForm:hover {
+            transform: scale(1.01);
+        }
+
+        /* Responsive Input Styling */
+        .form-control {
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+            outline: none;
+        }
+
+        /* Date-Time Picker */
+        .modern-date-time::placeholder {
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+
+        .modern-date-time {
+            font-size: 16px;
+            padding: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         }
 
         /* Button Styling */
@@ -1166,45 +1229,80 @@
             box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
         }
 
-        /* Placeholder and Input Styles */
-        .modern-date-time::placeholder {
-            font-size: 0.85em;
-            color: #6c757d;
+        .submit-btn:active {
+            background-color: #004085;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
         }
 
-        .modern-date-time {
-            font-size: 16px;
-            padding: 12px;
-            cursor: pointer;
-        }
-
-        .date-time-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            /* Aligns label and input to the start */
-            max-width: fit-content;
-            /* Ensures the container fits its content */
-        }
-
-        .date-time-container input[type="datetime-local"] {
-            width: 200px;
-            /* Set a specific width that suits your design */
-            padding: 10px;
-            /* Maintain padding for aesthetics */
-            border: 1px solid #ced4da;
-            /* Consistent border styling */
-            border-radius: 6px;
-            /* Rounded corners */
-            font-size: 16px;
-            /* Font size for the input */
-        }
-
+        /* Responsive Layout */
         @media (max-width: 576px) {
-            .date-time-container input[type="datetime-local"] {
-                width: 100%;
-                /* Full width on smaller screens */
+
+            .form-title,
+            .sub-title {
+                font-size: 1.1rem;
+            }
+
+            .form-control,
+            .submit-btn {
+                font-size: 14px;
             }
         }
+
+        /* Reduced width for Date and Time container */
+        .date-time-container #input {
+            max-width: 30px;
+            /* Adjust width as needed */
+            margin: 0 auto;
+        }
+
+        #questionnaireForm {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        .form-control {
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+        }
     </style>
+
+    {{-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        flatpickr("#time", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i"
+        });
+    });
+</script> --}}
 @endsection
