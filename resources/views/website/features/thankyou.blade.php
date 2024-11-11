@@ -76,12 +76,12 @@ Thank You
     color: #000000;
     font-size: 5rem; 
     font-weight: bold; /* Bold text */
-    margin: 1rem 0; /* Margin for spacing */
+    margin: 1rem 0; 
 }
 
 .small-image {
     width: 50px; 
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 .social-icons {
