@@ -107,7 +107,6 @@ Request Prospertus
             </div>
         </div>
     </section>
-
 </div>
 
 <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
