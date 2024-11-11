@@ -56,69 +56,8 @@
         gtag('js', new Date());
         gtag('config', 'UA-42715764-11');
     </script>
+
 </head>
-
-
-
-<!-- <style>
-    .modal-body {
-        background-color: #fff;
-        border-radius: 8px;
-        width: 90%;
-        max-width: 600px;
-        /* Set max width for larger screens */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        position: relative;
-        transition: all 0.3s ease;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #prospertousModal {
-        background-color: #fff;
-        border-radius: 8px;
-        width: 90%;
-        max-width: 600px;
-        /* Set max width for larger screens */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        position: relative;
-        transition: all 0.3s ease;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .modal-header {
-        padding: 16px;
-        border-bottom: 1px solid #eee;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .modal-body {
-        padding: 16px;
-    }
-
-    .modal-footer {
-        padding: 16px;
-        border-top: 1px solid #eee;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .close-button {
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    .action-button:hover {
-        background-color: #0056b3;
-    }
-</style> -->
 
 
 <body data-plugin-page-transition>
@@ -126,36 +65,6 @@
         @include('website.layouts.header')
         <div role="main" class="main">
             @yield('content')
-        </div>
-        <div class="modal fade" id="prospertousModal" tabindex="-1" aria-labelledby="prospertousModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h6 class="modal-title" id="prospertousModalLabel">Enter Your Email address to receive the
-                            Investors Community Prospectus PDF.</h6>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <form id="prospertousForm" action="{{ route('prospertous.store') }}" method="POST">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="emailInput" class="form-label">Email address</label>
-                                <input type="email" name="email" class="form-control" id="emailInput"
-                                    placeholder="Enter your email">
-                            </div>
-                            @error('email')
-                                <span class="badge badge-danger">{{ $message }}</span>
-                            @enderror
-                            <button type="submit" class="btn btn-primary">Receive</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -166,34 +75,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Show success modal if session contains 'success' message
-            @if (session('success'))
-                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
-            @endif
-        });
-    </script>
-
-    {{-- <script>
-        document.getElementById('prospertousForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formData = new FormData(this);
-            fetch('{{ route('prospertous.store') }}', {
-    method: 'POST',
-    body: formData,
-    headers: {
-    'X-CSRF-TOKEN': '{{ csrf_token() }}'}
-    })
-    .then(response => response.json())
-    .then(data => {
-    alert(data.message);
-    $('#prospertousModal').modal('hide');
-    })
-    .catch(error => console.error('Error:', error));
-    });
-    </script> --}}
 
     <style>
         /* Whatsapp */
@@ -224,6 +105,37 @@
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
+
+
+    <script>
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + d.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        // Check if the user has already visited the site
+        window.onload = function() {
+            if (!getCookie("userPreference")) {
+                // Set cookie for new visitors
+                setCookie("userPreference", "visited", 30); // 30 days
+                alert("Welcome! We have set a cookie for you.");
+            } else {
+                console.log("Welcome back! Cookie found.");
+            }
+        };
+    </script>
 
     <!-- End of whatsapp Button -->
     <!-- Vendor -->
