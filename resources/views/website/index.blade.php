@@ -3,7 +3,7 @@
     TGR AFRICA
 @endsection
 @section('content')
-    <style>
+    {{-- <style>
         .ipopup {
             position: fixed;
             top: 50%;
@@ -174,7 +174,7 @@
 
     <div id="overlay" style="display: none; /* Your overlay styles */">
         <button id="iclose">Close</button>
-    </div>
+    </div> --}}
     <!-- End of Book popup -->
     <div role="main" class="main">
         <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"

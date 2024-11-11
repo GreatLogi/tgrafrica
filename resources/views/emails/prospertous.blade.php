@@ -4,8 +4,8 @@
 <head>
     <title>Prospectus</title>
 </head>
-<p>Thank you for reaching out.</p>
-<p>Please find the requested <a href="{{ $pdfUrl }}" target="_blank">TGR Prospectus</a> attached for your reference.</p>
+<p>Thank you for your request.</p>
+<p>Please see attached, the <a href="{{ $pdfUrl }}" target="_blank">Investors Community Prospectus.</a></p>
 <p>Best regards,</p>
 <p>The TGR Team</p>
 
