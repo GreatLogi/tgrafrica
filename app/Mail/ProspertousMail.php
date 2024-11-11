@@ -30,7 +30,7 @@ class ProspertousMail extends Mailable
                 'pdfUrl' => $this->pdfUrl,
             ]);
     }
-    
+
     // public function __construct($email, $pdfPath)
     // {
     //     $this->email = $email;

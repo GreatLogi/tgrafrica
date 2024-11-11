@@ -42,7 +42,7 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li> <a class="  {{ Request::is('home') ? 'active' : '' }}"
-                                                href="{{ route('home') }}">TRG Africa</a>
+                                                href="{{ route('home') }}">Home</a>
                                         </li>
                                         <li class="dropdown"> <a
                                                 class="dropdown-item dropdown-toggle  {{ Request::is('about*') ? 'active' : '' }}"
