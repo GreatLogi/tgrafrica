@@ -6,8 +6,8 @@ Brainstorm
 
 @section('content')
 <section
-    class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-5"
-    style="background-image: url({{ asset('img/page-header/bc-adv.jpg') }});">
+class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-1"
+style="background-image: url({{ asset('img/page-header/bc-adv.jpg') }});">
     <div class="container">
         <div class="row">
             <div class="col-md-8 order-2 order-md-1 align-self-center p-static">

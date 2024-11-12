@@ -17,6 +17,13 @@
             align-items: center;
             height: 100vh;
         }
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 150px;
+        }
 
         .content {
             background-color: #fff;
@@ -42,14 +49,34 @@
         p:last-child {
             margin-top: 30px;
         }
+
+        .footer {margin-top: 30px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <!-- <img src="cid:logo_default_slim" alt="TGR Logo"> -->
+        <img src="http://www.tgrafrica.com/img/logo-default-slim.png" alt="TGR Logo">
+
+    </div>
     <div class="content">
         <h5>Thank You, {{ $messageContent['full_name'] }}!</h5>
         <p>We have received your mail, a consultant will contact you shortly.</p>
-        <p>Best regards,<br>TGR Africa Team</p>
+        {{-- <p>Best regards,<br>TGR Africa Team</p> --}}
+    </div>
+
+    <div class="footer">
+        <p>Best regards,</p>
+        <p>The TGR Team</p>
+        <p><small>&copy; 2024 TGR AFRICA. All rights reserved.</small></p>
     </div>
 </body>
 

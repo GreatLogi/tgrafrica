@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             color: #333;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f4f4f4;
         }
 
@@ -18,24 +18,29 @@
         }
 
         .header img {
-            max-width: 200px;
+            max-width: 150px;
         }
 
         .content {
-            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.6;
         }
 
+        .content p {
+            font-size: 12px;  /* Increase font size here */
+        }
         
+        .content a {
+            color: rgb(0, 0, 255);
+        }
 
-        
-
-        .footer {
-            font-size: 12px;
+        .footer {margin-top: 30px;
+            font-size: 13px;
             color: #999;
         }
 
         .footer p {
-            margin: 0;
+            margin: 5px 0;
         }
     </style>
 </head>
