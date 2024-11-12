@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin_master')
 @section('title')
-    Prospertous
+    Prospectus
 @endsection
 @section('admin')
     <div class="row">
@@ -21,7 +21,7 @@
                             <div class="col-lg-6">
                                 <div id="datatable-default_filter" class="dataTables_filter">
                                     <label>
-                                        <a href="{{ route('add-prospertous') }}" class="btn btn-success"
+                                        <a href="{{ route('add-prospectus') }}" class="btn btn-success"
                                             style="float:right;">Click Me</a>
                                     </label>
                                 </div>
@@ -46,15 +46,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($prospertousFiles as $index => $file)
+                                    @foreach ($prospectusFiles as $index => $file)
                                         <tr>
                                             <td>{{ $index + 1 }}</td>
-                                            <td>{{ basename($file->prospertous) }}</td>
+                                            <td>{{ basename($file->prospectus) }}</td>
                                             <td>
-                                                {{-- <a href="{{ asset($file->prospertous) }}" class="btn btn-primary"
+                                                {{-- <a href="{{ asset($file->prospectus) }}" class="btn btn-primary"
                                                     target="_blank">View</a>
                                                 <!-- You can also add a download button if needed --> --}}
-                                                <a href="{{ asset($file->prospertous) }}" class="btn btn-info"
+                                                <a href="{{ asset($file->prospectus) }}" class="btn btn-info"
                                                     download>Download</a>
                                             </td>
                                         </tr>

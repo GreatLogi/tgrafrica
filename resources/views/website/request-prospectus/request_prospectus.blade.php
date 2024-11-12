@@ -1,7 +1,7 @@
 @extends('website.layouts.main')
 
 @section('title')
-Request Prospertus
+Request Prospectus
 @endsection
 
 @section('content')
@@ -88,7 +88,7 @@ Request Prospertus
                         </div>
                         <div class="row">
                             <div class="col">
-                                <form id="prospertousForm" action="{{ route('prospertous.store') }}" method="POST">
+                                <form id="prospectusForm" action="{{ route('prospectus.store') }}" method="POST">
                                     @csrf
                                     <div class="mb-3">
                                         <label for="emailInput" class="form-label text-white">Enter your Email address to download</label>

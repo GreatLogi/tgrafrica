@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use OwenIt\Auditing\Contracts\Auditable;
 
-class Prospertous extends Model implements Auditable
+class ProspectusRequest extends Model implements Auditable
 {
     use HasFactory;
     use UuidTrait;
@@ -18,7 +18,7 @@ class Prospertous extends Model implements Auditable
      * @var array<int, string>
      */
     protected $fillable = [
-        'prospertous',
+        'email',
     ];
 
     /**

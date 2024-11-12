@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('prospertous_requests', function (Blueprint $table) {
+        Schema::table('prospectus_requests', function (Blueprint $table) {
             $table->string('email')->unique(false)->change();
         });
     }
@@ -25,7 +25,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('prospertous_requests', function (Blueprint $table) {
+        Schema::table('prospectus_requests', function (Blueprint $table) {
             $table->string('email')->unique()->change();
         });
     }

@@ -7,7 +7,7 @@
         <div class="col">
             <section class="card">
                 <header class="card-header">
-                    <h2 class="card-title">Requested Lists of Prospertus</h2>
+                    <h2 class="card-title">Requested Lists of Prospectus</h2>
                 </header>
                 <div class="card-body">
                     <div id="datatable-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">

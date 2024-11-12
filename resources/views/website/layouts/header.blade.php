@@ -85,7 +85,7 @@
                                                 Investors Community</a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a href="{{ route('request-propertus') }}"
+                                                    <a href="{{ route('request-prospectus') }}"
                                                         class="nav-link">Prospectus</a>
                                                 </li>
                                             </ul>

@@ -80,15 +80,15 @@
 
                                 </li>
                                 <li class="nav-parent">
-                                    <a class="nav-link" href="{{ route('prospertous-index') }}">
-                                        Prospertous <span class="mega-sub-nav-toggle toggled float-end"
+                                    <a class="nav-link" href="{{ route('prospectus-index') }}">
+                                        Prospectus <span class="mega-sub-nav-toggle toggled float-end"
                                             data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                     </a>
 
                                 </li>
                                 <li class="nav-parent">
                                     <a class="nav-link" href="{{ route('requested-list') }}">
-                                        Requested List of Prospertus <span class="mega-sub-nav-toggle toggled float-end"
+                                        Requested List of Prospectus <span class="mega-sub-nav-toggle toggled float-end"
                                             data-toggle="collapse" data-target=".mega-sub-nav-sub-menu-1"></span>
                                     </a>
 

@@ -6,7 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ProspertousMail extends Mailable
+class ProspectusMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -24,7 +24,7 @@ class ProspertousMail extends Mailable
             ->from('investorscommunity@tgrafrica.com', 'TGR Africa')
             ->to($this->email)
             ->subject('TGR Prospectus Request')
-            ->view('emails.prospertous')
+            ->view('emails.prospectus')
             ->with([
                 'requesterEmail' => $this->email,
                 'pdfUrl' => $this->pdfUrl,
@@ -47,7 +47,7 @@ class ProspertousMail extends Mailable
     //             'as' => 'Investors_Prospectus.pdf',
     //             'mime' => 'application/pdf',
     //         ])
-    //         ->view('emails.prospertous')
+    //         ->view('emails.prospectus')
     //         ->with(['requesterEmail' => $this->email]);
     // }
     // public function build()
@@ -55,23 +55,23 @@ class ProspertousMail extends Mailable
     //     return $thisgit
     //         ->from('info@tgrafrica.com', 'TGR Africa')
     //         ->to($this->email)
-    //         ->subject('TGR Prospertous Request')
+    //         ->subject('TGR Prospectus Request')
     //         ->attach($this->pdfPath, [
     //             'as' => 'Investors_Prospectus.pdf',
     //             'mime' => 'application/pdf',
     //         ])
-    //         ->view('emails.prospertous')
+    //         ->view('emails.prospectus')
     //         ->with(['requesterEmail' => $this->email]);
     // }
 
     // public function build()
     // {
     //     return $this->to($this->email)
-    //         ->subject('TGR Prospertous')
+    //         ->subject('TGR Prospectus')
     //         ->attach($this->pdfPath, [
-    //             'as' => 'prospertous.pdf',
+    //             'as' => 'prospectus.pdf',
     //             'mime' => 'application/pdf',
     //         ])
-    //         ->view('emails.prospertous');
+    //         ->view('emails.prospectus');
     // }
 }
