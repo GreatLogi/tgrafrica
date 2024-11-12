@@ -39,6 +39,7 @@
         }
     </style>
 </head>
+<<<<<<< HEAD
 
 <body>
         <div class="header">
@@ -63,5 +64,11 @@
 </body>
 
       
+=======
+<p>Thank you for your request.</p>
+<p>Please see attached, the <a href="{{ $pdfUrl }}" target="_blank">Investors Community Prospectus here.</a></p>
+<p>Best regards,</p>
+<p>The TGR Team</p>
+>>>>>>> fd9032a111bb7aff0564ea6206f50e64ea7d5cd8
 
 </html>

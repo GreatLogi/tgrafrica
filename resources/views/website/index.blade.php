@@ -3,6 +3,7 @@
     TGR AFRICA
 @endsection
 @section('content')
+<<<<<<< HEAD
     <style>
        /* Popup container to center the popup */
 #overlay {
@@ -17,6 +18,28 @@
     align-items: center;
     z-index: 9999;
 }
+=======
+    {{-- <style>
+        .ipopup {
+            position: fixed;
+            top: 50%;
+            /* Center vertically by default */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            height: 400px;
+            width: 500px;
+            max-width: 100%;
+            /* Prevents overflow */
+            max-height: 100%;
+            /* Prevents overflow */
+            overflow: auto;
+            /* Scroll if content overflows */
+        }
+>>>>>>> fd9032a111bb7aff0564ea6206f50e64ea7d5cd8
 
 .popup-container {
     display: flex;
@@ -167,6 +190,7 @@
         var show_delay = 0; // Show immediately on page load (0ms delay)
         var hide_delay = 30000; // Hide after 30 seconds
 
+<<<<<<< HEAD
         // Immediately show the popup after page is fully loaded
         document.getElementById('overlay').style.display = 'block';
 
@@ -183,6 +207,12 @@
 </script>
 
 <!-- End of Book popup -->
+=======
+    <div id="overlay" style="display: none; /* Your overlay styles */">
+        <button id="iclose">Close</button>
+    </div> --}}
+    <!-- End of Book popup -->
+>>>>>>> fd9032a111bb7aff0564ea6206f50e64ea7d5cd8
     <div role="main" class="main">
         <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0"
             data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['650px','650px','650px','550px','500px']"
