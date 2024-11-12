@@ -20,16 +20,34 @@ class ProspertousMail extends Mailable
 
     public function build()
     {
-        return $this
-            ->from('investorscommunity@tgrafrica.com', 'TGR Africa')
+        // Embed the logo image as an attachment and reference it using a Content-ID (CID)
+        return $this->from('investorscommunity@tgrafrica.com', 'TGR Africa')
             ->to($this->email)
             ->subject('TGR Prospectus Request')
             ->view('emails.prospertous')
             ->with([
                 'requesterEmail' => $this->email,
                 'pdfUrl' => $this->pdfUrl,
+            ])
+            ->attach(public_path('img/logo-default-slim.png'), [
+                'as' => 'logo-default-slim.png', // Name of the file when attached
+                'mime' => 'image/png', // MIME type of the image
+                'contentId' => 'logo_default_slim' // CID for referencing in the HTML
             ]);
     }
+
+    // public function build()
+    // {
+    //     return $this
+    //         ->from('investorscommunity@tgrafrica.com', 'TGR Africa')
+    //         ->to($this->email)
+    //         ->subject('TGR Prospectus Request')
+    //         ->view('emails.prospertous')
+    //         ->with([
+    //             'requesterEmail' => $this->email,
+    //             'pdfUrl' => $this->pdfUrl,
+    //         ]);
+    // }
 
     // public function __construct($email, $pdfPath)
     // {
