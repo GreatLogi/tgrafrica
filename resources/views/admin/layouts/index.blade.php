@@ -133,7 +133,6 @@ Dashboard
 											<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
 											
 										</div>
-
 										<h2 class="card-title">Last 10 Visits</h2>
 										<p class="card-subtitle">This data shows the last 10 visits by Date, Time and I.P Address</p>
 									</header>
